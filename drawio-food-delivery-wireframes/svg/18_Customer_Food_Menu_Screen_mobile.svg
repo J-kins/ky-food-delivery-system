@@ -1,0 +1,99 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 400; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <rect width="375" height="812" fill="#F7F4EF"/>
+  
+  <rect width="375" height="56" fill="#005638"/>
+  <text x="16" y="38" class="font-header" fill="#F7F4EF">← Menu</text>
+  <rect width="375" height="20" fill="#005638"/>
+
+  <!-- Category Pills -->
+  <g transform="translate(8, 76)">
+    <rect width="100" height="32" rx="16" fill="#005638"/>
+    <text x="50" y="21" class="font-label" fill="#F7F4EF" text-anchor="middle">All</text>
+    
+    <rect x="112" width="80" height="32" rx="16" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="152" y="21" class="font-label color-text-dark" text-anchor="middle">Pasta</text>
+    
+    <rect x="196" width="80" height="32" rx="16" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="236" y="21" class="font-label color-text-dark" text-anchor="middle">Pizza</text>
+    
+    <rect x="280" width="95" height="32" rx="16" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="327.5" y="21" class="font-label color-text-dark" text-anchor="middle">Dessert</text>
+  </g>
+
+  <!-- Menu Items -->
+  <g transform="translate(8, 120)">
+    <!-- Item 1 -->
+    <g>
+      <rect width="359" height="88" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="72" height="72" rx="6" fill="#E8D7B5"/>
+      <text x="92" y="24" class="font-title color-text-dark">Margherita Pizza</text>
+      <text x="92" y="40" class="font-caption color-text-light">Fresh mozzarella, basil</text>
+      <text x="92" y="64" class="font-label color-accent">$12.99</text>
+      <text x="327" y="44" class="font-header color-text-light" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(0, 104)">
+      <rect width="359" height="88" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="72" height="72" rx="6" fill="#E8D7B5"/>
+      <text x="92" y="24" class="font-title color-text-dark">Carbonara Pasta</text>
+      <text x="92" y="40" class="font-caption color-text-light">Guanciale, pecorino romano</text>
+      <text x="92" y="64" class="font-label color-accent">$14.99</text>
+      <text x="327" y="44" class="font-header color-text-light" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(0, 208)">
+      <rect width="359" height="88" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="72" height="72" rx="6" fill="#E8D7B5"/>
+      <text x="92" y="24" class="font-title color-text-dark">Tiramisu</text>
+      <text x="92" y="40" class="font-caption color-text-light">Ladyfingers, mascarpone</text>
+      <text x="92" y="64" class="font-label color-accent">$7.99</text>
+      <text x="327" y="44" class="font-header color-text-light" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Item 4 -->
+    <g transform="translate(0, 312)">
+      <rect width="359" height="88" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="72" height="72" rx="6" fill="#E8D7B5"/>
+      <text x="92" y="24" class="font-title color-text-dark">Panna Cotta</text>
+      <text x="92" y="40" class="font-caption color-text-light">Vanilla cream, berries</text>
+      <text x="92" y="64" class="font-label color-accent">$8.99</text>
+      <text x="327" y="44" class="font-header color-text-light" text-anchor="middle">+</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation -->
+  <g transform="translate(0, 756)">
+    <rect width="375" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <g transform="translate(42.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🏠</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(123.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🔍</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Search</text>
+    </g>
+    <g transform="translate(204.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">📦</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Orders</text>
+    </g>
+    <g transform="translate(285.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">👤</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Account</text>
+    </g>
+  </g>
+</svg>

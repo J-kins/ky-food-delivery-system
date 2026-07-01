@@ -1,0 +1,82 @@
+<svg viewBox="0 0 768 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="768" height="1024" fill="#F7F4EF"/>
+  <rect width="768" height="1024" fill="#000" opacity="0.5"/>
+  
+  <g transform="translate(80, 250)">
+    <rect width="608" height="524" rx="16" fill="#F7F4EF"/>
+    
+    <g transform="translate(24, 24)">
+      <text class="font-header" fill="#3B2A1A">Filters & Sort</text>
+      <text x="560" y="18" class="font-label" text-anchor="end" fill="#3B2A1A">✕</text>
+    </g>
+    
+    <line x1="24" y1="64" x2="584" y2="64" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <g transform="translate(24, 80)">
+      <text class="font-title" fill="#3B2A1A">Sort By</text>
+      
+      <g transform="translate(0, 40)">
+        <circle cx="12" cy="12" r="8" fill="#005638"/>
+        <text x="32" y="18" class="font-body" fill="#3B2A1A">Most Popular</text>
+      </g>
+      
+      <g transform="translate(0, 72)">
+        <circle cx="12" cy="12" r="8" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+        <text x="32" y="18" class="font-body" fill="#3B2A1A">Highest Rating</text>
+      </g>
+      
+      <g transform="translate(0, 104)">
+        <circle cx="12" cy="12" r="8" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+        <text x="32" y="18" class="font-body" fill="#3B2A1A">Fastest Delivery</text>
+      </g>
+      
+      <g transform="translate(0, 136)">
+        <circle cx="12" cy="12" r="8" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+        <text x="32" y="18" class="font-body" fill="#3B2A1A">Lowest Price</text>
+      </g>
+    </g>
+    
+    <line x1="24" y1="264" x2="584" y2="264" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <g transform="translate(24, 280)">
+      <text class="font-title" fill="#3B2A1A">Cuisine</text>
+      
+      <g transform="translate(0, 40)">
+        <rect width="20" height="20" rx="3" fill="#005638"/>
+        <text x="32" y="15" class="font-body" fill="#3B2A1A">Italian</text>
+      </g>
+      
+      <g transform="translate(0, 72)">
+        <rect width="20" height="20" rx="3" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+        <text x="32" y="15" class="font-body" fill="#3B2A1A">Indian</text>
+      </g>
+      
+      <g transform="translate(0, 104)">
+        <rect width="20" height="20" rx="3" fill="#005638"/>
+        <text x="32" y="15" class="font-body" fill="#3B2A1A">Japanese</text>
+      </g>
+      
+      <g transform="translate(0, 136)">
+        <rect width="20" height="20" rx="3" fill="none" stroke="#E0E0E0" stroke-width="2"/>
+        <text x="32" y="15" class="font-body" fill="#3B2A1A">Mexican</text>
+      </g>
+    </g>
+    
+    <g transform="translate(24, 432)">
+      <rect width="560" height="56" rx="8" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="280" y="37" class="font-label" fill="#3B2A1A" text-anchor="middle">Reset Filters</text>
+      
+      <rect y="72" width="560" height="56" rx="8" fill="#005638"/>
+      <text x="280" y="109" class="font-label" fill="#F7F4EF" text-anchor="middle">Apply Filters</text>
+    </g>
+  </g>
+</svg>

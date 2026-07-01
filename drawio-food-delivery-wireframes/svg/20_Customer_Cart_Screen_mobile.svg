@@ -1,0 +1,129 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <rect width="375" height="812" fill="#F7F4EF"/>
+  
+  <!-- Header -->
+  <rect width="375" height="56" fill="#005638"/>
+  <text x="16" y="38" class="font-header" fill="#F7F4EF">Your Cart</text>
+  <rect width="375" height="20" fill="#005638"/>
+
+  <!-- Restaurant Info -->
+  <g transform="translate(16, 76)">
+    <text class="font-title color-text-dark">Trattoria Bella</text>
+    <text x="0" y="24" class="font-caption color-text-light">Estimated delivery: 20 min</text>
+  </g>
+
+  <!-- Cart Items -->
+  <g transform="translate(16, 120)">
+    <!-- Item 1 -->
+    <g>
+      <rect width="343" height="80" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="16" y="24" class="font-title color-text-dark">Margherita Pizza</text>
+      <text x="16" y="44" class="font-caption color-text-light">Size: Small</text>
+      <text x="16" y="64" class="font-label color-accent">$12.99</text>
+      
+      <!-- Quantity -->
+      <g transform="translate(280, 32)">
+        <text class="font-label color-text-light">−</text>
+        <text x="20" class="font-label color-text-dark">1</text>
+        <text x="40" class="font-label color-text-light">+</text>
+      </g>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(0, 96)">
+      <rect width="343" height="80" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="16" y="24" class="font-title color-text-dark">Carbonara Pasta</text>
+      <text x="16" y="44" class="font-caption color-text-light">Regular portion</text>
+      <text x="16" y="64" class="font-label color-accent">$14.99</text>
+      
+      <!-- Quantity -->
+      <g transform="translate(280, 32)">
+        <text class="font-label color-text-light">−</text>
+        <text x="20" class="font-label color-text-dark">1</text>
+        <text x="40" class="font-label color-text-light">+</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Divider -->
+  <line x1="16" y1="312" x2="359" y2="312" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Order Summary -->
+  <g transform="translate(16, 328)">
+    <g>
+      <text class="font-body color-text-dark">Subtotal</text>
+      <text x="320" class="font-body color-text-dark" text-anchor="end">$27.98</text>
+    </g>
+    
+    <g transform="translate(0, 28)">
+      <text class="font-body color-text-dark">Delivery Fee</text>
+      <text x="320" class="font-body color-text-dark" text-anchor="end">$2.99</text>
+    </g>
+    
+    <g transform="translate(0, 56)">
+      <text class="font-body color-text-dark">Taxes & Fees</text>
+      <text x="320" class="font-body color-text-dark" text-anchor="end">$2.65</text>
+    </g>
+    
+    <!-- Divider -->
+    <line y1="36" x2="343" y2="36" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <g transform="translate(0, 52)">
+      <text class="font-title color-text-dark">Total</text>
+      <text x="320" class="font-title color-accent" text-anchor="end">$33.62</text>
+    </g>
+  </g>
+
+  <!-- Promo Code Section -->
+  <g transform="translate(16, 500)">
+    <text class="font-label color-text-dark">Have a promo code?</text>
+    <rect x="0" y="20" width="343" height="40" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="16" y="44" class="font-body color-text-light">Enter code</text>
+  </g>
+
+  <!-- Checkout Button -->
+  <g transform="translate(16, 600)">
+    <rect width="343" height="48" rx="8" fill="#005638"/>
+    <text x="171.5" y="32" class="font-label" fill="#F7F4EF" text-anchor="middle">PROCEED TO CHECKOUT</text>
+  </g>
+
+  <!-- Continue Shopping -->
+  <g transform="translate(16, 660)">
+    <rect width="343" height="48" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="171.5" y="32" class="font-label color-text-dark" text-anchor="middle">CONTINUE SHOPPING</text>
+  </g>
+
+  <!-- Bottom Navigation -->
+  <g transform="translate(0, 756)">
+    <rect width="375" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <g transform="translate(42.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🏠</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(123.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🔍</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Search</text>
+    </g>
+    <g transform="translate(204.75, 8)">
+      <text class="font-label color-accent" text-anchor="middle">🛒</text>
+      <text y="28" class="font-label color-accent" text-anchor="middle">Cart</text>
+    </g>
+    <g transform="translate(285.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">👤</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Account</text>
+    </g>
+  </g>
+</svg>

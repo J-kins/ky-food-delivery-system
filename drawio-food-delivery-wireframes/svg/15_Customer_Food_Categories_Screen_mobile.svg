@@ -1,0 +1,96 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <rect width="375" height="812" fill="#F7F4EF"/>
+  
+  <!-- Header -->
+  <rect width="375" height="56" fill="#005638"/>
+  <text x="16" y="38" class="font-header" fill="#F7F4EF">Categories</text>
+  <rect width="375" height="20" fill="#005638"/>
+
+  <!-- Categories Grid -->
+  <g transform="translate(16, 76)">
+    <!-- Row 1 -->
+    <g>
+      <!-- Pizza -->
+      <rect width="155" height="155" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="155" height="100" rx="12" fill="#E8D7B5"/>
+      <text x="77.5" y="55" class="font-header" text-anchor="middle">🍕</text>
+      <text x="77.5" y="128" class="font-title color-text-dark" text-anchor="middle">Pizza</text>
+      
+      <!-- Burger -->
+      <g transform="translate(187, 0)">
+        <rect width="155" height="155" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+        <rect x="0" y="0" width="155" height="100" rx="12" fill="#E8D7B5"/>
+        <text x="77.5" y="55" class="font-header" text-anchor="middle">🍔</text>
+        <text x="77.5" y="128" class="font-title color-text-dark" text-anchor="middle">Burger</text>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 175)">
+      <!-- Sushi -->
+      <rect width="155" height="155" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="155" height="100" rx="12" fill="#E8D7B5"/>
+      <text x="77.5" y="55" class="font-header" text-anchor="middle">🍣</text>
+      <text x="77.5" y="128" class="font-title color-text-dark" text-anchor="middle">Sushi</text>
+      
+      <!-- Salad -->
+      <g transform="translate(187, 0)">
+        <rect width="155" height="155" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+        <rect x="0" y="0" width="155" height="100" rx="12" fill="#E8D7B5"/>
+        <text x="77.5" y="55" class="font-header" text-anchor="middle">🥗</text>
+        <text x="77.5" y="128" class="font-title color-text-dark" text-anchor="middle">Salad</text>
+      </g>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 350)">
+      <!-- Dessert -->
+      <rect width="155" height="155" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="155" height="100" rx="12" fill="#E8D7B5"/>
+      <text x="77.5" y="55" class="font-header" text-anchor="middle">🍰</text>
+      <text x="77.5" y="128" class="font-title color-text-dark" text-anchor="middle">Dessert</text>
+      
+      <!-- Beverage -->
+      <g transform="translate(187, 0)">
+        <rect width="155" height="155" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+        <rect x="0" y="0" width="155" height="100" rx="12" fill="#E8D7B5"/>
+        <text x="77.5" y="55" class="font-header" text-anchor="middle">☕</text>
+        <text x="77.5" y="128" class="font-title color-text-dark" text-anchor="middle">Beverage</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation -->
+  <g transform="translate(0, 756)">
+    <rect width="375" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <g transform="translate(42.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🏠</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(123.75, 8)">
+      <text class="font-label color-accent" text-anchor="middle">🔍</text>
+      <text y="28" class="font-label color-accent" text-anchor="middle">Search</text>
+    </g>
+    <g transform="translate(204.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">📦</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Orders</text>
+    </g>
+    <g transform="translate(285.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">👤</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Account</text>
+    </g>
+  </g>
+</svg>
