@@ -17,11 +17,8 @@
   },
   "dependencies": {
     "d3": "^7.8.5",
-    "tiptap": "^2.1.13",
-    "tiptap-react": "^2.1.13",
-    "tiptap-extensions": "^2.1.13",
+    "@tiptap/core": "^2.1.13",
     "@tiptap/starter-kit": "^2.1.13",
-    "@tiptap/react": "^2.1.13",
     "chart.js": "^4.4.0",
     "axios": "^1.6.0",
     "date-fns": "^2.30.0"
