@@ -1,0 +1,51 @@
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* KY FOOD DELIVERY SYSTEM - PUBLIC LAYOUT STYLES */
+/* ──────────────────────────────────────────────────────────────────────────── */
+
+.public-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-neutral-offwhite);
+}
+
+.public-layout__navbar {
+  background-color: var(--color-white);
+  box-shadow: 0 1px 3px rgba(59, 42, 26, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.public-layout__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.public-layout__footer {
+  background-color: var(--color-neutral-brown);
+  color: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .public-layout__content {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+
+  .public-layout__footer {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .public-layout__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--spacing-xl);
+  }
+}

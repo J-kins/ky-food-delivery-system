@@ -1,0 +1,83 @@
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* KY FOOD DELIVERY SYSTEM - ADMIN LAYOUT STYLES */
+/* ──────────────────────────────────────────────────────────────────────────── */
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+  background-color: var(--color-neutral-offwhite);
+}
+
+.admin-layout__sidebar {
+  background-color: var(--color-neutral-brown);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.admin-layout__sidebar-header {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.admin-layout__sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md) 0;
+}
+
+.admin-layout__sidebar-nav-item {
+  padding: var(--spacing-md) var(--spacing-lg);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.admin-layout__sidebar-nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-layout__sidebar-nav-item--active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left-color: var(--color-primary-yellow);
+}
+
+.admin-layout__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-layout__header {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid #E8D7B5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-layout__content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-xl);
+}
+
+@media (max-width: 1024px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-layout__sidebar {
+    display: none;
+  }
+}

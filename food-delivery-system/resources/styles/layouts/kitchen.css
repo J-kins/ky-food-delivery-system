@@ -1,0 +1,64 @@
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* KY FOOD DELIVERY SYSTEM - KITCHEN LAYOUT STYLES */
+/* ──────────────────────────────────────────────────────────────────────────── */
+
+.kitchen-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #DC4024;
+}
+
+.kitchen-layout__header {
+  background-color: #B83420;
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.kitchen-layout__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: var(--spacing-xl);
+}
+
+.kitchen-layout__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.kitchen-layout__stat-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.kitchen-layout__stat-card-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.kitchen-layout__stat-card-label {
+  font-size: 0.9375rem;
+  margin: var(--spacing-sm) 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .kitchen-layout__content {
+    padding: var(--spacing-lg);
+  }
+
+  .kitchen-layout__stats {
+    grid-template-columns: 1fr;
+  }
+}
