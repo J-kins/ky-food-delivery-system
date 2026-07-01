@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /web/
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule ^(.*)$ /web/index.html [QSA,L]
+</IfModule>
+
+AddType application/javascript .js
+AddType text/css .css
+AddEncoding gzip .js.gz
+AddEncoding gzip .css.gz

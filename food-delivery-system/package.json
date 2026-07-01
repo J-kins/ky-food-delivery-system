@@ -1,10 +1,36 @@
 {
   "name": "ky-food-delivery-system",
   "version": "1.0.0",
-  "description": "KY Food Delivery System",
+  "description": "KY Food Delivery System - Multi-platform Food Delivery Application",
+  "main": "web/index.html",
   "scripts": {
-    "serve": "python3 -m http.server 8000"
+    "serve": "python3 -m http.server 8000",
+    "dev": "npm run serve",
+    "build": "npm run build:web && npm run build:desktop",
+    "build:web": "echo 'Web build complete'",
+    "build:desktop": "cd src-tauri && cargo tauri build",
+    "tauri": "cargo tauri",
+    "test": "npm run test:unit",
+    "test:unit": "echo 'Tests'",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"**/*.{js,css,json,md}\""
+  },
+  "dependencies": {
+    "d3": "^7.8.5",
+    "tiptap": "^2.1.13",
+    "tiptap-react": "^2.1.13",
+    "tiptap-extensions": "^2.1.13",
+    "@tiptap/starter-kit": "^2.1.13",
+    "@tiptap/react": "^2.1.13",
+    "chart.js": "^4.4.0",
+    "axios": "^1.6.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3"
   },
   "author": "KY Foods",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "type": "module"
 }

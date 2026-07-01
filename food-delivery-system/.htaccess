@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule ^api/(.*)$ /api/index.php?path=$1 [QSA,L]
+  RewriteRule ^admin/(.*)$ /admin/index.php?path=$1 [QSA,L]
+  RewriteRule ^manager/(.*)$ /manager/index.php?path=$1 [QSA,L]
+  RewriteRule ^kitchen/(.*)$ /kitchen/index.php?path=$1 [QSA,L]
+  RewriteRule ^delivery/(.*)$ /delivery/index.php?path=$1 [QSA,L]
+  RewriteRule ^(.*)$ /web/index.html [QSA,L]
+</IfModule>
+
+<FilesMatch "\.env$">
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "^\.">
+  Deny from all
+</FilesMatch>
