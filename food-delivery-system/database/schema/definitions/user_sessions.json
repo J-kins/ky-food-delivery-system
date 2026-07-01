@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "user_sessions",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "description": "Constraints: PK | UUID token"
+    },
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL"
+    },
+    "device_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "iOS / Android / Web"
+    },
+    "device_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Unique device fingerprint"
+    },
+    "device_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | e.g., \"John's iPhone 14\""
+    },
+    "ip_address": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "user_agent": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Browser / app identifier"
+    },
+    "fcm_token": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Firebase push notification token"
+    },
+    "started_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Constraints: NOT NULL"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    }
+  },
+  "required": [
+    "expires_at",
+    "session_id",
+    "user_id"
+  ]
+}

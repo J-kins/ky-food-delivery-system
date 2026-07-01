@@ -1,0 +1,203 @@
+/*
+ * KY Food Delivery System
+ * Component Styles: Forms, Inputs, Badges, Alerts, Ratings, Avatars, Spinners, SearchBar
+ */
+
+/* ── Form Field ─────────────────────────────────────────────────────────── */
+.form-field { display: flex; flex-direction: column; gap: var(--spacing-xs); }
+
+.form-field__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+}
+.form-field__required { color: var(--color-primary-red); }
+
+.form-field__row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-field__input {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1.5px solid #D0C9BF;
+  border-radius: var(--radius-md);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--color-neutral-brown);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+.form-field__input::placeholder { color: #A89F93; }
+.form-field__input:focus {
+  border-color: var(--color-primary-green);
+  box-shadow: 0 0 0 3px rgba(0, 86, 56, 0.12);
+}
+.form-field--error .form-field__input,
+.form-field__input--error {
+  border-color: var(--color-primary-red);
+}
+.form-field--error .form-field__input:focus {
+  box-shadow: 0 0 0 3px rgba(220, 64, 36, 0.15);
+}
+.form-field__input:disabled { background-color: #F0EDE8; cursor: not-allowed; opacity: 0.7; }
+
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #A89F93;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.form-field__icon--lead  { left: 0.75rem; }
+.form-field__icon--trail { right: 0.75rem; }
+.form-field__input--lead-icon  { padding-left: 2.5rem; }
+.form-field__input--trail-icon { padding-right: 2.5rem; }
+
+.form-field__error-text { font-size: 0.8125rem; color: var(--color-primary-red); }
+.form-field__hint       { font-size: 0.8125rem; color: #837A70; }
+
+/* ── Badge ──────────────────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+.badge__dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+.badge--default { background-color: #EDE9E3; color: var(--color-neutral-brown); }
+.badge--success { background-color: #D4EDDA; color: #155724; }
+.badge--warning { background-color: #FFF3CD; color: #856404; }
+.badge--danger  { background-color: #F8D7DA; color: #721C24; }
+.badge--info    { background-color: #D1ECF1; color: #0C5460; }
+.badge--neutral { background-color: #E2E3E5; color: #383D41; }
+
+/* ── Alert ──────────────────────────────────────────────────────────────── */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border-left: 4px solid transparent;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+}
+.alert--success { background-color: #D4EDDA; color: #155724; border-color: #28A745; }
+.alert--error   { background-color: #F8D7DA; color: #721C24; border-color: var(--color-primary-red); }
+.alert--warning { background-color: #FFF3CD; color: #856404; border-color: var(--color-primary-yellow); }
+.alert--info    { background-color: #D1ECF1; color: #0C5460; border-color: #17A2B8; }
+
+.alert__icon    { flex-shrink: 0; margin-top: 1px; }
+.alert__message { flex: 1; line-height: 1.5; }
+.alert__dismiss {
+  background: none; border: none; cursor: pointer;
+  color: inherit; opacity: 0.6; padding: 0; display: flex;
+  align-items: center;
+  transition: opacity var(--transition-fast);
+}
+.alert__dismiss:hover { opacity: 1; }
+
+@keyframes alertExit {
+  to { opacity: 0; transform: translateX(10px); }
+}
+.alert--exiting { animation: alertExit 0.2s ease-out forwards; }
+
+/* ── Avatar ─────────────────────────────────────────────────────────────── */
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-round);
+  overflow: hidden;
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.avatar--xs { width: 24px;  height: 24px;  font-size: 0.6rem; }
+.avatar--sm { width: 32px;  height: 32px;  font-size: 0.75rem; }
+.avatar--md { width: 44px;  height: 44px;  font-size: 1rem; }
+.avatar--lg { width: 64px;  height: 64px;  font-size: 1.25rem; }
+.avatar--xl { width: 96px;  height: 96px;  font-size: 1.75rem; }
+
+.avatar__img { width: 100%; height: 100%; object-fit: cover; }
+.avatar__initials { text-transform: uppercase; }
+
+.avatar__online-dot {
+  position: absolute;
+  bottom: 1px; right: 1px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background-color: #28A745;
+  border: 2px solid var(--color-white);
+}
+
+/* ── Rating ─────────────────────────────────────────────────────────────── */
+.rating { display: inline-flex; align-items: center; gap: 2px; }
+.rating__star { display: inline-flex; color: #D0C9BF; }
+.rating__star--filled { color: var(--color-primary-yellow); }
+.rating--interactive .rating__star { cursor: pointer; transition: color var(--transition-fast), transform var(--transition-fast); }
+.rating--interactive .rating__star:hover,
+.rating--interactive .rating__star:focus { color: var(--color-primary-yellow); transform: scale(1.15); outline: none; }
+.rating--sm .rating__star svg { width: 14px; height: 14px; }
+.rating--md .rating__star svg { width: 18px; height: 18px; }
+.rating--lg .rating__star svg { width: 24px; height: 24px; }
+.rating__label { font-size: 0.875rem; font-weight: 600; color: var(--color-neutral-brown); margin-left: var(--spacing-xs); }
+
+/* ── Spinner ────────────────────────────────────────────────────────────── */
+.spinner { display: inline-flex; align-items: center; justify-content: center; }
+.spinner__svg { animation: spin 0.8s linear infinite; display: block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── SearchBar ──────────────────────────────────────────────────────────── */
+.searchbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--color-white);
+  border: 1.5px solid #D0C9BF;
+  border-radius: 100px;
+  padding: 0.35rem 0.75rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.searchbar:focus-within {
+  border-color: var(--color-primary-green);
+  box-shadow: 0 0 0 3px rgba(0, 86, 56, 0.12);
+}
+.searchbar__icon { color: #A89F93; display: flex; align-items: center; flex-shrink: 0; margin-right: var(--spacing-xs); }
+.searchbar__input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--color-neutral-brown);
+  flex: 1;
+  min-width: 0;
+}
+.searchbar__input::placeholder { color: #A89F93; }
+.searchbar__clear {
+  background: none; border: none; cursor: pointer;
+  color: #A89F93; display: flex; align-items: center;
+  padding: 0 0 0 var(--spacing-xs);
+  transition: color var(--transition-fast);
+}
+.searchbar__clear:hover { color: var(--color-primary-red); }

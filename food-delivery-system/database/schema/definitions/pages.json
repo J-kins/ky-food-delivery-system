@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "pages",
+  "type": "object",
+  "properties": {
+    "page_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "title": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "slug": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | URL path e.g., `about-us`, `privacy-policy`"
+    },
+    "content": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | HTML or Markdown body"
+    },
+    "meta_description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | SEO description"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "last_updated_by": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "content",
+    "page_id",
+    "slug",
+    "title"
+  ]
+}

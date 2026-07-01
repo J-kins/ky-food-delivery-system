@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "operating_hours",
+  "type": "object",
+  "properties": {
+    "hours_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "day_of_week": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | 0 = Sunday \u2026 6 = Saturday"
+    },
+    "opening_time": {
+      "type": "string",
+      "format": "time",
+      "description": "Constraints: NOT NULL"
+    },
+    "closing_time": {
+      "type": "string",
+      "format": "time",
+      "description": "Constraints: NOT NULL"
+    },
+    "break_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "time",
+      "description": "Constraints: NULLABLE | Midday break start (if any)"
+    },
+    "break_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "time",
+      "description": "Constraints: NULLABLE | Midday break end"
+    },
+    "is_closed": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Mark as holiday / day off"
+    }
+  },
+  "required": [
+    "closing_time",
+    "day_of_week",
+    "hours_id",
+    "opening_time"
+  ]
+}

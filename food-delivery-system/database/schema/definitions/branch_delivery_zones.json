@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "branch_delivery_zones",
+  "type": "object",
+  "properties": {
+    "branch_zone_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "branch_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 STORE_BRANCHES, NOT NULL"
+    },
+    "zone_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 DELIVERY_ZONES, NOT NULL"
+    },
+    "custom_delivery_fee": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Override zone default fee for this branch"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    }
+  },
+  "required": [
+    "branch_id",
+    "branch_zone_id",
+    "zone_id"
+  ]
+}

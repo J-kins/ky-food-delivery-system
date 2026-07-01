@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "audit_logs",
+  "type": "object",
+  "properties": {
+    "log_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | Actor \u2014 NULL = system-automated action"
+    },
+    "action": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Create / Update / Delete / Login / Logout / Approve / Reject"
+    },
+    "module": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Domain / module name"
+    },
+    "table_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Affected database table"
+    },
+    "record_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | PK of the affected record"
+    },
+    "old_value": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | State before change"
+    },
+    "new_value": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | State after change"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Human-readable summary"
+    },
+    "ip_address": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "user_agent": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "action",
+    "log_id",
+    "module",
+    "table_name"
+  ]
+}

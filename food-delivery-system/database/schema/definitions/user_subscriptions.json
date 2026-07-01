@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "user_subscriptions",
+  "type": "object",
+  "properties": {
+    "subscription_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL"
+    },
+    "plan_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 SUBSCRIPTION_PLANS, NOT NULL"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'ACTIVE' | Active / Expired / Cancelled / Paused"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Constraints: NOT NULL"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Constraints: NOT NULL"
+    },
+    "auto_renew": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "payment_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 PAYMENTS, NULLABLE | Payment for this subscription period"
+    },
+    "free_deliveries_used": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0 | Tracked per billing cycle"
+    },
+    "cancelled_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "cancellation_reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "end_date",
+    "plan_id",
+    "start_date",
+    "subscription_id",
+    "user_id"
+  ]
+}

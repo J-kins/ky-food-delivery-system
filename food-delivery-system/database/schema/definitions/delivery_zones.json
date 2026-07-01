@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "delivery_zones",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | e.g., \"Kampala Central\", \"Naguru\", \"Ntinda\""
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "boundary_polygon": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | GeoJSON polygon string"
+    },
+    "base_delivery_fee": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "fee_per_km": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Additional charge per km"
+    },
+    "max_delivery_time": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Estimated delivery minutes for this zone"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "base_delivery_fee",
+    "boundary_polygon",
+    "name",
+    "zone_id"
+  ]
+}

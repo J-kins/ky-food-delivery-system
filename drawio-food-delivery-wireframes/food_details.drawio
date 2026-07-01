@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="Page-1">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1024" height="768" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fillColor=#E0E0E0;strokeColor=#666666;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1024" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="10" y="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="70" y="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="ky-foods.com/menu/item" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#999999;fontSize=11;fontColor=#666666;fontStyle=0;dashed=0;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="6" width="904" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="36" width="1024" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="← Back to Menu" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F5F5F5;strokeColor=#CCCCCC;fontSize=11;fontColor=#999999;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="450" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="endArrow=none;html=1;strokeColor=#CCCCCC;strokeWidth=1;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="170" as="sourcePoint" />
+            <mxPoint x="500" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="" style="endArrow=none;html=1;strokeColor=#CCCCCC;strokeWidth=1;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="170" as="sourcePoint" />
+            <mxPoint x="50" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Delicious Food Item" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="530" y="170" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Detailed description of the food item. Lorem ipsum dolor sit amet." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="220" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="$12UGX 15,000" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="530" y="260" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Add-ons" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="530" y="310" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="340" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Extra Item 1 (+$1UGX 2,000)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="340" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="370" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Extra Item 2 (+$1UGX 2,000)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="370" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="400" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Extra Item 3 (+$1UGX 2,000)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Qty: 1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontSize=12;fontColor=#666666;fontStyle=0;dashed=0;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="530" y="450" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="Add to Cart — $12UGX 15,000" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#666666;strokeColor=#666666;fontSize=12;fontColor=#FFFFFF;fontStyle=1;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="450" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="0" width="375" height="812" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fillColor=#E0E0E0;strokeColor=#666666;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="0" width="375" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="ky-foods.com/menu/item" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#999999;fontSize=11;fontColor=#666666;fontStyle=0;dashed=0;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="6" width="255" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="36" width="375" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F5F5F5;strokeColor=#CCCCCC;fontSize=11;fontColor=#999999;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="96" width="375" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="" style="endArrow=none;html=1;strokeColor=#CCCCCC;strokeWidth=1;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="96" as="sourcePoint" />
+            <mxPoint x="1475" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34" value="" style="endArrow=none;html=1;strokeColor=#CCCCCC;strokeWidth=1;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1475" y="96" as="sourcePoint" />
+            <mxPoint x="1100" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" value="←" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="106" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="Delicious Food Item" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="360" width="335" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="Detailed description of the food item." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="390" width="335" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="$12UGX 15,000" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="440" width="335" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="Add-ons" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="480" width="335" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="510" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="Extra Item 1 (+$1UGX 2,000)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="510" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="540" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="Extra Item 2 (+$1UGX 2,000)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="540" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;fontColor=#333333;fontStyle=0;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="570" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="Extra Item 3 (+$1UGX 2,000)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="570" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="732" width="375" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="Qty: 1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#CCCCCC;fontSize=12;fontColor=#666666;fontStyle=0;dashed=0;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="752" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="Add to Cart — $12UGX 15,000" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#666666;strokeColor=#666666;fontSize=12;fontColor=#FFFFFF;fontStyle=1;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="752" width="215" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

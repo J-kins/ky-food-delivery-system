@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "store_settings",
+  "type": "object",
+  "properties": {
+    "setting_id": {
+      "type": "integer",
+      "description": "Constraints: PK, DEFAULT 1 | Always ID = 1 (singleton)"
+    },
+    "store_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL, DEFAULT 'KY FOODS' | Display name"
+    },
+    "tagline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | e.g., \"Bold Flavour. Fast Delivery.\""
+    },
+    "address": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | KY Foods' primary physical address"
+    },
+    "city": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'UGANDA'"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Location for map display"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Customer contact number"
+    },
+    "email": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Customer contact email"
+    },
+    "logo_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "cover_image_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "min_order_amount": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Minimum cart value to check out"
+    },
+    "base_delivery_fee": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Default delivery charge"
+    },
+    "free_delivery_threshold": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Cart total qualifying for free delivery"
+    },
+    "tax_rate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | VAT / tax percentage"
+    },
+    "service_charge": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Platform service fee %"
+    },
+    "packaging_fee": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "avg_preparation_time": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 20 | In minutes"
+    },
+    "max_delivery_radius_km": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Geographic delivery limit"
+    },
+    "is_accepting_orders": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE | Manual open / closed toggle"
+    },
+    "accepts_scheduled_orders": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Pre-order / scheduled delivery"
+    },
+    "cancellation_policy": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'UGX'"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "address",
+    "city",
+    "email",
+    "latitude",
+    "longitude",
+    "phone",
+    "setting_id",
+    "store_name"
+  ]
+}

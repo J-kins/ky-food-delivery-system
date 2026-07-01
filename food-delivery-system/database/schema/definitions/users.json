@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "users",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT | Unique user identifier"
+    },
+    "role_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 ROLES, NOT NULL | User's assigned role"
+    },
+    "first_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Legal first name"
+    },
+    "last_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Legal last name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | Login email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | Mobile phone number"
+    },
+    "password_hash": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Bcrypt-hashed password"
+    },
+    "is_email_verified": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Has the user verified their email"
+    },
+    "is_phone_verified": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Has the user verified their phone"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE | Account active / deactivated status"
+    },
+    "is_banned": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Whether the account is banned"
+    },
+    "ban_reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Reason for ban (if banned)"
+    },
+    "profile_picture_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | URL to avatar / profile image"
+    },
+    "preferred_language": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'EN' | UI language preference"
+    },
+    "referral_code": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: UNIQUE, NULLABLE | Customer's own referral code"
+    },
+    "referred_by": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | user_id of the referring customer"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW() | Account creation timestamp"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Last profile update"
+    },
+    "last_login": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE | Most recent login timestamp"
+    }
+  },
+  "required": [
+    "email",
+    "first_name",
+    "last_name",
+    "password_hash",
+    "phone",
+    "role_id",
+    "user_id"
+  ]
+}

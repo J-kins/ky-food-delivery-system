@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "promotions",
+  "type": "object",
+  "properties": {
+    "promotion_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "created_by": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL | Admin or manager who created it"
+    },
+    "name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | e.g., \"Weekend Special\", \"First Order Discount\""
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "discount_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Percentage / Fixed Amount / Free Delivery / Buy X Get Y"
+    },
+    "discount_value": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | % or flat amount"
+    },
+    "min_order_amount": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Minimum cart value to qualify"
+    },
+    "max_discount_cap": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Maximum discount amount allowed"
+    },
+    "applicable_items": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Array of food_ids; NULL = entire menu"
+    },
+    "applicable_categories": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Array of category_ids"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Constraints: NOT NULL"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Constraints: NOT NULL"
+    },
+    "usage_limit": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Total redemptions allowed platform-wide"
+    },
+    "used_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "per_user_limit": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 1 | Max uses per individual customer"
+    },
+    "is_first_order_only": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Restricts to new customers"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "created_by",
+    "discount_type",
+    "discount_value",
+    "end_date",
+    "name",
+    "promotion_id",
+    "start_date"
+  ]
+}

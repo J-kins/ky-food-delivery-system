@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "loyalty_accounts",
+  "type": "object",
+  "properties": {
+    "loyalty_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, UNIQUE | One loyalty account per customer"
+    },
+    "total_points_earned": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0 | Lifetime points accumulated"
+    },
+    "current_points": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0 | Available points to spend"
+    },
+    "tier_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 LOYALTY_TIERS | Current tier"
+    },
+    "tier_updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE | When tier last changed"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "loyalty_id"
+  ]
+}

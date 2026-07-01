@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "reviews",
+  "type": "object",
+  "properties": {
+    "review_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL | Reviewer"
+    },
+    "order_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 ORDERS, UNIQUE | One review per order"
+    },
+    "food_rating": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | 1\u20135 overall food quality rating"
+    },
+    "food_comment": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | General food comment"
+    },
+    "delivery_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 DELIVERIES, NULLABLE"
+    },
+    "rider_rating": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | 1\u20135 rider rating"
+    },
+    "rider_comment": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "images": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Array of customer-uploaded photo URLs"
+    },
+    "is_verified_purchase": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE | Always true \u2014 review gated by order completion"
+    },
+    "is_visible": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE | Can be hidden by admin"
+    },
+    "helpful_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0 | Number of \"helpful\" votes from other customers"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "food_rating",
+    "review_id",
+    "user_id"
+  ]
+}

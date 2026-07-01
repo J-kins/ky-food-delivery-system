@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "hourly_order_stats",
+  "type": "object",
+  "properties": {
+    "stat_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "branch_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 STORE_BRANCHES, NULLABLE"
+    },
+    "stat_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Constraints: NOT NULL"
+    },
+    "hour": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | 0\u201323"
+    },
+    "orders_received": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "orders_completed": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "orders_cancelled": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "avg_preparation_time": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Minutes"
+    },
+    "avg_delivery_time": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Minutes"
+    },
+    "avg_rating": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    }
+  },
+  "required": [
+    "hour",
+    "stat_date",
+    "stat_id"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "delivery_tracking",
+  "type": "object",
+  "properties": {
+    "tracking_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "delivery_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 DELIVERIES, NOT NULL"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "speed_kmh": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "heading_degrees": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Direction of travel"
+    },
+    "accuracy_meters": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | GPS accuracy radius"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Constraints: NOT NULL"
+    }
+  },
+  "required": [
+    "delivery_id",
+    "latitude",
+    "longitude",
+    "timestamp",
+    "tracking_id"
+  ]
+}

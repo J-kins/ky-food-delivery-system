@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "subscription_plans",
+  "type": "object",
+  "properties": {
+    "plan_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | e.g., KY Free / KY Pro / KY Family"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "billing_cycle": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Monthly / Quarterly / Annual"
+    },
+    "price": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'UGX'"
+    },
+    "features": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NOT NULL | Array of feature descriptions"
+    },
+    "free_deliveries_per_month": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | NULL = unlimited"
+    },
+    "priority_ordering": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Jumps queue in kitchen"
+    },
+    "discount_on_orders": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | % off all orders for subscribers"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "billing_cycle",
+    "features",
+    "name",
+    "plan_id",
+    "price"
+  ]
+}

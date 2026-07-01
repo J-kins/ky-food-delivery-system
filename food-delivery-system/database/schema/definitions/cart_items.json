@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "cart_items",
+  "type": "object",
+  "properties": {
+    "cart_item_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "cart_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 CARTS, NOT NULL"
+    },
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 FOODS, NOT NULL"
+    },
+    "variant_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 FOOD_VARIANTS, NULLABLE | Selected size / style"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL, DEFAULT 1"
+    },
+    "unit_price": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Price snapshot at time of adding"
+    },
+    "addons": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Array of {addon_id, name, price, quantity}"
+    },
+    "addons_total": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Computed add-on cost"
+    },
+    "special_instructions": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Per-item customer note"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "cart_id",
+    "cart_item_id",
+    "food_id",
+    "quantity",
+    "unit_price"
+  ]
+}

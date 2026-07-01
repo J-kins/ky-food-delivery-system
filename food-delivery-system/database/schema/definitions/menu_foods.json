@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "menu_foods",
+  "type": "object",
+  "properties": {
+    "menu_food_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "menu_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 MENUS, NOT NULL"
+    },
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 FOODS, NOT NULL"
+    },
+    "display_order": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    }
+  },
+  "required": [
+    "food_id",
+    "menu_food_id",
+    "menu_id"
+  ]
+}

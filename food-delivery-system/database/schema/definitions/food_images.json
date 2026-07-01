@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "food_images",
+  "type": "object",
+  "properties": {
+    "image_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 FOODS, NOT NULL"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "alt_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Accessibility description"
+    },
+    "is_primary": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "display_order": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "uploaded_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "food_id",
+    "image_id",
+    "image_url"
+  ]
+}

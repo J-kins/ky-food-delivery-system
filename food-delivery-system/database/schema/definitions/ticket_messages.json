@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ticket_messages",
+  "type": "object",
+  "properties": {
+    "message_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "ticket_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 SUPPORT_TICKETS, NOT NULL"
+    },
+    "sender_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL"
+    },
+    "message": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "attachment_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Screenshot or file"
+    },
+    "is_internal_note": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Staff-only note \u2014 hidden from customer"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "message",
+    "message_id",
+    "sender_id",
+    "ticket_id"
+  ]
+}

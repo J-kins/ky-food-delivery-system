@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "support_tickets",
+  "type": "object",
+  "properties": {
+    "ticket_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL | Customer raising the issue"
+    },
+    "order_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 ORDERS, NULLABLE | Related order (if any)"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "description": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Late Delivery / Wrong Item / Missing Item / Payment Issue / App Bug / Other"
+    },
+    "priority": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'MEDIUM' | Low / Medium / High / Urgent"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'OPEN' | Open / In Progress / Awaiting Customer / Resolved / Closed"
+    },
+    "assigned_to": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | Support agent"
+    },
+    "resolution_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "resolved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "satisfaction_rating": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | 1\u20135, post-resolution survey"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "description",
+    "subject",
+    "ticket_id",
+    "user_id"
+  ]
+}

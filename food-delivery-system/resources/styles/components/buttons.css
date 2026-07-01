@@ -1,0 +1,122 @@
+/*
+ * KY Food Delivery System
+ * Component Styles: Buttons
+ * Uses CSS variables from resources/styles/base/variables.css
+ */
+
+/* Base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.btn--sm { padding: 0.35rem 0.85rem; font-size: 0.8125rem; }
+.btn--md { padding: 0.625rem 1.25rem; font-size: 0.9375rem; }
+.btn--lg { padding: 0.875rem 1.75rem; font-size: 1.0625rem; }
+
+/* Variants */
+.btn--primary {
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+  border-color: var(--color-primary-green);
+}
+.btn--primary:hover:not(:disabled) {
+  background-color: #003e27;
+  border-color: #003e27;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+  border-color: var(--color-primary-red);
+}
+.btn--secondary:hover:not(:disabled) {
+  background-color: #b73520;
+  border-color: #b73520;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary-green);
+  border-color: var(--color-primary-green);
+}
+.btn--outline:hover:not(:disabled) {
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.btn--danger {
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+  border-color: var(--color-primary-red);
+}
+.btn--danger:hover:not(:disabled) {
+  background-color: #b73520;
+}
+
+.btn--text {
+  background-color: transparent;
+  color: var(--color-primary-green);
+  border-color: transparent;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.btn--text:hover:not(:disabled) {
+  color: var(--color-primary-red);
+}
+
+/* Disabled */
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Loading */
+.btn--loading .btn__label { opacity: 0.6; }
+.btn__spinner {
+  display: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: currentColor;
+  border-radius: var(--radius-round);
+  animation: spin 0.7s linear infinite;
+}
+.btn--loading .btn__spinner { display: inline-block; }
+
+/* Icon */
+.btn__icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.btn__icon svg { display: block; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

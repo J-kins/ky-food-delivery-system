@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "rider_earnings",
+  "type": "object",
+  "properties": {
+    "earning_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "rider_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 DELIVERY_RIDERS, NOT NULL"
+    },
+    "delivery_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 DELIVERIES, NOT NULL"
+    },
+    "base_fee": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Fixed per-delivery payout"
+    },
+    "distance_bonus": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Extra pay for longer distances"
+    },
+    "tip": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Customer tip passed through"
+    },
+    "deductions": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Any deductions applied"
+    },
+    "net_earning": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'PENDING' | Pending / Paid"
+    },
+    "paid_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "base_fee",
+    "delivery_id",
+    "earning_id",
+    "net_earning",
+    "rider_id"
+  ]
+}

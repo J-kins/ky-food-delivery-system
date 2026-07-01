@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "loyalty_tiers",
+  "type": "object",
+  "properties": {
+    "tier_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "tier_name": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | Bronze / Silver / Gold / Platinum"
+    },
+    "min_points": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | Lifetime points needed to reach this tier"
+    },
+    "points_multiplier": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 1.0 | Earn rate multiplier for this tier"
+    },
+    "perks": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Array of perk descriptions"
+    },
+    "badge_image_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    }
+  },
+  "required": [
+    "min_points",
+    "tier_id",
+    "tier_name"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "user_addresses",
+  "type": "object",
+  "properties": {
+    "address_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL | Address owner"
+    },
+    "address_label": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Home / Work / Other"
+    },
+    "recipient_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Name of person receiving at this address"
+    },
+    "recipient_phone": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Contact phone at delivery location"
+    },
+    "street": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Street line 1"
+    },
+    "street_2": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Apartment / suite / unit"
+    },
+    "city": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "postal_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'UGANDA'"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | GPS latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | GPS longitude"
+    },
+    "is_default": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Whether this is the primary delivery address"
+    },
+    "delivery_instructions": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | e.g., \"Gate code 1234, leave at door\""
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "address_id",
+    "city",
+    "latitude",
+    "longitude",
+    "street",
+    "user_id"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "stock_movements",
+  "type": "object",
+  "properties": {
+    "movement_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "ingredient_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 INGREDIENTS, NOT NULL"
+    },
+    "movement_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Restock / Usage / Wastage / Adjustment"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Positive = in, Negative = out"
+    },
+    "balance_after": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Stock level after this movement"
+    },
+    "reference": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | e.g., Order ID or supplier invoice number"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "performed_by": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "balance_after",
+    "ingredient_id",
+    "movement_id",
+    "movement_type",
+    "performed_by",
+    "quantity"
+  ]
+}

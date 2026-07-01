@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=swap');
+      
+      * { box-sizing: border-box; }
+      text { font-family: 'Poppins', sans-serif; fill: #3B2A1A; }
+      .heading { font-family: 'Baloo 2', sans-serif; font-weight: 700; fill: #005638; }
+      .subheading { font-weight: 600; fill: #3B2A1A; }
+      
+      .bg { fill: #F7F4EF; }
+      .card { fill: #FFFFFF; stroke: #EDE9E3; stroke-width: 1px; rx: 12px; }
+      .shadow { filter: drop-shadow(0 4px 12px rgba(59,42,26,0.08)); }
+      
+      .btn-primary { fill: #005638; rx: 8px; }
+      .btn-primary-text { fill: #FFFFFF; font-weight: 600; font-size: 16px; text-anchor: middle; alignment-baseline: middle; }
+      
+      .btn-secondary { fill: #F0C019; rx: 8px; }
+      .btn-secondary-text { fill: #3B2A1A; font-weight: 600; font-size: 16px; text-anchor: middle; alignment-baseline: middle; }
+      
+      .input-bg { fill: #FFFFFF; stroke: #A89F93; stroke-width: 1.5px; rx: 8px; }
+      .input-text { fill: #A89F93; font-size: 14px; alignment-baseline: middle; }
+      
+      .navbar { fill: #FFFFFF; stroke: #EDE9E3; stroke-width: 1px; }
+      .bottom-bar { fill: #FFFFFF; stroke: #EDE9E3; stroke-width: 1px; }
+      .sidebar { fill: #005638; }
+      
+      .badge-warning { fill: #F0C019; rx: 4px; }
+      .badge-success { fill: #D4EDDA; rx: 4px; }
+      .badge-danger { fill: #F8D7DA; rx: 4px; }
+      .badge-text { font-size: 12px; font-weight: 600; text-anchor: middle; alignment-baseline: middle; }
+    </style>
+  </defs>
+<rect class="bg" width="390" height="844" /><rect width="390" height="44" fill="#FFFFFF" /><text x="20" y="28" font-weight="600" font-size="14">9:41</text><rect class="navbar shadow" y="44" width="390" height="60" /><text x="195.0" y="80" class="heading" font-size="20" text-anchor="middle">Order Tracking Screen</text><circle cx="35" cy="74" r="16" fill="#EDE9E3" /><rect class="bottom-bar shadow" y="764" width="390" height="80" /><circle cx="40" cy="794" r="12" fill="#005638" /><text x="40" y="819" font-size="10" font-weight="500" fill="#005638" text-anchor="middle">Home</text><circle cx="140" cy="794" r="12" fill="#A89F93" /><text x="140" y="819" font-size="10" font-weight="500" fill="#A89F93" text-anchor="middle">Search</text><circle cx="240" cy="794" r="12" fill="#A89F93" /><text x="240" y="819" font-size="10" font-weight="500" fill="#A89F93" text-anchor="middle">Cart</text><circle cx="340" cy="794" r="12" fill="#A89F93" /><text x="340" y="819" font-size="10" font-weight="500" fill="#A89F93" text-anchor="middle">Profile</text><rect x="0" y="104" width="390" height="660" fill="#E8D7B5" /><path d="M50 200 L150 400 L250 350 L300 600" stroke="#005638" stroke-width="6" fill="none" stroke-linejoin="round" /><circle cx="50" cy="200" r="12" fill="#DC4024" /><circle cx="300" cy="600" r="16" fill="#005638" /><rect class="card shadow" x="10" y="564" width="370" height="180" /><text x="195.0" y="604" class="subheading" font-size="18" text-anchor="middle">Driver is 5 mins away</text><rect class="btn-primary" x="30" y="684" width="330" height="48" /><text x="195.0" y="708" class="btn-primary-text">Contact Driver</text></svg>

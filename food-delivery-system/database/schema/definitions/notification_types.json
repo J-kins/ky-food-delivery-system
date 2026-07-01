@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "notification_types",
+  "type": "object",
+  "properties": {
+    "type_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "type_name": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | Order Confirmed / Rider Assigned / Out for Delivery / Delivered / Promo / System"
+    },
+    "template_title": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Title template with `{{placeholders}}`"
+    },
+    "template_body": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Body template"
+    },
+    "icon": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Icon class or emoji"
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Order / Delivery / Promo / System / Support"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    }
+  },
+  "required": [
+    "template_body",
+    "template_title",
+    "type_id",
+    "type_name"
+  ]
+}

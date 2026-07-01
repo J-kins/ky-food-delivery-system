@@ -1,0 +1,188 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "deliveries",
+  "type": "object",
+  "properties": {
+    "delivery_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "order_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 ORDERS, UNIQUE | One delivery per order"
+    },
+    "rider_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 DELIVERY_RIDERS, NULLABLE | NULL = not yet assigned"
+    },
+    "branch_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 STORE_BRANCHES, NULLABLE | KY Foods branch this delivery originates from"
+    },
+    "assignment_method": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Auto / Manual"
+    },
+    "assigned_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "pickup_address": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | KY Foods branch address snapshot"
+    },
+    "pickup_latitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "pickup_longitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "delivery_address": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Customer address snapshot"
+    },
+    "delivery_latitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "delivery_longitude": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'PENDING' | Pending / Assigned / Heading to KY Foods / Picked Up / In Transit / Arrived / Delivered / Failed"
+    },
+    "distance_km": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Route distance"
+    },
+    "estimated_pickup_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "actual_pickup_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "estimated_delivery_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "actual_delivery_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "delivery_fee": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "rider_earnings": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Rider's payout for this delivery"
+    },
+    "rider_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "delivery_photo_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Proof of delivery photo"
+    },
+    "customer_rating": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | 1\u20135 stars for the rider"
+    },
+    "customer_feedback": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "failure_reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | If delivery could not be completed"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "delivery_address",
+    "delivery_fee",
+    "delivery_id",
+    "delivery_latitude",
+    "delivery_longitude",
+    "pickup_address",
+    "pickup_latitude",
+    "pickup_longitude"
+  ]
+}

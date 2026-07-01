@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "food_reviews",
+  "type": "object",
+  "properties": {
+    "food_review_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "review_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 REVIEWS, NOT NULL | Parent review"
+    },
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 FOODS, NOT NULL"
+    },
+    "rating": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | 1\u20135"
+    },
+    "comment": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    }
+  },
+  "required": [
+    "food_id",
+    "food_review_id",
+    "rating",
+    "review_id"
+  ]
+}

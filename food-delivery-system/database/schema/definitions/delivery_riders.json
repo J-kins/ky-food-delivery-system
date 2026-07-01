@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "delivery_riders",
+  "type": "object",
+  "properties": {
+    "rider_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, UNIQUE | Links to the rider's user account"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Bicycle / Motorbike / Car / Scooter"
+    },
+    "vehicle_make": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | e.g., Yamaha"
+    },
+    "vehicle_model": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | e.g., YBR 125"
+    },
+    "vehicle_colour": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "vehicle_plate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: UNIQUE"
+    },
+    "license_number": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "insurance_number": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "insurance_expiry": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Constraints: NULLABLE"
+    },
+    "id_document_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | National ID / Passport scan"
+    },
+    "is_verified": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Admin verification of documents"
+    },
+    "is_available": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Rider online / offline toggle"
+    },
+    "current_latitude": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Live location"
+    },
+    "current_longitude": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "last_location_update": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "rating_avg": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.0 | Computed from customer ratings"
+    },
+    "total_deliveries": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "total_earnings": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Lifetime earnings"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "rider_id",
+    "vehicle_type"
+  ]
+}

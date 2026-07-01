@@ -1,0 +1,10 @@
+{
+  "name": "ky-food-delivery-system",
+  "version": "1.0.0",
+  "description": "KY Food Delivery System",
+  "scripts": {
+    "serve": "python3 -m http.server 8000"
+  },
+  "author": "KY Foods",
+  "license": "UNLICENSED"
+}

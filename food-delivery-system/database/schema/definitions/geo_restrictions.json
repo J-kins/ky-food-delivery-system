@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "geo_restrictions",
+  "type": "object",
+  "properties": {
+    "restriction_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | e.g., \"Outside City Limits\", \"Industrial Area\""
+    },
+    "boundary_polygon": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | GeoJSON polygon"
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "boundary_polygon",
+    "name",
+    "restriction_id"
+  ]
+}

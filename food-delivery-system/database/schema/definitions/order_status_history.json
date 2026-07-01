@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "order_status_history",
+  "type": "object",
+  "properties": {
+    "status_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "order_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 ORDERS, NOT NULL"
+    },
+    "status": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Status value at this point in time"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Optional internal note"
+    },
+    "updated_by": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | Staff member who triggered the change"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "order_id",
+    "status",
+    "status_id"
+  ]
+}

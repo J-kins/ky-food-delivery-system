@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "orders",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "user_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL | Placing customer"
+    },
+    "branch_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 STORE_BRANCHES, NULLABLE | Which KY Foods branch is preparing this order"
+    },
+    "delivery_address_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USER_ADDRESSES, NULLABLE | NULL if order type is Pickup"
+    },
+    "coupon_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 COUPONS, NULLABLE | Applied coupon"
+    },
+    "order_reference": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | Human-readable code (e.g., KY-20250612-0043)"
+    },
+    "order_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'DELIVERY' | Delivery / Pickup"
+    },
+    "scheduled_for": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE | Pre-order delivery time"
+    },
+    "subtotal": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Items total before fees"
+    },
+    "tax_amount": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "delivery_fee": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "service_charge": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "packaging_fee": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "discount_amount": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "tip_amount": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00 | Customer tip to rider"
+    },
+    "grand_total": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Final amount charged"
+    },
+    "payment_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'PENDING' | Pending / Paid / Failed / Refunded"
+    },
+    "order_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'RECEIVED' | Received / Confirmed / Preparing / Ready / Picked Up / On Delivery / Delivered / Cancelled"
+    },
+    "special_instructions": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Overall order note from customer"
+    },
+    "is_rated": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Has customer submitted a review"
+    },
+    "is_cancelled": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "cancellation_reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "cancelled_by": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | Who cancelled (customer or staff)"
+    },
+    "cancelled_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "estimated_delivery_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE | System-generated ETA"
+    },
+    "actual_delivery_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "grand_total",
+    "order_id",
+    "order_reference",
+    "subtotal",
+    "user_id"
+  ]
+}

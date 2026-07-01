@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "foods",
+  "type": "object",
+  "properties": {
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "category_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 CATEGORIES, NOT NULL"
+    },
+    "name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "base_price": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "discount_price": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Sale / promotional price"
+    },
+    "sku": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Internal stock code"
+    },
+    "ingredients": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Plain text or JSON list"
+    },
+    "allergens": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Nuts, Gluten, Dairy, etc."
+    },
+    "calories": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "carbohydrates_g": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "protein_g": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "fat_g": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "preparation_time": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 15 | Minutes"
+    },
+    "is_available": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "is_vegetarian": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "is_vegan": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "is_gluten_free": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "is_halal": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "is_spicy": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "spice_level": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | 1 (mild) to 5 (very hot)"
+    },
+    "is_featured": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE | Appears in \"Featured\" section"
+    },
+    "rating_avg": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.0 | Computed from food reviews"
+    },
+    "total_reviews": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0 | Denormalised count"
+    },
+    "display_order": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "base_price",
+    "category_id",
+    "food_id",
+    "name"
+  ]
+}

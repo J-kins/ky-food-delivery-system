@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "loyalty_transactions",
+  "type": "object",
+  "properties": {
+    "loyalty_tx_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "loyalty_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 LOYALTY_ACCOUNTS, NOT NULL"
+    },
+    "order_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 ORDERS, NULLABLE | Linked KY Foods order"
+    },
+    "type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Earn / Redeem / Expire / Bonus / Adjustment"
+    },
+    "points": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | Positive = earn, Negative = redeem/expire"
+    },
+    "balance_after": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | Points balance after this transaction"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "e.g., \"Earned 50 pts for order KY-0043\""
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE | When these points expire"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "balance_after",
+    "loyalty_id",
+    "loyalty_tx_id",
+    "points",
+    "type"
+  ]
+}

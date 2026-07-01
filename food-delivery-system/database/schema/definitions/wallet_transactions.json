@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "wallet_transactions",
+  "type": "object",
+  "properties": {
+    "transaction_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "wallet_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 WALLETS, NOT NULL"
+    },
+    "type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Credit / Debit"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Constraints: NOT NULL"
+    },
+    "balance_after": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Running balance after transaction"
+    },
+    "reference": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Linked order reference or top-up reference"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "e.g., \"Order KY-2025-0043 payment\""
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "amount",
+    "balance_after",
+    "transaction_id",
+    "type",
+    "wallet_id"
+  ]
+}

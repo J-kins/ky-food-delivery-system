@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "kitchen_order_items",
+  "type": "object",
+  "properties": {
+    "kitchen_item_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "kitchen_order_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 KITCHEN_ORDERS, NOT NULL"
+    },
+    "order_item_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 ORDER_ITEMS, NOT NULL"
+    },
+    "food_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Snapshot for kitchen display"
+    },
+    "variant_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL"
+    },
+    "addons": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "special_instructions": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 'PENDING' | Pending / Preparing / Done"
+    }
+  },
+  "required": [
+    "food_name",
+    "kitchen_item_id",
+    "kitchen_order_id",
+    "order_item_id",
+    "quantity"
+  ]
+}

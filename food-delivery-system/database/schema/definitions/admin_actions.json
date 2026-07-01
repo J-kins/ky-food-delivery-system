@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "admin_actions",
+  "type": "object",
+  "properties": {
+    "action_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "admin_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL"
+    },
+    "action_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Ban User / Process Refund / Hide Review / Restock Alert / etc."
+    },
+    "target_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | User / Order / Review / Food"
+    },
+    "target_id": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | ID of the target record"
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "action_id",
+    "action_type",
+    "admin_id",
+    "target_id",
+    "target_type"
+  ]
+}

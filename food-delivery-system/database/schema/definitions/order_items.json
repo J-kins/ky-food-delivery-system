@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "order_items",
+  "type": "object",
+  "properties": {
+    "order_item_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "order_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 ORDERS, NOT NULL"
+    },
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 FOODS, NOT NULL"
+    },
+    "food_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Snapshot \u2014 name at time of order"
+    },
+    "variant_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 FOOD_VARIANTS, NULLABLE"
+    },
+    "variant_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Snapshot"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL"
+    },
+    "unit_price": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Snapshot of price at order time"
+    },
+    "addons": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Snapshot of selected add-ons"
+    },
+    "addons_total": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "line_total": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | (unit_price + addons_total) \u00d7 quantity"
+    },
+    "special_instructions": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "food_id",
+    "food_name",
+    "line_total",
+    "order_id",
+    "order_item_id",
+    "quantity",
+    "unit_price"
+  ]
+}

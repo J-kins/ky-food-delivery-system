@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "system_settings",
+  "type": "object",
+  "properties": {
+    "setting_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "setting_key": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | e.g., `platform_commission_rate`, `default_tax_rate`"
+    },
+    "setting_value": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "data_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | String / Integer / Decimal / Boolean / JSON"
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "General / Payment / Delivery / Notifications"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "is_editable": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "updated_by": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | Admin who last changed this"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "data_type",
+    "setting_id",
+    "setting_key",
+    "setting_value"
+  ]
+}

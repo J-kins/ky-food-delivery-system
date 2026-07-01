@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "review_replies",
+  "type": "object",
+  "properties": {
+    "reply_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "review_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 REVIEWS, UNIQUE | One reply per review"
+    },
+    "manager_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 USERS, NOT NULL | KY Foods staff member replying"
+    },
+    "reply_text": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "manager_id",
+    "reply_id",
+    "reply_text"
+  ]
+}

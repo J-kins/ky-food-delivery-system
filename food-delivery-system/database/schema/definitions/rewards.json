@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "rewards",
+  "type": "object",
+  "properties": {
+    "reward_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | e.g., \"Free Delivery\" / \"10% Off Next Order\" / \"Free Side\""
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "points_cost": {
+      "type": "integer",
+      "description": "Constraints: NOT NULL | Loyalty points required to redeem"
+    },
+    "reward_type": {
+      "type": "string",
+      "description": "Constraints: NOT NULL | Discount / Free Item / Free Delivery / Voucher"
+    },
+    "reward_value": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Monetary value of this reward"
+    },
+    "min_tier_required": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 LOYALTY_TIERS, NULLABLE | Minimum tier to unlock"
+    },
+    "expiry_days": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Days before reward voucher expires after redemption"
+    },
+    "usage_limit": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Total platform-wide redemptions allowed"
+    },
+    "used_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "name",
+    "points_cost",
+    "reward_id",
+    "reward_type"
+  ]
+}

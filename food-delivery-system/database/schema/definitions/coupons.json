@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "coupons",
+  "type": "object",
+  "properties": {
+    "coupon_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "promotion_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 PROMOTIONS, NOT NULL | Parent promotion"
+    },
+    "user_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 USERS, NULLABLE | NULL = any customer can use"
+    },
+    "code": {
+      "type": "string",
+      "description": "Constraints: UNIQUE, NOT NULL | e.g., KYFOOD20"
+    },
+    "is_used": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT FALSE"
+    },
+    "used_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: NULLABLE"
+    },
+    "order_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: FK \u2192 ORDERS, NULLABLE | Order the coupon was applied to"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Constraints: NOT NULL"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "code",
+    "coupon_id",
+    "expires_at",
+    "promotion_id"
+  ]
+}

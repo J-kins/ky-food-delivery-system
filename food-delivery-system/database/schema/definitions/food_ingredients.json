@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "food_ingredients",
+  "type": "object",
+  "properties": {
+    "food_ingredient_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "food_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 FOODS, NOT NULL"
+    },
+    "ingredient_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 INGREDIENTS, NOT NULL"
+    },
+    "quantity_needed": {
+      "type": "number",
+      "description": "Constraints: NOT NULL | Per serving"
+    },
+    "unit": {
+      "type": "string",
+      "description": "Constraints: NOT NULL"
+    }
+  },
+  "required": [
+    "food_id",
+    "food_ingredient_id",
+    "ingredient_id",
+    "quantity_needed",
+    "unit"
+  ]
+}

@@ -1,0 +1,32 @@
+/*
+ * KY Food Delivery System
+ * Component Styles: Cards
+ */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+/* Shadow variants */
+.card--shadow-none { box-shadow: none; }
+.card--shadow-sm   { box-shadow: var(--shadow-sm); }
+.card--shadow-md   { box-shadow: var(--shadow-md); }
+.card--shadow-lg   { box-shadow: var(--shadow-lg); }
+
+/* Padding variants */
+.card--pad-none { padding: 0; }
+.card--pad-sm   { padding: var(--spacing-sm); }
+.card--pad-md   { padding: var(--spacing-md); }
+.card--pad-lg   { padding: var(--spacing-lg); }
+
+/* Hoverable */
+.card--hoverable:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Clickable */
+.card--clickable { cursor: pointer; }

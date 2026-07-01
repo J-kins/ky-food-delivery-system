@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "roles",
+  "type": "object",
+  "properties": {
+    "role_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT | Unique role identifier"
+    },
+    "role_name": {
+      "type": "string",
+      "description": "Constraints: NOT NULL, UNIQUE | Customer / Kitchen Staff / Rider / Manager / Admin / Support"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Human-readable role description"
+    },
+    "permissions": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ],
+      "description": "Array of permission keys granted to this role"
+    },
+    "is_active": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT TRUE | Whether this role is currently in use"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW() | Record creation timestamp"
+    }
+  },
+  "required": [
+    "role_id",
+    "role_name"
+  ]
+}

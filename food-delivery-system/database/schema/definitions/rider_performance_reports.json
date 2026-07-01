@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "rider_performance_reports",
+  "type": "object",
+  "properties": {
+    "report_id": {
+      "type": "integer",
+      "description": "Constraints: PK, AUTO_INCREMENT"
+    },
+    "rider_id": {
+      "type": "integer",
+      "description": "Constraints: FK \u2192 DELIVERY_RIDERS, NOT NULL"
+    },
+    "report_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Constraints: NOT NULL"
+    },
+    "total_deliveries": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "successful_deliveries": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "failed_deliveries": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0"
+    },
+    "avg_delivery_time": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE | Minutes"
+    },
+    "total_distance_km": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.0"
+    },
+    "total_earnings": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: DEFAULT 0.00"
+    },
+    "avg_rating": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Constraints: NULLABLE"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "Constraints: DEFAULT NOW()"
+    }
+  },
+  "required": [
+    "report_date",
+    "report_id",
+    "rider_id"
+  ]
+}
