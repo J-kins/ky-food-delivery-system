@@ -1,12 +1,13 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /public/
+  RewriteBase /
 
+  # Serve real files and directories as-is
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
 
-  RewriteRule ^api/(.*)$ /api/index.php?path=$1 [QSA,L]
-  RewriteRule ^(.*)$ /public/index.html?path=$1 [QSA,L]
+  # SPA fallback — all unmatched routes serve this portal's index.html
+  RewriteRule ^(.*)$ /public/index.html [QSA,L]
 </IfModule>
 
 <FilesMatch "^\.">

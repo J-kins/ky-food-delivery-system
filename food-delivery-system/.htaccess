@@ -2,15 +2,21 @@
   RewriteEngine On
   RewriteBase /
 
+  # Block access to hidden files and .env
+  RewriteRule ^\.env$ - [F,L]
+  RewriteRule ^\. - [F,L]
+
+  # Route each portal to its own index.html (exact and sub-paths)
+  RewriteRule ^admin(/.*)?$    /admin/index.html    [QSA,L]
+  RewriteRule ^manager(/.*)?$  /manager/index.html  [QSA,L]
+  RewriteRule ^kitchen(/.*)?$  /kitchen/index.html  [QSA,L]
+  RewriteRule ^delivery(/.*)?$ /delivery/index.html [QSA,L]
+  RewriteRule ^support(/.*)?$  /support/index.html  [QSA,L]
+
+  # All other requests (including /) go to the customer-facing public SPA
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-
-  RewriteRule ^api/(.*)$ /api/index.php?path=$1 [QSA,L]
-  RewriteRule ^admin/(.*)$ /admin/index.php?path=$1 [QSA,L]
-  RewriteRule ^manager/(.*)$ /manager/index.php?path=$1 [QSA,L]
-  RewriteRule ^kitchen/(.*)$ /kitchen/index.php?path=$1 [QSA,L]
-  RewriteRule ^delivery/(.*)$ /delivery/index.php?path=$1 [QSA,L]
-  RewriteRule ^(.*)$ /web/index.html [QSA,L]
+  RewriteRule ^(.*)$ /public/index.html [QSA,L]
 </IfModule>
 
 <FilesMatch "\.env$">
@@ -20,3 +26,6 @@
 <FilesMatch "^\.">
   Deny from all
 </FilesMatch>
+
+AddType application/javascript .js
+AddType text/css .css
