@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 32px; font-weight: 700; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 400; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="900" fill="#F7F4EF"/>
+
+  <!-- Header -->
+  <rect width="1440" height="72" fill="#005638"/>
+  <text x="48" y="50" class="font-header" fill="#F7F4EF">Search</text>
+
+  <!-- Search Bar -->
+  <g transform="translate(400, 18)">
+    <rect width="600" height="56" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="24" y="36" class="font-body color-text-light">Search restaurants or dishes</text>
+    <text x="576" y="36" class="font-label color-text-light" text-anchor="end">🔍</text>
+  </g>
+
+  <!-- Main Content -->
+  <g transform="translate(48, 100)">
+    <!-- Left Sidebar -->
+    <g>
+      <text class="font-title color-text-dark">Filters</text>
+      
+      <g transform="translate(0, 40)">
+        <rect width="160" height="48" rx="6" fill="#005638"/>
+        <text x="80" y="32" class="font-label" fill="#F7F4EF" text-anchor="middle">Popular</text>
+      </g>
+      
+      <g transform="translate(0, 104)">
+        <rect width="160" height="48" rx="6" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="80" y="32" class="font-label color-text-dark" text-anchor="middle">Rating</text>
+      </g>
+      
+      <g transform="translate(0, 168)">
+        <rect width="160" height="48" rx="6" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="80" y="32" class="font-label color-text-dark" text-anchor="middle">Fastest</text>
+      </g>
+      
+      <g transform="translate(0, 232)">
+        <rect width="160" height="48" rx="6" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="80" y="32" class="font-label color-text-dark" text-anchor="middle">Price Low</text>
+      </g>
+    </g>
+
+    <!-- Main Content Area -->
+    <g transform="translate(240, 0)">
+      <!-- Recent Searches -->
+      <g>
+        <text class="font-title color-text-dark">Recent Searches</text>
+        
+        <g transform="translate(0, 40)">
+          <rect width="600" height="56" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="24" y="36" class="font-body color-text-dark">🕐 Pizza near me</text>
+        </g>
+        
+        <g transform="translate(0, 112)">
+          <rect width="600" height="56" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="24" y="36" class="font-body color-text-dark">🕐 Thai food delivery</text>
+        </g>
+        
+        <g transform="translate(0, 184)">
+          <rect width="600" height="56" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="24" y="36" class="font-body color-text-dark">🕐 Sushi restaurants</text>
+        </g>
+      </g>
+
+      <!-- Popular Searches -->
+      <g transform="translate(0, 300)">
+        <text class="font-title color-text-dark">Popular Searches</text>
+        
+        <g transform="translate(0, 40)">
+          <rect width="120" height="48" rx="24" fill="#005638"/>
+          <text x="60" y="32" class="font-label" fill="#F7F4EF" text-anchor="middle">Pizza</text>
+        </g>
+        
+        <g transform="translate(140, 40)">
+          <rect width="120" height="48" rx="24" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="60" y="32" class="font-label color-text-dark" text-anchor="middle">Burger</text>
+        </g>
+        
+        <g transform="translate(280, 40)">
+          <rect width="120" height="48" rx="24" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="60" y="32" class="font-label color-text-dark" text-anchor="middle">Sushi</text>
+        </g>
+        
+        <g transform="translate(420, 40)">
+          <rect width="120" height="48" rx="24" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="60" y="32" class="font-label color-text-dark" text-anchor="middle">Salad</text>
+        </g>
+        
+        <g transform="translate(0, 108)">
+          <rect width="120" height="48" rx="24" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="60" y="32" class="font-label color-text-dark" text-anchor="middle">Dessert</text>
+        </g>
+        
+        <g transform="translate(140, 108)">
+          <rect width="120" height="48" rx="24" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="60" y="32" class="font-label color-text-dark" text-anchor="middle">Coffee</text>
+        </g>
+        
+        <g transform="translate(280, 108)">
+          <rect width="120" height="48" rx="24" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+          <text x="60" y="32" class="font-label color-text-dark" text-anchor="middle">Breakfast</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <rect y="860" width="1440" height="40" fill="#3B2A1A"/>
+  <text x="48" y="883" class="font-caption" fill="#F7F4EF">© 2025 KY Food Delivery</text>
+</svg>

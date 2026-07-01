@@ -1,0 +1,105 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <rect width="375" height="812" fill="#F7F4EF"/>
+  
+  <!-- Header -->
+  <rect width="375" height="56" fill="#005638"/>
+  <text x="16" y="38" class="font-header" fill="#F7F4EF">← Italian</text>
+  <rect width="375" height="20" fill="#005638"/>
+
+  <!-- Filter Bar -->
+  <g transform="translate(16, 72)">
+    <rect width="105" height="36" rx="18" fill="#005638"/>
+    <text x="52.5" y="24" class="font-label" fill="#F7F4EF" text-anchor="middle">Popular</text>
+    
+    <rect x="123" width="105" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="175.5" y="24" class="font-label color-text-dark" text-anchor="middle">Rating</text>
+    
+    <rect x="246" width="97" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="294.5" y="24" class="font-label color-text-dark" text-anchor="middle">Speed</text>
+  </g>
+
+  <!-- Restaurant Items -->
+  <g transform="translate(16, 120)">
+    <!-- Restaurant 1 -->
+    <g>
+      <rect width="343" height="140" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="343" height="90" rx="12" fill="#E8D7B5"/>
+      <text x="171.5" y="48" class="font-caption color-text-light" text-anchor="middle">Image</text>
+      
+      <text x="16" y="116" class="font-title color-text-dark">Trattoria Bella</text>
+      <text x="16" y="136" class="font-caption color-text-light">Italian • Fine Dining • $$</text>
+      
+      <text x="260" y="116" class="font-label color-accent">★ 4.8</text>
+      <text x="260" y="136" class="font-caption color-text-light">20 min</text>
+      
+      <circle cx="319" cy="32" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="319" y="38" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+
+    <!-- Restaurant 2 -->
+    <g transform="translate(0, 160)">
+      <rect width="343" height="140" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="343" height="90" rx="12" fill="#E8D7B5"/>
+      <text x="171.5" y="48" class="font-caption color-text-light" text-anchor="middle">Image</text>
+      
+      <text x="16" y="116" class="font-title color-text-dark">Ristorante Roma</text>
+      <text x="16" y="136" class="font-caption color-text-light">Italian • Casual • $$</text>
+      
+      <text x="260" y="116" class="font-label color-accent">★ 4.6</text>
+      <text x="260" y="136" class="font-caption color-text-light">25 min</text>
+      
+      <circle cx="319" cy="32" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="319" y="38" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+
+    <!-- Restaurant 3 -->
+    <g transform="translate(0, 320)">
+      <rect width="343" height="140" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="343" height="90" rx="12" fill="#E8D7B5"/>
+      <text x="171.5" y="48" class="font-caption color-text-light" text-anchor="middle">Image</text>
+      
+      <text x="16" y="116" class="font-title color-text-dark">Pasta Paradise</text>
+      <text x="16" y="136" class="font-caption color-text-light">Italian • Quick • $</text>
+      
+      <text x="260" y="116" class="font-label color-accent">★ 4.4</text>
+      <text x="260" y="136" class="font-caption color-text-light">15 min</text>
+      
+      <circle cx="319" cy="32" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="319" y="38" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation -->
+  <g transform="translate(0, 756)">
+    <rect width="375" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <g transform="translate(42.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🏠</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(123.75, 8)">
+      <text class="font-label color-accent" text-anchor="middle">🔍</text>
+      <text y="28" class="font-label color-accent" text-anchor="middle">Search</text>
+    </g>
+    <g transform="translate(204.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">📦</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Orders</text>
+    </g>
+    <g transform="translate(285.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">👤</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Account</text>
+    </g>
+  </g>
+</svg>

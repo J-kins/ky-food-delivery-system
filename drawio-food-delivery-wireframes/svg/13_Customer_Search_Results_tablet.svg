@@ -1,0 +1,105 @@
+<svg viewBox="0 0 768 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <rect width="768" height="1024" fill="#F7F4EF"/>
+
+  <rect width="768" height="64" fill="#005638"/>
+  <text x="32" y="44" class="font-header" fill="#F7F4EF">← Pizza</text>
+
+  <g transform="translate(32, 80)">
+    <rect width="704" height="56" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="24" y="36" class="font-body color-text-light">Pizza</text>
+  </g>
+
+  <!-- Filters -->
+  <g transform="translate(32, 152)">
+    <rect width="100" height="40" rx="20" fill="#005638"/>
+    <text x="50" y="27" class="font-label" fill="#F7F4EF" text-anchor="middle">All</text>
+    
+    <rect x="116" width="100" height="40" rx="20" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="166" y="27" class="font-label color-text-dark" text-anchor="middle">Rating</text>
+    
+    <rect x="232" width="100" height="40" rx="20" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="282" y="27" class="font-label color-text-dark" text-anchor="middle">Delivery</text>
+  </g>
+
+  <!-- Results (2 columns) -->
+  <g transform="translate(32, 208)">
+    <text class="font-header color-text-dark">Results</text>
+    
+    <!-- Result 1 -->
+    <g transform="translate(0, 40)">
+      <rect width="336" height="140" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="100" height="100" rx="6" fill="#E8D7B5"/>
+      <text x="62" y="63" class="font-label color-text-light" text-anchor="middle">🍕</text>
+      
+      <text x="120" y="32" class="font-title color-text-dark">Gourmet Pizza</text>
+      <text x="120" y="56" class="font-caption color-text-light">Italian • Pizza</text>
+      <text x="120" y="84" class="font-caption color-text-light">★ 4.8 • 20 min • $2.99</text>
+      
+      <circle cx="304" cy="24" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="304" y="32" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+    
+    <!-- Result 2 -->
+    <g transform="translate(352, 40)">
+      <rect width="336" height="140" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="100" height="100" rx="6" fill="#E8D7B5"/>
+      <text x="62" y="63" class="font-label color-text-light" text-anchor="middle">🍕</text>
+      
+      <text x="120" y="32" class="font-title color-text-dark">New York Pizza</text>
+      <text x="120" y="56" class="font-caption color-text-light">Pizza • Fast Food</text>
+      <text x="120" y="84" class="font-caption color-text-light">★ 4.5 • 15 min • $1.99</text>
+      
+      <circle cx="304" cy="24" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="304" y="32" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+    
+    <!-- Result 3 -->
+    <g transform="translate(0, 196)">
+      <rect width="336" height="140" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="100" height="100" rx="6" fill="#E8D7B5"/>
+      <text x="62" y="63" class="font-label color-text-light" text-anchor="middle">🍕</text>
+      
+      <text x="120" y="32" class="font-title color-text-dark">Wood Fired</text>
+      <text x="120" y="56" class="font-caption color-text-light">Italian • Pizza</text>
+      <text x="120" y="84" class="font-caption color-text-light">★ 4.9 • 25 min • $3.99</text>
+      
+      <circle cx="304" cy="24" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="304" y="32" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+    
+    <!-- Result 4 -->
+    <g transform="translate(352, 196)">
+      <rect width="336" height="140" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="8" y="8" width="100" height="100" rx="6" fill="#E8D7B5"/>
+      <text x="62" y="63" class="font-label color-text-light" text-anchor="middle">🍕</text>
+      
+      <text x="120" y="32" class="font-title color-text-dark">Pizza Express</text>
+      <text x="120" y="56" class="font-caption color-text-light">Fast Food • Pizza</text>
+      <text x="120" y="84" class="font-caption color-text-light">★ 4.3 • 20 min • $1.49</text>
+      
+      <circle cx="304" cy="24" r="20" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="304" y="32" class="font-label color-accent" text-anchor="middle">♡</text>
+    </g>
+  </g>
+
+  <g transform="translate(0, 968)">
+    <rect width="768" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="96" y="28" class="font-title color-text-light">🏠 Home</text>
+    <text x="256" y="28" class="font-title color-accent">🔍 Search</text>
+    <text x="416" y="28" class="font-title color-text-light">📦 Orders</text>
+    <text x="576" y="28" class="font-title color-text-light">👤 Account</text>
+  </g>
+</svg>

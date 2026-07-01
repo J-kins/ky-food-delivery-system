@@ -1,0 +1,290 @@
+/*
+ * KY Food Delivery System
+ * Component Styles: Extended Cards
+ * Covers: CartItem, OrderCard, SearchFilter
+ */
+
+/* ── Cart Item ──────────────────────────────────────────────────────────── */
+.cart-item {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border: 1px solid #E8D7B5;
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--transition-normal);
+}
+
+.cart-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.cart-item__image {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border-radius: var(--radius-md);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.cart-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin: 0 0 var(--spacing-xs) 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart-item__price {
+  font-size: 0.9375rem;
+  color: var(--color-primary-green);
+  font-weight: 600;
+}
+
+.cart-item__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  border: 1px solid #D0C9BF;
+  border-radius: var(--radius-md);
+  padding: 0.25rem;
+  background-color: #F7F4EF;
+}
+
+.cart-item__controls .btn {
+  flex: 0 0 auto;
+  padding: 0.3rem 0.6rem;
+}
+
+.cart-item__quantity {
+  padding: 0 var(--spacing-sm);
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  min-width: 30px;
+  text-align: center;
+}
+
+.cart-item__total {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-primary-green);
+  min-width: 80px;
+  text-align: right;
+}
+
+.cart-item__remove {
+  margin-left: var(--spacing-md);
+}
+
+@media (max-width: 640px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item__image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .cart-item__controls {
+    justify-content: center;
+  }
+
+  .cart-item__total {
+    text-align: center;
+  }
+}
+
+/* ── Order Card ────────────────────────────────────────────────────────── */
+.order-card {
+  background-color: var(--color-white);
+  border: 1px solid #E8D7B5;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  transition: all var(--transition-normal);
+}
+
+.order-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.order-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #EDE9E3;
+}
+
+.order-card__info {
+  flex: 1;
+}
+
+.order-card__id {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin: 0 0 0.25rem 0;
+}
+
+.order-card__restaurant {
+  font-size: 0.8125rem;
+  color: #837A70;
+}
+
+.order-card__status {
+  flex-shrink: 0;
+}
+
+.order-card__body {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.order-card__items {
+  font-size: 0.9375rem;
+  color: #837A70;
+}
+
+.order-card__total {
+  font-size: 0.9375rem;
+  color: var(--color-neutral-brown);
+}
+
+.order-card__total strong {
+  font-size: 1.0625rem;
+  color: var(--color-primary-green);
+  font-weight: 700;
+}
+
+.order-card__footer {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+  .order-card {
+    padding: var(--spacing-sm);
+  }
+
+  .order-card__header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .order-card__body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-card__footer {
+    width: 100%;
+  }
+
+  .order-card__footer .btn {
+    flex: 1;
+  }
+}
+
+/* ── Search Filter ──────────────────────────────────────────────────────── */
+.search-filter {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  border: 1px solid #E8D7B5;
+}
+
+.search-filter__group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.search-filter__group:last-child {
+  margin-bottom: var(--spacing-md);
+}
+
+.search-filter__group-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.search-filter__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.search-filter__option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.search-filter__option:hover {
+  background-color: #F7F4EF;
+}
+
+.search-filter__input {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.search-filter__option-label {
+  font-size: 0.9375rem;
+  color: var(--color-neutral-brown);
+  cursor: pointer;
+  user-select: none;
+}
+
+.search-filter__reset {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: #F7F4EF;
+  border: 1px solid #D0C9BF;
+  border-radius: var(--radius-md);
+  color: var(--color-neutral-brown);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  transition: all var(--transition-fast);
+}
+
+.search-filter__reset:hover {
+  background-color: #EDE9E3;
+  border-color: var(--color-primary-green);
+  color: var(--color-primary-green);
+}
+
+@media (max-width: 768px) {
+  .search-filter {
+    padding: var(--spacing-md);
+  }
+
+  .search-filter__group {
+    margin-bottom: var(--spacing-md);
+  }
+}

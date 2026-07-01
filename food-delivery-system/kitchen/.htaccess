@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /kitchen/
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule ^api/(.*)$ /api/index.php?path=$1 [QSA,L]
+  RewriteRule ^(.*)$ /kitchen/index.php?path=$1 [QSA,L]
+</IfModule>
+
+<FilesMatch "^\.">
+  Deny from all
+</FilesMatch>

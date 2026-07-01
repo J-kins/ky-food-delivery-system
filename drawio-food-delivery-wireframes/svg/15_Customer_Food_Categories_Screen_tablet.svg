@@ -1,0 +1,50 @@
+<svg viewBox="0 0 768 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>.font-header { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 600; }.font-title { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600; }.font-caption { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }</style></defs>
+  <rect width="768" height="1024" fill="#F7F4EF"/>
+  <rect width="768" height="64" fill="#005638"/>
+  <text x="32" y="44" class="font-header" fill="#F7F4EF">Categories</text>
+  
+  <g transform="translate(32, 88)">
+    <!-- 3 columns grid -->
+    <rect width="220" height="220" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <rect x="0" y="0" width="220" height="140" rx="12" fill="#E8D7B5"/>
+    <text x="110" y="75" class="font-title" text-anchor="middle">🍕</text>
+    <text x="110" y="188" class="font-title" fill="#3B2A1A" text-anchor="middle">Pizza</text>
+    
+    <g transform="translate(244, 0)">
+      <rect width="220" height="220" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="140" rx="12" fill="#E8D7B5"/>
+      <text x="110" y="75" class="font-title" text-anchor="middle">🍔</text>
+      <text x="110" y="188" class="font-title" fill="#3B2A1A" text-anchor="middle">Burger</text>
+    </g>
+    
+    <g transform="translate(488, 0)">
+      <rect width="220" height="220" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="140" rx="12" fill="#E8D7B5"/>
+      <text x="110" y="75" class="font-title" text-anchor="middle">🍣</text>
+      <text x="110" y="188" class="font-title" fill="#3B2A1A" text-anchor="middle">Sushi</text>
+    </g>
+    
+    <!-- Row 2 -->
+    <g transform="translate(0, 244)">
+      <rect width="220" height="220" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="140" rx="12" fill="#E8D7B5"/>
+      <text x="110" y="75" class="font-title" text-anchor="middle">🥗</text>
+      <text x="110" y="188" class="font-title" fill="#3B2A1A" text-anchor="middle">Salad</text>
+    </g>
+    
+    <g transform="translate(244, 244)">
+      <rect width="220" height="220" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="140" rx="12" fill="#E8D7B5"/>
+      <text x="110" y="75" class="font-title" text-anchor="middle">🍰</text>
+      <text x="110" y="188" class="font-title" fill="#3B2A1A" text-anchor="middle">Dessert</text>
+    </g>
+    
+    <g transform="translate(488, 244)">
+      <rect width="220" height="220" rx="12" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="140" rx="12" fill="#E8D7B5"/>
+      <text x="110" y="75" class="font-title" text-anchor="middle">☕</text>
+      <text x="110" y="188" class="font-title" fill="#3B2A1A" text-anchor="middle">Beverage</text>
+    </g>
+  </g>
+</svg>

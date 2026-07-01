@@ -1,0 +1,100 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; }
+      .color-fg { fill: #F7F4EF; }
+      .color-bg { fill: #005638; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#F7F4EF"/>
+
+  <!-- Top Bar -->
+  <rect width="375" height="56" fill="#005638"/>
+  <rect width="375" height="20" fill="#005638"/>
+  
+  <!-- Search Input -->
+  <g transform="translate(16, 72)">
+    <rect width="343" height="48" rx="8" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="16" y="32" class="font-body color-text-light">Search restaurants or dishes</text>
+    <text x="315" y="32" class="font-label color-text-light" text-anchor="end">🔍</text>
+  </g>
+
+  <!-- Recent Searches -->
+  <g transform="translate(16, 136)">
+    <text class="font-title color-text-dark">Recent Searches</text>
+    
+    <g transform="translate(0, 32)">
+      <rect width="343" height="40" fill="none"/>
+      <text class="font-body color-text-dark">🕐 Pizza near me</text>
+    </g>
+    
+    <g transform="translate(0, 80)">
+      <rect width="343" height="40" fill="none"/>
+      <text class="font-body color-text-dark">🕐 Thai food</text>
+    </g>
+    
+    <g transform="translate(0, 128)">
+      <rect width="343" height="40" fill="none"/>
+      <text class="font-body color-text-dark">🕐 Sushi</text>
+    </g>
+  </g>
+
+  <!-- Popular Searches -->
+  <g transform="translate(16, 420)">
+    <text class="font-title color-text-dark">Popular Searches</text>
+    
+    <g transform="translate(0, 32)">
+      <rect width="160" height="36" rx="18" fill="#005638"/>
+      <text x="80" y="26" class="font-label color-fg" text-anchor="middle">Pizza</text>
+    </g>
+    
+    <g transform="translate(177, 32)">
+      <rect width="160" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="80" y="26" class="font-label color-text-dark" text-anchor="middle">Burger</text>
+    </g>
+    
+    <g transform="translate(0, 80)">
+      <rect width="160" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="80" y="26" class="font-label color-text-dark" text-anchor="middle">Sushi</text>
+    </g>
+    
+    <g transform="translate(177, 80)">
+      <rect width="160" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="80" y="26" class="font-label color-text-dark" text-anchor="middle">Salad</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation -->
+  <g transform="translate(0, 756)">
+    <rect width="375" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <g transform="translate(42.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">🏠</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Home</text>
+    </g>
+    
+    <g transform="translate(123.75, 8)">
+      <text class="font-label color-accent" text-anchor="middle">🔍</text>
+      <text y="28" class="font-label color-accent" text-anchor="middle">Search</text>
+    </g>
+    
+    <g transform="translate(204.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">📦</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Orders</text>
+    </g>
+    
+    <g transform="translate(285.75, 8)">
+      <text class="font-label color-text-light" text-anchor="middle">👤</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Account</text>
+    </g>
+  </g>
+</svg>

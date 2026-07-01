@@ -1,0 +1,162 @@
+<svg viewBox="0 0 375 812" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      .font-header { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
+      .font-title { font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; }
+      .font-body { font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; }
+      .font-label { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 600; }
+      .font-caption { font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; }
+      .color-fg { fill: #F7F4EF; }
+      .color-bg { fill: #005638; }
+      .color-text-dark { fill: #3B2A1A; }
+      .color-text-light { fill: #757575; }
+      .color-accent { fill: #DC4024; }
+      .color-accent-alt { fill: #F0C019; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#F7F4EF"/>
+
+  <!-- Top Navigation Bar -->
+  <rect width="375" height="56" fill="#005638"/>
+  
+  <!-- Location & Time in Header -->
+  <text x="16" y="38" class="font-header color-fg">Good Morning!</text>
+  
+  <!-- Search & Notification Icons (Placeholder) -->
+  <circle cx="336" cy="28" r="20" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="336" cy="28" r="3" fill="#F7F4EF"/>
+  
+  <!-- Safe Area Top Padding -->
+  <rect x="0" y="0" width="375" height="20" fill="#005638"/>
+
+  <!-- Content Area -->
+  <!-- Current Location Section -->
+  <g transform="translate(16, 72)">
+    <text class="font-label color-text-light">DELIVERING TO</text>
+    <text x="0" y="24" class="font-title color-text-dark">123 Main Street, Apt 4B</text>
+    <text x="0" y="44" class="font-caption color-text-light">San Francisco, CA 94102</text>
+  </g>
+
+  <!-- Promo Banner -->
+  <g transform="translate(16, 144)">
+    <rect width="343" height="120" rx="12" fill="#005638"/>
+    <rect width="343" height="120" rx="12" fill="#F0C019" opacity="0.15"/>
+    
+    <!-- Promo Content -->
+    <text x="16" y="32" class="font-title color-fg">New User Special!</text>
+    <text x="16" y="56" class="font-caption" fill="rgba(247,244,239,0.9)">Get 50% off your first order</text>
+    <text x="16" y="72" class="font-caption" fill="rgba(247,244,239,0.9)">Code: WELCOME50</text>
+    
+    <!-- CTA Badge -->
+    <rect x="16" y="88" width="100" height="28" rx="4" fill="#F0C019"/>
+    <text x="66" y="108" class="font-label color-bg" text-anchor="middle">Claim Offer</text>
+  </g>
+
+  <!-- Section: Popular Restaurants -->
+  <g transform="translate(16, 280)">
+    <text class="font-header color-text-dark">Popular Now</text>
+    
+    <!-- Restaurant Card 1 -->
+    <g transform="translate(0, 32)">
+      <rect width="343" height="160" rx="12" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      
+      <!-- Image Placeholder -->
+      <rect width="343" height="100" rx="12" fill="#E8D7B5"/>
+      <text x="171.5" y="55" class="font-caption color-text-light" text-anchor="middle">Restaurant Image</text>
+      
+      <!-- Card Content -->
+      <text x="16" y="136" class="font-title color-text-dark">Gourmet Pizza Co.</text>
+      <text x="16" y="152" class="font-caption color-text-light">Italian • Pizza • Mediterranean</text>
+      
+      <!-- Rating & Delivery -->
+      <text x="16" y="168" class="font-caption color-text-light">★ 4.8 • 20-30 min</text>
+      
+      <!-- Favorite Icon -->
+      <circle cx="319" cy="40" r="24" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="319" y="46" class="font-label" text-anchor="middle" fill="#DC4024">♡</text>
+    </g>
+    
+    <!-- Restaurant Card 2 -->
+    <g transform="translate(0, 204)">
+      <rect width="343" height="160" rx="12" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      
+      <!-- Image Placeholder -->
+      <rect width="343" height="100" rx="12" fill="#E8D7B5"/>
+      <text x="171.5" y="55" class="font-caption color-text-light" text-anchor="middle">Restaurant Image</text>
+      
+      <!-- Card Content -->
+      <text x="16" y="136" class="font-title color-text-dark">Spice Kitchen</text>
+      <text x="16" y="152" class="font-caption color-text-light">Indian • Curry • Authentic</text>
+      
+      <!-- Rating & Delivery -->
+      <text x="16" y="168" class="font-caption color-text-light">★ 4.6 • 25-35 min</text>
+      
+      <!-- Favorite Icon -->
+      <circle cx="319" cy="40" r="24" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="319" y="46" class="font-label" text-anchor="middle" fill="#DC4024">♡</text>
+    </g>
+  </g>
+
+  <!-- Categories Section (scrollable horizontal) -->
+  <g transform="translate(0, 620)">
+    <text x="16" y="0" class="font-header color-text-dark">Categories</text>
+    
+    <!-- Category Pills -->
+    <g transform="translate(16, 24)">
+      <!-- All -->
+      <rect width="60" height="36" rx="18" fill="#005638"/>
+      <text x="30" y="25" class="font-label color-fg" text-anchor="middle">All</text>
+      
+      <!-- Pizza -->
+      <rect x="72" width="60" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="102" y="25" class="font-label color-text-dark" text-anchor="middle">Pizza</text>
+      
+      <!-- Sushi -->
+      <rect x="144" width="60" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="174" y="25" class="font-label color-text-dark" text-anchor="middle">Sushi</text>
+      
+      <!-- Burger -->
+      <rect x="216" width="60" height="36" rx="18" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1"/>
+      <text x="246" y="25" class="font-label color-text-dark" text-anchor="middle">Burger</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation -->
+  <g>
+    <rect y="756" width="375" height="56" fill="#F7F4EF" stroke="#E0E0E0" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Home (Active) -->
+    <g transform="translate(42.75, 764)">
+      <circle cx="0" cy="0" r="24" fill="none"/>
+      <text class="font-label color-accent" text-anchor="middle">🏠</text>
+      <text y="28" class="font-label color-accent" text-anchor="middle">Home</text>
+    </g>
+    
+    <!-- Search -->
+    <g transform="translate(123.75, 764)">
+      <circle cx="0" cy="0" r="24" fill="none"/>
+      <text class="font-label color-text-light" text-anchor="middle">🔍</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Search</text>
+    </g>
+    
+    <!-- Orders -->
+    <g transform="translate(204.75, 764)">
+      <circle cx="0" cy="0" r="24" fill="none"/>
+      <text class="font-label color-text-light" text-anchor="middle">📦</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Orders</text>
+    </g>
+    
+    <!-- Account -->
+    <g transform="translate(285.75, 764)">
+      <circle cx="0" cy="0" r="24" fill="none"/>
+      <text class="font-label color-text-light" text-anchor="middle">👤</text>
+      <text y="28" class="font-label color-text-light" text-anchor="middle">Account</text>
+    </g>
+  </g>
+
+  <!-- Floating Action Button (Order Tracking) - Hint -->
+  <circle cx="335" cy="720" r="28" fill="#DC4024"/>
+  <text x="335" y="728" class="font-title color-fg" text-anchor="middle">📍</text>
+</svg>

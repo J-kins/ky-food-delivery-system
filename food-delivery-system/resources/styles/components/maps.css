@@ -1,0 +1,184 @@
+/*
+ * KY Food Delivery System
+ * Component Styles: Maps and Delivery Markers
+ */
+
+/* ── Map Component ──────────────────────────────────────────────────────── */
+.map-component {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: #E8E6E1;
+}
+
+.map-component__area {
+  position: relative;
+}
+
+.map-component__placeholder {
+  background: linear-gradient(135deg, #E8E6E1 25%, transparent 25%),
+              linear-gradient(225deg, #E8E6E1 25%, transparent 25%),
+              linear-gradient(45deg, #E8E6E1 25%, transparent 25%),
+              linear-gradient(315deg, #E8E6E1 25%, transparent 25%);
+  background-position: 20px 0, 20px 0, 0 0, 0 0;
+  background-size: 40px 40px;
+  background-repeat: repeat;
+}
+
+.map-component__markers {
+  z-index: 10;
+}
+
+.map-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-marker__pin {
+  width: 32px;
+  height: 40px;
+  background-color: var(--color-primary-green);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.map-marker:hover .map-marker__pin {
+  transform: rotate(-45deg) scale(1.2);
+  background-color: #003e27;
+}
+
+.map-marker--restaurant .map-marker__pin {
+  background-color: var(--color-primary-red);
+}
+
+.map-marker--restaurant:hover .map-marker__pin {
+  background-color: #b73520;
+}
+
+.map-marker--customer .map-marker__pin {
+  background-color: var(--color-primary-orange);
+}
+
+.map-marker--customer:hover .map-marker__pin {
+  background-color: #d93410;
+}
+
+.map-marker__tooltip {
+  background-color: var(--color-white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.map-marker:hover .map-marker__tooltip {
+  opacity: 1;
+}
+
+/* ── Delivery Marker ────────────────────────────────────────────────────── */
+.delivery-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.delivery-marker--active {
+  opacity: 1;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.delivery-marker__pin {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--color-white);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.delivery-marker__pin:hover {
+  transform: scale(1.15);
+}
+
+.delivery-marker__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-neutral-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery-marker__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.delivery-marker__popup {
+  background-color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 150px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+}
+
+.delivery-marker:hover .delivery-marker__popup {
+  opacity: 1;
+  transform: translateY(-55px);
+  pointer-events: auto;
+}
+
+.delivery-marker__name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin-bottom: 0.25rem;
+}
+
+.delivery-marker__vehicle {
+  font-size: 0.8125rem;
+  color: #837A70;
+  margin-bottom: 0.25rem;
+}
+
+.delivery-marker__rating {
+  font-size: 0.8125rem;
+  color: var(--color-primary-yellow);
+  font-weight: 600;
+}
+
+.rating-stars {
+  font-size: 0.75rem;
+}

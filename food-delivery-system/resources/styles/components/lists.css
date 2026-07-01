@@ -1,0 +1,453 @@
+/*
+ * KY Food Delivery System
+ * Component Styles: Lists
+ * Covers: RestaurantList, FoodList, OrderList, NotificationList, ReviewList
+ */
+
+/* ── Restaurant List ────────────────────────────────────────────────────── */
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.restaurant-list__empty {
+  grid-column: 1 / -1;
+  padding: var(--spacing-xxl);
+  text-align: center;
+  color: var(--color-neutral-brown);
+  font-size: 0.9375rem;
+}
+
+.restaurant-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.restaurant-card--featured {
+  border: 2px solid var(--color-primary-green);
+}
+
+.restaurant-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.restaurant-card__image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.restaurant-card__discount-badge {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+}
+
+.restaurant-card__content {
+  padding: var(--spacing-md);
+}
+
+.restaurant-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.restaurant-card__name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin: 0;
+  flex: 1;
+}
+
+.restaurant-card__rating {
+  flex-shrink: 0;
+}
+
+.restaurant-card__meta {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: 0.8125rem;
+  color: #837A70;
+}
+
+.restaurant-card__cuisine,
+.restaurant-card__delivery {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.delivery-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+/* ── Food List ──────────────────────────────────────────────────────────── */
+.food-list {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.food-list--grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.food-list--list {
+  grid-template-columns: 1fr;
+}
+
+.food-list__empty {
+  grid-column: 1 / -1;
+  padding: var(--spacing-xxl);
+  text-align: center;
+  color: var(--color-neutral-brown);
+  font-size: 0.9375rem;
+}
+
+.food-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.food-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.food-card__image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.food-card__image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-card__badge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+}
+
+.food-card__content {
+  padding: var(--spacing-md);
+}
+
+.food-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.food-card__description {
+  font-size: 0.8125rem;
+  color: #837A70;
+  margin: 0 0 var(--spacing-sm) 0;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.food-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-card__price {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-primary-green);
+}
+
+.food-card__rating {
+  font-size: 0.8125rem;
+}
+
+/* ── Order List ────────────────────────────────────────────────────────── */
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.order-list__empty {
+  padding: var(--spacing-xxl);
+  text-align: center;
+  color: var(--color-neutral-brown);
+  font-size: 0.9375rem;
+}
+
+.order-item {
+  background-color: var(--color-white);
+  border: 1px solid #E8D7B5;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  transition: box-shadow var(--transition-normal);
+}
+
+.order-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.order-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #F0EDE8;
+}
+
+.order-item__info {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: 0.9375rem;
+}
+
+.order-item__id {
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+}
+
+.order-item__date {
+  color: #837A70;
+}
+
+.order-item__status {
+  flex-shrink: 0;
+}
+
+.order-item__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.order-item__items {
+  font-size: 0.9375rem;
+  color: #837A70;
+}
+
+.order-item__total {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+}
+
+.order-item__footer {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: flex-end;
+}
+
+/* ── Notification List ──────────────────────────────────────────────────── */
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notification-list__empty {
+  padding: var(--spacing-lg);
+  text-align: center;
+  color: var(--color-neutral-brown);
+  font-size: 0.9375rem;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  border-left: 3px solid transparent;
+  transition: background-color var(--transition-fast);
+}
+
+.notification-item--unread {
+  background-color: #FAFAF8;
+  border-left-color: var(--color-primary-green);
+}
+
+.notification-item:hover {
+  background-color: #F7F4EF;
+}
+
+.notification-item__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-primary-green);
+  display: flex;
+  align-items: center;
+}
+
+.notification-item__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.notification-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-item__message {
+  font-size: 0.9375rem;
+  color: var(--color-neutral-brown);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.notification-item__timestamp {
+  font-size: 0.75rem;
+  color: #A89F93;
+  margin-top: 0.25rem;
+}
+
+.notification-item__dismiss {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #A89F93;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.notification-item__dismiss:hover {
+  color: var(--color-neutral-brown);
+}
+
+/* ── Review List ────────────────────────────────────────────────────────── */
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.review-list__empty {
+  padding: var(--spacing-xxl);
+  text-align: center;
+  color: var(--color-neutral-brown);
+  font-size: 0.9375rem;
+}
+
+.review-item {
+  background-color: var(--color-white);
+  border: 1px solid #E8D7B5;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.review-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.review-item__author {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.review-item__avatar {
+  flex-shrink: 0;
+}
+
+.review-item__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.review-item__author-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-neutral-brown);
+  margin: 0;
+}
+
+.review-item__date {
+  font-size: 0.75rem;
+  color: #A89F93;
+}
+
+.review-item__rating {
+  flex-shrink: 0;
+}
+
+.review-item__body {
+  margin-bottom: var(--spacing-md);
+}
+
+.review-item__text {
+  font-size: 0.9375rem;
+  color: #837A70;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.review-item__footer {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.review-item__helpful {
+  background: none;
+  border: 1px solid #D0C9BF;
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8125rem;
+  color: #837A70;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.review-item__helpful:hover {
+  border-color: var(--color-primary-green);
+  color: var(--color-primary-green);
+}
+
+.review-item__helpful-count {
+  font-weight: 600;
+}
