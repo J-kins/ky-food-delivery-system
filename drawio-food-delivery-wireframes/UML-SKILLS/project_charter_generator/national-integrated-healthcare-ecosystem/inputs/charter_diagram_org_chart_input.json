@@ -1,0 +1,204 @@
+{
+  "diagram_description": {
+    "id": "org_chart",
+    "title": "Project Organization Chart",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "caption": "Figure 4: NIHE Project Organization Structure",
+    "nodes": [
+      {
+        "id": "SPONSOR",
+        "label": "Project Sponsor\nPermanent Secretary, MoH",
+        "shape": "box",
+        "fill": "#1A237E",
+        "border": "#0D47A1",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "PM",
+        "label": "Project Manager\nDigital Health Division Lead",
+        "shape": "box",
+        "fill": "#1565C0",
+        "border": "#0D47A1",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "ARCH",
+        "label": "Lead Architect\nChief Architect",
+        "shape": "box",
+        "fill": "#2E7D32",
+        "border": "#1B5E20",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BACKEND",
+        "label": "Backend Lead\nBackend Development Lead",
+        "shape": "box",
+        "fill": "#00838F",
+        "border": "#006064",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "FRONTEND",
+        "label": "Frontend Lead\nFrontend Development Lead",
+        "shape": "box",
+        "fill": "#00838F",
+        "border": "#006064",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "GIS",
+        "label": "GIS Lead\nGIS Development Lead",
+        "shape": "box",
+        "fill": "#00838F",
+        "border": "#006064",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "SEC",
+        "label": "Security Lead\nCybersecurity Lead",
+        "shape": "box",
+        "fill": "#37474F",
+        "border": "#263238",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "DEVREL",
+        "label": "Developer Relations\nDeveloper Experience Lead",
+        "shape": "box",
+        "fill": "#6A1B9A",
+        "border": "#4A148C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "QA",
+        "label": "QA Lead\nQuality Assurance Lead",
+        "shape": "box",
+        "fill": "#E65100",
+        "border": "#BF360C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "OPS",
+        "label": "DevOps Lead\nOperations Lead",
+        "shape": "box",
+        "fill": "#BF360C",
+        "border": "#871F00",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "DPO",
+        "label": "Data Protection Officer\nPrivacy & Compliance Lead",
+        "shape": "box",
+        "fill": "#AD1457",
+        "border": "#880E4F",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "TRAIN",
+        "label": "Training Lead\nCapacity Building Lead",
+        "shape": "box",
+        "fill": "#8E24AA",
+        "border": "#6A1B9A",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "ME",
+        "label": "M&E Lead\nMonitoring & Evaluation Lead",
+        "shape": "box",
+        "fill": "#00695C",
+        "border": "#004D40",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "PROC",
+        "label": "Procurement Lead\nVendor Management Lead",
+        "shape": "box",
+        "fill": "#5D4037",
+        "border": "#3E2723",
+        "text_color": "#FFFFFF"
+      }
+    ],
+    "edges": [
+      {
+        "from": "PM",
+        "to": "SPONSOR",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "ARCH",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BACKEND",
+        "to": "ARCH",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "FRONTEND",
+        "to": "ARCH",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "GIS",
+        "to": "ARCH",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "SEC",
+        "to": "ARCH",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "DEVREL",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "QA",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "OPS",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "DPO",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "TRAIN",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "ME",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "PROC",
+        "to": "PM",
+        "label": "",
+        "color": "#666666"
+      }
+    ]
+  }
+}

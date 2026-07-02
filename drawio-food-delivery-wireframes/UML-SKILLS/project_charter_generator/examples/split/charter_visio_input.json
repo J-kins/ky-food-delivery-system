@@ -1,0 +1,895 @@
+{
+  "project": {
+    "name": "Da'atSNA Community Data Platform",
+    "sponsor": "Dr. James Okello, Project Sponsor \u2014 Min. of Health",
+    "manager": "Sarah Nakato",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "department": "Digital Health Innovations",
+    "version": "1.0"
+  },
+  "vision": {
+    "statement": "Enable every community health worker in Uganda to access trusted, interoperable patient data through a secure national platform.",
+    "mission": "Design, build, and deploy the Da'atSNA Community Data Platform connecting clinics, NHIS, and ministry systems within 12 months."
+  },
+  "objectives": [
+    {
+      "id": "OBJ-01",
+      "description": "Deliver FHIR-compliant data exchange between 50 pilot clinics",
+      "measurable_criteria": "50 clinics live by Q4; 99% uptime SLA"
+    },
+    {
+      "id": "OBJ-02",
+      "description": "Reduce patient record retrieval time for CHWs",
+      "measurable_criteria": "Median query time under 2 seconds"
+    },
+    {
+      "id": "OBJ-03",
+      "description": "Train 200 community health workers on the platform",
+      "measurable_criteria": "200 certified users; 80% adoption in pilot districts"
+    }
+  ],
+  "scope": {
+    "in_scope": [
+      "FHIR API gateway and patient demographics module",
+      "Clinic onboarding portal and CHW mobile interface",
+      "Integration with NHIS billing endpoints",
+      "Training program and operational runbooks"
+    ],
+    "out_of_scope": [
+      "Payroll and HR systems",
+      "Legacy paper record digitization backlog",
+      "National e-prescription rollout (Phase 2)"
+    ],
+    "boundaries": "Platform terminates at approved ministry firewall endpoints; clinics connect via VPN or approved cloud links."
+  },
+  "constraints": [
+    "Must comply with Uganda Data Protection and Health Information regulations",
+    "Total budget capped at USD 59,400 for Phase 1",
+    "All production releases require sponsor sign-off"
+  ],
+  "assumptions": [
+    "Existing NHIS APIs remain stable through project duration",
+    "Pilot clinics provide dedicated IT liaisons",
+    "Cloud infrastructure procured within first 60 days",
+    "Ministry security review completes before go-live"
+  ],
+  "success_criteria": [
+    "50 clinics connected with verified data exchange",
+    "Median record retrieval under 2 seconds",
+    "200 CHWs trained and actively using the platform",
+    "Zero critical security findings at go-live audit"
+  ],
+  "budget": {
+    "total": 59400,
+    "currency": "USD",
+    "breakdown": {
+      "personnel": 31000,
+      "hardware": 18500,
+      "software": 1500,
+      "training": 3000,
+      "contingency": 5400
+    }
+  },
+  "approvals": [
+    {
+      "role": "Project Sponsor",
+      "name": "Dr. James Okello",
+      "date": "2026-01-05"
+    },
+    {
+      "role": "Project Manager",
+      "name": "Sarah Nakato",
+      "date": "2026-01-05"
+    }
+  ],
+  "stakeholders": [
+    {
+      "id": "SH-01",
+      "name": "Dr. James Okello",
+      "role": "Project Sponsor",
+      "organization": "Min. of Health",
+      "power": "High",
+      "interest": "High",
+      "expectations": "On-time delivery, policy alignment, transparent reporting"
+    },
+    {
+      "id": "SH-02",
+      "name": "Dr. Sarah Nambi",
+      "role": "Policy Maker",
+      "organization": "Min. of Health",
+      "power": "High",
+      "interest": "Low",
+      "expectations": "Regulatory compliance and audit readiness"
+    },
+    {
+      "id": "SH-03",
+      "name": "NHIS Leadership",
+      "role": "Insurance Partner",
+      "organization": "NHIS",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Accurate billing integration and cost control"
+    },
+    {
+      "id": "SH-04",
+      "name": "District Health Officers",
+      "role": "Regional Coordinators",
+      "organization": "Regional Health Offices",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Reliable clinic connectivity and training support"
+    },
+    {
+      "id": "SH-05",
+      "name": "Community Health Workers",
+      "role": "End Users",
+      "organization": "Pilot Clinics",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Fast, simple access to patient records"
+    }
+  ],
+  "team": [
+    {
+      "id": "SPONSOR",
+      "name": "Dr. James Okello",
+      "role": "Project Sponsor",
+      "reports_to": null
+    },
+    {
+      "id": "PM",
+      "name": "Sarah Nakato",
+      "role": "Project Manager",
+      "reports_to": "SPONSOR"
+    },
+    {
+      "id": "TL-TECH",
+      "name": "David Mukasa",
+      "role": "Technical Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "TL-QA",
+      "name": "Grace Achieng",
+      "role": "QA Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "BA-01",
+      "name": "Peter Okello",
+      "role": "Business Analyst",
+      "reports_to": "PM"
+    }
+  ],
+  "risks": [
+    {
+      "id": "RSK-01",
+      "description": "NHIS API changes break billing integration",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain adapter layer; monthly API compatibility review with NHIS"
+    },
+    {
+      "id": "RSK-02",
+      "description": "Clinic connectivity delays pilot rollout",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Pre-site surveys; backup mobile hotspot kits for 10 clinics"
+    },
+    {
+      "id": "RSK-03",
+      "description": "Security audit findings delay go-live",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Early penetration test in Q2; remediate findings before UAT"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Project Kickoff",
+      "date": "2026-01-01",
+      "deliverable": "Charter approved; team mobilized",
+      "is_critical": true
+    },
+    {
+      "id": "M2",
+      "name": "Architecture Sign-off",
+      "date": "2026-03-15",
+      "deliverable": "Solution architecture and security baseline approved",
+      "is_critical": true
+    },
+    {
+      "id": "M3",
+      "name": "Pilot Go-Live",
+      "date": "2026-09-01",
+      "deliverable": "10 clinics live on platform",
+      "is_critical": true
+    },
+    {
+      "id": "M4",
+      "name": "Phase 1 Complete",
+      "date": "2026-12-15",
+      "deliverable": "50 clinics connected; training complete",
+      "is_critical": false
+    }
+  ],
+  "diagrams": {
+    "problem_tree": {},
+    "stakeholder_map": {},
+    "system_context": {
+      "description": "Da'atSNA sits at the center of clinic, NHIS, ministry, and CHW workflows."
+    },
+    "org_chart": {},
+    "scope_boundary": {},
+    "milestone_timeline": {}
+  },
+  "visio_deck": {
+    "page_size": "A3",
+    "orientation": "landscape",
+    "include_risk_matrix": true,
+    "theme": "corporate_blue"
+  },
+  "diagram_descriptions": {
+    "problem_tree": {
+      "id": "problem_tree",
+      "title": "Problem Tree",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "nodes": [
+        {
+          "id": "TRUNK",
+          "label": "Enable every community health worker in Uganda to access trusted, interoperable patient data through a secure national platform.",
+          "shape": "box",
+          "fill": "#FFCC80",
+          "border": "#F57C00",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "RSK-01",
+          "label": "RSK-01: NHIS API changes break billing integration",
+          "shape": "box",
+          "fill": "#EF9A9A",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": "roots"
+        },
+        {
+          "id": "RSK-02",
+          "label": "RSK-02: Clinic connectivity delays pilot rollout",
+          "shape": "box",
+          "fill": "#EF9A9A",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": "roots"
+        },
+        {
+          "id": "RSK-03",
+          "label": "RSK-03: Security audit findings delay go-live",
+          "shape": "box",
+          "fill": "#EF9A9A",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": "roots"
+        },
+        {
+          "id": "OBJ-01",
+          "label": "OBJ-01: Deliver FHIR-compliant data exchange between 50 pilot clinic",
+          "shape": "box",
+          "fill": "#90CAF9",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": "branches"
+        },
+        {
+          "id": "OBJ-02",
+          "label": "OBJ-02: Reduce patient record retrieval time for CHWs",
+          "shape": "box",
+          "fill": "#90CAF9",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": "branches"
+        },
+        {
+          "id": "OBJ-03",
+          "label": "OBJ-03: Train 200 community health workers on the platform",
+          "shape": "box",
+          "fill": "#90CAF9",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": "branches"
+        },
+        {
+          "id": "L1",
+          "label": "50 clinics connected with verified data exchange",
+          "shape": "box",
+          "fill": "#A5D6A7",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": "leaves"
+        },
+        {
+          "id": "L2",
+          "label": "Median record retrieval under 2 seconds",
+          "shape": "box",
+          "fill": "#A5D6A7",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": "leaves"
+        },
+        {
+          "id": "L3",
+          "label": "200 CHWs trained and actively using the platform",
+          "shape": "box",
+          "fill": "#A5D6A7",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": "leaves"
+        }
+      ],
+      "edges": [
+        {
+          "from": "RSK-01",
+          "to": "TRUNK",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "RSK-02",
+          "to": "TRUNK",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "RSK-03",
+          "to": "TRUNK",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "TRUNK",
+          "to": "OBJ-01",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "TRUNK",
+          "to": "OBJ-02",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "TRUNK",
+          "to": "OBJ-03",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-01",
+          "to": "L1",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-02",
+          "to": "L1",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-03",
+          "to": "L1",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-01",
+          "to": "L2",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-02",
+          "to": "L2",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-03",
+          "to": "L2",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-01",
+          "to": "L3",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-02",
+          "to": "L3",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "OBJ-03",
+          "to": "L3",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        }
+      ],
+      "source": null,
+      "caption": "Figure 4: Problem Tree"
+    },
+    "stakeholder_matrix": {
+      "id": "stakeholder_matrix",
+      "title": "Stakeholder Power-Interest Matrix",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "nodes": [
+        {
+          "id": "Q_HH",
+          "label": "KEY PLAYERS",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#666666",
+          "text_color": "#000000",
+          "group": "grid"
+        },
+        {
+          "id": "Q_HL",
+          "label": "KEEP SATISFIED",
+          "shape": "box",
+          "fill": "#FFE0B2",
+          "border": "#666666",
+          "text_color": "#000000",
+          "group": "grid"
+        },
+        {
+          "id": "Q_LH",
+          "label": "KEEP INFORMED",
+          "shape": "box",
+          "fill": "#FFF9C4",
+          "border": "#666666",
+          "text_color": "#000000",
+          "group": "grid"
+        },
+        {
+          "id": "Q_LL",
+          "label": "MONITOR",
+          "shape": "box",
+          "fill": "#C8E6C9",
+          "border": "#666666",
+          "text_color": "#000000",
+          "group": "grid"
+        },
+        {
+          "id": "SH-01",
+          "label": "Dr. James Okello\\nProject Sponsor",
+          "shape": "box",
+          "fill": "#FFFFFF",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "SH-02",
+          "label": "Dr. Sarah Nambi\\nPolicy Maker",
+          "shape": "box",
+          "fill": "#FFFFFF",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "SH-03",
+          "label": "NHIS Leadership\\nInsurance Partner",
+          "shape": "box",
+          "fill": "#FFFFFF",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "SH-04",
+          "label": "District Health Officers\\nRegional Coordinators",
+          "shape": "box",
+          "fill": "#FFFFFF",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "SH-05",
+          "label": "Community Health Workers\\nEnd Users",
+          "shape": "box",
+          "fill": "#FFFFFF",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        }
+      ],
+      "edges": [],
+      "source": null,
+      "caption": "Figure 2: Power-Interest Matrix"
+    },
+    "scope_boundary": {
+      "id": "scope_boundary",
+      "title": "Scope Boundary",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "LR",
+      "nodes": [
+        {
+          "id": "OUTER",
+          "label": "OUT OF SCOPE",
+          "shape": "box",
+          "fill": "#FFEBEE",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "INNER",
+          "label": "IN SCOPE",
+          "shape": "box",
+          "fill": "#E8F5E9",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "IN_0",
+          "label": "FHIR API gateway and patient demographics module",
+          "shape": "box",
+          "fill": "#C8E6C9",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "IN_1",
+          "label": "Clinic onboarding portal and CHW mobile interface",
+          "shape": "box",
+          "fill": "#C8E6C9",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "IN_2",
+          "label": "Integration with NHIS billing endpoints",
+          "shape": "box",
+          "fill": "#C8E6C9",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "IN_3",
+          "label": "Training program and operational runbooks",
+          "shape": "box",
+          "fill": "#C8E6C9",
+          "border": "#2E7D32",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "OUT_0",
+          "label": "Payroll and HR systems",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "OUT_1",
+          "label": "Legacy paper record digitization backlog",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "OUT_2",
+          "label": "National e-prescription rollout (Phase 2)",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        }
+      ],
+      "edges": [],
+      "source": null,
+      "caption": "Figure 1: Scope Boundaries"
+    },
+    "org_chart": {
+      "id": "org_chart",
+      "title": "Project Org Chart",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "nodes": [
+        {
+          "id": "SPONSOR",
+          "label": "Dr. James Okello\\nProject Sponsor",
+          "shape": "box",
+          "fill": "#64B5F6",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "PM",
+          "label": "Sarah Nakato\\nProject Manager",
+          "shape": "box",
+          "fill": "#64B5F6",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "TL-TECH",
+          "label": "David Mukasa\\nTechnical Lead",
+          "shape": "box",
+          "fill": "#64B5F6",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "TL-QA",
+          "label": "Grace Achieng\\nQA Lead",
+          "shape": "box",
+          "fill": "#64B5F6",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "BA-01",
+          "label": "Peter Okello\\nBusiness Analyst",
+          "shape": "box",
+          "fill": "#64B5F6",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "SPONSOR",
+          "to": "PM",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "PM",
+          "to": "TL-TECH",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "PM",
+          "to": "TL-QA",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "PM",
+          "to": "BA-01",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        }
+      ],
+      "source": null,
+      "caption": "Figure 3: Project Organization"
+    },
+    "milestone_timeline": {
+      "id": "milestone_timeline",
+      "title": "Milestone Timeline",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "LR",
+      "nodes": [
+        {
+          "id": "M1",
+          "label": "2026-01-01\\nProject Kickoff",
+          "shape": "diamond",
+          "fill": "#E53935",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "M2",
+          "label": "2026-03-15\\nArchitecture Sign-off",
+          "shape": "diamond",
+          "fill": "#E53935",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "M3",
+          "label": "2026-09-01\\nPilot Go-Live",
+          "shape": "diamond",
+          "fill": "#E53935",
+          "border": "#E53935",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "M4",
+          "label": "2026-12-15\\nPhase 1 Complete",
+          "shape": "diamond",
+          "fill": "#1565C0",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "M1",
+          "to": "M2",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "M2",
+          "to": "M3",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "M3",
+          "to": "M4",
+          "label": "",
+          "style": "solid",
+          "color": "#666666"
+        }
+      ],
+      "source": null,
+      "caption": "Figure 6: Milestone Timeline"
+    },
+    "risk_matrix": {
+      "id": "risk_matrix",
+      "title": "Risk Matrix",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "nodes": [
+        {
+          "id": "RSK-01",
+          "label": "RSK-01",
+          "shape": "circle",
+          "fill": "#FF7043",
+          "border": "#333333",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "RSK-02",
+          "label": "RSK-02",
+          "shape": "circle",
+          "fill": "#FF7043",
+          "border": "#333333",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "RSK-03",
+          "label": "RSK-03",
+          "shape": "circle",
+          "fill": "#FF7043",
+          "border": "#333333",
+          "text_color": "#000000",
+          "group": null
+        }
+      ],
+      "edges": [],
+      "source": null,
+      "caption": "Figure 5: Risk Matrix"
+    },
+    "system_context": {
+      "id": "system_context",
+      "title": "System Context",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "LR",
+      "nodes": [
+        {
+          "id": "SYSTEM",
+          "label": "Da'atSNA Community Data Platform",
+          "shape": "box",
+          "fill": "#1565C0",
+          "border": "#0D47A1",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "EXT1",
+          "label": "External Stakeholders",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "EXT2",
+          "label": "NHIS / Billing",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        },
+        {
+          "id": "EXT3",
+          "label": "Clinic Systems",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#000000",
+          "group": null
+        }
+      ],
+      "edges": [
+        {
+          "from": "EXT1",
+          "to": "SYSTEM",
+          "label": "policy",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "EXT2",
+          "to": "SYSTEM",
+          "label": "billing",
+          "style": "solid",
+          "color": "#666666"
+        },
+        {
+          "from": "SYSTEM",
+          "to": "EXT3",
+          "label": "patient data",
+          "style": "solid",
+          "color": "#666666"
+        }
+      ],
+      "source": null,
+      "caption": "Figure: System Context \u2014 System under development"
+    }
+  }
+}

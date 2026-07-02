@@ -1,0 +1,76 @@
+/* 
+ * KY Food Delivery System
+ * Kitchen Portal Layout Styles
+ */
+
+.kitchen-layout {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-neutral-offwhite);
+  color: var(--color-neutral-brown);
+}
+
+.kitchen-layout__sidebar {
+  width: 260px;
+  background-color: var(--color-neutral-brown);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl) 0;
+  flex-shrink: 0;
+}
+
+.kitchen-layout__logo {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-yellow);
+  padding: 0 var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.kitchen-layout__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.kitchen-layout__nav-link {
+  padding: var(--spacing-md) var(--spacing-xl);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border-left: 4px solid transparent;
+}
+
+.kitchen-layout__nav-link:hover {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.kitchen-layout__nav-link--active {
+  color: var(--color-primary-yellow);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left-color: var(--color-primary-yellow);
+  font-weight: 600;
+}
+
+.kitchen-layout__main {
+  background-color: var(--color-neutral-offwhite);
+}
+
+.kitchen-layout__header {
+  padding: var(--spacing-xl) var(--spacing-xxl);
+  background-color: var(--color-white);
+  border-bottom: 1px solid rgba(59, 42, 26, 0.08);
+}
+
+.kitchen-layout__header h1 {
+  margin: 0;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.75rem;
+  color: var(--color-neutral-brown);
+}
+
+.kitchen-layout__body {
+  padding: var(--spacing-xxl);
+}

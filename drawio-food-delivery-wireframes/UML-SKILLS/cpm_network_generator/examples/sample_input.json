@@ -1,0 +1,128 @@
+{
+  "cpm_network": {
+    "title": "CPM Network Diagram - Critical Path Method",
+    "project_name": "Healthcare Ecosystem Project",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "description": "Activity network diagram with critical path",
+    
+    "activities": [
+      {
+        "id": "S",
+        "name": "Start",
+        "duration": 0,
+        "is_start": true
+      },
+      {
+        "id": "A",
+        "name": "Develop Charter",
+        "duration": 2,
+        "predecessors": ["S"]
+      },
+      {
+        "id": "B",
+        "name": "Create Schedule",
+        "duration": 4,
+        "predecessors": [{"id": "A", "type": "FS", "lag": 0}]
+      },
+      {
+        "id": "C",
+        "name": "Define Budget",
+        "duration": 3,
+        "predecessors": [{"id": "A", "type": "FS", "lag": 0}]
+      },
+      {
+        "id": "D",
+        "name": "Requirements Elicitation",
+        "duration": 6,
+        "predecessors": ["B"]
+      },
+      {
+        "id": "E",
+        "name": "Requirements Analysis",
+        "duration": 4,
+        "predecessors": ["D"]
+      },
+      {
+        "id": "F",
+        "name": "Requirements Specification",
+        "duration": 3,
+        "predecessors": ["D"]
+      },
+      {
+        "id": "G",
+        "name": "Database Design",
+        "duration": 5,
+        "predecessors": ["E", "F"]
+      },
+      {
+        "id": "H",
+        "name": "API Design",
+        "duration": 6,
+        "predecessors": ["G"]
+      },
+      {
+        "id": "I",
+        "name": "UI/UX Design",
+        "duration": 7,
+        "predecessors": ["H"]
+      },
+      {
+        "id": "J",
+        "name": "Backend Development",
+        "duration": 12,
+        "predecessors": ["H"]
+      },
+      {
+        "id": "K",
+        "name": "Frontend Development",
+        "duration": 10,
+        "predecessors": ["I"]
+      },
+      {
+        "id": "L",
+        "name": "Integration",
+        "duration": 4,
+        "predecessors": ["J", "K"]
+      },
+      {
+        "id": "M",
+        "name": "Testing",
+        "duration": 6,
+        "predecessors": ["L"]
+      },
+      {
+        "id": "N",
+        "name": "Deployment",
+        "duration": 3,
+        "predecessors": ["M"]
+      },
+      {
+        "id": "END",
+        "name": "End",
+        "duration": 0,
+        "predecessors": ["N"],
+        "is_end": true
+      }
+    ],
+
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 9,
+      "critical_path_color": "#E53935",
+      "show_es_ef": true,
+      "show_ls_lf": true,
+      "show_slack": true,
+      "show_predecessors": true
+    },
+
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5,
+      "level_spacing": 3.0,
+      "node_spacing": 1.2
+    }
+  }
+}

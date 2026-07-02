@@ -1,0 +1,180 @@
+{
+  "diagram_description": {
+    "id": "stakeholder_matrix",
+    "title": "Stakeholder Power-Interest Matrix",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "caption": "Figure 2: Stakeholder Power-Interest Matrix",
+    "nodes": [
+      {
+        "id": "SH-01",
+        "label": "Patients",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-02",
+        "label": "Health Facilities",
+        "shape": "box",
+        "fill": "#E8F5E9",
+        "border": "#2E7D32",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-03",
+        "label": "Healthcare Personnel",
+        "shape": "box",
+        "fill": "#FFF3E0",
+        "border": "#E65100",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-04",
+        "label": "System Administrators",
+        "shape": "box",
+        "fill": "#F3E5F5",
+        "border": "#7B1FA2",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-05",
+        "label": "Ministry of Health",
+        "shape": "box",
+        "fill": "#FFEBEE",
+        "border": "#C62828",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-06",
+        "label": "National Drug Authority",
+        "shape": "box",
+        "fill": "#FFEBEE",
+        "border": "#C62828",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-07",
+        "label": "Auditors",
+        "shape": "box",
+        "fill": "#ECEFF1",
+        "border": "#455A64",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-08",
+        "label": "Researchers",
+        "shape": "box",
+        "fill": "#E0F7FA",
+        "border": "#00838F",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-09",
+        "label": "Developers",
+        "shape": "box",
+        "fill": "#E8EAF6",
+        "border": "#283593",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-10",
+        "label": "Development Partners / Donors",
+        "shape": "box",
+        "fill": "#FFF8E1",
+        "border": "#F9A825",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-11",
+        "label": "Civil Society & Patient Advocacy",
+        "shape": "box",
+        "fill": "#F1F8E9",
+        "border": "#558B2F",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SH-12",
+        "label": "Pharmaceutical Suppliers",
+        "shape": "box",
+        "fill": "#EDE7F6",
+        "border": "#5E35B1",
+        "text_color": "#333333"
+      }
+    ],
+    "edges": [
+      {
+        "from": "SH-01",
+        "to": "SH-05",
+        "label": "High Interest",
+        "color": "#1565C0",
+        "style": "dashed"
+      },
+      {
+        "from": "SH-02",
+        "to": "SH-03",
+        "label": "Collaboration",
+        "color": "#2E7D32",
+        "style": "solid"
+      },
+      {
+        "from": "SH-04",
+        "to": "SH-01",
+        "label": "Supports",
+        "color": "#7B1FA2",
+        "style": "solid"
+      },
+      {
+        "from": "SH-05",
+        "to": "SH-06",
+        "label": "Co-regulate",
+        "color": "#C62828",
+        "style": "solid"
+      },
+      {
+        "from": "SH-07",
+        "to": "SH-04",
+        "label": "Audits",
+        "color": "#455A64",
+        "style": "dashed"
+      },
+      {
+        "from": "SH-08",
+        "to": "SH-09",
+        "label": "Uses APIs",
+        "color": "#00838F",
+        "style": "dashed"
+      },
+      {
+        "from": "SH-09",
+        "to": "SH-04",
+        "label": "Integrates with",
+        "color": "#283593",
+        "style": "solid"
+      },
+      {
+        "from": "SH-10",
+        "to": "SH-05",
+        "label": "Funds & Oversees",
+        "color": "#F9A825",
+        "style": "dashed"
+      },
+      {
+        "from": "SH-11",
+        "to": "SH-01",
+        "label": "Advocates for",
+        "color": "#558B2F",
+        "style": "dashed"
+      },
+      {
+        "from": "SH-12",
+        "to": "SH-02",
+        "label": "Supplies",
+        "color": "#5E35B1",
+        "style": "solid"
+      }
+    ]
+  }
+}

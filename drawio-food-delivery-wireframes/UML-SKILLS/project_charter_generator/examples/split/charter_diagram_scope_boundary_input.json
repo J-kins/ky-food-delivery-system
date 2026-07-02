@@ -1,0 +1,95 @@
+{
+  "diagram_description": {
+    "id": "scope_boundary",
+    "title": "Scope Boundary",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "LR",
+    "nodes": [
+      {
+        "id": "OUTER",
+        "label": "OUT OF SCOPE",
+        "shape": "box",
+        "fill": "#FFEBEE",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "INNER",
+        "label": "IN SCOPE",
+        "shape": "box",
+        "fill": "#E8F5E9",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "IN_0",
+        "label": "FHIR API gateway and patient demographics module",
+        "shape": "box",
+        "fill": "#C8E6C9",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "IN_1",
+        "label": "Clinic onboarding portal and CHW mobile interface",
+        "shape": "box",
+        "fill": "#C8E6C9",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "IN_2",
+        "label": "Integration with NHIS billing endpoints",
+        "shape": "box",
+        "fill": "#C8E6C9",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "IN_3",
+        "label": "Training program and operational runbooks",
+        "shape": "box",
+        "fill": "#C8E6C9",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "OUT_0",
+        "label": "Payroll and HR systems",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "OUT_1",
+        "label": "Legacy paper record digitization backlog",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "OUT_2",
+        "label": "National e-prescription rollout (Phase 2)",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      }
+    ],
+    "edges": [],
+    "source": null,
+    "caption": "Figure 1: Scope Boundaries"
+  }
+}

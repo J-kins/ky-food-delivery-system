@@ -1,0 +1,204 @@
+{
+  "communication_diagram": {
+    "title": "Communication Diagram - Patient Consultation",
+    "system_name": "Healthcare Ecosystem",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "description": "Patient consultation booking and management flow",
+    
+    "participants": [
+      {
+        "id": "P1",
+        "name": "Patient",
+        "class_name": "Patient",
+        "instance_name": "patient",
+        "type": "actor",
+        "stereotype": "<<actor>>",
+        "x": 8.0,
+        "y": 15.0,
+        "width": 2.5,
+        "height": 1.2
+      },
+      {
+        "id": "P2",
+        "name": "Appointment System",
+        "class_name": "AppointmentSystem",
+        "instance_name": "scheduler",
+        "type": "control",
+        "stereotype": "<<control>>",
+        "x": 15.0,
+        "y": 10.0,
+        "width": 3.0,
+        "height": 1.4
+      },
+      {
+        "id": "P3",
+        "name": "Availability Service",
+        "class_name": "AvailabilityService",
+        "instance_name": "calendar",
+        "type": "entity",
+        "stereotype": "<<entity>>",
+        "x": 22.0,
+        "y": 15.0,
+        "width": 3.0,
+        "height": 1.4
+      },
+      {
+        "id": "P4",
+        "name": "Doctor",
+        "class_name": "Doctor",
+        "instance_name": "physician",
+        "type": "actor",
+        "stereotype": "<<actor>>",
+        "x": 28.0,
+        "y": 10.0,
+        "width": 2.5,
+        "height": 1.2
+      },
+      {
+        "id": "P5",
+        "name": "Medical Record System",
+        "class_name": "MedicalRecordSystem",
+        "instance_name": "emr",
+        "type": "entity",
+        "stereotype": "<<entity>>",
+        "x": 22.0,
+        "y": 25.0,
+        "width": 3.0,
+        "height": 1.4
+      }
+    ],
+    
+    "links": [
+      {
+        "id": "L1",
+        "source": "P1",
+        "target": "P2",
+        "type": "association",
+        "line_style": "solid"
+      },
+      {
+        "id": "L2",
+        "source": "P2",
+        "target": "P3",
+        "type": "association",
+        "line_style": "solid"
+      },
+      {
+        "id": "L3",
+        "source": "P2",
+        "target": "P4",
+        "type": "association",
+        "line_style": "solid"
+      },
+      {
+        "id": "L4",
+        "source": "P2",
+        "target": "P5",
+        "type": "association",
+        "line_style": "solid"
+      },
+      {
+        "id": "L5",
+        "source": "P4",
+        "target": "P5",
+        "type": "dependency",
+        "line_style": "dashed"
+      }
+    ],
+    
+    "messages": [
+      {
+        "id": "M1",
+        "from": "P1",
+        "to": "P2",
+        "sequence": "1",
+        "label": "Book Appointment",
+        "type": "synchronous",
+        "return_value": "confirmation"
+      },
+      {
+        "id": "M2",
+        "from": "P2",
+        "to": "P3",
+        "sequence": "1.1",
+        "label": "Check Availability",
+        "type": "synchronous",
+        "return_value": "slots"
+      },
+      {
+        "id": "M3",
+        "from": "P3",
+        "to": "P2",
+        "sequence": "1.1.1",
+        "label": "Return Available Slots",
+        "type": "synchronous",
+        "return_value": "List<Slot>"
+      },
+      {
+        "id": "M4",
+        "from": "P2",
+        "to": "P1",
+        "sequence": "1.2",
+        "label": "Show Available Slots",
+        "type": "synchronous"
+      },
+      {
+        "id": "M5",
+        "from": "P1",
+        "to": "P2",
+        "sequence": "1.3",
+        "label": "Select Slot and Book",
+        "type": "synchronous",
+        "return_value": "Booking"
+      },
+      {
+        "id": "M6",
+        "from": "P2",
+        "to": "P4",
+        "sequence": "1.4",
+        "label": "Schedule Consultation",
+        "type": "synchronous"
+      },
+      {
+        "id": "M7",
+        "from": "P2",
+        "to": "P5",
+        "sequence": "1.5",
+        "label": "Record Booking",
+        "type": "synchronous"
+      },
+      {
+        "id": "M8",
+        "from": "P4",
+        "to": "P5",
+        "sequence": "2",
+        "label": "Record Consultation",
+        "type": "synchronous",
+        "guard": "consultation_complete"
+      }
+    ],
+    
+    "groups": [
+      {
+        "id": "G1",
+        "name": "Healthcare System",
+        "participants": ["P2", "P3", "P4", "P5"]
+      }
+    ],
+    
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 9,
+      "shadow_enabled": true
+    },
+    
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 1.0,
+      "auto_layout": false
+    }
+  }
+}

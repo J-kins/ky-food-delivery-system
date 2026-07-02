@@ -1,0 +1,210 @@
+{
+  "diagram_description": {
+    "id": "problem_tree",
+    "title": "Problem Tree",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "nodes": [
+      {
+        "id": "TRUNK",
+        "label": "Enable every community health worker in Uganda to access trusted, interoperable patient data through a secure national platform.",
+        "shape": "box",
+        "fill": "#FFCC80",
+        "border": "#F57C00",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "RSK-01",
+        "label": "RSK-01: NHIS API changes break billing integration",
+        "shape": "box",
+        "fill": "#EF9A9A",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": "roots"
+      },
+      {
+        "id": "RSK-02",
+        "label": "RSK-02: Clinic connectivity delays pilot rollout",
+        "shape": "box",
+        "fill": "#EF9A9A",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": "roots"
+      },
+      {
+        "id": "RSK-03",
+        "label": "RSK-03: Security audit findings delay go-live",
+        "shape": "box",
+        "fill": "#EF9A9A",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": "roots"
+      },
+      {
+        "id": "OBJ-01",
+        "label": "OBJ-01: Deliver FHIR-compliant data exchange between 50 pilot clinic",
+        "shape": "box",
+        "fill": "#90CAF9",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": "branches"
+      },
+      {
+        "id": "OBJ-02",
+        "label": "OBJ-02: Reduce patient record retrieval time for CHWs",
+        "shape": "box",
+        "fill": "#90CAF9",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": "branches"
+      },
+      {
+        "id": "OBJ-03",
+        "label": "OBJ-03: Train 200 community health workers on the platform",
+        "shape": "box",
+        "fill": "#90CAF9",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": "branches"
+      },
+      {
+        "id": "L1",
+        "label": "50 clinics connected with verified data exchange",
+        "shape": "box",
+        "fill": "#A5D6A7",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": "leaves"
+      },
+      {
+        "id": "L2",
+        "label": "Median record retrieval under 2 seconds",
+        "shape": "box",
+        "fill": "#A5D6A7",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": "leaves"
+      },
+      {
+        "id": "L3",
+        "label": "200 CHWs trained and actively using the platform",
+        "shape": "box",
+        "fill": "#A5D6A7",
+        "border": "#2E7D32",
+        "text_color": "#000000",
+        "group": "leaves"
+      }
+    ],
+    "edges": [
+      {
+        "from": "RSK-01",
+        "to": "TRUNK",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "RSK-02",
+        "to": "TRUNK",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "RSK-03",
+        "to": "TRUNK",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "TRUNK",
+        "to": "OBJ-01",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "TRUNK",
+        "to": "OBJ-02",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "TRUNK",
+        "to": "OBJ-03",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-01",
+        "to": "L1",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-02",
+        "to": "L1",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-03",
+        "to": "L1",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-01",
+        "to": "L2",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-02",
+        "to": "L2",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-03",
+        "to": "L2",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-01",
+        "to": "L3",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-02",
+        "to": "L3",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "OBJ-03",
+        "to": "L3",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      }
+    ],
+    "source": null,
+    "caption": "Figure 4: Problem Tree"
+  }
+}

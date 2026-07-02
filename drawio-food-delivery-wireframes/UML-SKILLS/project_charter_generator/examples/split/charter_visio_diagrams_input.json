@@ -1,0 +1,18 @@
+{
+  "diagrams": {
+    "problem_tree": {},
+    "stakeholder_map": {},
+    "system_context": {
+      "description": "Da'atSNA sits at the center of clinic, NHIS, ministry, and CHW workflows."
+    },
+    "org_chart": {},
+    "scope_boundary": {},
+    "milestone_timeline": {}
+  },
+  "visio_deck": {
+    "page_size": "A3",
+    "orientation": "landscape",
+    "include_risk_matrix": true,
+    "theme": "corporate_blue"
+  }
+}

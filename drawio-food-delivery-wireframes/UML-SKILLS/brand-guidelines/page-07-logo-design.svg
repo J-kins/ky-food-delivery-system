@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">01  LOGO</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">07</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Logo Design</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">The master logo consists of the logomark and wordmark, used together.</text>
+  <g id="logo-main">
+    <rect x="72" y="192" width="480" height="252" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="72" y1="192" x2="552" y2="444" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="552" y1="192" x2="72" y2="444" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="312" y="322" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">PRIMARY LOGO</text>
+  </g>
+  <text id="var-hdr" x="616" y="192" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Logo Variations</text>
+  <line id="var-rule" x1="616" y1="206" x2="816" y2="206" stroke="#556B4E" stroke-width="1.5"/>
+  <g id="logo-v1">
+    <rect x="616" y="224" width="248" height="100" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="616" y1="224" x2="864" y2="324" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="864" y1="224" x2="616" y2="324" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="740" y="278" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">HORIZONTAL</text>
+  </g>
+  <g id="logo-v2">
+    <rect x="616" y="344" width="248" height="100" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="616" y1="344" x2="864" y2="444" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="864" y1="344" x2="616" y2="444" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="740" y="398" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">STACKED</text>
+  </g>
+  <text id="cs-hdr" x="72" y="472" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Clear Space</text>
+  <line id="cs-rule" x1="72" y1="485" x2="192" y2="485" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="cs-d1" x="72" y="505" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Maintain clear space equal to</text>
+  <text id="cs-d2" x="72" y="521" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">the height of the mark.</text>
+  <text id="ms-hdr" x="352" y="472" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Minimum Size</text>
+  <line id="ms-rule" x1="352" y1="485" x2="472" y2="485" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="ms-d1" x="352" y="505" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Digital: 24px height min.</text>
+  <text id="ms-d2" x="352" y="521" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Print:   8mm height min.</text>
+  <text id="fo-hdr" x="616" y="472" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">File Formats</text>
+  <line id="fo-rule" x1="616" y1="485" x2="816" y2="485" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="fo-d1" x="616" y="505" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">SVG — Digital / Web</text>
+  <text id="fo-d2" x="616" y="521" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">EPS — Print / Vendors</text>
+  <text id="fo-d3" x="616" y="537" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">PNG — Social / Screens</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

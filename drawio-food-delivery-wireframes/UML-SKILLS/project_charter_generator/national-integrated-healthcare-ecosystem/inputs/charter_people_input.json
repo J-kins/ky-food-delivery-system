@@ -1,0 +1,198 @@
+{
+  "stakeholders": [
+    {
+      "id": "SH-01",
+      "name": "Patients",
+      "role": "End Users",
+      "organization": "General Public",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Access to healthcare services, medical records, emergency assistance, and telemedicine"
+    },
+    {
+      "id": "SH-02",
+      "name": "Healthcare Facilities",
+      "role": "Service Providers",
+      "organization": "Hospitals, Clinics, Pharmacies, Laboratories",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Operational efficiency, patient management, inventory control, regulatory compliance"
+    },
+    {
+      "id": "SH-03",
+      "name": "Healthcare Personnel",
+      "role": "Clinical Staff",
+      "organization": "Doctors, Nurses, Pharmacists, Community Health Workers",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Clinical workflow efficiency, decision support, patient records access, telemedicine"
+    },
+    {
+      "id": "SH-04",
+      "name": "System Administrators",
+      "role": "Platform Operators",
+      "organization": "ICT Department",
+      "power": "High",
+      "interest": "High",
+      "expectations": "System reliability, security, maintainability, monitoring"
+    },
+    {
+      "id": "SH-05",
+      "name": "Ministry of Health",
+      "role": "Regulator",
+      "organization": "Government",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Compliance, public health surveillance, national health analytics"
+    },
+    {
+      "id": "SH-06",
+      "name": "National Drug Authority",
+      "role": "Regulator",
+      "organization": "Government",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Medicine safety monitoring, pharmacovigilance, licensing oversight"
+    },
+    {
+      "id": "SH-07",
+      "name": "Auditors",
+      "role": "Oversight",
+      "organization": "Internal/External Audit",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Audit trail integrity, financial accountability, compliance verification"
+    },
+    {
+      "id": "SH-08",
+      "name": "Researchers",
+      "role": "Data Users",
+      "organization": "Academic/Research Institutions",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Access to anonymized health data for research"
+    },
+    {
+      "id": "SH-09",
+      "name": "Developers",
+      "role": "Integrators",
+      "organization": "Third-party Developers, System Integrators",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "API access, documentation, SDKs, sandbox environment"
+    },
+    {
+      "id": "SH-10",
+      "name": "Development Partners / Donors",
+      "role": "Funding & Technical Assistance Partners",
+      "organization": "WHO, USAID, Global Fund, World Bank",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Transparent fund utilization, measurable health outcomes, donor reporting compliance"
+    },
+    {
+      "id": "SH-11",
+      "name": "Civil Society & Patient Advocacy Groups",
+      "role": "Community Representatives",
+      "organization": "NGOs, Patient Advocacy Networks",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Equitable access, patient rights protection, community engagement during rollout"
+    },
+    {
+      "id": "SH-12",
+      "name": "Pharmaceutical Suppliers & Distributors",
+      "role": "Supply Chain Partners",
+      "organization": "Licensed Wholesalers and Manufacturers",
+      "power": "Low",
+      "interest": "Low",
+      "expectations": "Integration with inventory and ordering systems, timely payment processing"
+    }
+  ],
+  "team": [
+    {
+      "id": "SPONSOR",
+      "name": "Permanent Secretary",
+      "role": "Project Sponsor",
+      "reports_to": null
+    },
+    {
+      "id": "PM",
+      "name": "Digital Health Division Lead",
+      "role": "Project Manager",
+      "reports_to": "SPONSOR"
+    },
+    {
+      "id": "ARCH",
+      "name": "Chief Architect",
+      "role": "Lead Architect",
+      "reports_to": "PM"
+    },
+    {
+      "id": "BACKEND",
+      "name": "Backend Lead",
+      "role": "Backend Development Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "FRONTEND",
+      "name": "Frontend Lead",
+      "role": "Frontend Development Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "GIS",
+      "name": "GIS Specialist",
+      "role": "GIS Development Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "SEC",
+      "name": "Security Lead",
+      "role": "Cybersecurity & Information Security Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "DEVREL",
+      "name": "Developer Relations",
+      "role": "Developer Experience Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "QA",
+      "name": "QA Lead",
+      "role": "Quality Assurance Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "OPS",
+      "name": "DevOps Lead",
+      "role": "Operations and Infrastructure Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "DPO",
+      "name": "Data Protection Officer",
+      "role": "Privacy & Compliance Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "TRAIN",
+      "name": "Training & Change Management Lead",
+      "role": "Capacity Building Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "ME",
+      "name": "Monitoring & Evaluation Lead",
+      "role": "M&E Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "PROC",
+      "name": "Procurement Lead",
+      "role": "Procurement & Vendor Management Lead",
+      "reports_to": "PM"
+    }
+  ]
+}

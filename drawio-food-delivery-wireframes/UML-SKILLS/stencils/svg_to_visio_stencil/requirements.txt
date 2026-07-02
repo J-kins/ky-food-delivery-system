@@ -1,0 +1,6 @@
+aspose-diagram>=23.10.0
+JPype1>=1.5.0
+pyyaml>=6.0
+tqdm>=4.66.0
+lxml>=4.9.0
+svg.path>=6.3

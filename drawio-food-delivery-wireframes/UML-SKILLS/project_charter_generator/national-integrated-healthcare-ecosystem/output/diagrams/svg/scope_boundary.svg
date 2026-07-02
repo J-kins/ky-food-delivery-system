@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1400" viewBox="0 0 2600 1400">
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#1a237e">Scope Boundary Diagram</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#666"/></marker></defs>
+<rect x="299.0" y="290.0" width="442.0" height="120.0" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+<text x="309.0" y="318.0" font-family="Arial" font-size="13" fill="#1B5E20">IN-SCOPE: NIHE Platform</text>
+<rect x="819.0" y="290.0" width="442.0" height="120.0" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="829.0" y="318.0" font-family="Arial" font-size="13" fill="#0D47A1">Patient Services
+(EHR, Appointments, Telemedicine)</text>
+<rect x="1339.0" y="290.0" width="442.0" height="120.0" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="1349.0" y="318.0" font-family="Arial" font-size="13" fill="#0D47A1">Facility Services
+(Registration, Staff, EMR)</text>
+<rect x="1859.0" y="290.0" width="442.0" height="120.0" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="1869.0" y="318.0" font-family="Arial" font-size="13" fill="#0D47A1">Healthcare Personnel
+(Consultation, Prescriptions)</text>
+<rect x="299.0" y="523.3" width="442.0" height="120.0" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="309.0" y="551.3" font-family="Arial" font-size="13" fill="#0D47A1">Regulatory Services
+(Oversight, Pharmacovigilance)</text>
+<rect x="819.0" y="523.3" width="442.0" height="120.0" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+<text x="829.0" y="551.3" font-family="Arial" font-size="13" fill="#4A148C">GIS Services
+(Facility Locator, Routing)</text>
+<rect x="1339.0" y="523.3" width="442.0" height="120.0" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+<text x="1349.0" y="551.3" font-family="Arial" font-size="13" fill="#4A148C">API &amp; Integration
+(HL7/FHIR, SDKs)</text>
+<rect x="1859.0" y="523.3" width="442.0" height="120.0" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="1869.0" y="551.3" font-family="Arial" font-size="13" fill="#BF360C">Security &amp; Compliance
+(Encryption, Consent, Auditing)</text>
+<rect x="299.0" y="756.7" width="442.0" height="120.0" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="309.0" y="784.7" font-family="Arial" font-size="13" fill="#BF360C">Capacity Building
+(Training, Help Desk, M&amp;E)</text>
+<rect x="819.0" y="756.7" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="784.7" font-family="Arial" font-size="13" fill="#B71C1C">OUT-OF-SCOPE:
+National ID Integration</text>
+<rect x="1339.0" y="756.7" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+<text x="1349.0" y="784.7" font-family="Arial" font-size="13" fill="#B71C1C">OUT-OF-SCOPE:
+Insurance Platform</text>
+<rect x="1859.0" y="756.7" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+<text x="1869.0" y="784.7" font-family="Arial" font-size="13" fill="#B71C1C">OUT-OF-SCOPE:
+Extension Marketplace</text>
+<rect x="299.0" y="990.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+<text x="309.0" y="1018.0" font-family="Arial" font-size="13" fill="#B71C1C">OUT-OF-SCOPE:
+USSD Gateway</text>
+<rect x="819.0" y="990.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="1018.0" font-family="Arial" font-size="13" fill="#B71C1C">OUT-OF-SCOPE:
+Cross-Border Data Exchange</text>
+<line x1="1040.0" y1="350.0" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="350.0" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="350.0" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="583.3" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="583.3" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="583.3" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="583.3" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="816.7" x2="520.0" y2="350.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="816.7" x2="520.0" y2="350.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="816.7" x2="520.0" y2="350.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="816.7" x2="520.0" y2="350.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="1050.0" x2="520.0" y2="350.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="1050.0" x2="520.0" y2="350.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

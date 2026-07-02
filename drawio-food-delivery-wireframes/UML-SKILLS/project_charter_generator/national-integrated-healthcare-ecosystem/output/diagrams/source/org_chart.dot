@@ -1,0 +1,33 @@
+digraph "org_chart" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=TB;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "SPONSOR" [label="Project Sponsor\nPermanent Secretary, MoH" shape=box fillcolor="#1A237E" color="#0D47A1" fontcolor="#FFFFFF"];
+  "PM" [label="Project Manager\nDigital Health Division Lead" shape=box fillcolor="#1565C0" color="#0D47A1" fontcolor="#FFFFFF"];
+  "ARCH" [label="Lead Architect\nChief Architect" shape=box fillcolor="#2E7D32" color="#1B5E20" fontcolor="#FFFFFF"];
+  "BACKEND" [label="Backend Lead\nBackend Development Lead" shape=box fillcolor="#00838F" color="#006064" fontcolor="#FFFFFF"];
+  "FRONTEND" [label="Frontend Lead\nFrontend Development Lead" shape=box fillcolor="#00838F" color="#006064" fontcolor="#FFFFFF"];
+  "GIS" [label="GIS Lead\nGIS Development Lead" shape=box fillcolor="#00838F" color="#006064" fontcolor="#FFFFFF"];
+  "SEC" [label="Security Lead\nCybersecurity Lead" shape=box fillcolor="#37474F" color="#263238" fontcolor="#FFFFFF"];
+  "DEVREL" [label="Developer Relations\nDeveloper Experience Lead" shape=box fillcolor="#6A1B9A" color="#4A148C" fontcolor="#FFFFFF"];
+  "QA" [label="QA Lead\nQuality Assurance Lead" shape=box fillcolor="#E65100" color="#BF360C" fontcolor="#FFFFFF"];
+  "OPS" [label="DevOps Lead\nOperations Lead" shape=box fillcolor="#BF360C" color="#871F00" fontcolor="#FFFFFF"];
+  "DPO" [label="Data Protection Officer\nPrivacy & Compliance Lead" shape=box fillcolor="#AD1457" color="#880E4F" fontcolor="#FFFFFF"];
+  "TRAIN" [label="Training Lead\nCapacity Building Lead" shape=box fillcolor="#8E24AA" color="#6A1B9A" fontcolor="#FFFFFF"];
+  "ME" [label="M&E Lead\nMonitoring & Evaluation Lead" shape=box fillcolor="#00695C" color="#004D40" fontcolor="#FFFFFF"];
+  "PROC" [label="Procurement Lead\nVendor Management Lead" shape=box fillcolor="#5D4037" color="#3E2723" fontcolor="#FFFFFF"];
+  "PM" -> "SPONSOR"[ color="#666666"];
+  "ARCH" -> "PM"[ color="#666666"];
+  "BACKEND" -> "ARCH"[ color="#666666"];
+  "FRONTEND" -> "ARCH"[ color="#666666"];
+  "GIS" -> "ARCH"[ color="#666666"];
+  "SEC" -> "ARCH"[ color="#666666"];
+  "DEVREL" -> "PM"[ color="#666666"];
+  "QA" -> "PM"[ color="#666666"];
+  "OPS" -> "PM"[ color="#666666"];
+  "DPO" -> "PM"[ color="#666666"];
+  "TRAIN" -> "PM"[ color="#666666"];
+  "ME" -> "PM"[ color="#666666"];
+  "PROC" -> "PM"[ color="#666666"];
+}

@@ -1,0 +1,201 @@
+{
+  "wbs": {
+    "title": "Work Breakdown Structure",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "description": "Complete WBS for the community data platform",
+
+    "levels": {
+      "level_0": {
+        "id": "0",
+        "name": "Da'atSNA Community Data Platform",
+        "description": "Community data collection, analytics, and reporting platform",
+        "color": "#1a237e",
+        "text_color": "#FFFFFF"
+      },
+      "level_1": {
+        "name": "Phases/Deliverables",
+        "color": "#1565C0",
+        "text_color": "#FFFFFF",
+        "shape_style": "rounded_rectangle"
+      },
+      "level_2": {
+        "name": "Work Packages",
+        "color": "#64B5F6",
+        "text_color": "#333333",
+        "shape_style": "rounded_rectangle"
+      },
+      "level_3": {
+        "name": "Tasks/Activities",
+        "color": "#FFFFFF",
+        "text_color": "#333333",
+        "border_color": "#64B5F6",
+        "shape_style": "rounded_rectangle"
+      }
+    },
+
+    "branches": [
+      {
+        "id": "1",
+        "name": "Project Management",
+        "description": "Overall project governance and control",
+        "level": 1,
+        "children": [
+          {
+            "id": "1.1",
+            "name": "Planning",
+            "description": "Project planning activities",
+            "level": 2,
+            "children": [
+              {"id": "1.1.1", "name": "Develop Charter", "description": "Create project charter", "level": 3, "effort_hours": 40},
+              {"id": "1.1.2", "name": "Create Schedule", "description": "Develop project schedule", "level": 3, "effort_hours": 80},
+              {"id": "1.1.3", "name": "Define Budget", "description": "Establish project budget", "level": 3, "effort_hours": 40}
+            ]
+          },
+          {
+            "id": "1.2",
+            "name": "Monitoring",
+            "description": "Track project progress",
+            "level": 2,
+            "children": [
+              {"id": "1.2.1", "name": "Track Progress", "description": "Monitor milestones", "level": 3, "effort_hours": 160},
+              {"id": "1.2.2", "name": "Risk Management", "description": "Identify and mitigate risks", "level": 3, "effort_hours": 80}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Requirements Engineering",
+        "description": "Gather and document requirements",
+        "level": 1,
+        "children": [
+          {
+            "id": "2.1",
+            "name": "Elicitation",
+            "description": "Gather stakeholder requirements",
+            "level": 2,
+            "children": [
+              {"id": "2.1.1", "name": "Stakeholder Interviews", "description": "Conduct stakeholder interviews", "level": 3, "effort_hours": 120},
+              {"id": "2.1.2", "name": "Community Workshops", "description": "Facilitate community workshops", "level": 3, "effort_hours": 80}
+            ]
+          },
+          {
+            "id": "2.2",
+            "name": "Specification",
+            "description": "Document requirements",
+            "level": 2,
+            "children": [
+              {"id": "2.2.1", "name": "Write SRS", "description": "Create Software Requirements Specification", "level": 3, "effort_hours": 160},
+              {"id": "2.2.2", "name": "Create RTM", "description": "Build Requirements Traceability Matrix", "level": 3, "effort_hours": 80}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "System Design",
+        "description": "Design system architecture and components",
+        "level": 1,
+        "children": [
+          {
+            "id": "3.1",
+            "name": "Data Architecture",
+            "description": "Design data platform architecture",
+            "level": 2,
+            "children": [
+              {"id": "3.1.1", "name": "Data Model Design", "description": "Create entity relationship model", "level": 3, "effort_hours": 80},
+              {"id": "3.1.2", "name": "Pipeline Architecture", "description": "Design ETL/ELT pipelines", "level": 3, "effort_hours": 120}
+            ]
+          },
+          {
+            "id": "3.2",
+            "name": "API Design",
+            "description": "Design RESTful APIs",
+            "level": 2,
+            "children": [
+              {"id": "3.2.1", "name": "API Specifications", "description": "Define API endpoints", "level": 3, "effort_hours": 120},
+              {"id": "3.2.2", "name": "OpenAPI Spec", "description": "Create OpenAPI specification", "level": 3, "effort_hours": 80}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Development",
+        "description": "Build the platform",
+        "level": 1,
+        "children": [
+          {
+            "id": "4.1",
+            "name": "Backend Development",
+            "description": "Build backend services",
+            "level": 2,
+            "children": [
+              {"id": "4.1.1", "name": "Authentication Service", "description": "Build auth service", "level": 3, "effort_hours": 160},
+              {"id": "4.1.2", "name": "Data Ingestion Service", "description": "Build data ingestion APIs", "level": 3, "effort_hours": 240},
+              {"id": "4.1.3", "name": "Analytics Engine", "description": "Build analytics processing", "level": 3, "effort_hours": 200}
+            ]
+          },
+          {
+            "id": "4.2",
+            "name": "Frontend Development",
+            "description": "Build user interfaces",
+            "level": 2,
+            "children": [
+              {"id": "4.2.1", "name": "Community Portal", "description": "Build community-facing UI", "level": 3, "effort_hours": 320},
+              {"id": "4.2.2", "name": "Admin Dashboard", "description": "Build admin interface", "level": 3, "effort_hours": 160}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Testing & Deployment",
+        "description": "Validate quality and deploy system",
+        "level": 1,
+        "children": [
+          {
+            "id": "5.1",
+            "name": "Testing",
+            "description": "Execute test activities",
+            "level": 2,
+            "children": [
+              {"id": "5.1.1", "name": "Integration Testing", "description": "Test integrated components", "level": 3, "effort_hours": 120},
+              {"id": "5.1.2", "name": "UAT", "description": "User acceptance testing", "level": 3, "effort_hours": 160}
+            ]
+          },
+          {
+            "id": "5.2",
+            "name": "Deployment",
+            "description": "Deploy to production",
+            "level": 2,
+            "children": [
+              {"id": "5.2.1", "name": "CI/CD Setup", "description": "Build deployment pipeline", "level": 3, "effort_hours": 80},
+              {"id": "5.2.2", "name": "Production Cutover", "description": "Deploy and transition to operations", "level": 3, "effort_hours": 40}
+            ]
+          }
+        ]
+      }
+    ],
+
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 10,
+      "layout_style": "tree",
+      "shadow_enabled": true,
+      "corner_radius": 6,
+      "box_spacing": 0.3
+    },
+
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5,
+      "level_spacing": 1.5,
+      "box_height": 0.8
+    }
+  }
+}

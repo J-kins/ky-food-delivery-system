@@ -101,5 +101,43 @@ export function AdminDashboardView() {
 
   container.appendChild(chartsSection);
 
-  return container;
+  // Expose lifecycle hooks for the Router to initialize interactivity after mounting
+  return {
+    element: container,
+    onMount: () => {
+      if (window.Chart) {
+        // Initialize Revenue Chart
+        const ctxRev = document.getElementById('revenue-chart').getContext('2d');
+        new Chart(ctxRev, {
+          type: 'line',
+          data: {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            datasets: [{
+              label: 'Revenue (UGX)',
+              data: [1200000, 1500000, 1400000, 1800000, 2200000, 2800000, 2500000],
+              borderColor: '#005638',
+              backgroundColor: 'rgba(0, 86, 56, 0.1)',
+              tension: 0.4,
+              fill: true
+            }]
+          },
+          options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // Initialize Orders Chart
+        const ctxOrd = document.getElementById('orders-chart').getContext('2d');
+        new Chart(ctxOrd, {
+          type: 'doughnut',
+          data: {
+            labels: ['Delivered', 'In Progress', 'Cancelled'],
+            datasets: [{
+              data: [300, 32, 10],
+              backgroundColor: ['#005638', '#F0C019', '#DC4024']
+            }]
+          },
+          options: { responsive: true, maintainAspectRatio: false }
+        });
+      }
+    }
+  };
 }

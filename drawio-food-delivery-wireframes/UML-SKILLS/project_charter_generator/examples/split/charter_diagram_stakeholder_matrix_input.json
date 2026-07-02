@@ -1,0 +1,95 @@
+{
+  "diagram_description": {
+    "id": "stakeholder_matrix",
+    "title": "Stakeholder Power-Interest Matrix",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "nodes": [
+      {
+        "id": "Q_HH",
+        "label": "KEY PLAYERS",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#666666",
+        "text_color": "#000000",
+        "group": "grid"
+      },
+      {
+        "id": "Q_HL",
+        "label": "KEEP SATISFIED",
+        "shape": "box",
+        "fill": "#FFE0B2",
+        "border": "#666666",
+        "text_color": "#000000",
+        "group": "grid"
+      },
+      {
+        "id": "Q_LH",
+        "label": "KEEP INFORMED",
+        "shape": "box",
+        "fill": "#FFF9C4",
+        "border": "#666666",
+        "text_color": "#000000",
+        "group": "grid"
+      },
+      {
+        "id": "Q_LL",
+        "label": "MONITOR",
+        "shape": "box",
+        "fill": "#C8E6C9",
+        "border": "#666666",
+        "text_color": "#000000",
+        "group": "grid"
+      },
+      {
+        "id": "SH-01",
+        "label": "Dr. James Okello\\nProject Sponsor",
+        "shape": "box",
+        "fill": "#FFFFFF",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "SH-02",
+        "label": "Dr. Sarah Nambi\\nPolicy Maker",
+        "shape": "box",
+        "fill": "#FFFFFF",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "SH-03",
+        "label": "NHIS Leadership\\nInsurance Partner",
+        "shape": "box",
+        "fill": "#FFFFFF",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "SH-04",
+        "label": "District Health Officers\\nRegional Coordinators",
+        "shape": "box",
+        "fill": "#FFFFFF",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "SH-05",
+        "label": "Community Health Workers\\nEnd Users",
+        "shape": "box",
+        "fill": "#FFFFFF",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      }
+    ],
+    "edges": [],
+    "source": null,
+    "caption": "Figure 2: Power-Interest Matrix"
+  }
+}

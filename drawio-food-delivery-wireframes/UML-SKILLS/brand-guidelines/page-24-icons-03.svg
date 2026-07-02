@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">05  ICONOGRAPHY</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">24</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Icon Example 03</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Duotone icon set — two-tone style using primary and tint colours.</text>
+  <g id="duo-icons">
+    <g id="duo-icons-0">
+      <rect x="72" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="84" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="92" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="102" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Home</text>
+    </g>
+    <g id="duo-icons-1">
+      <rect x="216" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="228" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="236" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="246" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Search</text>
+    </g>
+    <g id="duo-icons-2">
+      <rect x="360" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="372" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="380" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="390" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">User</text>
+    </g>
+    <g id="duo-icons-3">
+      <rect x="504" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="516" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="524" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="534" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Settings</text>
+    </g>
+    <g id="duo-icons-4">
+      <rect x="648" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="660" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="668" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="678" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Mail</text>
+    </g>
+    <g id="duo-icons-5">
+      <rect x="792" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="804" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="812" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="822" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Bell</text>
+    </g>
+    <g id="duo-icons-6">
+      <rect x="936" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="948" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="956" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="966" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Heart</text>
+    </g>
+    <g id="duo-icons-7">
+      <rect x="1080" y="176" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="1092" y="188" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="1100" y="196" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="1110" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Star</text>
+    </g>
+    <g id="duo-icons-8">
+      <rect x="72" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="84" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="92" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="102" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Calendar</text>
+    </g>
+    <g id="duo-icons-9">
+      <rect x="216" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="228" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="236" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="246" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">File</text>
+    </g>
+    <g id="duo-icons-10">
+      <rect x="360" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="372" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="380" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="390" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Folder</text>
+    </g>
+    <g id="duo-icons-11">
+      <rect x="504" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="516" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="524" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="534" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Download</text>
+    </g>
+    <g id="duo-icons-12">
+      <rect x="648" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="660" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="668" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="678" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Upload</text>
+    </g>
+    <g id="duo-icons-13">
+      <rect x="792" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="804" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="812" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="822" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Share</text>
+    </g>
+    <g id="duo-icons-14">
+      <rect x="936" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="948" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="956" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="966" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Link</text>
+    </g>
+    <g id="duo-icons-15">
+      <rect x="1080" y="280" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="1092" y="292" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="1100" y="300" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="1110" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Lock</text>
+    </g>
+    <g id="duo-icons-16">
+      <rect x="72" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="84" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="92" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="102" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Camera</text>
+    </g>
+    <g id="duo-icons-17">
+      <rect x="216" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="228" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="236" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="246" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Image</text>
+    </g>
+    <g id="duo-icons-18">
+      <rect x="360" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="372" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="380" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="390" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Video</text>
+    </g>
+    <g id="duo-icons-19">
+      <rect x="504" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="516" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="524" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="534" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Music</text>
+    </g>
+    <g id="duo-icons-20">
+      <rect x="648" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="660" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="668" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="678" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Map</text>
+    </g>
+    <g id="duo-icons-21">
+      <rect x="792" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="804" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="812" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="822" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Phone</text>
+    </g>
+    <g id="duo-icons-22">
+      <rect x="936" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="948" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="956" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="966" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Message</text>
+    </g>
+    <g id="duo-icons-23">
+      <rect x="1080" y="384" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="1092" y="396" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="1100" y="404" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="1110" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Cart</text>
+    </g>
+    <g id="duo-icons-24">
+      <rect x="72" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="84" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="92" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="102" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Check</text>
+    </g>
+    <g id="duo-icons-25">
+      <rect x="216" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="228" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="236" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="246" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Close</text>
+    </g>
+    <g id="duo-icons-26">
+      <rect x="360" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="372" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="380" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="390" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Arrow</text>
+    </g>
+    <g id="duo-icons-27">
+      <rect x="504" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="516" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="524" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="534" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Menu</text>
+    </g>
+    <g id="duo-icons-28">
+      <rect x="648" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="660" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="668" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="678" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Plus</text>
+    </g>
+    <g id="duo-icons-29">
+      <rect x="792" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="804" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="812" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="822" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Filter</text>
+    </g>
+    <g id="duo-icons-30">
+      <rect x="936" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="948" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="956" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="966" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Sort</text>
+    </g>
+    <g id="duo-icons-31">
+      <rect x="1080" y="488" width="60" height="60" rx="8" fill="#D4E0CE"/>
+      <rect x="1092" y="500" width="36" height="36" rx="4" fill="#8CA47A" opacity="0.6"/>
+      <rect x="1100" y="508" width="20" height="20" rx="2" fill="#3E5139"/>
+      <text x="1110" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="middle">Dots</text>
+    </g>
+  </g>
+  <text id="style" x="72" y="618" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">Style: Duotone  /  BG: Pale Green  /  FG: Deep Forest  /  Grid: 60&#xD7;60px</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

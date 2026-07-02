@@ -1,0 +1,233 @@
+{
+  "budget": {
+    "title": "Budget Breakdown - Project Financials",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "currency": "USD",
+    "exchange_rate_note": "1 USD = 3,700 UGX",
+    "budget_period": "Jan 2026 - Dec 2026",
+    "categories": [
+      {
+        "id": "CAT1",
+        "name": "Personnel",
+        "color": "#1a237e",
+        "text_color": "#FFFFFF",
+        "budget": 31000,
+        "actual": 28500,
+        "notes": "Includes PM, Dev, QA, BA"
+      },
+      {
+        "id": "CAT2",
+        "name": "Hardware",
+        "color": "#1565C0",
+        "text_color": "#FFFFFF",
+        "budget": 18500,
+        "actual": 19200,
+        "notes": "Cloud, workstations, network"
+      },
+      {
+        "id": "CAT3",
+        "name": "Software",
+        "color": "#2E7D32",
+        "text_color": "#FFFFFF",
+        "budget": 1500,
+        "actual": 1200,
+        "notes": "Licenses, tools"
+      },
+      {
+        "id": "CAT4",
+        "name": "Training",
+        "color": "#E65100",
+        "text_color": "#FFFFFF",
+        "budget": 3000,
+        "actual": 2800,
+        "notes": "User training, materials"
+      },
+      {
+        "id": "CAT5",
+        "name": "Contingency",
+        "color": "#6A1B9A",
+        "text_color": "#FFFFFF",
+        "budget": 5400,
+        "actual": 2100,
+        "notes": "10% buffer of subtotal"
+      }
+    ],
+    "line_items": [
+      {
+        "category": "Personnel",
+        "item": "Project Manager",
+        "qty": 1,
+        "unit_cost": 5000,
+        "total": 5000
+      },
+      {
+        "category": "Personnel",
+        "item": "Developers",
+        "qty": 3,
+        "unit_cost": 4000,
+        "total": 12000
+      },
+      {
+        "category": "Personnel",
+        "item": "QA Engineers",
+        "qty": 2,
+        "unit_cost": 3500,
+        "total": 7000
+      },
+      {
+        "category": "Personnel",
+        "item": "Business Analysts",
+        "qty": 2,
+        "unit_cost": 3500,
+        "total": 7000
+      },
+      {
+        "category": "Personnel",
+        "item": "DevOps Engineer",
+        "qty": 1,
+        "unit_cost": 4500,
+        "total": 4500
+      },
+      {
+        "category": "Hardware",
+        "item": "Cloud Servers (annual)",
+        "qty": 4,
+        "unit_cost": 1500,
+        "total": 6000
+      },
+      {
+        "category": "Hardware",
+        "item": "Workstations",
+        "qty": 5,
+        "unit_cost": 2000,
+        "total": 10000
+      },
+      {
+        "category": "Hardware",
+        "item": "Network Equipment",
+        "qty": 1,
+        "unit_cost": 2500,
+        "total": 2500
+      },
+      {
+        "category": "Software",
+        "item": "Licenses (per user)",
+        "qty": 5,
+        "unit_cost": 200,
+        "total": 1000
+      },
+      {
+        "category": "Software",
+        "item": "Development Tools",
+        "qty": 1,
+        "unit_cost": 500,
+        "total": 500
+      },
+      {
+        "category": "Training",
+        "item": "User Training Sessions",
+        "qty": 10,
+        "unit_cost": 300,
+        "total": 3000
+      },
+      {
+        "category": "Contingency",
+        "item": "10% Contingency Buffer",
+        "qty": 1,
+        "unit_cost": 5400,
+        "total": 5400
+      }
+    ],
+    "monthly_burn_rate": [
+      {
+        "month": "January",
+        "planned": 5000,
+        "actual": 4800
+      },
+      {
+        "month": "February",
+        "planned": 5000,
+        "actual": 5200
+      },
+      {
+        "month": "March",
+        "planned": 5000,
+        "actual": 4500
+      },
+      {
+        "month": "April",
+        "planned": 6000,
+        "actual": 6500
+      },
+      {
+        "month": "May",
+        "planned": 6000,
+        "actual": 5800
+      },
+      {
+        "month": "June",
+        "planned": 6000,
+        "actual": 6200
+      },
+      {
+        "month": "July",
+        "planned": 4000,
+        "actual": 3500
+      },
+      {
+        "month": "August",
+        "planned": 4000,
+        "actual": 4200
+      },
+      {
+        "month": "September",
+        "planned": 4000,
+        "actual": 3800
+      },
+      {
+        "month": "October",
+        "planned": 4500,
+        "actual": 5000
+      },
+      {
+        "month": "November",
+        "planned": 4500,
+        "actual": 4300
+      },
+      {
+        "month": "December",
+        "planned": 5400,
+        "actual": null
+      }
+    ],
+    "styling": {
+      "font_family": "Arial",
+      "font_size": 9,
+      "header_fill": "#1a237e",
+      "header_text": "#FFFFFF",
+      "alt_row_fill": "#F5F5F5",
+      "total_row_fill": "#E3F2FD",
+      "positive_variance": "#4CAF50",
+      "negative_variance": "#E53935"
+    },
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5
+    },
+    "dashboard": {
+      "show_kpi_bar": true,
+      "show_bar_chart": true,
+      "show_pie_chart": true,
+      "show_burn_rate_chart": true,
+      "kpi_colors": {
+        "total_budget": "#1a237e",
+        "actual_spent": "#C62828",
+        "remaining": "#2E7D32",
+        "period": "#4E342E"
+      }
+    }
+  }
+}

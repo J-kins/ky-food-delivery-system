@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">04  STATIONERY</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">18</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Stationery Guideline</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="sub-hdr" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Business Card</text>
+  <text id="lbl-f" x="72" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1">Front</text>
+  <rect id="cf" x="72" y="220" width="360" height="220" fill="#FFFFFF" rx="3" stroke="#DDDDDD" stroke-width="0.5"/>
+  <rect id="cf-top" x="72" y="220" width="360" height="52" fill="#556B4E" rx="3"/>
+  <text id="cf-l" x="88" y="254" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="start">&#x25B2;  BRAND</text>
+  <text id="cf-n" x="88" y="322" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">First Last Name</text>
+  <text id="cf-t" x="88" y="342" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Job Title</text>
+  <text id="cf-e" x="88" y="400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">hello@company.com</text>
+  <text id="cf-p" x="88" y="418" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">+1 (000) 000-0000</text>
+  <text id="cf-w" x="88" y="436" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">www.company.com</text>
+  <text id="lbl-b" x="480" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1">Back</text>
+  <rect id="cb" x="480" y="220" width="360" height="220" fill="#556B4E" rx="3"/>
+  <text id="cb-l" x="660" y="338" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#x25B2;  BRAND</text>
+  <text id="sp-hdr" x="892" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Specifications</text>
+  <line id="sp-r" x1="892" y1="222" x2="1092" y2="222" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="sp1" x="892" y="256" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Size:      85mm &#xD7; 55mm</text>
+  <text id="sp2" x="892" y="274" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Material:  350gsm silk</text>
+  <text id="sp3" x="892" y="292" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Finish:    Soft-touch matt</text>
+  <text id="sp4" x="892" y="310" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Bleed:     3mm all sides</text>
+  <text id="sp5" x="892" y="328" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Print:     CMYK + Spot UV</text>
+  <text id="sp6" x="892" y="346" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Typeface:  Primary / 7pt min</text>
+  <text id="sp7" x="892" y="364" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Colour:    Brand Green / White</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

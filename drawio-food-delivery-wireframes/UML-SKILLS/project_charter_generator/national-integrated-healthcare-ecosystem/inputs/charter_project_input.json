@@ -1,0 +1,16 @@
+{
+  "project": {
+    "name": "National Integrated Healthcare Ecosystem (NIHE)",
+    "project_id": "NIHE-2026-001",
+    "sponsor": "Ministry of Health, Uganda",
+    "manager": "Project Manager, Digital Health Division",
+    "start_date": "2026-07-01",
+    "end_date": "2028-09-30",
+    "department": "Ministry of Health - Digital Health Division",
+    "version": "1.1",
+    "classification": "National Priority - Digital Health Transformation",
+    "methodology": "Hybrid (Agile delivery within phased Waterfall governance gates)",
+    "currency": "USD",
+    "geographic_scope": "Republic of Uganda (all 146 districts), phased rollout, architected for future East African Community expansion"
+  }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1400" viewBox="0 0 2600 1400">
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#1a237e">Problem Tree</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#666"/></marker></defs>
+<rect x="299.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#FFCC80" stroke="#F57C00" stroke-width="2"/>
+<text x="309.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">Enable every community health worker in Uganda to access trusted, interoperable patient data through a secure national platform.</text>
+<rect x="819.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#EF9A9A" stroke="#E53935" stroke-width="2"/>
+<text x="829.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">RSK-01: NHIS API changes break billing integration</text>
+<rect x="1339.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#EF9A9A" stroke="#E53935" stroke-width="2"/>
+<text x="1349.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">RSK-02: Clinic connectivity delays pilot rollout</text>
+<rect x="1859.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#EF9A9A" stroke="#E53935" stroke-width="2"/>
+<text x="1869.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">RSK-03: Security audit findings delay go-live</text>
+<rect x="299.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#90CAF9" stroke="#1565C0" stroke-width="2"/>
+<text x="309.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">OBJ-01: Deliver FHIR-compliant data exchange between 50 pilot clinic</text>
+<rect x="819.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#90CAF9" stroke="#1565C0" stroke-width="2"/>
+<text x="829.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">OBJ-02: Reduce patient record retrieval time for CHWs</text>
+<rect x="1339.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#90CAF9" stroke="#1565C0" stroke-width="2"/>
+<text x="1349.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">OBJ-03: Train 200 community health workers on the platform</text>
+<rect x="1859.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#A5D6A7" stroke="#2E7D32" stroke-width="2"/>
+<text x="1869.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">50 clinics connected with verified data exchange</text>
+<rect x="299.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#A5D6A7" stroke="#2E7D32" stroke-width="2"/>
+<text x="309.0" y="948.0" font-family="Arial" font-size="13" fill="#000000">Median record retrieval under 2 seconds</text>
+<rect x="819.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#A5D6A7" stroke="#2E7D32" stroke-width="2"/>
+<text x="829.0" y="948.0" font-family="Arial" font-size="13" fill="#000000">200 CHWs trained and actively using the platform</text>
+<line x1="1040.0" y1="420.0" x2="520.0" y2="420.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="420.0" x2="520.0" y2="420.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="420.0" x2="520.0" y2="420.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="420.0" x2="520.0" y2="700.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="420.0" x2="1040.0" y2="700.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="420.0" x2="1560.0" y2="700.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="700.0" x2="2080.0" y2="700.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="700.0" x2="2080.0" y2="700.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="700.0" x2="2080.0" y2="700.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="700.0" x2="520.0" y2="980.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="700.0" x2="520.0" y2="980.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="700.0" x2="520.0" y2="980.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="700.0" x2="1040.0" y2="980.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="700.0" x2="1040.0" y2="980.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="700.0" x2="1040.0" y2="980.0" stroke="#666666" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1400" viewBox="0 0 2600 1400">
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#1a237e">Risk Matrix</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#666"/></marker></defs>
+<rect x="299.0" y="240.0" width="442.0" height="120.0" rx="8" fill="#C62828" stroke="#B71C1C" stroke-width="2"/>
+<text x="309.0" y="268.0" font-family="Arial" font-size="13" fill="#FFFFFF">High Impact / High Likelihood</text>
+<rect x="819.0" y="240.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="268.0" font-family="Arial" font-size="13" fill="#FFFFFF">High Impact / Medium Likelihood</text>
+<rect x="1339.0" y="240.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="1349.0" y="268.0" font-family="Arial" font-size="13" fill="#FFFFFF">Medium Impact / High Likelihood</text>
+<rect x="1859.0" y="240.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#E57373" stroke-width="2"/>
+<text x="1869.0" y="268.0" font-family="Arial" font-size="13" fill="#333333">Low Impact / High Likelihood</text>
+<rect x="299.0" y="440.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#E57373" stroke-width="2"/>
+<text x="309.0" y="468.0" font-family="Arial" font-size="13" fill="#333333">High Impact / Low Likelihood</text>
+<rect x="819.0" y="440.0" width="442.0" height="120.0" rx="8" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2"/>
+<text x="829.0" y="468.0" font-family="Arial" font-size="13" fill="#333333">Medium Impact / Medium Likelihood</text>
+<rect x="1339.0" y="440.0" width="442.0" height="120.0" rx="8" fill="#FFF9C4" stroke="#FFF176" stroke-width="2"/>
+<text x="1349.0" y="468.0" font-family="Arial" font-size="13" fill="#333333">Low Impact / Medium Likelihood</text>
+<rect x="1859.0" y="440.0" width="442.0" height="120.0" rx="8" fill="#FFF9C4" stroke="#FFF176" stroke-width="2"/>
+<text x="1869.0" y="468.0" font-family="Arial" font-size="13" fill="#333333">Medium Impact / Low Likelihood</text>
+<rect x="299.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+<text x="309.0" y="668.0" font-family="Arial" font-size="13" fill="#333333">Low Impact / Low Likelihood</text>
+<rect x="819.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="668.0" font-family="Arial" font-size="13" fill="#FFFFFF">Limited Connectivity (Rural)</text>
+<rect x="1339.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="1349.0" y="668.0" font-family="Arial" font-size="13" fill="#FFFFFF">Adoption Resistance</text>
+<rect x="1859.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#E57373" stroke-width="2"/>
+<text x="1869.0" y="668.0" font-family="Arial" font-size="13" fill="#333333">Data Privacy Breach</text>
+<rect x="299.0" y="840.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="309.0" y="868.0" font-family="Arial" font-size="13" fill="#FFFFFF">Interoperability Challenges</text>
+<rect x="819.0" y="840.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="868.0" font-family="Arial" font-size="13" fill="#FFFFFF">Funding Constraints</text>
+<rect x="1339.0" y="840.0" width="442.0" height="120.0" rx="8" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2"/>
+<text x="1349.0" y="868.0" font-family="Arial" font-size="13" fill="#333333">Regulatory Changes</text>
+<rect x="1859.0" y="840.0" width="442.0" height="120.0" rx="8" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2"/>
+<text x="1869.0" y="868.0" font-family="Arial" font-size="13" fill="#333333">GIS Data Quality</text>
+<rect x="299.0" y="1040.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="309.0" y="1068.0" font-family="Arial" font-size="13" fill="#FFFFFF">Cybersecurity Threats</text>
+<rect x="819.0" y="1040.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="1068.0" font-family="Arial" font-size="13" fill="#FFFFFF">Key Personnel Attrition</text>
+<rect x="1339.0" y="1040.0" width="442.0" height="120.0" rx="8" fill="#FFF9C4" stroke="#FFF176" stroke-width="2"/>
+<text x="1349.0" y="1068.0" font-family="Arial" font-size="13" fill="#333333">Vendor Lock-in</text>
+<rect x="1859.0" y="1040.0" width="442.0" height="120.0" rx="8" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+<text x="1869.0" y="1068.0" font-family="Arial" font-size="13" fill="#FFFFFF">Data Migration Quality</text>
+<line x1="1040.0" y1="700.0" x2="520.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="700.0" x2="1040.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="700.0" x2="520.0" y2="500.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="900.0" x2="1560.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="900.0" x2="1040.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="900.0" x2="2080.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="900.0" x2="1040.0" y2="500.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="1100.0" x2="1040.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="1100.0" x2="1560.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="1100.0" x2="2080.0" y2="500.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="1100.0" x2="1560.0" y2="300.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

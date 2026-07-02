@@ -1,0 +1,88 @@
+{
+  "diagram_description": {
+    "id": "org_chart",
+    "title": "Project Org Chart",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "nodes": [
+      {
+        "id": "SPONSOR",
+        "label": "Dr. James Okello\\nProject Sponsor",
+        "shape": "box",
+        "fill": "#64B5F6",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "PM",
+        "label": "Sarah Nakato\\nProject Manager",
+        "shape": "box",
+        "fill": "#64B5F6",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "TL-TECH",
+        "label": "David Mukasa\\nTechnical Lead",
+        "shape": "box",
+        "fill": "#64B5F6",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "TL-QA",
+        "label": "Grace Achieng\\nQA Lead",
+        "shape": "box",
+        "fill": "#64B5F6",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "BA-01",
+        "label": "Peter Okello\\nBusiness Analyst",
+        "shape": "box",
+        "fill": "#64B5F6",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      }
+    ],
+    "edges": [
+      {
+        "from": "SPONSOR",
+        "to": "PM",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "PM",
+        "to": "TL-TECH",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "PM",
+        "to": "TL-QA",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "PM",
+        "to": "BA-01",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      }
+    ],
+    "source": null,
+    "caption": "Figure 3: Project Organization"
+  }
+}

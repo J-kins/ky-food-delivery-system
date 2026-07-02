@@ -1,0 +1,14 @@
+{
+  "budget": {
+    "styling": {
+      "font_family": "Arial",
+      "font_size": 9,
+      "header_fill": "#1a237e",
+      "header_text": "#FFFFFF",
+      "alt_row_fill": "#F5F5F5",
+      "total_row_fill": "#E3F2FD",
+      "positive_variance": "#4CAF50",
+      "negative_variance": "#E53935"
+    }
+  }
+}

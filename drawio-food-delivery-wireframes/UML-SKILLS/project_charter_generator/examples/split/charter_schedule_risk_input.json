@@ -1,0 +1,55 @@
+{
+  "risks": [
+    {
+      "id": "RSK-01",
+      "description": "NHIS API changes break billing integration",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain adapter layer; monthly API compatibility review with NHIS"
+    },
+    {
+      "id": "RSK-02",
+      "description": "Clinic connectivity delays pilot rollout",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Pre-site surveys; backup mobile hotspot kits for 10 clinics"
+    },
+    {
+      "id": "RSK-03",
+      "description": "Security audit findings delay go-live",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Early penetration test in Q2; remediate findings before UAT"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Project Kickoff",
+      "date": "2026-01-01",
+      "deliverable": "Charter approved; team mobilized",
+      "is_critical": true
+    },
+    {
+      "id": "M2",
+      "name": "Architecture Sign-off",
+      "date": "2026-03-15",
+      "deliverable": "Solution architecture and security baseline approved",
+      "is_critical": true
+    },
+    {
+      "id": "M3",
+      "name": "Pilot Go-Live",
+      "date": "2026-09-01",
+      "deliverable": "10 clinics live on platform",
+      "is_critical": true
+    },
+    {
+      "id": "M4",
+      "name": "Phase 1 Complete",
+      "date": "2026-12-15",
+      "deliverable": "50 clinics connected; training complete",
+      "is_critical": false
+    }
+  ]
+}

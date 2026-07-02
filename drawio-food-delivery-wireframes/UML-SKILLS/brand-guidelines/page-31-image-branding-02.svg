@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">07  IMAGE &amp; BRANDING</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">31</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Image &amp; Branding System</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Branded photography overlay system and social media size specifications.</text>
+  <g id="img1">
+    <rect x="72" y="200" width="296" height="200" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="72" y1="200" x2="368" y2="400" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="368" y1="200" x2="72" y2="400" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="220" y="304" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">PHOTO 01</text>
+  </g>
+  <rect id="ov1" x="72" y="356" width="296" height="44" fill="#556B4E" rx="2"/>
+  <text id="ol1" x="220" y="384" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#x25B2;  BRAND</text>
+  <g id="img2">
+    <rect x="432" y="200" width="296" height="200" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="432" y1="200" x2="728" y2="400" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="728" y1="200" x2="432" y2="400" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="580" y="304" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">PHOTO 02</text>
+  </g>
+  <rect id="ov2" x="432" y="356" width="296" height="44" fill="#3E5139" rx="2"/>
+  <text id="ol2" x="580" y="384" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#x25B2;  BRAND</text>
+  <g id="img3">
+    <rect x="792" y="200" width="296" height="200" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="792" y1="200" x2="1088" y2="400" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="1088" y1="200" x2="792" y2="400" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="940" y="304" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">PHOTO 03</text>
+  </g>
+  <rect id="ov3" x="792" y="356" width="296" height="44" fill="#1A1A1A" rx="2"/>
+  <text id="ol3" x="940" y="384" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#x25B2;  BRAND</text>
+  <text id="cl1" x="220" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">Standard Overlay</text>
+  <text id="cl2" x="580" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">Dark Overlay</text>
+  <text id="cl3" x="940" y="464" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">Minimal Overlay</text>
+  <text id="ss-hdr" x="72" y="500" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Social Media Specifications</text>
+  <line id="ss-r" x1="72" y1="514" x2="392" y2="514" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="ss0" x="72" y="536" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Instagram Square: 1080 &#xD7; 1080px</text>
+  <text id="ss1" x="72" y="562" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Instagram Story: 1080 &#xD7; 1920px</text>
+  <text id="ss2" x="72" y="588" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">LinkedIn Header: 1584 &#xD7; 396px</text>
+  <text id="ss3" x="672" y="536" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Twitter Header: 1500 &#xD7; 500px</text>
+  <text id="ss4" x="672" y="562" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Facebook Cover: 820 &#xD7; 312px</text>
+  <text id="ss5" x="672" y="588" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Profile Picture: 400 &#xD7; 400px</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

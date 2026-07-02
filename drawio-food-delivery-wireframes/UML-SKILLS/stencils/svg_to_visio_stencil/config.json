@@ -1,0 +1,94 @@
+{
+  "stencil_name": "UML & Architecture Shape Stencil",
+  "stencil_description": "Complete library of UML and software architecture shapes",
+  "stencil_version": "1.0.0",
+  "stencil_author": "UML-SKILLS",
+  "input_directory": "../svg/shapes",
+  "shape_library": "../svg/SHAPE_LIBRARY.json",
+  "manifest": "../svg/shapes/manifest.json",
+  "output_file": "../output/uml-architecture-stencil.vssx",
+  "template_output": "../output/uml-architecture-template.vstx",
+  "logs_directory": "logs",
+  "svg_dpi": 96.0,
+  "categories": {
+    "basic-geometric": {
+      "name": "Basic Geometric Shapes",
+      "description": "Geometric building blocks"
+    },
+    "uml-class": {
+      "name": "UML Class Diagram",
+      "description": "Class, interface, and relationship shapes"
+    },
+    "uml-use-case": {
+      "name": "UML Use Case Diagram",
+      "description": "Actor, use case, and boundary shapes"
+    },
+    "uml-sequence": {
+      "name": "UML Sequence Diagram",
+      "description": "Lifeline, message, and fragment shapes"
+    },
+    "uml-activity": {
+      "name": "UML Activity Diagram",
+      "description": "Action, decision, and flow shapes"
+    },
+    "uml-state-machine": {
+      "name": "UML State Machine Diagram",
+      "description": "State, transition, and pseudo-state shapes"
+    },
+    "uml-component-deployment": {
+      "name": "UML Component & Deployment",
+      "description": "Component, node, and artifact shapes"
+    },
+    "uml-package": {
+      "name": "UML Package & Organizational",
+      "description": "Package, model, and subsystem shapes"
+    },
+    "architecture": {
+      "name": "Architecture Diagram Shapes",
+      "description": "Microservice, API, and cloud shapes"
+    },
+    "data-database": {
+      "name": "Data & Database",
+      "description": "Table, view, and relationship shapes"
+    },
+    "cloud-architecture": {
+      "name": "Cloud Architecture",
+      "description": "AWS, Azure, and GCP shapes"
+    },
+    "infrastructure-network": {
+      "name": "Infrastructure & Network",
+      "description": "Server, switch, and network shapes"
+    },
+    "process-flow": {
+      "name": "Process & Flow",
+      "description": "Process, decision, and flow shapes"
+    },
+    "connector-line": {
+      "name": "Connector & Line Types",
+      "description": "Line and arrow variations"
+    },
+    "miscellaneous": {
+      "name": "Miscellaneous",
+      "description": "Legend, tags, and annotation helpers"
+    }
+  },
+  "shape_styling": {
+    "default_fill": "#FFFFFF",
+    "default_stroke": "#334155",
+    "default_stroke_width": 1.5,
+    "default_stroke_width_connector": 1.25
+  },
+  "connection_points": {
+    "enabled": true,
+    "shape": ["top", "bottom", "left", "right", "center"],
+    "connector": ["left", "right"]
+  },
+  "output_options": {
+    "generate_preview": false,
+    "preview_format": "png",
+    "create_template": true,
+    "per_category_stencils": false,
+    "merge_categories": true,
+    "skip_files": ["sprite.svg"]
+  }
+}

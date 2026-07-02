@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">WELCOME</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">02</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Welcome Message</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="greeting" x="72" y="176" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1A1A1A" text-anchor="start">Dear Partners &amp; Collaborators,</text>
+  <rect id="accent-greeting" x="72" y="181" width="52" height="2" fill="#556B4E" rx="1"/>
+  <g id="body">
+    <rect x="72" y="200" width="420" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="218" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="236" width="400" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="254" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="272" width="420" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="290" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="308" width="400" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="326" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="344" width="420" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="362" width="420" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="380" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="398" width="400" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="416" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="434" width="420" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="452" width="440" height="9" rx="1.5" fill="#DDDDDD"/>
+  </g>
+  <text id="sig-name" x="72" y="548" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">First Last Name</text>
+  <text id="sig-title" x="72" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Chief Executive Officer</text>
+  <line id="sig-r" x1="72" y1="582" x2="240" y2="582" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="sig-co" x="72" y="600" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1.5">COMPANY NAME</text>
+  <g id="photo">
+    <rect x="680" y="72" width="260" height="340" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="680" y1="72" x2="940" y2="412" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="940" y1="72" x2="680" y2="412" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="810" y="246" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">PORTRAIT PHOTO</text>
+  </g>
+  <text id="photo-cap" x="810" y="432" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">Name &amp; Title</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

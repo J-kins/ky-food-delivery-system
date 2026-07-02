@@ -1,0 +1,190 @@
+{
+  "diagram_description": {
+    "id": "system_context",
+    "title": "System Context Diagram",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "LR",
+    "caption": "Figure 7: NIHE System Context — External Interactions",
+    "nodes": [
+      {
+        "id": "NIHE",
+        "label": "NIHE Platform\n(Healthcare Ecosystem)",
+        "shape": "box",
+        "fill": "#1565C0",
+        "border": "#0D47A1",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "PATIENT",
+        "label": "Patient\n(Web/Mobile User)",
+        "shape": "actor",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#333333"
+      },
+      {
+        "id": "HF",
+        "label": "Healthcare Facility\n(Organizational Account)",
+        "shape": "actor",
+        "fill": "#E8F5E9",
+        "border": "#2E7D32",
+        "text_color": "#333333"
+      },
+      {
+        "id": "HCP",
+        "label": "Healthcare Personnel\n(Clinical Staff)",
+        "shape": "actor",
+        "fill": "#FFF3E0",
+        "border": "#E65100",
+        "text_color": "#333333"
+      },
+      {
+        "id": "REG",
+        "label": "Regulator\n(MoH, NDA)",
+        "shape": "actor",
+        "fill": "#FFEBEE",
+        "border": "#C62828",
+        "text_color": "#333333"
+      },
+      {
+        "id": "AUD",
+        "label": "Auditor\n(Internal/External)",
+        "shape": "actor",
+        "fill": "#ECEFF1",
+        "border": "#455A64",
+        "text_color": "#333333"
+      },
+      {
+        "id": "DEV",
+        "label": "Developer\n(Third-party Integrator)",
+        "shape": "actor",
+        "fill": "#E8EAF6",
+        "border": "#283593",
+        "text_color": "#333333"
+      },
+      {
+        "id": "PAYMENT",
+        "label": "Payment Gateway\n(Mobile Money, Card)",
+        "shape": "box",
+        "fill": "#FFF9C4",
+        "border": "#F9A825",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SMS",
+        "label": "SMS/Email Gateway",
+        "shape": "box",
+        "fill": "#FFF9C4",
+        "border": "#F9A825",
+        "text_color": "#333333"
+      },
+      {
+        "id": "MAP",
+        "label": "Mapping Provider\n(OSM, GIS)",
+        "shape": "box",
+        "fill": "#F3E5F5",
+        "border": "#7B1FA2",
+        "text_color": "#333333"
+      },
+      {
+        "id": "HIS",
+        "label": "External HIS/LIS\n(Hospital/Lab Systems)",
+        "shape": "box",
+        "fill": "#E0F7FA",
+        "border": "#00838F",
+        "text_color": "#333333"
+      },
+      {
+        "id": "DONOR",
+        "label": "Development Partner\n(Donor/Funder)",
+        "shape": "actor",
+        "fill": "#FFF8E1",
+        "border": "#F9A825",
+        "text_color": "#333333"
+      },
+      {
+        "id": "SUPPLIER",
+        "label": "Pharmaceutical Distributor\n(Supply Chain System)",
+        "shape": "box",
+        "fill": "#EDE7F6",
+        "border": "#5E35B1",
+        "text_color": "#333333"
+      }
+    ],
+    "edges": [
+      {
+        "from": "PATIENT",
+        "to": "NIHE",
+        "label": "Accesses EHR, Appointments, Telemedicine, Pharmacy",
+        "color": "#1565C0"
+      },
+      {
+        "from": "HF",
+        "to": "NIHE",
+        "label": "Manages EMR, Inventory, Staff",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "HCP",
+        "to": "NIHE",
+        "label": "Clinical Workflow, Prescriptions, Referrals",
+        "color": "#E65100"
+      },
+      {
+        "from": "REG",
+        "to": "NIHE",
+        "label": "Oversight, Compliance, Analytics",
+        "color": "#C62828"
+      },
+      {
+        "from": "AUD",
+        "to": "NIHE",
+        "label": "Audit Trails, Compliance Verification",
+        "color": "#455A64"
+      },
+      {
+        "from": "DEV",
+        "to": "NIHE",
+        "label": "API Consumption, Integrations",
+        "color": "#283593"
+      },
+      {
+        "from": "NIHE",
+        "to": "PAYMENT",
+        "label": "Process Payments",
+        "color": "#F9A825"
+      },
+      {
+        "from": "NIHE",
+        "to": "SMS",
+        "label": "Send Notifications",
+        "color": "#F9A825"
+      },
+      {
+        "from": "NIHE",
+        "to": "MAP",
+        "label": "Geocoding, Routing, Tiles",
+        "color": "#7B1FA2"
+      },
+      {
+        "from": "NIHE",
+        "to": "HIS",
+        "label": "HL7/FHIR Interoperability",
+        "color": "#00838F"
+      },
+      {
+        "from": "DONOR",
+        "to": "NIHE",
+        "label": "Funds & Monitors Outcomes",
+        "color": "#F9A825"
+      },
+      {
+        "from": "NIHE",
+        "to": "SUPPLIER",
+        "label": "Inventory & Ordering Sync",
+        "color": "#5E35B1"
+      }
+    ]
+  }
+}

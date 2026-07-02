@@ -1,0 +1,148 @@
+{
+  "diagram_description": {
+    "id": "milestone_timeline",
+    "title": "Project Milestone Timeline",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "LR",
+    "caption": "Figure 5: NIHE Implementation Timeline",
+    "nodes": [
+      {
+        "id": "M1",
+        "label": "Project Kick-off\nJul 2026",
+        "shape": "box",
+        "fill": "#1B5E20",
+        "border": "#0D47A1",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M2",
+        "label": "Requirements Finalized\nSep 2026",
+        "shape": "box",
+        "fill": "#2E7D32",
+        "border": "#1B5E20",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M3",
+        "label": "Architecture Design\nNov 2026",
+        "shape": "box",
+        "fill": "#1565C0",
+        "border": "#0D47A1",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M4",
+        "label": "GIS Prototype\nFeb 2027",
+        "shape": "box",
+        "fill": "#7B1FA2",
+        "border": "#4A148C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M5",
+        "label": "Core EHR Complete\nMay 2027",
+        "shape": "box",
+        "fill": "#00838F",
+        "border": "#006064",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M6",
+        "label": "Security Certification\nJul 2027",
+        "shape": "box",
+        "fill": "#37474F",
+        "border": "#263238",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M7",
+        "label": "Pilot Deployment\nAug 2027",
+        "shape": "box",
+        "fill": "#E65100",
+        "border": "#BF360C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M8",
+        "label": "National Phase 1\nJan 2028",
+        "shape": "box",
+        "fill": "#FF6F00",
+        "border": "#E65100",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M9",
+        "label": "Full National Deployment\nJun 2028",
+        "shape": "box",
+        "fill": "#C62828",
+        "border": "#B71C1C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "M10",
+        "label": "Stabilization & Handover\nSep 2028",
+        "shape": "box",
+        "fill": "#5D4037",
+        "border": "#3E2723",
+        "text_color": "#FFFFFF"
+      }
+    ],
+    "edges": [
+      {
+        "from": "M1",
+        "to": "M2",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M2",
+        "to": "M3",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M3",
+        "to": "M4",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M4",
+        "to": "M5",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M5",
+        "to": "M6",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M6",
+        "to": "M7",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M7",
+        "to": "M8",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M8",
+        "to": "M9",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "M9",
+        "to": "M10",
+        "label": "",
+        "color": "#666666"
+      }
+    ]
+  }
+}

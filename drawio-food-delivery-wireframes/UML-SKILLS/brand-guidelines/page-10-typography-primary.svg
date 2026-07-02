@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">02  TYPOGRAPHY</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">10</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Company Primary Font</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Our primary typeface is used for headlines, display text, and key messaging.</text>
+  <text id="big-aa" x="72" y="400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="168" font-weight="800" fill="#1A1A1A" text-anchor="start" letter-spacing="-5">Aa</text>
+  <text id="fn-lbl" x="552" y="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="3">PRIMARY TYPEFACE</text>
+  <text id="fn-name" x="552" y="240" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Your Display Font</text>
+  <line id="fn-rule" x1="552" y1="260" x2="812" y2="260" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="w0" x="552" y="296" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#1A1A1A" text-anchor="start">Extra Bold — Aa Bb Cc Dd</text>
+  <text id="w1" x="552" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">Bold — Aa Bb Cc Dd</text>
+  <text id="w2" x="552" y="352" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1A1A1A" text-anchor="start">Semi Bold — Aa Bb Cc Dd</text>
+  <text id="w3" x="552" y="380" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1A1A1A" text-anchor="start">Regular — Aa Bb Cc Dd</text>
+  <text id="w4" x="552" y="408" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="300" fill="#1A1A1A" text-anchor="start">Light — Aa Bb Cc Dd</text>
+  <line id="alpha-r1" x1="72" y1="436" x2="1208" y2="436" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="alpha-uc" x="72" y="456" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</text>
+  <text id="alpha-lc" x="72" y="474" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">a b c d e f g h i j k l m n o p q r s t u v w x y z</text>
+  <text id="nums" x="72" y="492" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">0 1 2 3 4 5 6 7 8 9   !  @  #  $  %  &amp;  *  (  )</text>
+  <line id="alpha-r2" x1="72" y1="504" x2="1208" y2="504" stroke="#DDDDDD" stroke-width="0.5"/>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

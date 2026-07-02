@@ -1,0 +1,33 @@
+digraph "scope_boundary" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=LR;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "SCOPE" [label="IN-SCOPE: NIHE Platform" shape=box fillcolor="#E8F5E9" color="#2E7D32" fontcolor="#1B5E20"];
+  "PATIENT" [label="Patient Services\n(EHR, Appointments, Telemedicine)" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#0D47A1"];
+  "FACILITY" [label="Facility Services\n(Registration, Staff, EMR)" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#0D47A1"];
+  "HCP" [label="Healthcare Personnel\n(Consultation, Prescriptions)" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#0D47A1"];
+  "REGULATOR" [label="Regulatory Services\n(Oversight, Pharmacovigilance)" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#0D47A1"];
+  "GIS" [label="GIS Services\n(Facility Locator, Routing)" shape=box fillcolor="#F3E5F5" color="#7B1FA2" fontcolor="#4A148C"];
+  "API" [label="API & Integration\n(HL7/FHIR, SDKs)" shape=box fillcolor="#F3E5F5" color="#7B1FA2" fontcolor="#4A148C"];
+  "SECURITY" [label="Security & Compliance\n(Encryption, Consent, Auditing)" shape=box fillcolor="#FFF3E0" color="#E65100" fontcolor="#BF360C"];
+  "TRAINING" [label="Capacity Building\n(Training, Help Desk, M&E)" shape=box fillcolor="#FFF3E0" color="#E65100" fontcolor="#BF360C"];
+  "OUT-1" [label="OUT-OF-SCOPE:\nNational ID Integration" shape=box fillcolor="#FFCDD2" color="#C62828" fontcolor="#B71C1C"];
+  "OUT-2" [label="OUT-OF-SCOPE:\nInsurance Platform" shape=box fillcolor="#FFCDD2" color="#C62828" fontcolor="#B71C1C"];
+  "OUT-3" [label="OUT-OF-SCOPE:\nExtension Marketplace" shape=box fillcolor="#FFCDD2" color="#C62828" fontcolor="#B71C1C"];
+  "OUT-4" [label="OUT-OF-SCOPE:\nUSSD Gateway" shape=box fillcolor="#FFCDD2" color="#C62828" fontcolor="#B71C1C"];
+  "OUT-5" [label="OUT-OF-SCOPE:\nCross-Border Data Exchange" shape=box fillcolor="#FFCDD2" color="#C62828" fontcolor="#B71C1C"];
+  "PATIENT" -> "SCOPE"[ color="#2E7D32"];
+  "FACILITY" -> "SCOPE"[ color="#2E7D32"];
+  "HCP" -> "SCOPE"[ color="#2E7D32"];
+  "REGULATOR" -> "SCOPE"[ color="#2E7D32"];
+  "GIS" -> "SCOPE"[ color="#2E7D32"];
+  "API" -> "SCOPE"[ color="#2E7D32"];
+  "SECURITY" -> "SCOPE"[ color="#2E7D32"];
+  "TRAINING" -> "SCOPE"[ color="#2E7D32"];
+  "OUT-1" -> "SCOPE"[ label="Future Phase" color="#C62828"];
+  "OUT-2" -> "SCOPE"[ label="Future Phase" color="#C62828"];
+  "OUT-3" -> "SCOPE"[ label="Future Phase" color="#C62828"];
+  "OUT-4" -> "SCOPE"[ label="Future Phase" color="#C62828"];
+  "OUT-5" -> "SCOPE"[ label="Future Phase" color="#C62828"];
+}

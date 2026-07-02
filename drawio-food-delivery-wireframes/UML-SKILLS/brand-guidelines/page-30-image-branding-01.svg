@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">07  IMAGE &amp; BRANDING</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">30</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Image &amp; Branding System</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Photography style guidelines and approved visual directions for the brand.</text>
+  <g id="hero">
+    <rect x="72" y="192" width="576" height="360" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="72" y1="192" x2="648" y2="552" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="648" y1="192" x2="72" y2="552" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="360" y="376" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">HERO IMAGE</text>
+  </g>
+  <g id="sm1">
+    <rect x="704" y="192" width="256" height="164" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="704" y1="192" x2="960" y2="356" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="960" y1="192" x2="704" y2="356" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="832" y="278" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">LIFESTYLE</text>
+  </g>
+  <g id="sm2">
+    <rect x="704" y="388" width="256" height="164" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="704" y1="388" x2="960" y2="552" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="960" y1="388" x2="704" y2="552" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="832" y="474" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">PRODUCT</text>
+  </g>
+  <text id="do-hdr" x="72" y="576" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#8CA47A" text-anchor="start">&#x2714;  Do</text>
+  <text id="dont-hdr" x="612" y="576" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#C04444" text-anchor="start">&#x2715;  Don't</text>
+  <text id="do0" x="72" y="596" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Natural light</text>
+  <text id="do1" x="72" y="613" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Authentic moments</text>
+  <text id="do2" x="72" y="630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Brand palette tones</text>
+  <text id="do3" x="72" y="647" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Human connection</text>
+  <text id="dn0" x="612" y="596" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Heavy filters</text>
+  <text id="dn1" x="612" y="613" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Staged/stock feel</text>
+  <text id="dn2" x="612" y="630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Off-brand colours</text>
+  <text id="dn3" x="612" y="647" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Over-saturated</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

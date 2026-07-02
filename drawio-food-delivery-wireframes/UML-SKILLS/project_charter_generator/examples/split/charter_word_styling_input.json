@@ -1,0 +1,14 @@
+{
+  "word_document": {
+    "template": "word_template.docx",
+    "figure_width_inches": 6.0,
+    "include_toc": true,
+    "include_appendices": false,
+    "body_font": "Calibri",
+    "body_size_pt": 11,
+    "sections": {
+      "system_context": true,
+      "budget_chart": false
+    }
+  }
+}

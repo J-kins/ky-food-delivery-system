@@ -1,0 +1,29 @@
+{
+  "diagrams": {
+    "problem_tree": {},
+    "stakeholder_matrix": {},
+    "scope_boundary": {},
+    "risk_matrix": {},
+    "milestone_timeline": {},
+    "system_context": {},
+    "stakeholder_map": {},
+    "org_chart": {}
+  },
+  "visio_deck": {
+    "page_size": "A3",
+    "orientation": "landscape",
+    "include_risk_matrix": true,
+    "theme": "corporate_blue",
+    "include_legend": true,
+    "watermark": "DRAFT - FOR INTERNAL REVIEW",
+    "diagram_order": [
+      "system_context",
+      "problem_tree",
+      "stakeholder_map",
+      "org_chart",
+      "scope_boundary",
+      "milestone_timeline",
+      "risk_matrix"
+    ]
+  }
+}

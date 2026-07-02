@@ -1,0 +1,2049 @@
+{
+  "project": {
+    "name": "National Integrated Healthcare Ecosystem (NIHE)",
+    "project_id": "NIHE-2026-001",
+    "sponsor": "Ministry of Health, Uganda",
+    "manager": "Project Manager, Digital Health Division",
+    "start_date": "2026-07-01",
+    "end_date": "2028-09-30",
+    "department": "Ministry of Health - Digital Health Division",
+    "version": "1.1",
+    "classification": "National Priority - Digital Health Transformation",
+    "methodology": "Hybrid (Agile delivery within phased Waterfall governance gates)",
+    "currency": "USD",
+    "geographic_scope": "Republic of Uganda (all 146 districts), phased rollout, architected for future East African Community expansion"
+  },
+  "vision": {
+    "statement": "To create a secure, interoperable, GIS-enabled healthcare ecosystem that connects patients, healthcare providers, regulators, and researchers through a unified digital platform across Uganda.",
+    "mission": "To digitize and integrate healthcare services, improve accessibility, enable emergency response coordination, support telemedicine, enhance regulatory oversight, protect patient data, and facilitate national health analytics through a single, scalable, and sustainable platform."
+  },
+  "objectives": [
+    {
+      "id": "OBJ-01",
+      "description": "Digitize healthcare records and enable seamless sharing across facilities",
+      "measurable_criteria": "Patient record retrieval time \u2264 2 seconds; 100% of registered facilities using EHR"
+    },
+    {
+      "id": "OBJ-02",
+      "description": "Improve healthcare accessibility through GIS-enabled facility discovery and navigation",
+      "measurable_criteria": "100% of districts covered; facility location accuracy \u2264 10m"
+    },
+    {
+      "id": "OBJ-03",
+      "description": "Enable emergency response coordination with real-time dispatch and tracking",
+      "measurable_criteria": "Emergency dispatch time \u2264 2 minutes; patient location accuracy \u2264 50m"
+    },
+    {
+      "id": "OBJ-04",
+      "description": "Support telemedicine services for remote consultation and care",
+      "measurable_criteria": "Video consultation connection success rate \u2265 95%; patient satisfaction \u2265 4/5"
+    },
+    {
+      "id": "OBJ-05",
+      "description": "Improve regulatory oversight through compliance monitoring and pharmacovigilance",
+      "measurable_criteria": "Regulatory compliance rate 100%; ADR report acknowledgment \u2264 4 hours"
+    },
+    {
+      "id": "OBJ-06",
+      "description": "Enable national health analytics and public health surveillance",
+      "measurable_criteria": "Surveillance data freshness \u2264 5 minutes; outbreak detection \u2264 48 hours"
+    },
+    {
+      "id": "OBJ-07",
+      "description": "Facilitate interoperability with existing healthcare systems",
+      "measurable_criteria": "HL7/FHIR standards compliance \u2265 95%; integration success rate \u2265 95%"
+    },
+    {
+      "id": "OBJ-08",
+      "description": "Protect patient data privacy and platform security through robust cybersecurity controls and compliance",
+      "measurable_criteria": "Zero critical (Severity 1) security incidents per year; 100% of facilities completing annual security awareness training; full compliance verified in annual Data Protection Act audits"
+    },
+    {
+      "id": "OBJ-09",
+      "description": "Build sustainable digital health capacity among healthcare workers and facility administrators",
+      "measurable_criteria": "\u2265 90% of onboarded healthcare personnel certified on platform use within 60 days of facility go-live; digital health literacy training delivered in all 146 districts"
+    }
+  ],
+  "scope": {
+    "in_scope": [
+      "Patient-facing services: account management, EHR access, appointment booking, telemedicine, AI health assistant, facility discovery and navigation, emergency assistance, online pharmacy, payments, health monitoring, medication reminders, pharmacovigilance reporting, reviews and notifications",
+      "Health facility services: registration and verification, staff and patient management, EMR, telemedicine, pharmacy and laboratory operations, order and delivery management, emergency services, location and mapping, financial management, reviews, pharmacovigilance, reporting, and notifications",
+      "Healthcare personnel services: professional profile management, availability and scheduling, patient search and access, clinical consultation management, telemedicine, prescription management, laboratory and diagnostic requests, referral management, emergency response, pharmacist and laboratory functions, care coordination, pharmacovigilance, health monitoring, reviews, reporting, and notifications",
+      "System administration: user, facility, and personnel lifecycle management; content and catalog governance; transaction oversight; security and audit administration; system configuration; monitoring; backup and recovery",
+      "Regulatory oversight: facility and personnel oversight; prescription and medicine oversight; pharmacovigilance management; public health surveillance; inspection management; complaint investigation; national health analytics",
+      "Audit capabilities: audit trail management; compliance auditing; financial auditing; security auditing",
+      "Developer ecosystem: REST and GraphQL APIs; webhooks; SDKs; plugin framework; healthcare interoperability standards (HL7, FHIR, ICD, SNOMED CT, LOINC)",
+      "GIS capabilities: facility geocoding; map tile services; routing and navigation; geospatial analytics; emergency location services",
+      "Security, privacy, and compliance services: end-to-end encryption, encryption key management, consent management, role-based access control, access auditing, and data subject rights handling under Uganda's Data Protection and Privacy Act",
+      "Capacity building and support: healthcare-worker digital literacy training, facility administrator onboarding, multi-channel help desk and support services, district-level adoption dashboards, and a monitoring & evaluation framework"
+    ],
+    "out_of_scope": [
+      "Integration with government identity systems not yet available",
+      "Insurance platform integration, including national health insurance claims processing and adjudication (future phase)",
+      "Extension marketplace (future phase)",
+      "USSD gateway for feature phones (future phase)",
+      "Wearable device integration beyond commercially available APIs",
+      "Cross-border (East African Community) health data exchange (planned for a future regional-expansion phase; current architecture is designed to support it but exchange is not activated in this phase)"
+    ],
+    "boundaries": "The system is designed for national-scale deployment within Uganda, with architecture supporting future East African expansion. It is an API-first, headless-capable platform that exposes all core functionality through documented APIs consumed by web, mobile, and third-party clients. The implementation phase concludes with a structured post-go-live stabilization (hypercare) period before full operational handover to a permanent Ministry of Health ICT and Digital Health Division team."
+  },
+  "constraints": [
+    "Must operate under low-bandwidth conditions (\u2264 100 Kbps) representative of rural Uganda",
+    "Must support intermittent connectivity with offline capabilities for critical functions",
+    "Must comply with Uganda's Data Protection and Privacy Act and healthcare regulatory requirements administered by the Ministry of Health and National Drug Authority",
+    "Must support Mobile Money as a primary payment method",
+    "Must support HL7/FHIR interoperability standards for integration with existing systems",
+    "Must be deployable on cloud, on-premises, or hybrid infrastructure",
+    "Must support 99.9% uptime for all critical services",
+    "Must support patient-facing content in English, Luganda, Runyankole, Luo, and other major Ugandan languages",
+    "Must comply with Uganda's Public Procurement and Disposal of Public Assets Authority (PPDA) regulations for all hardware, software, and vendor contracts"
+  ],
+  "assumptions": [
+    "Patients, healthcare personnel, and facility staff have access to internet-connected smartphones, tablets, or computers, even if connectivity is intermittent or low-bandwidth",
+    "Healthcare facilities and personnel onboarding possess valid licensure and legal authority to deliver registered services",
+    "Cooperation from healthcare facilities and regulatory bodies (MoH, NDA) for credential verification is available",
+    "Third-party Mobile Money, SMS, email, and mapping service providers maintain acceptable service levels",
+    "Future integration with government identity, insurance, and national health systems will be possible",
+    "The platform will achieve sufficient adoption to realize national-scale benefits",
+    "National electricity supply and data-center infrastructure will provide sufficient reliability for primary and backup hosting sites",
+    "The Ministry of Health will provide sustained budgetary support beyond the initial implementation period for ongoing operations and maintenance"
+  ],
+  "success_criteria": [
+    "Patient record retrieval time \u2264 2 seconds",
+    "System uptime \u2265 99.9%",
+    "Emergency dispatch automation \u2264 2 minutes",
+    "National facility mapping coverage 100% of districts",
+    "Multi-facility interoperability via HL7/FHIR",
+    "Medicine inventory accuracy \u2265 98%",
+    "Regulatory compliance rate 100%",
+    "100% of registered healthcare facilities using the platform",
+    "Video consultation quality score \u2265 4/5",
+    "ADR report acknowledgment time \u2264 4 hours",
+    "Zero critical (Severity 1) security incidents during the first 12 months post-launch",
+    "\u2265 90% of onboarded healthcare personnel digitally certified on platform use",
+    "Help desk first-response time \u2264 30 minutes during business hours"
+  ],
+  "budget": {
+    "total": 1250000,
+    "currency": "USD",
+    "breakdown": {
+      "personnel": 450000,
+      "hardware": 400000,
+      "software": 200000,
+      "training": 150000,
+      "contingency": 50000
+    }
+  },
+  "approvals": [
+    {
+      "role": "Project Sponsor",
+      "name": "Ministry of Health Representative",
+      "date": "2026-07-15"
+    },
+    {
+      "role": "Project Manager",
+      "name": "Digital Health Division Lead",
+      "date": "2026-07-01"
+    },
+    {
+      "role": "Technical Lead / Architect",
+      "name": "Chief Architect",
+      "date": "2026-07-10"
+    },
+    {
+      "role": "Data Protection Officer",
+      "name": "Ministry of Health Data Protection Officer",
+      "date": "2026-07-12"
+    },
+    {
+      "role": "National Drug Authority Representative",
+      "name": "NDA Liaison Officer",
+      "date": "2026-07-14"
+    }
+  ],
+  "stakeholders": [
+    {
+      "id": "SH-01",
+      "name": "Patients",
+      "role": "End Users",
+      "organization": "General Public",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Access to healthcare services, medical records, emergency assistance, and telemedicine"
+    },
+    {
+      "id": "SH-02",
+      "name": "Healthcare Facilities",
+      "role": "Service Providers",
+      "organization": "Hospitals, Clinics, Pharmacies, Laboratories",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Operational efficiency, patient management, inventory control, regulatory compliance"
+    },
+    {
+      "id": "SH-03",
+      "name": "Healthcare Personnel",
+      "role": "Clinical Staff",
+      "organization": "Doctors, Nurses, Pharmacists, Community Health Workers",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Clinical workflow efficiency, decision support, patient records access, telemedicine"
+    },
+    {
+      "id": "SH-04",
+      "name": "System Administrators",
+      "role": "Platform Operators",
+      "organization": "ICT Department",
+      "power": "High",
+      "interest": "High",
+      "expectations": "System reliability, security, maintainability, monitoring"
+    },
+    {
+      "id": "SH-05",
+      "name": "Ministry of Health",
+      "role": "Regulator",
+      "organization": "Government",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Compliance, public health surveillance, national health analytics"
+    },
+    {
+      "id": "SH-06",
+      "name": "National Drug Authority",
+      "role": "Regulator",
+      "organization": "Government",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Medicine safety monitoring, pharmacovigilance, licensing oversight"
+    },
+    {
+      "id": "SH-07",
+      "name": "Auditors",
+      "role": "Oversight",
+      "organization": "Internal/External Audit",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Audit trail integrity, financial accountability, compliance verification"
+    },
+    {
+      "id": "SH-08",
+      "name": "Researchers",
+      "role": "Data Users",
+      "organization": "Academic/Research Institutions",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Access to anonymized health data for research"
+    },
+    {
+      "id": "SH-09",
+      "name": "Developers",
+      "role": "Integrators",
+      "organization": "Third-party Developers, System Integrators",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "API access, documentation, SDKs, sandbox environment"
+    },
+    {
+      "id": "SH-10",
+      "name": "Development Partners / Donors",
+      "role": "Funding & Technical Assistance Partners",
+      "organization": "WHO, USAID, Global Fund, World Bank",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Transparent fund utilization, measurable health outcomes, donor reporting compliance"
+    },
+    {
+      "id": "SH-11",
+      "name": "Civil Society & Patient Advocacy Groups",
+      "role": "Community Representatives",
+      "organization": "NGOs, Patient Advocacy Networks",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Equitable access, patient rights protection, community engagement during rollout"
+    },
+    {
+      "id": "SH-12",
+      "name": "Pharmaceutical Suppliers & Distributors",
+      "role": "Supply Chain Partners",
+      "organization": "Licensed Wholesalers and Manufacturers",
+      "power": "Low",
+      "interest": "Low",
+      "expectations": "Integration with inventory and ordering systems, timely payment processing"
+    }
+  ],
+  "team": [
+    {
+      "id": "SPONSOR",
+      "name": "Permanent Secretary",
+      "role": "Project Sponsor",
+      "reports_to": null
+    },
+    {
+      "id": "PM",
+      "name": "Digital Health Division Lead",
+      "role": "Project Manager",
+      "reports_to": "SPONSOR"
+    },
+    {
+      "id": "ARCH",
+      "name": "Chief Architect",
+      "role": "Lead Architect",
+      "reports_to": "PM"
+    },
+    {
+      "id": "BACKEND",
+      "name": "Backend Lead",
+      "role": "Backend Development Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "FRONTEND",
+      "name": "Frontend Lead",
+      "role": "Frontend Development Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "GIS",
+      "name": "GIS Specialist",
+      "role": "GIS Development Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "SEC",
+      "name": "Security Lead",
+      "role": "Cybersecurity & Information Security Lead",
+      "reports_to": "ARCH"
+    },
+    {
+      "id": "DEVREL",
+      "name": "Developer Relations",
+      "role": "Developer Experience Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "QA",
+      "name": "QA Lead",
+      "role": "Quality Assurance Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "OPS",
+      "name": "DevOps Lead",
+      "role": "Operations and Infrastructure Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "DPO",
+      "name": "Data Protection Officer",
+      "role": "Privacy & Compliance Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "TRAIN",
+      "name": "Training & Change Management Lead",
+      "role": "Capacity Building Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "ME",
+      "name": "Monitoring & Evaluation Lead",
+      "role": "M&E Lead",
+      "reports_to": "PM"
+    },
+    {
+      "id": "PROC",
+      "name": "Procurement Lead",
+      "role": "Procurement & Vendor Management Lead",
+      "reports_to": "PM"
+    }
+  ],
+  "risks": [
+    {
+      "id": "RSK-01",
+      "description": "Limited internet connectivity in rural areas may reduce platform adoption and usability",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement offline-first architecture, data compression, USSD fallback, and progressive web app capabilities"
+    },
+    {
+      "id": "RSK-02",
+      "description": "Resistance to digital adoption from healthcare workers and facilities",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Comprehensive training programs, stakeholder engagement, pilot testing, user-centred design"
+    },
+    {
+      "id": "RSK-03",
+      "description": "Data privacy and security breaches compromising patient information",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "End-to-end encryption, role-based access control, regular security audits, compliance with Uganda Data Protection Act"
+    },
+    {
+      "id": "RSK-04",
+      "description": "Interoperability challenges with existing healthcare systems",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Adopt HL7/FHIR standards, provide integration SDKs, API-first architecture, partner engagement"
+    },
+    {
+      "id": "RSK-05",
+      "description": "Project funding constraints may impact scope or timeline",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Phased delivery approach, prioritise core functionality, secure government and donor funding"
+    },
+    {
+      "id": "RSK-06",
+      "description": "Regulatory changes affecting healthcare data handling or telemedicine",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Engage regulators early, build flexible compliance framework, regular legal review"
+    },
+    {
+      "id": "RSK-07",
+      "description": "Insufficient GIS data quality for routing and facility location",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Ground-truthing validation, community mapping partnerships, leverage OpenStreetMap"
+    },
+    {
+      "id": "RSK-08",
+      "description": "Cybersecurity threats, including ransomware and data breaches, targeting national health infrastructure",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Defense-in-depth security architecture, 24/7 security operations monitoring, regular penetration testing, documented incident response plan, cyber insurance"
+    },
+    {
+      "id": "RSK-09",
+      "description": "Attrition of key technical personnel (architects, GIS specialists, security leads) during the project lifecycle",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Competitive retention packages, thorough knowledge documentation, cross-training, succession planning, partnerships with local universities for talent pipeline"
+    },
+    {
+      "id": "RSK-10",
+      "description": "Over-dependence on third-party vendors (cloud, payment, mapping) creating lock-in or service-continuity risk",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Multi-vendor strategy where feasible, contractual SLAs, data portability requirements, defined exit clauses in vendor contracts"
+    },
+    {
+      "id": "RSK-11",
+      "description": "Poor data quality and migration errors when importing legacy paper-based or fragmented digital records",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Pre-migration data quality audits, phased data validation, dedicated data migration team, tested rollback procedures"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Project Kick-off",
+      "date": "2026-07-01",
+      "deliverable": "Project charter approved, team assembled",
+      "is_critical": true
+    },
+    {
+      "id": "M2",
+      "name": "Requirements Finalization",
+      "date": "2026-09-30",
+      "deliverable": "Complete SRS approved by all stakeholders",
+      "is_critical": true
+    },
+    {
+      "id": "M3",
+      "name": "System Architecture Design",
+      "date": "2026-11-30",
+      "deliverable": "Architecture diagrams, technology stack finalized",
+      "is_critical": true
+    },
+    {
+      "id": "M4",
+      "name": "GIS Platform Prototype",
+      "date": "2027-02-28",
+      "deliverable": "Working map tile server, geocoding, and routing prototype",
+      "is_critical": false
+    },
+    {
+      "id": "M5",
+      "name": "Core EHR Module Complete",
+      "date": "2027-05-31",
+      "deliverable": "Patient records, facility management, appointment system",
+      "is_critical": true
+    },
+    {
+      "id": "M6",
+      "name": "Security & Compliance Certification",
+      "date": "2027-07-15",
+      "deliverable": "Independent security audit passed; Data Protection Impact Assessment approved by regulators",
+      "is_critical": true
+    },
+    {
+      "id": "M7",
+      "name": "Pilot Deployment",
+      "date": "2027-08-31",
+      "deliverable": "Live system in 5 pilot districts",
+      "is_critical": true
+    },
+    {
+      "id": "M8",
+      "name": "National Rollout Phase 1",
+      "date": "2028-01-31",
+      "deliverable": "System live in 50% of districts",
+      "is_critical": false
+    },
+    {
+      "id": "M9",
+      "name": "Full National Deployment",
+      "date": "2028-06-30",
+      "deliverable": "100% district coverage, all core modules live",
+      "is_critical": true
+    },
+    {
+      "id": "M10",
+      "name": "Post-Go-Live Stabilization & Handover",
+      "date": "2028-09-30",
+      "deliverable": "Hypercare support period complete; operations handed to permanent Ministry of Health ICT team; lessons-learned report published",
+      "is_critical": false
+    }
+  ],
+  "diagrams": {
+    "problem_tree": {},
+    "stakeholder_map": {},
+    "system_context": {},
+    "org_chart": {},
+    "scope_boundary": {},
+    "milestone_timeline": {},
+    "stakeholder_matrix": {},
+    "risk_matrix": {}
+  },
+  "visio_deck": {
+    "page_size": "A3",
+    "orientation": "landscape",
+    "include_risk_matrix": true,
+    "theme": "corporate_blue",
+    "include_legend": true,
+    "watermark": "DRAFT - FOR INTERNAL REVIEW",
+    "diagram_order": [
+      "system_context",
+      "problem_tree",
+      "stakeholder_map",
+      "org_chart",
+      "scope_boundary",
+      "milestone_timeline",
+      "risk_matrix"
+    ]
+  },
+  "diagram_descriptions": {
+    "problem_tree": {
+      "id": "problem_tree",
+      "title": "Problem Tree: Uganda Healthcare Challenges",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "caption": "Figure 1: Problem Tree \u2014 Uganda Healthcare Ecosystem Challenges",
+      "nodes": [
+        {
+          "id": "ROOT",
+          "label": "Fragmented, Inefficient, and Inaccessible Healthcare",
+          "shape": "box",
+          "fill": "#C62828",
+          "border": "#B71C1C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-1",
+          "label": "Fragmented Patient Records",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-2",
+          "label": "Poor Healthcare Access",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-3",
+          "label": "Inefficient Referrals",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-4",
+          "label": "Emergency Response Delays",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-5",
+          "label": "Medicine Stock-outs",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-6",
+          "label": "Limited Healthcare Analytics",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BRANCH-7",
+          "label": "Workforce Capacity Gaps",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "LEAF-1-1",
+          "label": "No shared EHR across facilities",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-1-2",
+          "label": "Paper-based records",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-2-1",
+          "label": "No facility locator",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-2-2",
+          "label": "Limited rural coverage",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-3-1",
+          "label": "No electronic referrals",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-3-2",
+          "label": "Referral loss/fragmentation",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-4-1",
+          "label": "No integrated dispatch",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-4-2",
+          "label": "No ambulance tracking",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-5-1",
+          "label": "No real-time inventory",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-5-2",
+          "label": "No expiry tracking",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-6-1",
+          "label": "No national health data",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-6-2",
+          "label": "No disease surveillance",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-7-1",
+          "label": "Limited digital literacy among health workers",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LEAF-7-2",
+          "label": "Shortage of trained GIS/health-informatics specialists",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        }
+      ],
+      "edges": [
+        {
+          "from": "LEAF-1-1",
+          "to": "BRANCH-1",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-1-2",
+          "to": "BRANCH-1",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-2-1",
+          "to": "BRANCH-2",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-2-2",
+          "to": "BRANCH-2",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-3-1",
+          "to": "BRANCH-3",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-3-2",
+          "to": "BRANCH-3",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-4-1",
+          "to": "BRANCH-4",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-4-2",
+          "to": "BRANCH-4",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-5-1",
+          "to": "BRANCH-5",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-5-2",
+          "to": "BRANCH-5",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-6-1",
+          "to": "BRANCH-6",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-6-2",
+          "to": "BRANCH-6",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-7-1",
+          "to": "BRANCH-7",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "LEAF-7-2",
+          "to": "BRANCH-7",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-1",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-2",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-3",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-4",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-5",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-6",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BRANCH-7",
+          "to": "ROOT",
+          "label": "",
+          "color": "#666666"
+        }
+      ]
+    },
+    "stakeholder_matrix": {
+      "id": "stakeholder_matrix",
+      "title": "Stakeholder Power-Interest Matrix",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "caption": "Figure 2: Stakeholder Power-Interest Matrix",
+      "nodes": [
+        {
+          "id": "SH-01",
+          "label": "Patients",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-02",
+          "label": "Health Facilities",
+          "shape": "box",
+          "fill": "#E8F5E9",
+          "border": "#2E7D32",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-03",
+          "label": "Healthcare Personnel",
+          "shape": "box",
+          "fill": "#FFF3E0",
+          "border": "#E65100",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-04",
+          "label": "System Administrators",
+          "shape": "box",
+          "fill": "#F3E5F5",
+          "border": "#7B1FA2",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-05",
+          "label": "Ministry of Health",
+          "shape": "box",
+          "fill": "#FFEBEE",
+          "border": "#C62828",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-06",
+          "label": "National Drug Authority",
+          "shape": "box",
+          "fill": "#FFEBEE",
+          "border": "#C62828",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-07",
+          "label": "Auditors",
+          "shape": "box",
+          "fill": "#ECEFF1",
+          "border": "#455A64",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-08",
+          "label": "Researchers",
+          "shape": "box",
+          "fill": "#E0F7FA",
+          "border": "#00838F",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-09",
+          "label": "Developers",
+          "shape": "box",
+          "fill": "#E8EAF6",
+          "border": "#283593",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-10",
+          "label": "Development Partners / Donors",
+          "shape": "box",
+          "fill": "#FFF8E1",
+          "border": "#F9A825",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-11",
+          "label": "Civil Society & Patient Advocacy",
+          "shape": "box",
+          "fill": "#F1F8E9",
+          "border": "#558B2F",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SH-12",
+          "label": "Pharmaceutical Suppliers",
+          "shape": "box",
+          "fill": "#EDE7F6",
+          "border": "#5E35B1",
+          "text_color": "#333333"
+        }
+      ],
+      "edges": [
+        {
+          "from": "SH-01",
+          "to": "SH-05",
+          "label": "High Interest",
+          "color": "#1565C0",
+          "style": "dashed"
+        },
+        {
+          "from": "SH-02",
+          "to": "SH-03",
+          "label": "Collaboration",
+          "color": "#2E7D32",
+          "style": "solid"
+        },
+        {
+          "from": "SH-04",
+          "to": "SH-01",
+          "label": "Supports",
+          "color": "#7B1FA2",
+          "style": "solid"
+        },
+        {
+          "from": "SH-05",
+          "to": "SH-06",
+          "label": "Co-regulate",
+          "color": "#C62828",
+          "style": "solid"
+        },
+        {
+          "from": "SH-07",
+          "to": "SH-04",
+          "label": "Audits",
+          "color": "#455A64",
+          "style": "dashed"
+        },
+        {
+          "from": "SH-08",
+          "to": "SH-09",
+          "label": "Uses APIs",
+          "color": "#00838F",
+          "style": "dashed"
+        },
+        {
+          "from": "SH-09",
+          "to": "SH-04",
+          "label": "Integrates with",
+          "color": "#283593",
+          "style": "solid"
+        },
+        {
+          "from": "SH-10",
+          "to": "SH-05",
+          "label": "Funds & Oversees",
+          "color": "#F9A825",
+          "style": "dashed"
+        },
+        {
+          "from": "SH-11",
+          "to": "SH-01",
+          "label": "Advocates for",
+          "color": "#558B2F",
+          "style": "dashed"
+        },
+        {
+          "from": "SH-12",
+          "to": "SH-02",
+          "label": "Supplies",
+          "color": "#5E35B1",
+          "style": "solid"
+        }
+      ]
+    },
+    "scope_boundary": {
+      "id": "scope_boundary",
+      "title": "Scope Boundary Diagram",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "LR",
+      "caption": "Figure 3: Scope Boundary \u2014 In-Scope vs Out-of-Scope",
+      "nodes": [
+        {
+          "id": "SCOPE",
+          "label": "IN-SCOPE: NIHE Platform",
+          "shape": "box",
+          "fill": "#E8F5E9",
+          "border": "#2E7D32",
+          "text_color": "#1B5E20"
+        },
+        {
+          "id": "PATIENT",
+          "label": "Patient Services\n(EHR, Appointments, Telemedicine)",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#0D47A1"
+        },
+        {
+          "id": "FACILITY",
+          "label": "Facility Services\n(Registration, Staff, EMR)",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#0D47A1"
+        },
+        {
+          "id": "HCP",
+          "label": "Healthcare Personnel\n(Consultation, Prescriptions)",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#0D47A1"
+        },
+        {
+          "id": "REGULATOR",
+          "label": "Regulatory Services\n(Oversight, Pharmacovigilance)",
+          "shape": "box",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#0D47A1"
+        },
+        {
+          "id": "GIS",
+          "label": "GIS Services\n(Facility Locator, Routing)",
+          "shape": "box",
+          "fill": "#F3E5F5",
+          "border": "#7B1FA2",
+          "text_color": "#4A148C"
+        },
+        {
+          "id": "API",
+          "label": "API & Integration\n(HL7/FHIR, SDKs)",
+          "shape": "box",
+          "fill": "#F3E5F5",
+          "border": "#7B1FA2",
+          "text_color": "#4A148C"
+        },
+        {
+          "id": "SECURITY",
+          "label": "Security & Compliance\n(Encryption, Consent, Auditing)",
+          "shape": "box",
+          "fill": "#FFF3E0",
+          "border": "#E65100",
+          "text_color": "#BF360C"
+        },
+        {
+          "id": "TRAINING",
+          "label": "Capacity Building\n(Training, Help Desk, M&E)",
+          "shape": "box",
+          "fill": "#FFF3E0",
+          "border": "#E65100",
+          "text_color": "#BF360C"
+        },
+        {
+          "id": "OUT-1",
+          "label": "OUT-OF-SCOPE:\nNational ID Integration",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#C62828",
+          "text_color": "#B71C1C"
+        },
+        {
+          "id": "OUT-2",
+          "label": "OUT-OF-SCOPE:\nInsurance Platform",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#C62828",
+          "text_color": "#B71C1C"
+        },
+        {
+          "id": "OUT-3",
+          "label": "OUT-OF-SCOPE:\nExtension Marketplace",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#C62828",
+          "text_color": "#B71C1C"
+        },
+        {
+          "id": "OUT-4",
+          "label": "OUT-OF-SCOPE:\nUSSD Gateway",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#C62828",
+          "text_color": "#B71C1C"
+        },
+        {
+          "id": "OUT-5",
+          "label": "OUT-OF-SCOPE:\nCross-Border Data Exchange",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#C62828",
+          "text_color": "#B71C1C"
+        }
+      ],
+      "edges": [
+        {
+          "from": "PATIENT",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "FACILITY",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "HCP",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "REGULATOR",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "GIS",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "API",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "SECURITY",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "TRAINING",
+          "to": "SCOPE",
+          "label": "",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "OUT-1",
+          "to": "SCOPE",
+          "label": "Future Phase",
+          "color": "#C62828",
+          "style": "dashed"
+        },
+        {
+          "from": "OUT-2",
+          "to": "SCOPE",
+          "label": "Future Phase",
+          "color": "#C62828",
+          "style": "dashed"
+        },
+        {
+          "from": "OUT-3",
+          "to": "SCOPE",
+          "label": "Future Phase",
+          "color": "#C62828",
+          "style": "dashed"
+        },
+        {
+          "from": "OUT-4",
+          "to": "SCOPE",
+          "label": "Future Phase",
+          "color": "#C62828",
+          "style": "dashed"
+        },
+        {
+          "from": "OUT-5",
+          "to": "SCOPE",
+          "label": "Future Phase",
+          "color": "#C62828",
+          "style": "dashed"
+        }
+      ]
+    },
+    "org_chart": {
+      "id": "org_chart",
+      "title": "Project Organization Chart",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "caption": "Figure 4: NIHE Project Organization Structure",
+      "nodes": [
+        {
+          "id": "SPONSOR",
+          "label": "Project Sponsor\nPermanent Secretary, MoH",
+          "shape": "box",
+          "fill": "#1A237E",
+          "border": "#0D47A1",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "PM",
+          "label": "Project Manager\nDigital Health Division Lead",
+          "shape": "box",
+          "fill": "#1565C0",
+          "border": "#0D47A1",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "ARCH",
+          "label": "Lead Architect\nChief Architect",
+          "shape": "box",
+          "fill": "#2E7D32",
+          "border": "#1B5E20",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "BACKEND",
+          "label": "Backend Lead\nBackend Development Lead",
+          "shape": "box",
+          "fill": "#00838F",
+          "border": "#006064",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "FRONTEND",
+          "label": "Frontend Lead\nFrontend Development Lead",
+          "shape": "box",
+          "fill": "#00838F",
+          "border": "#006064",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "GIS",
+          "label": "GIS Lead\nGIS Development Lead",
+          "shape": "box",
+          "fill": "#00838F",
+          "border": "#006064",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "SEC",
+          "label": "Security Lead\nCybersecurity Lead",
+          "shape": "box",
+          "fill": "#37474F",
+          "border": "#263238",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "DEVREL",
+          "label": "Developer Relations\nDeveloper Experience Lead",
+          "shape": "box",
+          "fill": "#6A1B9A",
+          "border": "#4A148C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "QA",
+          "label": "QA Lead\nQuality Assurance Lead",
+          "shape": "box",
+          "fill": "#E65100",
+          "border": "#BF360C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "OPS",
+          "label": "DevOps Lead\nOperations Lead",
+          "shape": "box",
+          "fill": "#BF360C",
+          "border": "#871F00",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "DPO",
+          "label": "Data Protection Officer\nPrivacy & Compliance Lead",
+          "shape": "box",
+          "fill": "#AD1457",
+          "border": "#880E4F",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "TRAIN",
+          "label": "Training Lead\nCapacity Building Lead",
+          "shape": "box",
+          "fill": "#8E24AA",
+          "border": "#6A1B9A",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "ME",
+          "label": "M&E Lead\nMonitoring & Evaluation Lead",
+          "shape": "box",
+          "fill": "#00695C",
+          "border": "#004D40",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "PROC",
+          "label": "Procurement Lead\nVendor Management Lead",
+          "shape": "box",
+          "fill": "#5D4037",
+          "border": "#3E2723",
+          "text_color": "#FFFFFF"
+        }
+      ],
+      "edges": [
+        {
+          "from": "PM",
+          "to": "SPONSOR",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "ARCH",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "BACKEND",
+          "to": "ARCH",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "FRONTEND",
+          "to": "ARCH",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "GIS",
+          "to": "ARCH",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "SEC",
+          "to": "ARCH",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "DEVREL",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "QA",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "OPS",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "DPO",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "TRAIN",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "ME",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "PROC",
+          "to": "PM",
+          "label": "",
+          "color": "#666666"
+        }
+      ]
+    },
+    "milestone_timeline": {
+      "id": "milestone_timeline",
+      "title": "Project Milestone Timeline",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "LR",
+      "caption": "Figure 5: NIHE Implementation Timeline",
+      "nodes": [
+        {
+          "id": "M1",
+          "label": "Project Kick-off\nJul 2026",
+          "shape": "box",
+          "fill": "#1B5E20",
+          "border": "#0D47A1",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M2",
+          "label": "Requirements Finalized\nSep 2026",
+          "shape": "box",
+          "fill": "#2E7D32",
+          "border": "#1B5E20",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M3",
+          "label": "Architecture Design\nNov 2026",
+          "shape": "box",
+          "fill": "#1565C0",
+          "border": "#0D47A1",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M4",
+          "label": "GIS Prototype\nFeb 2027",
+          "shape": "box",
+          "fill": "#7B1FA2",
+          "border": "#4A148C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M5",
+          "label": "Core EHR Complete\nMay 2027",
+          "shape": "box",
+          "fill": "#00838F",
+          "border": "#006064",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M6",
+          "label": "Security Certification\nJul 2027",
+          "shape": "box",
+          "fill": "#37474F",
+          "border": "#263238",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M7",
+          "label": "Pilot Deployment\nAug 2027",
+          "shape": "box",
+          "fill": "#E65100",
+          "border": "#BF360C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M8",
+          "label": "National Phase 1\nJan 2028",
+          "shape": "box",
+          "fill": "#FF6F00",
+          "border": "#E65100",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M9",
+          "label": "Full National Deployment\nJun 2028",
+          "shape": "box",
+          "fill": "#C62828",
+          "border": "#B71C1C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "M10",
+          "label": "Stabilization & Handover\nSep 2028",
+          "shape": "box",
+          "fill": "#5D4037",
+          "border": "#3E2723",
+          "text_color": "#FFFFFF"
+        }
+      ],
+      "edges": [
+        {
+          "from": "M1",
+          "to": "M2",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M2",
+          "to": "M3",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M3",
+          "to": "M4",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M4",
+          "to": "M5",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M5",
+          "to": "M6",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M6",
+          "to": "M7",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M7",
+          "to": "M8",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M8",
+          "to": "M9",
+          "label": "",
+          "color": "#666666"
+        },
+        {
+          "from": "M9",
+          "to": "M10",
+          "label": "",
+          "color": "#666666"
+        }
+      ]
+    },
+    "risk_matrix": {
+      "id": "risk_matrix",
+      "title": "Risk Matrix",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "TB",
+      "caption": "Figure 6: NIHE Risk Matrix",
+      "nodes": [
+        {
+          "id": "HIGH_HIGH",
+          "label": "High Impact / High Likelihood",
+          "shape": "box",
+          "fill": "#C62828",
+          "border": "#B71C1C",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "HIGH_MED",
+          "label": "High Impact / Medium Likelihood",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "MED_HIGH",
+          "label": "Medium Impact / High Likelihood",
+          "shape": "box",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "LOW_HIGH",
+          "label": "Low Impact / High Likelihood",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "HIGH_LOW",
+          "label": "High Impact / Low Likelihood",
+          "shape": "box",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "MED_MED",
+          "label": "Medium Impact / Medium Likelihood",
+          "shape": "box",
+          "fill": "#FFE0B2",
+          "border": "#FFB74D",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LOW_MED",
+          "label": "Low Impact / Medium Likelihood",
+          "shape": "box",
+          "fill": "#FFF9C4",
+          "border": "#FFF176",
+          "text_color": "#333333"
+        },
+        {
+          "id": "MED_LOW",
+          "label": "Medium Impact / Low Likelihood",
+          "shape": "box",
+          "fill": "#FFF9C4",
+          "border": "#FFF176",
+          "text_color": "#333333"
+        },
+        {
+          "id": "LOW_LOW",
+          "label": "Low Impact / Low Likelihood",
+          "shape": "box",
+          "fill": "#C8E6C9",
+          "border": "#81C784",
+          "text_color": "#333333"
+        },
+        {
+          "id": "RSK-01",
+          "label": "Limited Connectivity (Rural)",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "RSK-02",
+          "label": "Adoption Resistance",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "RSK-03",
+          "label": "Data Privacy Breach",
+          "shape": "ellipse",
+          "fill": "#FFCDD2",
+          "border": "#E57373",
+          "text_color": "#333333"
+        },
+        {
+          "id": "RSK-04",
+          "label": "Interoperability Challenges",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "RSK-05",
+          "label": "Funding Constraints",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "RSK-06",
+          "label": "Regulatory Changes",
+          "shape": "ellipse",
+          "fill": "#FFE0B2",
+          "border": "#FFB74D",
+          "text_color": "#333333"
+        },
+        {
+          "id": "RSK-07",
+          "label": "GIS Data Quality",
+          "shape": "ellipse",
+          "fill": "#FFE0B2",
+          "border": "#FFB74D",
+          "text_color": "#333333"
+        },
+        {
+          "id": "RSK-08",
+          "label": "Cybersecurity Threats",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "RSK-09",
+          "label": "Key Personnel Attrition",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "RSK-10",
+          "label": "Vendor Lock-in",
+          "shape": "ellipse",
+          "fill": "#FFF9C4",
+          "border": "#FFF176",
+          "text_color": "#333333"
+        },
+        {
+          "id": "RSK-11",
+          "label": "Data Migration Quality",
+          "shape": "ellipse",
+          "fill": "#EF5350",
+          "border": "#C62828",
+          "text_color": "#FFFFFF"
+        }
+      ],
+      "edges": [
+        {
+          "from": "RSK-01",
+          "to": "HIGH_HIGH",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-02",
+          "to": "HIGH_MED",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-03",
+          "to": "HIGH_LOW",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-04",
+          "to": "MED_HIGH",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-05",
+          "to": "HIGH_MED",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-06",
+          "to": "LOW_HIGH",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-07",
+          "to": "MED_MED",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-08",
+          "to": "HIGH_MED",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-09",
+          "to": "MED_HIGH",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-10",
+          "to": "MED_LOW",
+          "label": "",
+          "color": "#C62828"
+        },
+        {
+          "from": "RSK-11",
+          "to": "MED_HIGH",
+          "label": "",
+          "color": "#C62828"
+        }
+      ]
+    },
+    "system_context": {
+      "id": "system_context",
+      "title": "System Context Diagram",
+      "format": "graphviz",
+      "engine": "dot",
+      "rankdir": "LR",
+      "caption": "Figure 7: NIHE System Context \u2014 External Interactions",
+      "nodes": [
+        {
+          "id": "NIHE",
+          "label": "NIHE Platform\n(Healthcare Ecosystem)",
+          "shape": "box",
+          "fill": "#1565C0",
+          "border": "#0D47A1",
+          "text_color": "#FFFFFF"
+        },
+        {
+          "id": "PATIENT",
+          "label": "Patient\n(Web/Mobile User)",
+          "shape": "actor",
+          "fill": "#E3F2FD",
+          "border": "#1565C0",
+          "text_color": "#333333"
+        },
+        {
+          "id": "HF",
+          "label": "Healthcare Facility\n(Organizational Account)",
+          "shape": "actor",
+          "fill": "#E8F5E9",
+          "border": "#2E7D32",
+          "text_color": "#333333"
+        },
+        {
+          "id": "HCP",
+          "label": "Healthcare Personnel\n(Clinical Staff)",
+          "shape": "actor",
+          "fill": "#FFF3E0",
+          "border": "#E65100",
+          "text_color": "#333333"
+        },
+        {
+          "id": "REG",
+          "label": "Regulator\n(MoH, NDA)",
+          "shape": "actor",
+          "fill": "#FFEBEE",
+          "border": "#C62828",
+          "text_color": "#333333"
+        },
+        {
+          "id": "AUD",
+          "label": "Auditor\n(Internal/External)",
+          "shape": "actor",
+          "fill": "#ECEFF1",
+          "border": "#455A64",
+          "text_color": "#333333"
+        },
+        {
+          "id": "DEV",
+          "label": "Developer\n(Third-party Integrator)",
+          "shape": "actor",
+          "fill": "#E8EAF6",
+          "border": "#283593",
+          "text_color": "#333333"
+        },
+        {
+          "id": "PAYMENT",
+          "label": "Payment Gateway\n(Mobile Money, Card)",
+          "shape": "box",
+          "fill": "#FFF9C4",
+          "border": "#F9A825",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SMS",
+          "label": "SMS/Email Gateway",
+          "shape": "box",
+          "fill": "#FFF9C4",
+          "border": "#F9A825",
+          "text_color": "#333333"
+        },
+        {
+          "id": "MAP",
+          "label": "Mapping Provider\n(OSM, GIS)",
+          "shape": "box",
+          "fill": "#F3E5F5",
+          "border": "#7B1FA2",
+          "text_color": "#333333"
+        },
+        {
+          "id": "HIS",
+          "label": "External HIS/LIS\n(Hospital/Lab Systems)",
+          "shape": "box",
+          "fill": "#E0F7FA",
+          "border": "#00838F",
+          "text_color": "#333333"
+        },
+        {
+          "id": "DONOR",
+          "label": "Development Partner\n(Donor/Funder)",
+          "shape": "actor",
+          "fill": "#FFF8E1",
+          "border": "#F9A825",
+          "text_color": "#333333"
+        },
+        {
+          "id": "SUPPLIER",
+          "label": "Pharmaceutical Distributor\n(Supply Chain System)",
+          "shape": "box",
+          "fill": "#EDE7F6",
+          "border": "#5E35B1",
+          "text_color": "#333333"
+        }
+      ],
+      "edges": [
+        {
+          "from": "PATIENT",
+          "to": "NIHE",
+          "label": "Accesses EHR, Appointments, Telemedicine, Pharmacy",
+          "color": "#1565C0"
+        },
+        {
+          "from": "HF",
+          "to": "NIHE",
+          "label": "Manages EMR, Inventory, Staff",
+          "color": "#2E7D32"
+        },
+        {
+          "from": "HCP",
+          "to": "NIHE",
+          "label": "Clinical Workflow, Prescriptions, Referrals",
+          "color": "#E65100"
+        },
+        {
+          "from": "REG",
+          "to": "NIHE",
+          "label": "Oversight, Compliance, Analytics",
+          "color": "#C62828"
+        },
+        {
+          "from": "AUD",
+          "to": "NIHE",
+          "label": "Audit Trails, Compliance Verification",
+          "color": "#455A64"
+        },
+        {
+          "from": "DEV",
+          "to": "NIHE",
+          "label": "API Consumption, Integrations",
+          "color": "#283593"
+        },
+        {
+          "from": "NIHE",
+          "to": "PAYMENT",
+          "label": "Process Payments",
+          "color": "#F9A825"
+        },
+        {
+          "from": "NIHE",
+          "to": "SMS",
+          "label": "Send Notifications",
+          "color": "#F9A825"
+        },
+        {
+          "from": "NIHE",
+          "to": "MAP",
+          "label": "Geocoding, Routing, Tiles",
+          "color": "#7B1FA2"
+        },
+        {
+          "from": "NIHE",
+          "to": "HIS",
+          "label": "HL7/FHIR Interoperability",
+          "color": "#00838F"
+        },
+        {
+          "from": "DONOR",
+          "to": "NIHE",
+          "label": "Funds & Monitors Outcomes",
+          "color": "#F9A825"
+        },
+        {
+          "from": "NIHE",
+          "to": "SUPPLIER",
+          "label": "Inventory & Ordering Sync",
+          "color": "#5E35B1"
+        }
+      ]
+    }
+  },
+  "word_document": {
+    "template": "word_template.docx",
+    "figure_width_inches": 6.5,
+    "include_toc": true,
+    "include_appendices": true,
+    "body_font": "Calibri",
+    "body_size_pt": 11,
+    "heading_font": "Calibri Light",
+    "color_theme": {
+      "primary": "#1565C0",
+      "secondary": "#2E7D32",
+      "accent": "#C62828"
+    },
+    "cover_page": {
+      "include_logo": true,
+      "logo_path": "assets/moh_logo.png",
+      "subtitle": "Project Charter \u2014 Version 1.1"
+    },
+    "header_footer": {
+      "header_text": "NIHE Project Charter \u2014 Confidential",
+      "footer_text": "Ministry of Health, Uganda",
+      "page_numbering": true
+    },
+    "sections": {
+      "system_context": true,
+      "budget_chart": true,
+      "risk_matrix": true,
+      "milestone_timeline": true
+    },
+    "appendix_sections": [
+      "Glossary of Terms",
+      "Stakeholder Contact Directory",
+      "Detailed Risk Register",
+      "Acronyms (HL7, FHIR, EHR, GIS, NDA, MoH, ADR)"
+    ]
+  }
+}

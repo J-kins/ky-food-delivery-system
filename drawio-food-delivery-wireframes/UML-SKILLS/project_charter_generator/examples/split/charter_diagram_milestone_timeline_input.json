@@ -1,0 +1,72 @@
+{
+  "diagram_description": {
+    "id": "milestone_timeline",
+    "title": "Milestone Timeline",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "LR",
+    "nodes": [
+      {
+        "id": "M1",
+        "label": "2026-01-01\\nProject Kickoff",
+        "shape": "diamond",
+        "fill": "#E53935",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "M2",
+        "label": "2026-03-15\\nArchitecture Sign-off",
+        "shape": "diamond",
+        "fill": "#E53935",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "M3",
+        "label": "2026-09-01\\nPilot Go-Live",
+        "shape": "diamond",
+        "fill": "#E53935",
+        "border": "#E53935",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "M4",
+        "label": "2026-12-15\\nPhase 1 Complete",
+        "shape": "diamond",
+        "fill": "#1565C0",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      }
+    ],
+    "edges": [
+      {
+        "from": "M1",
+        "to": "M2",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "M2",
+        "to": "M3",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "M3",
+        "to": "M4",
+        "label": "",
+        "style": "solid",
+        "color": "#666666"
+      }
+    ],
+    "source": null,
+    "caption": "Figure 6: Milestone Timeline"
+  }
+}

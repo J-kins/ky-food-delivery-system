@@ -1,0 +1,1641 @@
+{
+  "shapes": [
+    {
+      "id": "rectangle",
+      "name": "Rectangle",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/rectangle.svg"
+    },
+    {
+      "id": "rounded-rectangle",
+      "name": "Rounded Rectangle",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/rounded-rectangle.svg"
+    },
+    {
+      "id": "square",
+      "name": "Square",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/square.svg"
+    },
+    {
+      "id": "circle",
+      "name": "Circle",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/circle.svg"
+    },
+    {
+      "id": "ellipse",
+      "name": "Ellipse",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/ellipse.svg"
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/diamond.svg"
+    },
+    {
+      "id": "triangle",
+      "name": "Triangle",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/triangle.svg"
+    },
+    {
+      "id": "hexagon",
+      "name": "Hexagon",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/hexagon.svg"
+    },
+    {
+      "id": "pentagon",
+      "name": "Pentagon",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/pentagon.svg"
+    },
+    {
+      "id": "cylinder",
+      "name": "Cylinder",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/cylinder.svg"
+    },
+    {
+      "id": "folder",
+      "name": "Folder",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/folder.svg"
+    },
+    {
+      "id": "line",
+      "name": "Line",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/line.svg"
+    },
+    {
+      "id": "arrow",
+      "name": "Arrow",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/arrow.svg"
+    },
+    {
+      "id": "bracket",
+      "name": "Bracket",
+      "category": "basic-geometric",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "dashed-line",
+      "name": "Dashed Line",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/dashed-line.svg"
+    },
+    {
+      "id": "dotted-line",
+      "name": "Dotted Line",
+      "category": "basic-geometric",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/basic-geometric/dotted-line.svg"
+    },
+    {
+      "id": "class-box",
+      "name": "Class Box",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/class-box.svg"
+    },
+    {
+      "id": "abstract-class",
+      "name": "Abstract Class",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/abstract-class.svg"
+    },
+    {
+      "id": "interface-box",
+      "name": "Interface",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/interface-box.svg"
+    },
+    {
+      "id": "enumeration",
+      "name": "Enumeration",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/enumeration.svg"
+    },
+    {
+      "id": "stereotype",
+      "name": "Stereotype",
+      "category": "uml-class",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "attribute",
+      "name": "Attribute",
+      "category": "uml-class",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "method",
+      "name": "Method",
+      "category": "uml-class",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "visibility-marker",
+      "name": "Visibility Marker",
+      "category": "uml-class",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "association",
+      "name": "Association",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/association.svg"
+    },
+    {
+      "id": "aggregation",
+      "name": "Aggregation",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/aggregation.svg"
+    },
+    {
+      "id": "composition",
+      "name": "Composition",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/composition.svg"
+    },
+    {
+      "id": "inheritance",
+      "name": "Inheritance",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/inheritance.svg"
+    },
+    {
+      "id": "dependency",
+      "name": "Dependency",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/dependency.svg"
+    },
+    {
+      "id": "realization",
+      "name": "Realization",
+      "category": "uml-class",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-class/realization.svg"
+    },
+    {
+      "id": "multiplicity",
+      "name": "Multiplicity",
+      "category": "uml-class",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "constraint-brace",
+      "name": "Constraint",
+      "category": "uml-class",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "actor",
+      "name": "Actor",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/actor.svg"
+    },
+    {
+      "id": "use-case",
+      "name": "Use Case",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/use-case.svg"
+    },
+    {
+      "id": "system-boundary",
+      "name": "System Boundary",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/system-boundary.svg"
+    },
+    {
+      "id": "include-relationship",
+      "name": "Include",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/include-relationship.svg"
+    },
+    {
+      "id": "extend-relationship",
+      "name": "Extend",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/extend-relationship.svg"
+    },
+    {
+      "id": "actor-generalization",
+      "name": "Generalization",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/actor-generalization.svg"
+    },
+    {
+      "id": "actor-head",
+      "name": "Actor Head",
+      "category": "uml-use-case",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-use-case/actor-head.svg"
+    },
+    {
+      "id": "lifeline",
+      "name": "Lifeline",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/lifeline.svg"
+    },
+    {
+      "id": "actor-lifeline",
+      "name": "Actor Lifeline",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/actor-lifeline.svg"
+    },
+    {
+      "id": "activation-bar",
+      "name": "Activation Bar",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/activation-bar.svg"
+    },
+    {
+      "id": "sync-message",
+      "name": "Synchronous Message",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/sync-message.svg"
+    },
+    {
+      "id": "async-message",
+      "name": "Asynchronous Message",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/async-message.svg"
+    },
+    {
+      "id": "return-message",
+      "name": "Return Message",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/return-message.svg"
+    },
+    {
+      "id": "self-message",
+      "name": "Self Message",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/self-message.svg"
+    },
+    {
+      "id": "create-message",
+      "name": "Create Message",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/create-message.svg"
+    },
+    {
+      "id": "destroy-message",
+      "name": "Destroy Message",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/destroy-message.svg"
+    },
+    {
+      "id": "combined-fragment",
+      "name": "Combined Fragment",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/combined-fragment.svg"
+    },
+    {
+      "id": "alt-fragment",
+      "name": "Alt Fragment",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/alt-fragment.svg"
+    },
+    {
+      "id": "loop-fragment",
+      "name": "Loop Fragment",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/loop-fragment.svg"
+    },
+    {
+      "id": "opt-fragment",
+      "name": "Opt Fragment",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/opt-fragment.svg"
+    },
+    {
+      "id": "par-fragment",
+      "name": "Par Fragment",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/par-fragment.svg"
+    },
+    {
+      "id": "guard",
+      "name": "Guard",
+      "category": "uml-sequence",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "message-number",
+      "name": "Message Number",
+      "category": "uml-sequence",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "interaction-occurrence",
+      "name": "Interaction Occurrence",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/interaction-occurrence.svg"
+    },
+    {
+      "id": "continuation",
+      "name": "Continuation",
+      "category": "uml-sequence",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-sequence/continuation.svg"
+    },
+    {
+      "id": "initial-node",
+      "name": "Initial Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/initial-node.svg"
+    },
+    {
+      "id": "final-node",
+      "name": "Final Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/final-node.svg"
+    },
+    {
+      "id": "flow-final-node",
+      "name": "Flow Final Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/flow-final-node.svg"
+    },
+    {
+      "id": "action",
+      "name": "Action",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/action.svg"
+    },
+    {
+      "id": "activity",
+      "name": "Activity",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/activity.svg"
+    },
+    {
+      "id": "decision-node",
+      "name": "Decision Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/decision-node.svg"
+    },
+    {
+      "id": "merge-node",
+      "name": "Merge Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/merge-node.svg"
+    },
+    {
+      "id": "fork-node",
+      "name": "Fork Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/fork-node.svg"
+    },
+    {
+      "id": "join-node",
+      "name": "Join Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/join-node.svg"
+    },
+    {
+      "id": "object-node",
+      "name": "Object Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/object-node.svg"
+    },
+    {
+      "id": "data-store-node",
+      "name": "Data Store Node",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/data-store-node.svg"
+    },
+    {
+      "id": "send-signal",
+      "name": "Send Signal",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/send-signal.svg"
+    },
+    {
+      "id": "accept-signal",
+      "name": "Accept Signal",
+      "category": "uml-activity",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "accept-time-event",
+      "name": "Accept Time Event",
+      "category": "uml-activity",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "interrupting-edge",
+      "name": "Interrupting Edge",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/interrupting-edge.svg"
+    },
+    {
+      "id": "swimlane",
+      "name": "Swimlane",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/swimlane.svg"
+    },
+    {
+      "id": "activity-partition",
+      "name": "Activity Partition",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/activity-partition.svg"
+    },
+    {
+      "id": "expansion-region",
+      "name": "Expansion Region",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/expansion-region.svg"
+    },
+    {
+      "id": "exception-handler",
+      "name": "Exception Handler",
+      "category": "uml-activity",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "control-flow",
+      "name": "Control Flow",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/control-flow.svg"
+    },
+    {
+      "id": "object-flow",
+      "name": "Object Flow",
+      "category": "uml-activity",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-activity/object-flow.svg"
+    },
+    {
+      "id": "interrupting-flow",
+      "name": "Interrupting Flow",
+      "category": "uml-activity",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "state",
+      "name": "State",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/state.svg"
+    },
+    {
+      "id": "sm-initial-state",
+      "name": "Initial State",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/sm-initial-state.svg"
+    },
+    {
+      "id": "sm-final-state",
+      "name": "Final State",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/sm-final-state.svg"
+    },
+    {
+      "id": "choice-pseudostate",
+      "name": "Choice Pseudo-state",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/choice-pseudostate.svg"
+    },
+    {
+      "id": "fork-pseudostate",
+      "name": "Fork Pseudo-state",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/fork-pseudostate.svg"
+    },
+    {
+      "id": "join-pseudostate",
+      "name": "Join Pseudo-state",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/join-pseudostate.svg"
+    },
+    {
+      "id": "deep-history",
+      "name": "Deep History",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/deep-history.svg"
+    },
+    {
+      "id": "shallow-history",
+      "name": "Shallow History",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/shallow-history.svg"
+    },
+    {
+      "id": "entry-point",
+      "name": "Entry Point",
+      "category": "uml-state-machine",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "exit-point",
+      "name": "Exit Point",
+      "category": "uml-state-machine",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "composite-state",
+      "name": "Composite State",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/composite-state.svg"
+    },
+    {
+      "id": "submachine-state",
+      "name": "Submachine State",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/submachine-state.svg"
+    },
+    {
+      "id": "transition",
+      "name": "Transition",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/transition.svg"
+    },
+    {
+      "id": "internal-transition",
+      "name": "Internal Transition",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/internal-transition.svg"
+    },
+    {
+      "id": "completion-transition",
+      "name": "Completion Transition",
+      "category": "uml-state-machine",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-state-machine/completion-transition.svg"
+    },
+    {
+      "id": "transition-event",
+      "name": "Event",
+      "category": "uml-state-machine",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "transition-guard",
+      "name": "Transition Guard",
+      "category": "uml-state-machine",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "transition-action",
+      "name": "Transition Action",
+      "category": "uml-state-machine",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "component",
+      "name": "Component",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/component.svg"
+    },
+    {
+      "id": "component-lollipop",
+      "name": "Component with Lollipop",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/component-lollipop.svg"
+    },
+    {
+      "id": "component-socket",
+      "name": "Component with Socket",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/component-socket.svg"
+    },
+    {
+      "id": "interface-provided",
+      "name": "Interface (Provided)",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/interface-provided.svg"
+    },
+    {
+      "id": "interface-required",
+      "name": "Interface (Required)",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/interface-required.svg"
+    },
+    {
+      "id": "port",
+      "name": "Port",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/port.svg"
+    },
+    {
+      "id": "artifact",
+      "name": "Artifact",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/artifact.svg"
+    },
+    {
+      "id": "node",
+      "name": "Node",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/node.svg"
+    },
+    {
+      "id": "device",
+      "name": "Device",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/device.svg"
+    },
+    {
+      "id": "execution-environment",
+      "name": "Execution Environment",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/execution-environment.svg"
+    },
+    {
+      "id": "deployment-relationship",
+      "name": "Deployment",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/deployment-relationship.svg"
+    },
+    {
+      "id": "manifest-relationship",
+      "name": "Manifest",
+      "category": "uml-component-deployment",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-component-deployment/manifest-relationship.svg"
+    },
+    {
+      "id": "package",
+      "name": "Package",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/package.svg"
+    },
+    {
+      "id": "package-stereotype",
+      "name": "Package with Stereotype",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/package-stereotype.svg"
+    },
+    {
+      "id": "model",
+      "name": "Model",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/model.svg"
+    },
+    {
+      "id": "subsystem",
+      "name": "Subsystem",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/subsystem.svg"
+    },
+    {
+      "id": "profile",
+      "name": "Profile",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/profile.svg"
+    },
+    {
+      "id": "package-import",
+      "name": "Package Import",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/package-import.svg"
+    },
+    {
+      "id": "package-merge",
+      "name": "Package Merge",
+      "category": "uml-package",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/uml-package/package-merge.svg"
+    },
+    {
+      "id": "microservice",
+      "name": "Microservice",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/microservice.svg"
+    },
+    {
+      "id": "api-gateway",
+      "name": "API Gateway",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/api-gateway.svg"
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/database.svg"
+    },
+    {
+      "id": "cache",
+      "name": "Cache",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/cache.svg"
+    },
+    {
+      "id": "message-queue",
+      "name": "Message Queue",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/message-queue.svg"
+    },
+    {
+      "id": "load-balancer",
+      "name": "Load Balancer",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/load-balancer.svg"
+    },
+    {
+      "id": "firewall",
+      "name": "Firewall",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/firewall.svg"
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/storage.svg"
+    },
+    {
+      "id": "container",
+      "name": "Container",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/container.svg"
+    },
+    {
+      "id": "pod",
+      "name": "Pod",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/pod.svg"
+    },
+    {
+      "id": "k8s-service",
+      "name": "Service",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/k8s-service.svg"
+    },
+    {
+      "id": "ingress",
+      "name": "Ingress",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/ingress.svg"
+    },
+    {
+      "id": "configmap",
+      "name": "ConfigMap",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/configmap.svg"
+    },
+    {
+      "id": "secret",
+      "name": "Secret",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/secret.svg"
+    },
+    {
+      "id": "persistent-volume",
+      "name": "Persistent Volume",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/persistent-volume.svg"
+    },
+    {
+      "id": "namespace",
+      "name": "Namespace",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/namespace.svg"
+    },
+    {
+      "id": "consumer",
+      "name": "Consumer",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/consumer.svg"
+    },
+    {
+      "id": "producer",
+      "name": "Producer",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/producer.svg"
+    },
+    {
+      "id": "broker",
+      "name": "Broker",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/broker.svg"
+    },
+    {
+      "id": "topic",
+      "name": "Topic",
+      "category": "architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/architecture/topic.svg"
+    },
+    {
+      "id": "table",
+      "name": "Table",
+      "category": "data-database",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/data-database/table.svg"
+    },
+    {
+      "id": "view-db",
+      "name": "View",
+      "category": "data-database",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/data-database/view-db.svg"
+    },
+    {
+      "id": "stored-procedure",
+      "name": "Stored Procedure",
+      "category": "data-database",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/data-database/stored-procedure.svg"
+    },
+    {
+      "id": "index-db",
+      "name": "Index",
+      "category": "data-database",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/data-database/index-db.svg"
+    },
+    {
+      "id": "primary-key",
+      "name": "Primary Key",
+      "category": "data-database",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "foreign-key",
+      "name": "Foreign Key",
+      "category": "data-database",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "table-relationship",
+      "name": "Relationship",
+      "category": "data-database",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/data-database/table-relationship.svg"
+    },
+    {
+      "id": "er-entity",
+      "name": "Entity",
+      "category": "data-database",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/data-database/er-entity.svg"
+    },
+    {
+      "id": "aws-ec2",
+      "name": "AWS EC2",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/aws-ec2.svg"
+    },
+    {
+      "id": "aws-s3",
+      "name": "AWS S3",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/aws-s3.svg"
+    },
+    {
+      "id": "aws-rds",
+      "name": "AWS RDS",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/aws-rds.svg"
+    },
+    {
+      "id": "aws-lambda",
+      "name": "AWS Lambda",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/aws-lambda.svg"
+    },
+    {
+      "id": "aws-api-gateway",
+      "name": "AWS API Gateway",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/aws-api-gateway.svg"
+    },
+    {
+      "id": "aws-vpc",
+      "name": "AWS VPC",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/aws-vpc.svg"
+    },
+    {
+      "id": "azure-vm",
+      "name": "Azure VM",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "azure-blob",
+      "name": "Azure Blob",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "azure-sql",
+      "name": "Azure SQL",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "azure-functions",
+      "name": "Azure Functions",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "gcp-compute",
+      "name": "GCP Compute Engine",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "gcp-storage",
+      "name": "GCP Cloud Storage",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "gcp-bigquery",
+      "name": "GCP BigQuery",
+      "category": "cloud-architecture",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "cloud-region",
+      "name": "Cloud Region",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/cloud-region.svg"
+    },
+    {
+      "id": "cloud-az",
+      "name": "Cloud Availability Zone",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/cloud-az.svg"
+    },
+    {
+      "id": "cloud-generic",
+      "name": "Cloud Generic",
+      "category": "cloud-architecture",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/cloud-architecture/cloud-generic.svg"
+    },
+    {
+      "id": "server",
+      "name": "Server",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/server.svg"
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/switch.svg"
+    },
+    {
+      "id": "router",
+      "name": "Router",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/router.svg"
+    },
+    {
+      "id": "firewall-network",
+      "name": "Firewall",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/firewall-network.svg"
+    },
+    {
+      "id": "load-balancer-network",
+      "name": "Load Balancer",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/load-balancer-network.svg"
+    },
+    {
+      "id": "vpn",
+      "name": "VPN",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/vpn.svg"
+    },
+    {
+      "id": "internet",
+      "name": "Internet",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/internet.svg"
+    },
+    {
+      "id": "dmz",
+      "name": "DMZ",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/dmz.svg"
+    },
+    {
+      "id": "subnet",
+      "name": "Subnet",
+      "category": "infrastructure-network",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/infrastructure-network/subnet.svg"
+    },
+    {
+      "id": "process",
+      "name": "Process",
+      "category": "process-flow",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/process-flow/process.svg"
+    },
+    {
+      "id": "flow-start",
+      "name": "Start",
+      "category": "process-flow",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/process-flow/flow-start.svg"
+    },
+    {
+      "id": "flow-end",
+      "name": "End",
+      "category": "process-flow",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/process-flow/flow-end.svg"
+    },
+    {
+      "id": "flow-decision",
+      "name": "Decision",
+      "category": "process-flow",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/process-flow/flow-decision.svg"
+    },
+    {
+      "id": "document",
+      "name": "Document",
+      "category": "process-flow",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "data-parallelogram",
+      "name": "Data",
+      "category": "process-flow",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "predefined-process",
+      "name": "Predefined Process",
+      "category": "process-flow",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/process-flow/predefined-process.svg"
+    },
+    {
+      "id": "manual-input",
+      "name": "Manual Input",
+      "category": "process-flow",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "display",
+      "name": "Display",
+      "category": "process-flow",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "manual-operation",
+      "name": "Manual Operation",
+      "category": "process-flow",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "off-page-connector",
+      "name": "Off-page Connector",
+      "category": "process-flow",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/process-flow/off-page-connector.svg"
+    },
+    {
+      "id": "line-solid",
+      "name": "Solid Line",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/line-solid.svg"
+    },
+    {
+      "id": "line-dashed",
+      "name": "Dashed Line",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/line-dashed.svg"
+    },
+    {
+      "id": "line-dotted",
+      "name": "Dotted Line",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/line-dotted.svg"
+    },
+    {
+      "id": "arrow-solid",
+      "name": "Solid Arrow",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/arrow-solid.svg"
+    },
+    {
+      "id": "arrow-open",
+      "name": "Open Arrow",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/arrow-open.svg"
+    },
+    {
+      "id": "arrow-dashed",
+      "name": "Dashed Arrow",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/arrow-dashed.svg"
+    },
+    {
+      "id": "arrow-double",
+      "name": "Double-headed Arrow",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/arrow-double.svg"
+    },
+    {
+      "id": "arrow-hollow-triangle",
+      "name": "Solid Triangle Arrow",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/arrow-hollow-triangle.svg"
+    },
+    {
+      "id": "arrow-dashed-triangle",
+      "name": "Dashed Triangle Arrow",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/arrow-dashed-triangle.svg"
+    },
+    {
+      "id": "diamond-hollow-end",
+      "name": "Hollow Diamond",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/diamond-hollow-end.svg"
+    },
+    {
+      "id": "diamond-filled-end",
+      "name": "Filled Diamond",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/diamond-filled-end.svg"
+    },
+    {
+      "id": "self-loop",
+      "name": "Self-loop",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/self-loop.svg"
+    },
+    {
+      "id": "zigzag-line",
+      "name": "Zigzag Line",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/zigzag-line.svg"
+    },
+    {
+      "id": "bend-point",
+      "name": "Bend Point",
+      "category": "connector-line",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/connector-line/bend-point.svg"
+    },
+    {
+      "id": "note",
+      "name": "Note",
+      "category": "miscellaneous",
+      "delivery": "manual",
+      "status": "manual",
+      "path": null
+    },
+    {
+      "id": "constraint-text",
+      "name": "Constraint",
+      "category": "miscellaneous",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "tag",
+      "name": "Tag",
+      "category": "miscellaneous",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/miscellaneous/tag.svg"
+    },
+    {
+      "id": "legend",
+      "name": "Legend",
+      "category": "miscellaneous",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/miscellaneous/legend.svg"
+    },
+    {
+      "id": "title-block",
+      "name": "Title Block",
+      "category": "miscellaneous",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/miscellaneous/title-block.svg"
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "category": "miscellaneous",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/miscellaneous/timeline.svg"
+    },
+    {
+      "id": "milestone",
+      "name": "Milestone",
+      "category": "miscellaneous",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/miscellaneous/milestone.svg"
+    },
+    {
+      "id": "phase",
+      "name": "Phase",
+      "category": "miscellaneous",
+      "delivery": "generate",
+      "status": "generated",
+      "path": "shapes/miscellaneous/phase.svg"
+    },
+    {
+      "id": "sequence-number",
+      "name": "Number",
+      "category": "miscellaneous",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    },
+    {
+      "id": "condition-text",
+      "name": "Condition",
+      "category": "miscellaneous",
+      "delivery": "annotation",
+      "status": "skipped",
+      "path": null
+    }
+  ],
+  "counts": {
+    "generated": 168,
+    "manual": 20,
+    "skipped": 16
+  }
+}

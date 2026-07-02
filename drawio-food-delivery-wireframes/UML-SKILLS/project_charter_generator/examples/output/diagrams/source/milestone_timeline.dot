@@ -1,0 +1,13 @@
+digraph "milestone_timeline" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=LR;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "M1" [label="2026-01-01\\nProject Kickoff" shape=diamond fillcolor="#E53935" color="#E53935" fontcolor="#000000"];
+  "M2" [label="2026-03-15\\nArchitecture Sign-off" shape=diamond fillcolor="#E53935" color="#E53935" fontcolor="#000000"];
+  "M3" [label="2026-09-01\\nPilot Go-Live" shape=diamond fillcolor="#E53935" color="#E53935" fontcolor="#000000"];
+  "M4" [label="2026-12-15\\nPhase 1 Complete" shape=diamond fillcolor="#1565C0" color="#1565C0" fontcolor="#000000"];
+  "M1" -> "M2"[ color="#666666"];
+  "M2" -> "M3"[ color="#666666"];
+  "M3" -> "M4"[ color="#666666"];
+}

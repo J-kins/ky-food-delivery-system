@@ -1,0 +1,41 @@
+{
+  "diagram_description": {
+    "id": "risk_matrix",
+    "title": "Risk Matrix",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "nodes": [
+      {
+        "id": "RSK-01",
+        "label": "RSK-01",
+        "shape": "circle",
+        "fill": "#FF7043",
+        "border": "#333333",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "RSK-02",
+        "label": "RSK-02",
+        "shape": "circle",
+        "fill": "#FF7043",
+        "border": "#333333",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "RSK-03",
+        "label": "RSK-03",
+        "shape": "circle",
+        "fill": "#FF7043",
+        "border": "#333333",
+        "text_color": "#000000",
+        "group": null
+      }
+    ],
+    "edges": [],
+    "source": null,
+    "caption": "Figure 5: Risk Matrix"
+  }
+}

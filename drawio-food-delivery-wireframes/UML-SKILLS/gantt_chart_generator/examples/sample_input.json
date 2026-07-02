@@ -1,0 +1,83 @@
+{
+  "gantt_chart": {
+    "title": "Gantt Chart - Project Schedule",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "phases": [
+      {
+        "id": "P1",
+        "name": "Project Management",
+        "color": "#1565C0",
+        "tasks": [
+          {
+            "id": "T1.1",
+            "name": "Planning",
+            "start": "2026-01-01",
+            "end": "2026-02-28",
+            "completion": 100,
+            "dependencies": [],
+            "level": 1
+          },
+          {
+            "id": "T1.2",
+            "name": "Monitoring",
+            "start": "2026-03-01",
+            "end": "2026-04-30",
+            "completion": 50,
+            "dependencies": ["T1.1"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "id": "P2",
+        "name": "Requirements Engineering",
+        "color": "#2E7D32",
+        "tasks": [
+          {
+            "id": "T2.1",
+            "name": "Elicitation",
+            "start": "2026-02-01",
+            "end": "2026-03-15",
+            "completion": 80,
+            "dependencies": ["T1.1"],
+            "level": 1
+          }
+        ]
+      }
+    ],
+    "milestones": [
+      {
+        "id": "M1",
+        "name": "Project Kickoff",
+        "date": "2026-01-01",
+        "dependencies": []
+      },
+      {
+        "id": "M2",
+        "name": "Requirements Finalized",
+        "date": "2026-03-15",
+        "dependencies": ["T2.1"]
+      }
+    ],
+
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 9,
+      "bar_height": 0.4,
+      "row_height": 0.6,
+      "show_percent_complete": true
+    },
+
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5,
+      "grid_spacing": "weeks"
+    }
+  }
+}

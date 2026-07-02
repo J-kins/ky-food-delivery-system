@@ -1,0 +1,31 @@
+digraph "system_context" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=LR;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "NIHE" [label="NIHE Platform\n(Healthcare Ecosystem)" shape=box fillcolor="#1565C0" color="#0D47A1" fontcolor="#FFFFFF"];
+  "PATIENT" [label="Patient\n(Web/Mobile User)" shape=actor fillcolor="#E3F2FD" color="#1565C0" fontcolor="#333333"];
+  "HF" [label="Healthcare Facility\n(Organizational Account)" shape=actor fillcolor="#E8F5E9" color="#2E7D32" fontcolor="#333333"];
+  "HCP" [label="Healthcare Personnel\n(Clinical Staff)" shape=actor fillcolor="#FFF3E0" color="#E65100" fontcolor="#333333"];
+  "REG" [label="Regulator\n(MoH, NDA)" shape=actor fillcolor="#FFEBEE" color="#C62828" fontcolor="#333333"];
+  "AUD" [label="Auditor\n(Internal/External)" shape=actor fillcolor="#ECEFF1" color="#455A64" fontcolor="#333333"];
+  "DEV" [label="Developer\n(Third-party Integrator)" shape=actor fillcolor="#E8EAF6" color="#283593" fontcolor="#333333"];
+  "PAYMENT" [label="Payment Gateway\n(Mobile Money, Card)" shape=box fillcolor="#FFF9C4" color="#F9A825" fontcolor="#333333"];
+  "SMS" [label="SMS/Email Gateway" shape=box fillcolor="#FFF9C4" color="#F9A825" fontcolor="#333333"];
+  "MAP" [label="Mapping Provider\n(OSM, GIS)" shape=box fillcolor="#F3E5F5" color="#7B1FA2" fontcolor="#333333"];
+  "HIS" [label="External HIS/LIS\n(Hospital/Lab Systems)" shape=box fillcolor="#E0F7FA" color="#00838F" fontcolor="#333333"];
+  "DONOR" [label="Development Partner\n(Donor/Funder)" shape=actor fillcolor="#FFF8E1" color="#F9A825" fontcolor="#333333"];
+  "SUPPLIER" [label="Pharmaceutical Distributor\n(Supply Chain System)" shape=box fillcolor="#EDE7F6" color="#5E35B1" fontcolor="#333333"];
+  "PATIENT" -> "NIHE"[ label="Accesses EHR, Appointments, Telemedicine, Pharmacy" color="#1565C0"];
+  "HF" -> "NIHE"[ label="Manages EMR, Inventory, Staff" color="#2E7D32"];
+  "HCP" -> "NIHE"[ label="Clinical Workflow, Prescriptions, Referrals" color="#E65100"];
+  "REG" -> "NIHE"[ label="Oversight, Compliance, Analytics" color="#C62828"];
+  "AUD" -> "NIHE"[ label="Audit Trails, Compliance Verification" color="#455A64"];
+  "DEV" -> "NIHE"[ label="API Consumption, Integrations" color="#283593"];
+  "NIHE" -> "PAYMENT"[ label="Process Payments" color="#F9A825"];
+  "NIHE" -> "SMS"[ label="Send Notifications" color="#F9A825"];
+  "NIHE" -> "MAP"[ label="Geocoding, Routing, Tiles" color="#7B1FA2"];
+  "NIHE" -> "HIS"[ label="HL7/FHIR Interoperability" color="#00838F"];
+  "DONOR" -> "NIHE"[ label="Funds & Monitors Outcomes" color="#F9A825"];
+  "NIHE" -> "SUPPLIER"[ label="Inventory & Ordering Sync" color="#5E35B1"];
+}

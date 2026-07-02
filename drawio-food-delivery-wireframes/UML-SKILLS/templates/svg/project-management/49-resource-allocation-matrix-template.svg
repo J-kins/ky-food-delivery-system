@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">Resource Allocation Matrix</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
+  <defs>
+    <pattern id="grid-resource-allocation-matrix" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-resource-allocation-matrix)"/>
+  <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
+  <rect x="400" y="240" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="240" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="240" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="240" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="240" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="240" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="296" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="296" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="296" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="296" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="296" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="296" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="352" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="352" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="352" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="352" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="352" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="352" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="408" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="408" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="408" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="408" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="408" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="408" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="464" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="464" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="464" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="464" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="464" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="464" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="520" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="520" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="520" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="520" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="520" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="520" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="576" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="576" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="576" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="576" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="576" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="576" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="400" y="632" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="540" y="632" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="680" y="632" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="820" y="632" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="960" y="632" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="1100" y="632" width="140" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="470.0" y="228" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">R1</text>
+  <text x="610.0" y="228" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">R2</text>
+  <text x="750.0" y="228" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">R3</text>
+  <text x="890.0" y="228" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">R4</text>
+  <text x="1030.0" y="228" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">R5</text>
+  <text x="1170.0" y="228" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">R6</text>
+  <text x="400" y="220" text-anchor="start" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">Resources →</text>
+  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
+  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
+  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · Resource Allocation Matrix</text>
+</svg>

@@ -1,0 +1,9 @@
+digraph "risk_matrix" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=TB;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "RSK-01" [label="RSK-01" shape=circle fillcolor="#FF7043" color="#333333" fontcolor="#000000"];
+  "RSK-02" [label="RSK-02" shape=circle fillcolor="#FF7043" color="#333333" fontcolor="#000000"];
+  "RSK-03" [label="RSK-03" shape=circle fillcolor="#FF7043" color="#333333" fontcolor="#000000"];
+}

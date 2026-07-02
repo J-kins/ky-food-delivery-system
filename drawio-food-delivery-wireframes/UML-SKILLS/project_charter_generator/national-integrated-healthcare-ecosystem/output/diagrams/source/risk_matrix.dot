@@ -1,0 +1,37 @@
+digraph "risk_matrix" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=TB;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "HIGH_HIGH" [label="High Impact / High Likelihood" shape=box fillcolor="#C62828" color="#B71C1C" fontcolor="#FFFFFF"];
+  "HIGH_MED" [label="High Impact / Medium Likelihood" shape=box fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "MED_HIGH" [label="Medium Impact / High Likelihood" shape=box fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "LOW_HIGH" [label="Low Impact / High Likelihood" shape=box fillcolor="#FFCDD2" color="#E57373" fontcolor="#333333"];
+  "HIGH_LOW" [label="High Impact / Low Likelihood" shape=box fillcolor="#FFCDD2" color="#E57373" fontcolor="#333333"];
+  "MED_MED" [label="Medium Impact / Medium Likelihood" shape=box fillcolor="#FFE0B2" color="#FFB74D" fontcolor="#333333"];
+  "LOW_MED" [label="Low Impact / Medium Likelihood" shape=box fillcolor="#FFF9C4" color="#FFF176" fontcolor="#333333"];
+  "MED_LOW" [label="Medium Impact / Low Likelihood" shape=box fillcolor="#FFF9C4" color="#FFF176" fontcolor="#333333"];
+  "LOW_LOW" [label="Low Impact / Low Likelihood" shape=box fillcolor="#C8E6C9" color="#81C784" fontcolor="#333333"];
+  "RSK-01" [label="Limited Connectivity (Rural)" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-02" [label="Adoption Resistance" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-03" [label="Data Privacy Breach" shape=ellipse fillcolor="#FFCDD2" color="#E57373" fontcolor="#333333"];
+  "RSK-04" [label="Interoperability Challenges" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-05" [label="Funding Constraints" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-06" [label="Regulatory Changes" shape=ellipse fillcolor="#FFE0B2" color="#FFB74D" fontcolor="#333333"];
+  "RSK-07" [label="GIS Data Quality" shape=ellipse fillcolor="#FFE0B2" color="#FFB74D" fontcolor="#333333"];
+  "RSK-08" [label="Cybersecurity Threats" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-09" [label="Key Personnel Attrition" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-10" [label="Vendor Lock-in" shape=ellipse fillcolor="#FFF9C4" color="#FFF176" fontcolor="#333333"];
+  "RSK-11" [label="Data Migration Quality" shape=ellipse fillcolor="#EF5350" color="#C62828" fontcolor="#FFFFFF"];
+  "RSK-01" -> "HIGH_HIGH"[ color="#C62828"];
+  "RSK-02" -> "HIGH_MED"[ color="#C62828"];
+  "RSK-03" -> "HIGH_LOW"[ color="#C62828"];
+  "RSK-04" -> "MED_HIGH"[ color="#C62828"];
+  "RSK-05" -> "HIGH_MED"[ color="#C62828"];
+  "RSK-06" -> "LOW_HIGH"[ color="#C62828"];
+  "RSK-07" -> "MED_MED"[ color="#C62828"];
+  "RSK-08" -> "HIGH_MED"[ color="#C62828"];
+  "RSK-09" -> "MED_HIGH"[ color="#C62828"];
+  "RSK-10" -> "MED_LOW"[ color="#C62828"];
+  "RSK-11" -> "MED_HIGH"[ color="#C62828"];
+}

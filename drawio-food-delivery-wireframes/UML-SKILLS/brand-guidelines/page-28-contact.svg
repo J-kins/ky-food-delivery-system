@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">CONTACT</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">28</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Contact Part</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">For brand usage enquiries, please contact the relevant team below.</text>
+  <rect id="cc1" x="72" y="200" width="468" height="168" fill="#F5F5F5" rx="3"/>
+  <rect id="cct1" x="72" y="200" width="8" height="168" fill="#556B4E" rx="3"/>
+  <text id="cd1" x="100" y="244" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Brand &amp; Design</text>
+  <text id="cn1" x="100" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1A1A1A" text-anchor="start">First Last</text>
+  <text id="cr1" x="100" y="288" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Brand Manager</text>
+  <text id="ce1" x="100" y="316" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#556B4E" text-anchor="start">brand@yourcompany.com</text>
+  <text id="cp1" x="100" y="334" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">+1 (000) 000-0000</text>
+  <rect id="cc2" x="596" y="200" width="468" height="168" fill="#F5F5F5" rx="3"/>
+  <rect id="cct2" x="596" y="200" width="8" height="168" fill="#556B4E" rx="3"/>
+  <text id="cd2" x="624" y="244" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Marketing &amp; Comms</text>
+  <text id="cn2" x="624" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1A1A1A" text-anchor="start">First Last</text>
+  <text id="cr2" x="624" y="288" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Marketing Director</text>
+  <text id="ce2" x="624" y="316" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#556B4E" text-anchor="start">marketing@yourcompany.com</text>
+  <text id="cp2" x="624" y="334" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">+1 (000) 000-0000</text>
+  <rect id="cc3" x="72" y="400" width="468" height="168" fill="#F5F5F5" rx="3"/>
+  <rect id="cct3" x="72" y="400" width="8" height="168" fill="#556B4E" rx="3"/>
+  <text id="cd3" x="100" y="444" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Digital &amp; Social</text>
+  <text id="cn3" x="100" y="468" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1A1A1A" text-anchor="start">@yourcompany</text>
+  <text id="cr3" x="100" y="488" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Social Media Handle</text>
+  <text id="ce3" x="100" y="516" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#556B4E" text-anchor="start">Instagram / LinkedIn / Twitter</text>
+  <text id="cp3" x="100" y="534" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Facebook / YouTube</text>
+  <rect id="cc4" x="596" y="400" width="468" height="168" fill="#F5F5F5" rx="3"/>
+  <rect id="cct4" x="596" y="400" width="8" height="168" fill="#556B4E" rx="3"/>
+  <text id="cd4" x="624" y="444" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Head Office</text>
+  <text id="cn4" x="624" y="468" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1A1A1A" text-anchor="start">Your Company HQ</text>
+  <text id="cr4" x="624" y="488" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Main Office</text>
+  <text id="ce4" x="624" y="516" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#556B4E" text-anchor="start">123 Street, City, Country</text>
+  <text id="cp4" x="624" y="534" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">www.yourcompany.com</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

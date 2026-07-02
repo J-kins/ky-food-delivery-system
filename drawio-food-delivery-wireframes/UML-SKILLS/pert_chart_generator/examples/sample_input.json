@@ -1,0 +1,53 @@
+{
+  "pert_chart": {
+    "title": "PERT Chart",
+    "project_name": "Healthcare Ecosystem",
+    "tasks": [
+      {
+        "id": "A",
+        "name": "Charter",
+        "duration": 2,
+        "optimistic": 1,
+        "most_likely": 2,
+        "pessimistic": 4,
+        "dependencies": []
+      },
+      {
+        "id": "B",
+        "name": "Schedule",
+        "duration": 4,
+        "dependencies": ["A"]
+      },
+      {
+        "id": "C",
+        "name": "Budget",
+        "duration": 3,
+        "dependencies": ["A"]
+      },
+      {
+        "id": "D",
+        "name": "Requirements",
+        "duration": 6,
+        "dependencies": ["B"]
+      },
+      {
+        "id": "E",
+        "name": "Database",
+        "duration": 5,
+        "dependencies": ["D"]
+      },
+      {
+        "id": "F",
+        "name": "Frontend",
+        "duration": 4,
+        "dependencies": ["D"]
+      },
+      {
+        "id": "G",
+        "name": "Integration",
+        "duration": 2,
+        "dependencies": ["E", "F", "C"]
+      }
+    ]
+  }
+}

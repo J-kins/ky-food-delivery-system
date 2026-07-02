@@ -1,0 +1,72 @@
+{
+  "diagram_description": {
+    "id": "system_context",
+    "title": "System Context",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "LR",
+    "nodes": [
+      {
+        "id": "SYSTEM",
+        "label": "Da'atSNA Community Data Platform",
+        "shape": "box",
+        "fill": "#1565C0",
+        "border": "#0D47A1",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "EXT1",
+        "label": "External Stakeholders",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "EXT2",
+        "label": "NHIS / Billing",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      },
+      {
+        "id": "EXT3",
+        "label": "Clinic Systems",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#000000",
+        "group": null
+      }
+    ],
+    "edges": [
+      {
+        "from": "EXT1",
+        "to": "SYSTEM",
+        "label": "policy",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "EXT2",
+        "to": "SYSTEM",
+        "label": "billing",
+        "style": "solid",
+        "color": "#666666"
+      },
+      {
+        "from": "SYSTEM",
+        "to": "EXT3",
+        "label": "patient data",
+        "style": "solid",
+        "color": "#666666"
+      }
+    ],
+    "source": null,
+    "caption": "Figure: System Context \u2014 System under development"
+  }
+}

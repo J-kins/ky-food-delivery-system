@@ -1,0 +1,76 @@
+/* 
+ * KY Food Delivery System
+ * Delivery Portal Layout Styles
+ */
+
+.delivery-layout {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-neutral-offwhite);
+  color: var(--color-neutral-brown);
+}
+
+.delivery-layout__sidebar {
+  width: 260px;
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl) 0;
+  flex-shrink: 0;
+}
+
+.delivery-layout__logo {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-yellow);
+  padding: 0 var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.delivery-layout__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-layout__nav-link {
+  padding: var(--spacing-md) var(--spacing-xl);
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border-left: 4px solid transparent;
+}
+
+.delivery-layout__nav-link:hover {
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.delivery-layout__nav-link--active {
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-left-color: var(--color-primary-yellow);
+  font-weight: 600;
+}
+
+.delivery-layout__main {
+  background-color: var(--color-neutral-offwhite);
+}
+
+.delivery-layout__header {
+  padding: var(--spacing-xl) var(--spacing-xxl);
+  background-color: var(--color-white);
+  border-bottom: 1px solid rgba(59, 42, 26, 0.08);
+}
+
+.delivery-layout__header h1 {
+  margin: 0;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.75rem;
+  color: var(--color-neutral-brown);
+}
+
+.delivery-layout__body {
+  padding: var(--spacing-xxl);
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">01  LOGO</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">08</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Brand Logo Identification</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Understanding the logo anatomy and its individual components.</text>
+  <g id="logo-ann">
+    <rect x="72" y="192" width="560" height="296" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="72" y1="192" x2="632" y2="488" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="632" y1="192" x2="72" y2="488" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="352" y="344" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">LOGO ANATOMY / ANNOTATED</text>
+  </g>
+  <text id="c-hdr" x="692" y="192" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Components</text>
+  <line id="c-rule" x1="692" y1="206" x2="892" y2="206" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="c1-n" x="692" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#556B4E" text-anchor="start">A</text>
+  <text id="c1-t" x="716" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Logomark / Symbol</text>
+  <text id="c1-d" x="716" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">The primary graphic mark</text>
+  <line id="c1-r" x1="692" y1="284" x2="892" y2="284" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="c2-n" x="692" y="312" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#556B4E" text-anchor="start">B</text>
+  <text id="c2-t" x="716" y="312" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Wordmark / Brand Name</text>
+  <text id="c2-d" x="716" y="328" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Primary typeface, brand weight</text>
+  <line id="c2-r" x1="692" y1="344" x2="892" y2="344" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="c3-n" x="692" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#556B4E" text-anchor="start">C</text>
+  <text id="c3-t" x="716" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Tagline (optional)</text>
+  <text id="c3-d" x="716" y="388" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Used in extended identity only</text>
+  <line id="c3-r" x1="692" y1="404" x2="892" y2="404" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="c4-n" x="692" y="432" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#556B4E" text-anchor="start">D</text>
+  <text id="c4-t" x="716" y="432" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Clear Space Zone</text>
+  <text id="c4-d" x="716" y="448" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Protected buffer around logo</text>
+  <line id="c4-r" x1="692" y1="464" x2="892" y2="464" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="c5-n" x="692" y="492" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#556B4E" text-anchor="start">E</text>
+  <text id="c5-t" x="716" y="492" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Colour Lockup</text>
+  <text id="c5-d" x="716" y="508" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Approved colour versions</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

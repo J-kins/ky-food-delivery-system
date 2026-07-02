@@ -1,0 +1,94 @@
+{
+  "milestone_chart": {
+    "title": "Milestone Chart - Project Timeline",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "description": "Key project milestones across initiation, execution, and closure",
+
+    "phases": [
+      {
+        "id": "P1",
+        "name": "Initiation & Planning",
+        "start": "2026-01-01",
+        "end": "2026-03-31",
+        "color": "#1a237e",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "P2",
+        "name": "Execution",
+        "start": "2026-04-01",
+        "end": "2026-10-31",
+        "color": "#2E7D32",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "P3",
+        "name": "Closure",
+        "start": "2026-11-01",
+        "end": "2026-12-31",
+        "color": "#E65100",
+        "text_color": "#FFFFFF"
+      }
+    ],
+
+    "milestones": [
+      {
+        "id": "M1",
+        "name": "Charter Approved",
+        "description": "Project charter signed by sponsor",
+        "date": "2026-01-15",
+        "phase": "P1",
+        "is_critical": true,
+        "category": "Governance"
+      },
+      {
+        "id": "M2",
+        "name": "Requirements Locked",
+        "description": "SRS baseline approved",
+        "date": "2026-03-15",
+        "phase": "P1",
+        "is_critical": true,
+        "category": "Requirements"
+      },
+      {
+        "id": "M3",
+        "name": "Beta Release",
+        "description": "Beta platform available to pilot users",
+        "date": "2026-08-01",
+        "phase": "P2",
+        "is_critical": false,
+        "category": "Development"
+      },
+      {
+        "id": "M4",
+        "name": "Go Live",
+        "description": "Production deployment complete",
+        "date": "2026-11-15",
+        "phase": "P3",
+        "is_critical": true,
+        "category": "Deployment"
+      }
+    ],
+
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 9,
+      "timeline_height": 1.0,
+      "milestone_size": 0.5,
+      "critical_color": "#E53935",
+      "normal_color": "#4CAF50"
+    },
+
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5,
+      "grid_spacing": "months"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">03  COLOR SYSTEM</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">15</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Company Secondary Colors</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Secondary palette supports and complements primary colours in extended applications.</text>
+  <rect id="sw0" x="72" y="196" width="258" height="188" fill="#8CA47A" rx="3"/>
+  <text id="sr0" x="72" y="402" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1.5">SECONDARY</text>
+  <text id="sn0" x="72" y="422" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">Sage Light</text>
+  <text id="sh0" x="72" y="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#8CA47A</text>
+  <text id="sc0" x="72" y="458" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">CMYK: C15 M0 Y26 K35</text>
+  <rect id="sw1" x="362" y="196" width="258" height="188" fill="#D4E0CE" rx="3" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="sr1" x="362" y="402" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1.5">TINT</text>
+  <text id="sn1" x="362" y="422" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">Pale Green</text>
+  <text id="sh1" x="362" y="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#D4E0CE</text>
+  <text id="sc1" x="362" y="458" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">CMYK: C7 M0 Y10 K13</text>
+  <rect id="sw2" x="652" y="196" width="258" height="188" fill="#3E5139" rx="3"/>
+  <text id="sr2" x="652" y="402" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1.5">SHADE</text>
+  <text id="sn2" x="652" y="422" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">Deep Forest</text>
+  <text id="sh2" x="652" y="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#3E5139</text>
+  <text id="sc2" x="652" y="458" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">CMYK: C24 M0 Y30 K68</text>
+  <rect id="sw3" x="942" y="196" width="258" height="188" fill="#F5F5F5" rx="3" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="sr3" x="942" y="402" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1.5">SURFACE</text>
+  <text id="sn3" x="942" y="422" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="start">Off White</text>
+  <text id="sh3" x="942" y="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#F5F5F5</text>
+  <text id="sc3" x="942" y="458" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">CMYK: C0 M0 Y0 K4</text>
+  <defs>
+    <linearGradient id="g-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#3E5139"/>
+      <stop offset="50%"  stop-color="#556B4E"/>
+      <stop offset="100%" stop-color="#D4E0CE"/>
+    </linearGradient>
+  </defs>
+  <rect x="72" y="482" width="1136" height="44" fill="url(#g-grad)" rx="3"/>
+  <text id="grad-lbl" x="72" y="548" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Brand colour gradient — for approved gradient applications only</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

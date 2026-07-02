@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">03  COLOR SYSTEM</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">16</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Analogous Color</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Colour usage ratios and combination guidelines for all brand communications.</text>
+  <g id="pie">
+    <rect x="72" y="196" width="296" height="296" fill="#F5F5F5" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+    <line x1="72" y1="196" x2="368" y2="492" stroke="#DDDDDD" stroke-width="0.75"/>
+    <line x1="368" y1="196" x2="72" y2="492" stroke="#DDDDDD" stroke-width="0.75"/>
+    <text x="220" y="348" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#6B6B6B" text-anchor="middle">COLOR RATIO CHART</text>
+  </g>
+  <text id="rt-hdr" x="432" y="196" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Colour Usage Ratio</text>
+  <line id="rt-rule" x1="432" y1="210" x2="652" y2="210" stroke="#556B4E" stroke-width="1.5"/>
+  <rect id="rb0" x="432" y="236" width="220" height="24" fill="#556B4E" rx="2"/>
+  <text id="rp0" x="668" y="253" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="start">60%</text>
+  <text id="rn0" x="432" y="278" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Brand Green — Primary</text>
+  <rect id="rb1" x="432" y="308" width="146" height="24" fill="#1A1A1A" rx="2"/>
+  <text id="rp1" x="594" y="325" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="start">30%</text>
+  <text id="rn1" x="432" y="350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Near Black — Secondary</text>
+  <rect id="rb2" x="432" y="380" width="34" height="24" fill="#6B6B6B" rx="2"/>
+  <text id="rp2" x="482" y="397" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="start">7%</text>
+  <text id="rn2" x="432" y="422" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Mid Grey — Supporting</text>
+  <rect id="rb3" x="432" y="452" width="15" height="24" fill="#D4E0CE" rx="2"/>
+  <text id="rp3" x="463" y="469" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="start">3%</text>
+  <text id="rn3" x="432" y="494" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Pale Green — Accent / Tint</text>
+  <rect id="as0" x="732" y="196" width="96" height="72" fill="#556B4E" rx="3"/>
+  <text id="an0" x="844" y="218" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Brand Green</text>
+  <text id="ah0" x="844" y="236" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#556B4E</text>
+  <rect id="as1" x="732" y="292" width="96" height="72" fill="#8CA47A" rx="3"/>
+  <text id="an1" x="844" y="314" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Sage Light</text>
+  <text id="ah1" x="844" y="332" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#8CA47A</text>
+  <rect id="as2" x="732" y="388" width="96" height="72" fill="#D4E0CE" rx="3"/>
+  <text id="an2" x="844" y="410" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Pale Green</text>
+  <text id="ah2" x="844" y="428" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#D4E0CE</text>
+  <rect id="as3" x="732" y="484" width="96" height="72" fill="#3E5139" rx="3"/>
+  <text id="an3" x="844" y="506" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Deep Forest</text>
+  <text id="ah3" x="844" y="524" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">#3E5139</text>
+  <text id="an-note1" x="432" y="538" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">These ratios apply to print and digital</text>
+  <text id="an-note2" x="432" y="556" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">materials across all brand channels.</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+{
+  "budget": {
+    "title": "Budget Breakdown - Project Financials",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "currency": "USD",
+    "exchange_rate_note": "1 USD = 3,700 UGX",
+    "budget_period": "Jan 2026 - Dec 2026",
+    "categories": [
+      {
+        "id": "CAT1",
+        "name": "Personnel",
+        "color": "#1a237e",
+        "text_color": "#FFFFFF",
+        "budget": 31000,
+        "actual": 28500,
+        "notes": "Includes PM, Dev, QA, BA"
+      },
+      {
+        "id": "CAT2",
+        "name": "Hardware",
+        "color": "#1565C0",
+        "text_color": "#FFFFFF",
+        "budget": 18500,
+        "actual": 19200,
+        "notes": "Cloud, workstations, network"
+      },
+      {
+        "id": "CAT3",
+        "name": "Software",
+        "color": "#2E7D32",
+        "text_color": "#FFFFFF",
+        "budget": 1500,
+        "actual": 1200,
+        "notes": "Licenses, tools"
+      },
+      {
+        "id": "CAT4",
+        "name": "Training",
+        "color": "#E65100",
+        "text_color": "#FFFFFF",
+        "budget": 3000,
+        "actual": 2800,
+        "notes": "User training, materials"
+      },
+      {
+        "id": "CAT5",
+        "name": "Contingency",
+        "color": "#6A1B9A",
+        "text_color": "#FFFFFF",
+        "budget": 5400,
+        "actual": 2100,
+        "notes": "10% buffer of subtotal"
+      }
+    ],
+    "monthly_burn_rate": [
+      {
+        "month": "January",
+        "planned": 5000,
+        "actual": 4800
+      },
+      {
+        "month": "February",
+        "planned": 5000,
+        "actual": 5200
+      },
+      {
+        "month": "March",
+        "planned": 5000,
+        "actual": 4500
+      },
+      {
+        "month": "April",
+        "planned": 6000,
+        "actual": 6500
+      },
+      {
+        "month": "May",
+        "planned": 6000,
+        "actual": 5800
+      },
+      {
+        "month": "June",
+        "planned": 6000,
+        "actual": 6200
+      },
+      {
+        "month": "July",
+        "planned": 4000,
+        "actual": 3500
+      },
+      {
+        "month": "August",
+        "planned": 4000,
+        "actual": 4200
+      },
+      {
+        "month": "September",
+        "planned": 4000,
+        "actual": 3800
+      },
+      {
+        "month": "October",
+        "planned": 4500,
+        "actual": 5000
+      },
+      {
+        "month": "November",
+        "planned": 4500,
+        "actual": 4300
+      },
+      {
+        "month": "December",
+        "planned": 5400,
+        "actual": null
+      }
+    ],
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5
+    },
+    "dashboard": {
+      "show_kpi_bar": true,
+      "show_bar_chart": true,
+      "show_pie_chart": true,
+      "show_burn_rate_chart": true,
+      "kpi_colors": {
+        "total_budget": "#1a237e",
+        "actual_spent": "#C62828",
+        "remaining": "#2E7D32",
+        "period": "#4E342E"
+      }
+    },
+    "line_items": [],
+    "styling": {
+      "font_family": "Arial"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+digraph "milestone_timeline" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=LR;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "M1" [label="Project Kick-off\nJul 2026" shape=box fillcolor="#1B5E20" color="#0D47A1" fontcolor="#FFFFFF"];
+  "M2" [label="Requirements Finalized\nSep 2026" shape=box fillcolor="#2E7D32" color="#1B5E20" fontcolor="#FFFFFF"];
+  "M3" [label="Architecture Design\nNov 2026" shape=box fillcolor="#1565C0" color="#0D47A1" fontcolor="#FFFFFF"];
+  "M4" [label="GIS Prototype\nFeb 2027" shape=box fillcolor="#7B1FA2" color="#4A148C" fontcolor="#FFFFFF"];
+  "M5" [label="Core EHR Complete\nMay 2027" shape=box fillcolor="#00838F" color="#006064" fontcolor="#FFFFFF"];
+  "M6" [label="Security Certification\nJul 2027" shape=box fillcolor="#37474F" color="#263238" fontcolor="#FFFFFF"];
+  "M7" [label="Pilot Deployment\nAug 2027" shape=box fillcolor="#E65100" color="#BF360C" fontcolor="#FFFFFF"];
+  "M8" [label="National Phase 1\nJan 2028" shape=box fillcolor="#FF6F00" color="#E65100" fontcolor="#FFFFFF"];
+  "M9" [label="Full National Deployment\nJun 2028" shape=box fillcolor="#C62828" color="#B71C1C" fontcolor="#FFFFFF"];
+  "M10" [label="Stabilization & Handover\nSep 2028" shape=box fillcolor="#5D4037" color="#3E2723" fontcolor="#FFFFFF"];
+  "M1" -> "M2"[ color="#666666"];
+  "M2" -> "M3"[ color="#666666"];
+  "M3" -> "M4"[ color="#666666"];
+  "M4" -> "M5"[ color="#666666"];
+  "M5" -> "M6"[ color="#666666"];
+  "M6" -> "M7"[ color="#666666"];
+  "M7" -> "M8"[ color="#666666"];
+  "M8" -> "M9"[ color="#666666"];
+  "M9" -> "M10"[ color="#666666"];
+}

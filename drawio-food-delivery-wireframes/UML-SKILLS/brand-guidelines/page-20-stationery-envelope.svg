@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">04  STATIONERY</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">20</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Stationery Guideline</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="sub-hdr" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Envelope &amp; Notepad</text>
+  <text id="lbl-env" x="72" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1">DL Envelope</text>
+  <rect id="env" x="72" y="220" width="500" height="296" fill="#FFFFFF" rx="4" stroke="#DDDDDD" stroke-width="0.5"/>
+  <rect id="env-top" x="72" y="220" width="500" height="5" fill="#556B4E" rx="4"/>
+  <text id="env-lg" x="92" y="288" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">&#x25B2;  YOUR BRAND</text>
+  <text id="env-a1" x="92" y="378" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">First Last Name</text>
+  <text id="env-a2" x="92" y="394" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">123 Street Address</text>
+  <text id="env-a3" x="92" y="410" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">City, State 00000</text>
+  <text id="env-a4" x="92" y="426" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Country</text>
+  <line id="env-fl" x1="72" y1="364" x2="572" y2="364" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="lbl-np" x="632" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1">Notepad</text>
+  <rect id="np" x="632" y="220" width="184" height="248" fill="#FFFFFF" rx="3" stroke="#DDDDDD" stroke-width="0.5"/>
+  <rect id="np-top" x="632" y="220" width="184" height="32" fill="#556B4E" rx="3"/>
+  <text id="np-lg" x="648" y="241" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="start">&#x25B2; BRAND</text>
+  <g id="np-l">
+    <rect x="648" y="268" width="148" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="284" width="132" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="300" width="148" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="316" width="132" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="332" width="148" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="348" width="132" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="364" width="148" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="380" width="132" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="648" y="396" width="148" height="6" rx="1.5" fill="#DDDDDD"/>
+  </g>
+  <text id="sp-hdr" x="872" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Envelope Specs</text>
+  <line id="sp-r" x1="872" y1="222" x2="1072" y2="222" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="sp1" x="872" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">DL:     220 &#xD7; 110mm</text>
+  <text id="sp2" x="872" y="270" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">C5:     229 &#xD7; 162mm</text>
+  <text id="sp3" x="872" y="288" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">C4:     324 &#xD7; 229mm</text>
+  <text id="sp4" x="872" y="306" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Weight: 100gsm uncoated</text>
+  <text id="sp5" x="872" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Print:  1-col (green bar)</text>
+  <text id="np-sp" x="872" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Notepad Specs</text>
+  <line id="np-sr" x1="872" y1="386" x2="1072" y2="386" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="nsp1" x="872" y="416" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Size:   A5 (148 &#xD7; 210mm)</text>
+  <text id="nsp2" x="872" y="434" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Pages:  50 sheets</text>
+  <text id="nsp3" x="872" y="452" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Cover:  350gsm silk</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

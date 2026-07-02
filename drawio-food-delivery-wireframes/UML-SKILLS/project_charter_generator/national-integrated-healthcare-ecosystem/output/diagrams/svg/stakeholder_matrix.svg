@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1400" viewBox="0 0 2600 1400">
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#1a237e">Stakeholder Power-Interest Matrix</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#666"/></marker></defs>
+<rect x="299.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="309.0" y="388.0" font-family="Arial" font-size="13" fill="#333333">Patients</text>
+<rect x="819.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+<text x="829.0" y="388.0" font-family="Arial" font-size="13" fill="#333333">Health Facilities</text>
+<rect x="1339.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="1349.0" y="388.0" font-family="Arial" font-size="13" fill="#333333">Healthcare Personnel</text>
+<rect x="1859.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+<text x="1869.0" y="388.0" font-family="Arial" font-size="13" fill="#333333">System Administrators</text>
+<rect x="299.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+<text x="309.0" y="668.0" font-family="Arial" font-size="13" fill="#333333">Ministry of Health</text>
+<rect x="819.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+<text x="829.0" y="668.0" font-family="Arial" font-size="13" fill="#333333">National Drug Authority</text>
+<rect x="1339.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#ECEFF1" stroke="#455A64" stroke-width="2"/>
+<text x="1349.0" y="668.0" font-family="Arial" font-size="13" fill="#333333">Auditors</text>
+<rect x="1859.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#E0F7FA" stroke="#00838F" stroke-width="2"/>
+<text x="1869.0" y="668.0" font-family="Arial" font-size="13" fill="#333333">Researchers</text>
+<rect x="299.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#E8EAF6" stroke="#283593" stroke-width="2"/>
+<text x="309.0" y="948.0" font-family="Arial" font-size="13" fill="#333333">Developers</text>
+<rect x="819.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>
+<text x="829.0" y="948.0" font-family="Arial" font-size="13" fill="#333333">Development Partners / Donors</text>
+<rect x="1339.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#F1F8E9" stroke="#558B2F" stroke-width="2"/>
+<text x="1349.0" y="948.0" font-family="Arial" font-size="13" fill="#333333">Civil Society &amp; Patient Advocacy</text>
+<rect x="1859.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#EDE7F6" stroke="#5E35B1" stroke-width="2"/>
+<text x="1869.0" y="948.0" font-family="Arial" font-size="13" fill="#333333">Pharmaceutical Suppliers</text>
+<line x1="520.0" y1="420.0" x2="520.0" y2="700.0" stroke="#1565C0" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="420.0" x2="1560.0" y2="420.0" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="420.0" x2="520.0" y2="420.0" stroke="#7B1FA2" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="700.0" x2="1040.0" y2="700.0" stroke="#C62828" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="700.0" x2="2080.0" y2="420.0" stroke="#455A64" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="700.0" x2="520.0" y2="980.0" stroke="#00838F" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="980.0" x2="2080.0" y2="420.0" stroke="#283593" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1040.0" y1="980.0" x2="520.0" y2="700.0" stroke="#F9A825" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1560.0" y1="980.0" x2="520.0" y2="420.0" stroke="#558B2F" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2080.0" y1="980.0" x2="1040.0" y2="420.0" stroke="#5E35B1" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,790 @@
+{
+  "version": "1.0",
+  "title": "UML-SKILLS Diagram Template Library",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "viewbox": "0 0 1920 1080"
+  },
+  "style_reference": "../stencils/briefs/PRIMEREACT_DESIGN_DIRECTION.md",
+  "summary": {
+    "total_templates": 86,
+    "categories": 10
+  },
+  "templates": [
+    {
+      "num": 1,
+      "id": "uml-class-diagram",
+      "title": "UML Class Diagram",
+      "category": "uml",
+      "layout": "class_diagram",
+      "description": "3-class layout with relationship guides and multiplicity placeholders",
+      "path": "uml/01-uml-class-diagram-template.svg"
+    },
+    {
+      "num": 2,
+      "id": "uml-object-diagram",
+      "title": "UML Object Diagram",
+      "category": "uml",
+      "layout": "object_diagram",
+      "description": "3-object layout with link placeholders",
+      "path": "uml/02-uml-object-diagram-template.svg"
+    },
+    {
+      "num": 3,
+      "id": "uml-component-diagram",
+      "title": "UML Component Diagram",
+      "category": "uml",
+      "layout": "component_diagram",
+      "description": "4-component layout with interface ports",
+      "path": "uml/03-uml-component-diagram-template.svg"
+    },
+    {
+      "num": 4,
+      "id": "uml-deployment-diagram",
+      "title": "UML Deployment Diagram",
+      "category": "uml",
+      "layout": "deployment_diagram",
+      "description": "Node layout with artifact placeholders",
+      "path": "uml/04-uml-deployment-diagram-template.svg"
+    },
+    {
+      "num": 5,
+      "id": "uml-package-diagram",
+      "title": "UML Package Diagram",
+      "category": "uml",
+      "layout": "package_diagram",
+      "description": "Package folders with dependency spaces",
+      "path": "uml/05-uml-package-diagram-template.svg"
+    },
+    {
+      "num": 6,
+      "id": "uml-composite-structure",
+      "title": "UML Composite Structure Diagram",
+      "category": "uml",
+      "layout": "composite_structure",
+      "description": "Outer part with internal sub-parts",
+      "path": "uml/06-uml-composite-structure-template.svg"
+    },
+    {
+      "num": 7,
+      "id": "uml-use-case-diagram",
+      "title": "UML Use Case Diagram",
+      "category": "uml",
+      "layout": "use_case_diagram",
+      "description": "System boundary, actors, and use case ovals",
+      "path": "uml/07-uml-use-case-diagram-template.svg"
+    },
+    {
+      "num": 8,
+      "id": "uml-sequence-diagram",
+      "title": "UML Sequence Diagram",
+      "category": "uml",
+      "layout": "sequence_diagram",
+      "description": "Lifelines, activation bars, message spaces",
+      "path": "uml/08-uml-sequence-diagram-template.svg"
+    },
+    {
+      "num": 9,
+      "id": "uml-activity-diagram",
+      "title": "UML Activity Diagram",
+      "category": "uml",
+      "layout": "activity_diagram",
+      "description": "Swimlanes with action and decision placeholders",
+      "path": "uml/09-uml-activity-diagram-template.svg"
+    },
+    {
+      "num": 10,
+      "id": "uml-state-machine",
+      "title": "UML State Machine Diagram",
+      "category": "uml",
+      "layout": "state_machine",
+      "description": "States and transition layout",
+      "path": "uml/10-uml-state-machine-template.svg"
+    },
+    {
+      "num": 11,
+      "id": "uml-communication-diagram",
+      "title": "UML Communication Diagram",
+      "category": "uml",
+      "layout": "communication_diagram",
+      "description": "Objects with numbered message links",
+      "path": "uml/11-uml-communication-diagram-template.svg"
+    },
+    {
+      "num": 12,
+      "id": "uml-interaction-overview",
+      "title": "UML Interaction Overview Diagram",
+      "category": "uml",
+      "layout": "interaction_overview",
+      "description": "Activity nodes referencing interaction fragments",
+      "path": "uml/12-uml-interaction-overview-template.svg"
+    },
+    {
+      "num": 13,
+      "id": "uml-timing-diagram",
+      "title": "UML Timing Diagram",
+      "category": "uml",
+      "layout": "timing_diagram",
+      "description": "Lifelines with state timeline tracks",
+      "path": "uml/13-uml-timing-diagram-template.svg"
+    },
+    {
+      "num": 14,
+      "id": "uml-profile-diagram",
+      "title": "UML Profile Diagram",
+      "category": "uml",
+      "layout": "profile_diagram",
+      "description": "Stereotypes and metaclass layout",
+      "path": "uml/14-uml-profile-diagram-template.svg"
+    },
+    {
+      "num": 15,
+      "id": "enterprise-architecture",
+      "title": "Enterprise Architecture",
+      "category": "architecture",
+      "layout": "layered_stack",
+      "description": "4-layer enterprise stack",
+      "path": "architecture/15-enterprise-architecture-template.svg"
+    },
+    {
+      "num": 16,
+      "id": "business-capability-map",
+      "title": "Business Capability Map",
+      "category": "architecture",
+      "layout": "tier_columns",
+      "description": "Tiered capability columns",
+      "path": "architecture/16-business-capability-map-template.svg"
+    },
+    {
+      "num": 17,
+      "id": "application-landscape",
+      "title": "Application Landscape",
+      "category": "architecture",
+      "layout": "grid_blocks",
+      "description": "Application system grid",
+      "path": "architecture/17-application-landscape-template.svg"
+    },
+    {
+      "num": 18,
+      "id": "system-architecture",
+      "title": "System Architecture",
+      "category": "architecture",
+      "layout": "service_blocks",
+      "description": "Component and service layout",
+      "path": "architecture/18-system-architecture-template.svg"
+    },
+    {
+      "num": 19,
+      "id": "layered-architecture",
+      "title": "Layered Architecture",
+      "category": "architecture",
+      "layout": "layered_stack",
+      "description": "4-layer stack",
+      "path": "architecture/19-layered-architecture-template.svg"
+    },
+    {
+      "num": 20,
+      "id": "microservices-architecture",
+      "title": "Microservices Architecture",
+      "category": "architecture",
+      "layout": "microservices",
+      "description": "API gateway and service mesh",
+      "path": "architecture/20-microservices-architecture-template.svg"
+    },
+    {
+      "num": 21,
+      "id": "event-driven-architecture",
+      "title": "Event-Driven Architecture",
+      "category": "architecture",
+      "layout": "event_driven",
+      "description": "Producer, broker, consumer flow",
+      "path": "architecture/21-event-driven-architecture-template.svg"
+    },
+    {
+      "num": 22,
+      "id": "hexagonal-architecture",
+      "title": "Hexagonal Architecture",
+      "category": "architecture",
+      "layout": "hexagonal",
+      "description": "Domain core with ports and adapters",
+      "path": "architecture/22-hexagonal-architecture-template.svg"
+    },
+    {
+      "num": 23,
+      "id": "clean-architecture",
+      "title": "Clean Architecture",
+      "category": "architecture",
+      "layout": "concentric",
+      "description": "Concentric rings",
+      "path": "architecture/23-clean-architecture-template.svg"
+    },
+    {
+      "num": 24,
+      "id": "c4-system-context",
+      "title": "C4 System Context",
+      "category": "architecture",
+      "layout": "c4_context",
+      "description": "System centre with users and external systems",
+      "path": "architecture/24-c4-system-context-template.svg"
+    },
+    {
+      "num": 25,
+      "id": "c4-container-diagram",
+      "title": "C4 Container Diagram",
+      "category": "architecture",
+      "layout": "c4_container",
+      "description": "Containers inside system boundary",
+      "path": "architecture/25-c4-container-diagram-template.svg"
+    },
+    {
+      "num": 26,
+      "id": "c4-component-diagram",
+      "title": "C4 Component Diagram",
+      "category": "architecture",
+      "layout": "c4_component",
+      "description": "Components inside a container",
+      "path": "architecture/26-c4-component-diagram-template.svg"
+    },
+    {
+      "num": 27,
+      "id": "solution-architecture",
+      "title": "Solution Architecture",
+      "category": "architecture",
+      "layout": "solution_blocks",
+      "description": "End-to-end solution layout",
+      "path": "architecture/27-solution-architecture-template.svg"
+    },
+    {
+      "num": 28,
+      "id": "integration-architecture",
+      "title": "Integration Architecture",
+      "category": "architecture",
+      "layout": "hub_spoke",
+      "description": "ESB / API hub with integrations",
+      "path": "architecture/28-integration-architecture-template.svg"
+    },
+    {
+      "num": 29,
+      "id": "data-architecture",
+      "title": "Data Architecture",
+      "category": "architecture",
+      "layout": "layered_flow",
+      "description": "Data flow layers",
+      "path": "architecture/29-data-architecture-template.svg"
+    },
+    {
+      "num": 30,
+      "id": "security-architecture",
+      "title": "Security Architecture",
+      "category": "architecture",
+      "layout": "security_zones",
+      "description": "Security zones and controls",
+      "path": "architecture/30-security-architecture-template.svg"
+    },
+    {
+      "num": 31,
+      "id": "infrastructure-architecture",
+      "title": "Infrastructure Architecture",
+      "category": "infrastructure",
+      "layout": "infra_blocks",
+      "description": "Servers, storage, and network",
+      "path": "infrastructure/31-infrastructure-architecture-template.svg"
+    },
+    {
+      "num": 32,
+      "id": "network-architecture",
+      "title": "Network Architecture",
+      "category": "infrastructure",
+      "layout": "network_topology",
+      "description": "Router, switch, firewall topology",
+      "path": "infrastructure/32-network-architecture-template.svg"
+    },
+    {
+      "num": 33,
+      "id": "cloud-architecture",
+      "title": "Cloud Architecture",
+      "category": "infrastructure",
+      "layout": "cloud_vpc",
+      "description": "VPC, region, and availability zones",
+      "path": "infrastructure/33-cloud-architecture-template.svg"
+    },
+    {
+      "num": 34,
+      "id": "deployment-architecture",
+      "title": "Deployment Architecture",
+      "category": "infrastructure",
+      "layout": "deployment_envs",
+      "description": "Dev, staging, production environments",
+      "path": "infrastructure/34-deployment-architecture-template.svg"
+    },
+    {
+      "num": 35,
+      "id": "container-architecture",
+      "title": "Container Architecture",
+      "category": "infrastructure",
+      "layout": "container_cluster",
+      "description": "Cluster, pods, and services",
+      "path": "infrastructure/35-container-architecture-template.svg"
+    },
+    {
+      "num": 36,
+      "id": "kubernetes-architecture",
+      "title": "Kubernetes Architecture",
+      "category": "infrastructure",
+      "layout": "kubernetes",
+      "description": "Control plane and worker nodes",
+      "path": "infrastructure/36-kubernetes-architecture-template.svg"
+    },
+    {
+      "num": 37,
+      "id": "high-availability-architecture",
+      "title": "High Availability Architecture",
+      "category": "infrastructure",
+      "layout": "ha_active_standby",
+      "description": "Active, standby, and failover paths",
+      "path": "infrastructure/37-high-availability-architecture-template.svg"
+    },
+    {
+      "num": 38,
+      "id": "disaster-recovery-architecture",
+      "title": "Disaster Recovery Architecture",
+      "category": "infrastructure",
+      "layout": "dr_sites",
+      "description": "Production and DR site layout",
+      "path": "infrastructure/38-disaster-recovery-architecture-template.svg"
+    },
+    {
+      "num": 39,
+      "id": "project-charter",
+      "title": "Project Charter",
+      "category": "project-management",
+      "layout": "charter_sections",
+      "description": "Charter document sections",
+      "path": "project-management/39-project-charter-template.svg"
+    },
+    {
+      "num": 40,
+      "id": "work-breakdown-structure",
+      "title": "Work Breakdown Structure",
+      "category": "project-management",
+      "layout": "wbs_tree",
+      "description": "4-level hierarchical WBS",
+      "path": "project-management/40-work-breakdown-structure-template.svg"
+    },
+    {
+      "num": 41,
+      "id": "gantt-chart",
+      "title": "Gantt Chart",
+      "category": "project-management",
+      "layout": "gantt",
+      "description": "Task list and timeline grid",
+      "path": "project-management/41-gantt-chart-template.svg"
+    },
+    {
+      "num": 42,
+      "id": "milestone-chart",
+      "title": "Milestone Chart",
+      "category": "project-management",
+      "layout": "milestone_timeline",
+      "description": "Timeline with milestone markers",
+      "path": "project-management/42-milestone-chart-template.svg"
+    },
+    {
+      "num": 43,
+      "id": "roadmap-diagram",
+      "title": "Roadmap Diagram",
+      "category": "project-management",
+      "layout": "roadmap",
+      "description": "Phases, timeline, and milestones",
+      "path": "project-management/43-roadmap-diagram-template.svg"
+    },
+    {
+      "num": 44,
+      "id": "pert-chart",
+      "title": "PERT Chart",
+      "category": "project-management",
+      "layout": "pert_network",
+      "description": "Activity node network",
+      "path": "project-management/44-pert-chart-template.svg"
+    },
+    {
+      "num": 45,
+      "id": "critical-path-diagram",
+      "title": "Critical Path Diagram",
+      "category": "project-management",
+      "layout": "cpm_network",
+      "description": "CPM nodes with critical path highlight",
+      "path": "project-management/45-critical-path-diagram-template.svg"
+    },
+    {
+      "num": 46,
+      "id": "risk-matrix",
+      "title": "Risk Matrix",
+      "category": "project-management",
+      "layout": "risk_matrix",
+      "description": "5\u00d75 probability \u00d7 impact matrix",
+      "path": "project-management/46-risk-matrix-template.svg"
+    },
+    {
+      "num": 47,
+      "id": "risk-heat-map",
+      "title": "Risk Heat Map",
+      "category": "project-management",
+      "layout": "heat_map",
+      "description": "Colour-coded risk cells",
+      "path": "project-management/47-risk-heat-map-template.svg"
+    },
+    {
+      "num": 48,
+      "id": "threat-tree",
+      "title": "Threat Tree",
+      "category": "project-management",
+      "layout": "threat_tree",
+      "description": "Root, branches, and leaf threats",
+      "path": "project-management/48-threat-tree-template.svg"
+    },
+    {
+      "num": 49,
+      "id": "resource-allocation-matrix",
+      "title": "Resource Allocation Matrix",
+      "category": "project-management",
+      "layout": "allocation_matrix",
+      "description": "Resource \u00d7 task grid",
+      "path": "project-management/49-resource-allocation-matrix-template.svg"
+    },
+    {
+      "num": 50,
+      "id": "team-structure-diagram",
+      "title": "Team Structure Diagram",
+      "category": "project-management",
+      "layout": "org_chart",
+      "description": "Org chart with reporting lines",
+      "path": "project-management/50-team-structure-diagram-template.svg"
+    },
+    {
+      "num": 51,
+      "id": "stakeholder-map",
+      "title": "Stakeholder Map",
+      "category": "stakeholder",
+      "layout": "stakeholder_map",
+      "description": "Central system with surrounding stakeholders",
+      "path": "stakeholder/51-stakeholder-map-template.svg"
+    },
+    {
+      "num": 52,
+      "id": "power-interest-matrix",
+      "title": "Power\u2013Interest Matrix",
+      "category": "stakeholder",
+      "layout": "quadrant_matrix",
+      "description": "2\u00d72 power vs interest grid",
+      "path": "stakeholder/52-power-interest-matrix-template.svg"
+    },
+    {
+      "num": 53,
+      "id": "influence-network-diagram",
+      "title": "Influence Network Diagram",
+      "category": "stakeholder",
+      "layout": "influence_network",
+      "description": "Stakeholder nodes and influence arrows",
+      "path": "stakeholder/53-influence-network-diagram-template.svg"
+    },
+    {
+      "num": 54,
+      "id": "salience-model",
+      "title": "Salience Model",
+      "category": "stakeholder",
+      "layout": "venn_three",
+      "description": "Power, legitimacy, urgency Venn",
+      "path": "stakeholder/54-salience-model-template.svg"
+    },
+    {
+      "num": 55,
+      "id": "raci-matrix",
+      "title": "RACI Matrix",
+      "category": "stakeholder",
+      "layout": "raci_matrix",
+      "description": "Tasks \u00d7 roles RACI grid",
+      "path": "stakeholder/55-raci-matrix-template.svg"
+    },
+    {
+      "num": 56,
+      "id": "stakeholder-register",
+      "title": "Stakeholder Register",
+      "category": "stakeholder",
+      "layout": "register_table",
+      "description": "Stakeholder register columns",
+      "path": "stakeholder/56-stakeholder-register-template.svg"
+    },
+    {
+      "num": 57,
+      "id": "business-process-model",
+      "title": "Business Process Model",
+      "category": "process-flow",
+      "layout": "bpmn_swimlanes",
+      "description": "BPMN swimlanes, tasks, gateways",
+      "path": "process-flow/57-business-process-model-template.svg"
+    },
+    {
+      "num": 58,
+      "id": "data-flow-diagram",
+      "title": "Data Flow Diagram",
+      "category": "process-flow",
+      "layout": "dfd",
+      "description": "External entities, processes, data stores",
+      "path": "process-flow/58-data-flow-diagram-template.svg"
+    },
+    {
+      "num": 59,
+      "id": "business-process-analysis",
+      "title": "Business Process Analysis",
+      "category": "process-flow",
+      "layout": "side_by_side",
+      "description": "As-Is / To-Be process columns",
+      "path": "process-flow/59-business-process-analysis-template.svg"
+    },
+    {
+      "num": 60,
+      "id": "process-flow-diagram",
+      "title": "Process Flow Diagram",
+      "category": "process-flow",
+      "layout": "process_flow",
+      "description": "Steps, decisions, start/end",
+      "path": "process-flow/60-process-flow-diagram-template.svg"
+    },
+    {
+      "num": 61,
+      "id": "workflow-diagram",
+      "title": "Workflow Diagram",
+      "category": "process-flow",
+      "layout": "workflow_swimlanes",
+      "description": "Workflow activities in swimlanes",
+      "path": "process-flow/61-workflow-diagram-template.svg"
+    },
+    {
+      "num": 62,
+      "id": "value-stream-map",
+      "title": "Value Stream Map",
+      "category": "process-flow",
+      "layout": "value_stream",
+      "description": "Process steps, inventory, timeline",
+      "path": "process-flow/62-value-stream-map-template.svg"
+    },
+    {
+      "num": 63,
+      "id": "erd-diagram",
+      "title": "ERD Diagram",
+      "category": "data",
+      "layout": "erd",
+      "description": "Entities, relationships, cardinalities",
+      "path": "data/63-erd-diagram-template.svg"
+    },
+    {
+      "num": 64,
+      "id": "data-model-conceptual",
+      "title": "Conceptual Data Model",
+      "category": "data",
+      "layout": "conceptual_entities",
+      "description": "High-level entity layout",
+      "path": "data/64-data-model-conceptual-template.svg"
+    },
+    {
+      "num": 65,
+      "id": "data-model-logical",
+      "title": "Logical Data Model",
+      "category": "data",
+      "layout": "logical_entities",
+      "description": "Detailed entities with attributes",
+      "path": "data/65-data-model-logical-template.svg"
+    },
+    {
+      "num": 66,
+      "id": "data-model-physical",
+      "title": "Physical Data Model",
+      "category": "data",
+      "layout": "physical_tables",
+      "description": "Tables, columns, constraints",
+      "path": "data/66-data-model-physical-template.svg"
+    },
+    {
+      "num": 67,
+      "id": "data-pipeline-architecture",
+      "title": "Data Pipeline Architecture",
+      "category": "data",
+      "layout": "pipeline_layers",
+      "description": "Ingestion, processing, storage",
+      "path": "data/67-data-pipeline-architecture-template.svg"
+    },
+    {
+      "num": 68,
+      "id": "data-lakehouse-architecture",
+      "title": "Data Lakehouse Architecture",
+      "category": "data",
+      "layout": "lakehouse_layers",
+      "description": "Bronze, Silver, Gold medallion layers",
+      "path": "data/68-data-lakehouse-architecture-template.svg"
+    },
+    {
+      "num": 69,
+      "id": "gis-architecture",
+      "title": "GIS Architecture",
+      "category": "gis",
+      "layout": "gis_stack",
+      "description": "Server, database, client layout",
+      "path": "gis/69-gis-architecture-template.svg"
+    },
+    {
+      "num": 70,
+      "id": "geospatial-data-model",
+      "title": "Geospatial Data Model",
+      "category": "gis",
+      "layout": "geospatial_model",
+      "description": "Feature classes and attributes",
+      "path": "gis/70-geospatial-data-model-template.svg"
+    },
+    {
+      "num": 71,
+      "id": "map-design",
+      "title": "Map Design",
+      "category": "gis",
+      "layout": "map_layout",
+      "description": "Map frame, legend, scale, compass",
+      "path": "gis/71-map-design-template.svg"
+    },
+    {
+      "num": 72,
+      "id": "geoprocessing-workflow",
+      "title": "Geoprocessing Workflow",
+      "category": "gis",
+      "layout": "tool_chain",
+      "description": "Sequential geoprocessing tools",
+      "path": "gis/72-geoprocessing-workflow-template.svg"
+    },
+    {
+      "num": 73,
+      "id": "spatial-data-flow",
+      "title": "Spatial Data Flow",
+      "category": "gis",
+      "layout": "spatial_flow",
+      "description": "Source to client spatial pipeline",
+      "path": "gis/73-spatial-data-flow-template.svg"
+    },
+    {
+      "num": 74,
+      "id": "aws-architecture",
+      "title": "AWS Architecture",
+      "category": "cloud",
+      "layout": "cloud_provider",
+      "description": "AWS VPC, EC2, S3, RDS layout",
+      "path": "cloud/74-aws-architecture-template.svg"
+    },
+    {
+      "num": 75,
+      "id": "azure-architecture",
+      "title": "Azure Architecture",
+      "category": "cloud",
+      "layout": "cloud_provider",
+      "description": "Azure VNet, VM, Blob, SQL layout",
+      "path": "cloud/75-azure-architecture-template.svg"
+    },
+    {
+      "num": 76,
+      "id": "gcp-architecture",
+      "title": "GCP Architecture",
+      "category": "cloud",
+      "layout": "cloud_provider",
+      "description": "GCP VPC, Compute, Storage, BigQuery",
+      "path": "cloud/76-gcp-architecture-template.svg"
+    },
+    {
+      "num": 77,
+      "id": "multi-cloud-architecture",
+      "title": "Multi-Cloud Architecture",
+      "category": "cloud",
+      "layout": "multi_cloud",
+      "description": "AWS, Azure, GCP integration",
+      "path": "cloud/77-multi-cloud-architecture-template.svg"
+    },
+    {
+      "num": 78,
+      "id": "serverless-architecture",
+      "title": "Serverless Architecture",
+      "category": "cloud",
+      "layout": "serverless",
+      "description": "API Gateway, functions, datastore",
+      "path": "cloud/78-serverless-architecture-template.svg"
+    },
+    {
+      "num": 79,
+      "id": "cloud-migration-architecture",
+      "title": "Cloud Migration Architecture",
+      "category": "cloud",
+      "layout": "migration",
+      "description": "On-premises to cloud transition",
+      "path": "cloud/79-cloud-migration-architecture-template.svg"
+    },
+    {
+      "num": 80,
+      "id": "cloud-cost-optimization",
+      "title": "Cloud Cost Optimization",
+      "category": "cloud",
+      "layout": "cost_optimization",
+      "description": "Cost, resource, and optimization areas",
+      "path": "cloud/80-cloud-cost-optimization-template.svg"
+    },
+    {
+      "num": 81,
+      "id": "cicd-pipeline",
+      "title": "CI/CD Pipeline",
+      "category": "devops",
+      "layout": "pipeline_stages",
+      "description": "Source, build, test, deploy stages",
+      "path": "devops/81-cicd-pipeline-template.svg"
+    },
+    {
+      "num": 82,
+      "id": "devops-architecture",
+      "title": "DevOps Architecture",
+      "category": "devops",
+      "layout": "devops_toolchain",
+      "description": "Plan, code, build, test, release toolchain",
+      "path": "devops/82-devops-architecture-template.svg"
+    },
+    {
+      "num": 83,
+      "id": "gitops-architecture",
+      "title": "GitOps Architecture",
+      "category": "devops",
+      "layout": "gitops",
+      "description": "Git repo, operator, cluster loop",
+      "path": "devops/83-gitops-architecture-template.svg"
+    },
+    {
+      "num": 84,
+      "id": "observability-architecture",
+      "title": "Observability Architecture",
+      "category": "devops",
+      "layout": "observability",
+      "description": "Logs, metrics, traces, dashboards",
+      "path": "devops/84-observability-architecture-template.svg"
+    },
+    {
+      "num": 85,
+      "id": "infrastructure-as-code",
+      "title": "Infrastructure as Code",
+      "category": "devops",
+      "layout": "iac",
+      "description": "IaC definitions to cloud resources",
+      "path": "devops/85-infrastructure-as-code-template.svg"
+    },
+    {
+      "num": 86,
+      "id": "service-mesh-architecture",
+      "title": "Service Mesh Architecture",
+      "category": "devops",
+      "layout": "service_mesh",
+      "description": "Control plane, data plane, sidecars",
+      "path": "devops/86-service-mesh-architecture-template.svg"
+    }
+  ]
+}

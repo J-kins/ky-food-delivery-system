@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="8" y="8" width="104" height="64" rx="0" fill="#ffffff"/>
+  <text x="60" y="22" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" text-anchor="middle" fill="#64748b" stroke="none" style="">&lt;&lt;interface&gt;&gt;</text>
+  <text x="60" y="36" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" text-anchor="middle" fill="#334155" stroke="none" style="">InterfaceName</text>
+  <line x1="8" y1="40" x2="112" y2="40"/>
+  <text x="60" y="54" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" text-anchor="middle" fill="#64748b" stroke="none" style="">attributes</text>
+</svg>

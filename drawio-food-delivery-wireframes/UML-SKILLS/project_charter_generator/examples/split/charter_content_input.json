@@ -1,0 +1,69 @@
+{
+  "vision": {
+    "statement": "Enable every community health worker in Uganda to access trusted, interoperable patient data through a secure national platform.",
+    "mission": "Design, build, and deploy the Da'atSNA Community Data Platform connecting clinics, NHIS, and ministry systems within 12 months."
+  },
+  "objectives": [
+    {
+      "id": "OBJ-01",
+      "description": "Deliver FHIR-compliant data exchange between 50 pilot clinics",
+      "measurable_criteria": "50 clinics live by Q4; 99% uptime SLA"
+    },
+    {
+      "id": "OBJ-02",
+      "description": "Reduce patient record retrieval time for CHWs",
+      "measurable_criteria": "Median query time under 2 seconds"
+    },
+    {
+      "id": "OBJ-03",
+      "description": "Train 200 community health workers on the platform",
+      "measurable_criteria": "200 certified users; 80% adoption in pilot districts"
+    }
+  ],
+  "scope": {
+    "in_scope": [
+      "FHIR API gateway and patient demographics module",
+      "Clinic onboarding portal and CHW mobile interface",
+      "Integration with NHIS billing endpoints",
+      "Training program and operational runbooks"
+    ],
+    "out_of_scope": [
+      "Payroll and HR systems",
+      "Legacy paper record digitization backlog",
+      "National e-prescription rollout (Phase 2)"
+    ],
+    "boundaries": "Platform terminates at approved ministry firewall endpoints; clinics connect via VPN or approved cloud links."
+  },
+  "constraints": [
+    "Must comply with Uganda Data Protection and Health Information regulations",
+    "Total budget capped at USD 59,400 for Phase 1",
+    "All production releases require sponsor sign-off"
+  ],
+  "assumptions": [
+    "Existing NHIS APIs remain stable through project duration",
+    "Pilot clinics provide dedicated IT liaisons",
+    "Cloud infrastructure procured within first 60 days",
+    "Ministry security review completes before go-live"
+  ],
+  "success_criteria": [
+    "50 clinics connected with verified data exchange",
+    "Median record retrieval under 2 seconds",
+    "200 CHWs trained and actively using the platform",
+    "Zero critical security findings at go-live audit"
+  ],
+  "budget": {
+    "total": 59400,
+    "currency": "USD",
+    "breakdown": {
+      "personnel": 31000,
+      "hardware": 18500,
+      "software": 1500,
+      "training": 3000,
+      "contingency": 5400
+    }
+  },
+  "approvals": [
+    { "role": "Project Sponsor", "name": "Dr. James Okello", "date": "2026-01-05" },
+    { "role": "Project Manager", "name": "Sarah Nakato", "date": "2026-01-05" }
+  ]
+}

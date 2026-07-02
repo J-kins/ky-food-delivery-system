@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">06  LOGO PLACEMENT</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">26</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Logo Placement</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Preferred logo placement on light, white, and tinted backgrounds.</text>
+  <rect id="ex0" x="72" y="200" width="352" height="236" fill="#FFFFFF" rx="3" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="el0" x="248" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1A1A1A" text-anchor="middle">&#x25B2;  LOGO</text>
+  <text id="en0" x="248" y="456" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">White</text>
+  <rect id="ex1" x="456" y="200" width="352" height="236" fill="#F5F5F5" rx="3" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="el1" x="632" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1A1A1A" text-anchor="middle">&#x25B2;  LOGO</text>
+  <text id="en1" x="632" y="456" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">Off White</text>
+  <rect id="ex2" x="840" y="200" width="352" height="236" fill="#D4E0CE" rx="3"/>
+  <text id="el2" x="1016" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#3E5139" text-anchor="middle">&#x25B2;  LOGO</text>
+  <text id="en2" x="1016" y="456" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="middle">Pale Green</text>
+  <text id="r-hdr" x="72" y="484" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Placement Rules</text>
+  <line id="r-ln" x1="72" y1="498" x2="252" y2="498" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="r1" x="72" y="520" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Position logo in the top-left corner for all documents and stationery</text>
+  <text id="r2" x="72" y="538" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Centre logo on packaging, promotional, and signage materials</text>
+  <text id="r3" x="72" y="556" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Maintain minimum clear space equal to the height of the mark</text>
+  <text id="r4" x="72" y="574" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">&#x2022;  Never rotate, stretch, recolour, or alter the logo</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

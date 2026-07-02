@@ -1,0 +1,209 @@
+{
+  "diagram_description": {
+    "id": "scope_boundary",
+    "title": "Scope Boundary Diagram",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "LR",
+    "caption": "Figure 3: Scope Boundary — In-Scope vs Out-of-Scope",
+    "nodes": [
+      {
+        "id": "SCOPE",
+        "label": "IN-SCOPE: NIHE Platform",
+        "shape": "box",
+        "fill": "#E8F5E9",
+        "border": "#2E7D32",
+        "text_color": "#1B5E20"
+      },
+      {
+        "id": "PATIENT",
+        "label": "Patient Services\n(EHR, Appointments, Telemedicine)",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#0D47A1"
+      },
+      {
+        "id": "FACILITY",
+        "label": "Facility Services\n(Registration, Staff, EMR)",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#0D47A1"
+      },
+      {
+        "id": "HCP",
+        "label": "Healthcare Personnel\n(Consultation, Prescriptions)",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#0D47A1"
+      },
+      {
+        "id": "REGULATOR",
+        "label": "Regulatory Services\n(Oversight, Pharmacovigilance)",
+        "shape": "box",
+        "fill": "#E3F2FD",
+        "border": "#1565C0",
+        "text_color": "#0D47A1"
+      },
+      {
+        "id": "GIS",
+        "label": "GIS Services\n(Facility Locator, Routing)",
+        "shape": "box",
+        "fill": "#F3E5F5",
+        "border": "#7B1FA2",
+        "text_color": "#4A148C"
+      },
+      {
+        "id": "API",
+        "label": "API & Integration\n(HL7/FHIR, SDKs)",
+        "shape": "box",
+        "fill": "#F3E5F5",
+        "border": "#7B1FA2",
+        "text_color": "#4A148C"
+      },
+      {
+        "id": "SECURITY",
+        "label": "Security & Compliance\n(Encryption, Consent, Auditing)",
+        "shape": "box",
+        "fill": "#FFF3E0",
+        "border": "#E65100",
+        "text_color": "#BF360C"
+      },
+      {
+        "id": "TRAINING",
+        "label": "Capacity Building\n(Training, Help Desk, M&E)",
+        "shape": "box",
+        "fill": "#FFF3E0",
+        "border": "#E65100",
+        "text_color": "#BF360C"
+      },
+      {
+        "id": "OUT-1",
+        "label": "OUT-OF-SCOPE:\nNational ID Integration",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#C62828",
+        "text_color": "#B71C1C"
+      },
+      {
+        "id": "OUT-2",
+        "label": "OUT-OF-SCOPE:\nInsurance Platform",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#C62828",
+        "text_color": "#B71C1C"
+      },
+      {
+        "id": "OUT-3",
+        "label": "OUT-OF-SCOPE:\nExtension Marketplace",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#C62828",
+        "text_color": "#B71C1C"
+      },
+      {
+        "id": "OUT-4",
+        "label": "OUT-OF-SCOPE:\nUSSD Gateway",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#C62828",
+        "text_color": "#B71C1C"
+      },
+      {
+        "id": "OUT-5",
+        "label": "OUT-OF-SCOPE:\nCross-Border Data Exchange",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#C62828",
+        "text_color": "#B71C1C"
+      }
+    ],
+    "edges": [
+      {
+        "from": "PATIENT",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "FACILITY",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "HCP",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "REGULATOR",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "GIS",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "API",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "SECURITY",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "TRAINING",
+        "to": "SCOPE",
+        "label": "",
+        "color": "#2E7D32"
+      },
+      {
+        "from": "OUT-1",
+        "to": "SCOPE",
+        "label": "Future Phase",
+        "color": "#C62828",
+        "style": "dashed"
+      },
+      {
+        "from": "OUT-2",
+        "to": "SCOPE",
+        "label": "Future Phase",
+        "color": "#C62828",
+        "style": "dashed"
+      },
+      {
+        "from": "OUT-3",
+        "to": "SCOPE",
+        "label": "Future Phase",
+        "color": "#C62828",
+        "style": "dashed"
+      },
+      {
+        "from": "OUT-4",
+        "to": "SCOPE",
+        "label": "Future Phase",
+        "color": "#C62828",
+        "style": "dashed"
+      },
+      {
+        "from": "OUT-5",
+        "to": "SCOPE",
+        "label": "Future Phase",
+        "color": "#C62828",
+        "style": "dashed"
+      }
+    ]
+  }
+}

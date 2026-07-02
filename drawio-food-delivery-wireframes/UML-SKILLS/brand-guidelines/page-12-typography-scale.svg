@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">02  TYPOGRAPHY</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">12</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Typography</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <line id="ts-top" x1="72" y1="164" x2="632" y2="164" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="ts-lbl-38" x="72" y="186" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">H1 — Display / 48pt / Extra Bold</text>
+  <text id="ts-s-38" x="72" y="228" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="800" fill="#1A1A1A" text-anchor="start" letter-spacing="-1">Heading One</text>
+  <line id="ts-r-38" x1="72" y1="244" x2="632" y2="244" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="ts-lbl-28" x="72" y="262" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">H2 — Title / 32pt / Bold</text>
+  <text id="ts-s-28" x="72" y="294" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Heading Two</text>
+  <line id="ts-r-28" x1="72" y1="310" x2="632" y2="310" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="ts-lbl-20" x="72" y="328" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">H3 — Section / 22pt / Semi Bold</text>
+  <text id="ts-s-20" x="72" y="352" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#1A1A1A" text-anchor="start">Heading Three</text>
+  <line id="ts-r-20" x1="72" y1="368" x2="632" y2="368" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="ts-lbl-11" x="72" y="386" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">Body / 11pt / Regular</text>
+  <g id="ts-b-11">
+    <rect x="72" y="392" width="480" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="408" width="560" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="424" width="520" height="9" rx="1.5" fill="#DDDDDD"/>
+    <rect x="72" y="440" width="560" height="9" rx="1.5" fill="#DDDDDD"/>
+  </g>
+  <line id="ts-r-11" x1="72" y1="480" x2="632" y2="480" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="ts-lbl-9" x="72" y="498" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start">Caption / 9pt / Regular</text>
+  <g id="ts-b-9">
+    <rect x="72" y="504" width="480" height="7" rx="1.5" fill="#556B4E"/>
+    <rect x="72" y="520" width="560" height="7" rx="1.5" fill="#556B4E"/>
+    <rect x="72" y="536" width="520" height="7" rx="1.5" fill="#556B4E"/>
+    <rect x="72" y="552" width="560" height="7" rx="1.5" fill="#556B4E"/>
+  </g>
+  <line id="ts-r-9" x1="72" y1="592" x2="632" y2="592" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="fp-hdr" x="696" y="164" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Type Hierarchy &amp; Pairing</text>
+  <line id="fp-rule" x1="696" y1="178" x2="916" y2="178" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="fp-l1" x="696" y="216" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="2">PRIMARY</text>
+  <text id="fp-v1" x="696" y="244" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Headlines</text>
+  <text id="fp-u1" x="696" y="264" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">H1, H2, Display, Key messaging</text>
+  <line id="fp-d1" x1="696" y1="284" x2="916" y2="284" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="fp-l2" x="696" y="312" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="2">SECONDARY</text>
+  <text id="fp-v2" x="696" y="340" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#1A1A1A" text-anchor="start">Body Copy</text>
+  <text id="fp-u2" x="696" y="360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">H3, body, captions, labels</text>
+  <line id="fp-d2" x1="696" y1="380" x2="916" y2="380" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text id="sp-hdr" x="696" y="408" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Line Height &amp; Spacing</text>
+  <line id="sp-rule" x1="696" y1="422" x2="916" y2="422" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="sp-1" x="696" y="448" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Display:  1.1x</text>
+  <text id="sp-2" x="696" y="466" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Heading:  1.25x</text>
+  <text id="sp-3" x="696" y="484" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Body:     1.6x</text>
+  <text id="sp-4" x="696" y="502" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Caption:  1.4x</text>
+  <text id="ltr-hdr" x="940" y="164" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Letter Spacing</text>
+  <line id="ltr-rule" x1="940" y1="178" x2="1140" y2="178" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="ltr-1" x="940" y="216" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Display:  -2 to -4</text>
+  <text id="ltr-2" x="940" y="234" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Heading:  -0.5 to -1</text>
+  <text id="ltr-3" x="940" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Body:     0</text>
+  <text id="ltr-4" x="940" y="270" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Label:    +1.5 to +3</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>

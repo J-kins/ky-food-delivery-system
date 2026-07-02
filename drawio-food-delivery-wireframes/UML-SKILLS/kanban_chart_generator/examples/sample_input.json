@@ -1,0 +1,64 @@
+{
+  "kanban_chart": {
+    "title": "Kanban Chart - Workflow Dashboard",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "sprint": "Sprint 5",
+    "description": "Workflow dashboard showing work items and their status",
+
+    "columns": [
+      {"id": "BACKLOG", "name": "Backlog", "description": "To Do", "wip_limit": null, "color": "#E3F2FD", "text_color": "#0D47A1", "order": 1},
+      {"id": "SELECTED", "name": "Selected", "description": "Ready for work", "wip_limit": 20, "color": "#FFF3E0", "text_color": "#E65100", "order": 2},
+      {"id": "ANALYZE", "name": "Analyze", "description": "In Analysis", "wip_limit": 5, "color": "#FFF9C4", "text_color": "#F57F17", "order": 3},
+      {"id": "DEVELOP", "name": "Develop", "description": "In Development", "wip_limit": 8, "color": "#E8F5E9", "text_color": "#1B5E20", "order": 4},
+      {"id": "TEST", "name": "Test", "description": "In Testing", "wip_limit": 6, "color": "#F3E5F5", "text_color": "#4A148C", "order": 5},
+      {"id": "REVIEW", "name": "Review", "description": "In Review", "wip_limit": 4, "color": "#FCE4EC", "text_color": "#880E4F", "order": 6},
+      {"id": "DEPLOY", "name": "Deploy", "description": "Ready to Deploy", "wip_limit": 3, "color": "#E0F7FA", "text_color": "#006064", "order": 7},
+      {"id": "DONE", "name": "Done", "description": "Completed", "wip_limit": null, "color": "#E8F5E9", "text_color": "#1B5E20", "order": 8},
+      {"id": "BLOCKED", "name": "Blocked", "description": "Blocked items", "wip_limit": null, "color": "#FFEBEE", "text_color": "#B71C1C", "order": 9}
+    ],
+
+    "swimlanes": [
+      {"id": "SL1", "name": "Features", "color": "#1a237e", "text_color": "#FFFFFF", "icon": "★"},
+      {"id": "SL2", "name": "Bugs", "color": "#C62828", "text_color": "#FFFFFF", "icon": ""},
+      {"id": "SL3", "name": "Tasks", "color": "#2E7D32", "text_color": "#FFFFFF", "icon": "✓"}
+    ],
+
+    "work_items": [
+      {"id": "FEAT-100", "title": "Implement User Login", "type": "Feature", "status": "BACKLOG", "priority": "High", "assignee": "Alice", "swimlane_id": "SL1", "size": 5},
+      {"id": "FEAT-101", "title": "Dashboard UI", "type": "Feature", "status": "DEVELOP", "priority": "Medium", "assignee": "Charlie", "swimlane_id": "SL1", "size": 8},
+      {"id": "FEAT-102", "title": "Database Schema", "type": "Feature", "status": "DONE", "priority": "High", "assignee": "Alice", "swimlane_id": "SL1", "size": 5},
+      {"id": "FEAT-103", "title": "Community Data API", "type": "Feature", "status": "ANALYZE", "priority": "High", "assignee": "Diana", "swimlane_id": "SL1", "size": 8},
+      {"id": "FEAT-104", "title": "Role-Based Access", "type": "Feature", "status": "TEST", "priority": "Medium", "assignee": "Charlie", "swimlane_id": "SL1", "size": 5},
+      {"id": "FEAT-105", "title": "Reporting Module", "type": "Feature", "status": "SELECTED", "priority": "Low", "assignee": "Eve", "swimlane_id": "SL1", "size": 8},
+      {"id": "BUG-200", "title": "Fix NullPointerException", "type": "Bug", "status": "DEVELOP", "priority": "High", "assignee": "Bob", "swimlane_id": "SL2", "size": 3},
+      {"id": "BUG-201", "title": "Login timeout on mobile", "type": "Bug", "status": "ANALYZE", "priority": "High", "assignee": "Bob", "swimlane_id": "SL2", "size": 2},
+      {"id": "BUG-202", "title": "CSV export truncation", "type": "Bug", "status": "BLOCKED", "priority": "Medium", "assignee": "Frank", "swimlane_id": "SL2", "size": 3},
+      {"id": "TASK-300", "title": "CI/CD Pipeline Setup", "type": "Task", "status": "REVIEW", "priority": "High", "assignee": "Grace", "swimlane_id": "SL3", "size": 5},
+      {"id": "TASK-301", "title": "Documentation Update", "type": "Task", "status": "DEPLOY", "priority": "Low", "assignee": "Henry", "swimlane_id": "SL3", "size": 2},
+      {"id": "TASK-302", "title": "Security Audit Prep", "type": "Task", "status": "TEST", "priority": "Medium", "assignee": "Grace", "swimlane_id": "SL3", "size": 3}
+    ],
+
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 9,
+      "card_width": 2.0,
+      "card_height": 1.0,
+      "show_wip_limits": true,
+      "priority_colors": {
+        "High": "#FFCDD2",
+        "Medium": "#FFF9C4",
+        "Low": "#C8E6C9"
+      }
+    },
+
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5,
+      "cell_padding": 0.2
+    }
+  }
+}

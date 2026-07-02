@@ -9,21 +9,22 @@
     "build": "npm run build:web && npm run build:desktop",
     "build:web": "echo 'Web build complete'",
     "build:desktop": "cd src-tauri && cargo tauri build",
-    "tauri": "cargo tauri",
+    "tauri": "tauri",
     "test": "npm run test:unit",
     "test:unit": "echo 'Tests'",
     "lint": "eslint . --ext .js",
     "format": "prettier --write \"**/*.{js,css,json,md}\""
   },
   "dependencies": {
-    "d3": "^7.8.5",
     "@tiptap/core": "^2.1.13",
     "@tiptap/starter-kit": "^2.1.13",
-    "chart.js": "^4.4.0",
     "axios": "^1.6.0",
+    "chart.js": "^4.4.0",
+    "d3": "^7.8.5",
     "date-fns": "^2.30.0"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^1.6.3",
     "eslint": "^8.50.0",
     "prettier": "^3.0.3"
   },

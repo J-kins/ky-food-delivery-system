@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">Risk Matrix</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
+  <defs>
+    <pattern id="grid-risk-matrix" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-risk-matrix)"/>
+  <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
+  <rect x="560" y="280" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="656" y="280" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="752" y="280" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="848" y="280" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="944" y="280" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="560" y="352" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="656" y="352" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="752" y="352" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="848" y="352" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="944" y="352" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="560" y="424" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="656" y="424" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="752" y="424" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="848" y="424" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="944" y="424" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="560" y="496" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="656" y="496" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="752" y="496" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="848" y="496" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="944" y="496" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="560" y="568" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="656" y="568" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="752" y="568" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="848" y="568" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="944" y="568" width="96" height="72" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="608.0" y="268" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">1</text>
+  <text x="704.0" y="268" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">2</text>
+  <text x="800.0" y="268" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">3</text>
+  <text x="896.0" y="268" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">4</text>
+  <text x="992.0" y="268" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">5</text>
+  <text x="548" y="320.0" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">5</text>
+  <text x="548" y="392.0" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">4</text>
+  <text x="548" y="464.0" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">3</text>
+  <text x="548" y="536.0" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">2</text>
+  <text x="548" y="608.0" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">1</text>
+  <text x="520" y="600" text-anchor="start" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">Impact →</text>
+  <text x="400" y="320" text-anchor="start" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">↑ Probability</text>
+  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
+  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
+  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · Risk Matrix</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "budget": {
+    "layout": {
+      "orientation": "landscape",
+      "page_size": "A2",
+      "margin": 0.5
+    },
+    "dashboard": {
+      "show_kpi_bar": true,
+      "show_bar_chart": true,
+      "show_pie_chart": true,
+      "show_burn_rate_chart": true,
+      "kpi_colors": {
+        "total_budget": "#1a237e",
+        "actual_spent": "#C62828",
+        "remaining": "#2E7D32",
+        "period": "#4E342E"
+      }
+    }
+  }
+}

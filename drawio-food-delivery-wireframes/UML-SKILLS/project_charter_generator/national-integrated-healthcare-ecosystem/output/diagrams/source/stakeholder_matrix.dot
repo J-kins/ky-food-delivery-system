@@ -1,0 +1,28 @@
+digraph "stakeholder_matrix" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=TB;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "SH-01" [label="Patients" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#333333"];
+  "SH-02" [label="Health Facilities" shape=box fillcolor="#E8F5E9" color="#2E7D32" fontcolor="#333333"];
+  "SH-03" [label="Healthcare Personnel" shape=box fillcolor="#FFF3E0" color="#E65100" fontcolor="#333333"];
+  "SH-04" [label="System Administrators" shape=box fillcolor="#F3E5F5" color="#7B1FA2" fontcolor="#333333"];
+  "SH-05" [label="Ministry of Health" shape=box fillcolor="#FFEBEE" color="#C62828" fontcolor="#333333"];
+  "SH-06" [label="National Drug Authority" shape=box fillcolor="#FFEBEE" color="#C62828" fontcolor="#333333"];
+  "SH-07" [label="Auditors" shape=box fillcolor="#ECEFF1" color="#455A64" fontcolor="#333333"];
+  "SH-08" [label="Researchers" shape=box fillcolor="#E0F7FA" color="#00838F" fontcolor="#333333"];
+  "SH-09" [label="Developers" shape=box fillcolor="#E8EAF6" color="#283593" fontcolor="#333333"];
+  "SH-10" [label="Development Partners / Donors" shape=box fillcolor="#FFF8E1" color="#F9A825" fontcolor="#333333"];
+  "SH-11" [label="Civil Society & Patient Advocacy" shape=box fillcolor="#F1F8E9" color="#558B2F" fontcolor="#333333"];
+  "SH-12" [label="Pharmaceutical Suppliers" shape=box fillcolor="#EDE7F6" color="#5E35B1" fontcolor="#333333"];
+  "SH-01" -> "SH-05"[ label="High Interest" color="#1565C0"];
+  "SH-02" -> "SH-03"[ label="Collaboration" color="#2E7D32"];
+  "SH-04" -> "SH-01"[ label="Supports" color="#7B1FA2"];
+  "SH-05" -> "SH-06"[ label="Co-regulate" color="#C62828"];
+  "SH-07" -> "SH-04"[ label="Audits" color="#455A64"];
+  "SH-08" -> "SH-09"[ label="Uses APIs" color="#00838F"];
+  "SH-09" -> "SH-04"[ label="Integrates with" color="#283593"];
+  "SH-10" -> "SH-05"[ label="Funds & Oversees" color="#F9A825"];
+  "SH-11" -> "SH-01"[ label="Advocates for" color="#558B2F"];
+  "SH-12" -> "SH-02"[ label="Supplies" color="#5E35B1"];
+}

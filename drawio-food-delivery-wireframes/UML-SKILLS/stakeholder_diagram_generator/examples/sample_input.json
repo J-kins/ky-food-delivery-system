@@ -1,0 +1,94 @@
+{
+  "stakeholder_register": {
+    "title": "Stakeholder Register",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "stakeholders": [
+      {
+        "id": "S-001",
+        "name": "Dr. James Okello",
+        "title": "Project Sponsor",
+        "organization": "Min. of Health",
+        "category": "Internal",
+        "type": "Primary",
+        "power": "High",
+        "interest": "High",
+        "influence": "High",
+        "legitimacy": "High",
+        "urgency": "High",
+        "expectations": "Project success, policy alignment",
+        "needs": "Regular status, risk visibility",
+        "engagement_strategy": "auto",
+        "communication_preference": "Weekly email",
+        "contact": "james.o@health.gov",
+        "status": "Active"
+      },
+      {
+        "id": "S-002",
+        "name": "Dr. Sarah Nambi",
+        "title": "Policy Maker",
+        "organization": "Min. of Health",
+        "category": "Internal",
+        "type": "Primary",
+        "power": "High",
+        "interest": "Low",
+        "influence": "High",
+        "legitimacy": "High",
+        "urgency": "Medium",
+        "expectations": "Regulatory compliance",
+        "needs": "High-level briefs",
+        "engagement_strategy": "auto",
+        "communication_preference": "Quarterly brief",
+        "contact": "sarah.n@health.gov",
+        "status": "Active"
+      },
+      {
+        "id": "S-003",
+        "name": "NHIS",
+        "title": "Insurance Company",
+        "organization": "NHIS",
+        "category": "External",
+        "type": "Secondary",
+        "power": "Medium",
+        "interest": "High",
+        "influence": "Medium",
+        "legitimacy": "Medium",
+        "urgency": "Low",
+        "expectations": "Cost control",
+        "needs": "Compliance reports",
+        "engagement_strategy": "auto",
+        "status": "Active"
+      },
+      {
+        "id": "S-004",
+        "name": "General Public",
+        "title": "Citizens",
+        "organization": "N/A",
+        "category": "External",
+        "power": "Low",
+        "interest": "Low",
+        "influence": "Low",
+        "legitimacy": "Medium",
+        "urgency": "Low",
+        "expectations": "Better healthcare",
+        "needs": "Transparency",
+        "engagement_strategy": "auto",
+        "status": "Active"
+      }
+    ]
+  },
+  "power_interest_matrix": {
+    "title": "Power-Interest Matrix"
+  },
+  "influence_network": {
+    "title": "Influence Network",
+    "nodes": [{"id": "S-001"}, {"id": "S-002"}],
+    "edges": [{"from": "S-001", "to": "S-002"}]
+  },
+  "salience_model": {
+    "title": "Salience Model"
+  },
+  "stakeholder_map": {
+    "title": "Stakeholder Map"
+  }
+}

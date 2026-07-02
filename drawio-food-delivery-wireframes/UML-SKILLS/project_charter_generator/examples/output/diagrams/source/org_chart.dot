@@ -1,0 +1,15 @@
+digraph "org_chart" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=TB;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "SPONSOR" [label="Dr. James Okello\\nProject Sponsor" shape=box fillcolor="#64B5F6" color="#1565C0" fontcolor="#000000"];
+  "PM" [label="Sarah Nakato\\nProject Manager" shape=box fillcolor="#64B5F6" color="#1565C0" fontcolor="#000000"];
+  "TL-TECH" [label="David Mukasa\\nTechnical Lead" shape=box fillcolor="#64B5F6" color="#1565C0" fontcolor="#000000"];
+  "TL-QA" [label="Grace Achieng\\nQA Lead" shape=box fillcolor="#64B5F6" color="#1565C0" fontcolor="#000000"];
+  "BA-01" [label="Peter Okello\\nBusiness Analyst" shape=box fillcolor="#64B5F6" color="#1565C0" fontcolor="#000000"];
+  "SPONSOR" -> "PM"[ color="#666666"];
+  "PM" -> "TL-TECH"[ color="#666666"];
+  "PM" -> "TL-QA"[ color="#666666"];
+  "PM" -> "BA-01"[ color="#666666"];
+}

@@ -1,0 +1,18 @@
+digraph "stakeholder_matrix" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=TB;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  subgraph "cluster_grid" {
+    label="grid";
+  "Q_HH" [label="KEY PLAYERS" shape=box fillcolor="#FFCDD2" color="#666666" fontcolor="#000000"];
+  "Q_HL" [label="KEEP SATISFIED" shape=box fillcolor="#FFE0B2" color="#666666" fontcolor="#000000"];
+  "Q_LH" [label="KEEP INFORMED" shape=box fillcolor="#FFF9C4" color="#666666" fontcolor="#000000"];
+  "Q_LL" [label="MONITOR" shape=box fillcolor="#C8E6C9" color="#666666" fontcolor="#000000"];
+  }
+  "SH-01" [label="Dr. James Okello\\nProject Sponsor" shape=box fillcolor="#FFFFFF" color="#1565C0" fontcolor="#000000"];
+  "SH-02" [label="Dr. Sarah Nambi\\nPolicy Maker" shape=box fillcolor="#FFFFFF" color="#1565C0" fontcolor="#000000"];
+  "SH-03" [label="NHIS Leadership\\nInsurance Partner" shape=box fillcolor="#FFFFFF" color="#1565C0" fontcolor="#000000"];
+  "SH-04" [label="District Health Officers\\nRegional Coordinators" shape=box fillcolor="#FFFFFF" color="#1565C0" fontcolor="#000000"];
+  "SH-05" [label="Community Health Workers\\nEnd Users" shape=box fillcolor="#FFFFFF" color="#1565C0" fontcolor="#000000"];
+}

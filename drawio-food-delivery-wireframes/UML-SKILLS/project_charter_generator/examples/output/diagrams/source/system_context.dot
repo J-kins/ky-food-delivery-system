@@ -1,0 +1,13 @@
+digraph "system_context" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=LR;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "SYSTEM" [label="Da'atSNA Community Data Platform" shape=box fillcolor="#1565C0" color="#0D47A1" fontcolor="#000000"];
+  "EXT1" [label="External Stakeholders" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#000000"];
+  "EXT2" [label="NHIS / Billing" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#000000"];
+  "EXT3" [label="Clinic Systems" shape=box fillcolor="#E3F2FD" color="#1565C0" fontcolor="#000000"];
+  "EXT1" -> "SYSTEM"[ label="policy" color="#666666"];
+  "EXT2" -> "SYSTEM"[ label="billing" color="#666666"];
+  "SYSTEM" -> "EXT3"[ label="patient data" color="#666666"];
+}

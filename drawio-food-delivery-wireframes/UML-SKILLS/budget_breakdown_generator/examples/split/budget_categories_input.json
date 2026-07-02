@@ -1,0 +1,51 @@
+{
+  "budget": {
+    "categories": [
+      {
+        "id": "CAT1",
+        "name": "Personnel",
+        "color": "#1a237e",
+        "text_color": "#FFFFFF",
+        "budget": 31000,
+        "actual": 28500,
+        "notes": "Includes PM, Dev, QA, BA"
+      },
+      {
+        "id": "CAT2",
+        "name": "Hardware",
+        "color": "#1565C0",
+        "text_color": "#FFFFFF",
+        "budget": 18500,
+        "actual": 19200,
+        "notes": "Cloud, workstations, network"
+      },
+      {
+        "id": "CAT3",
+        "name": "Software",
+        "color": "#2E7D32",
+        "text_color": "#FFFFFF",
+        "budget": 1500,
+        "actual": 1200,
+        "notes": "Licenses, tools"
+      },
+      {
+        "id": "CAT4",
+        "name": "Training",
+        "color": "#E65100",
+        "text_color": "#FFFFFF",
+        "budget": 3000,
+        "actual": 2800,
+        "notes": "User training, materials"
+      },
+      {
+        "id": "CAT5",
+        "name": "Contingency",
+        "color": "#6A1B9A",
+        "text_color": "#FFFFFF",
+        "budget": 5400,
+        "actual": 2100,
+        "notes": "10% buffer of subtotal"
+      }
+    ]
+  }
+}

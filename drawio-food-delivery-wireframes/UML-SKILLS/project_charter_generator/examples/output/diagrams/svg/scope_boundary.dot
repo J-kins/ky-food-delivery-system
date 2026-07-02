@@ -1,0 +1,15 @@
+digraph "scope_boundary" {
+  graph [bgcolor=white fontname=Arial];
+  rankdir=LR;
+  node [shape=box style="rounded,filled" fontname=Arial fontsize=10 margin="0.2,0.1"];
+  edge [color="#666666" fontname=Arial fontsize=9];
+  "OUTER" [label="OUT OF SCOPE" shape=box fillcolor="#FFEBEE" color="#E53935" fontcolor="#000000"];
+  "INNER" [label="IN SCOPE" shape=box fillcolor="#E8F5E9" color="#2E7D32" fontcolor="#000000"];
+  "IN_0" [label="FHIR API gateway and patient demographics module" shape=box fillcolor="#C8E6C9" color="#2E7D32" fontcolor="#000000"];
+  "IN_1" [label="Clinic onboarding portal and CHW mobile interface" shape=box fillcolor="#C8E6C9" color="#2E7D32" fontcolor="#000000"];
+  "IN_2" [label="Integration with NHIS billing endpoints" shape=box fillcolor="#C8E6C9" color="#2E7D32" fontcolor="#000000"];
+  "IN_3" [label="Training program and operational runbooks" shape=box fillcolor="#C8E6C9" color="#2E7D32" fontcolor="#000000"];
+  "OUT_0" [label="Payroll and HR systems" shape=box fillcolor="#FFCDD2" color="#E53935" fontcolor="#000000"];
+  "OUT_1" [label="Legacy paper record digitization backlog" shape=box fillcolor="#FFCDD2" color="#E53935" fontcolor="#000000"];
+  "OUT_2" [label="National e-prescription rollout (Phase 2)" shape=box fillcolor="#FFCDD2" color="#E53935" fontcolor="#000000"];
+}

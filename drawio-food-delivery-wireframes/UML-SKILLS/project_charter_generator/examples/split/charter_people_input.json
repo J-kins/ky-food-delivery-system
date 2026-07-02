@@ -1,0 +1,56 @@
+{
+  "stakeholders": [
+    {
+      "id": "SH-01",
+      "name": "Dr. James Okello",
+      "role": "Project Sponsor",
+      "organization": "Min. of Health",
+      "power": "High",
+      "interest": "High",
+      "expectations": "On-time delivery, policy alignment, transparent reporting"
+    },
+    {
+      "id": "SH-02",
+      "name": "Dr. Sarah Nambi",
+      "role": "Policy Maker",
+      "organization": "Min. of Health",
+      "power": "High",
+      "interest": "Low",
+      "expectations": "Regulatory compliance and audit readiness"
+    },
+    {
+      "id": "SH-03",
+      "name": "NHIS Leadership",
+      "role": "Insurance Partner",
+      "organization": "NHIS",
+      "power": "High",
+      "interest": "High",
+      "expectations": "Accurate billing integration and cost control"
+    },
+    {
+      "id": "SH-04",
+      "name": "District Health Officers",
+      "role": "Regional Coordinators",
+      "organization": "Regional Health Offices",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Reliable clinic connectivity and training support"
+    },
+    {
+      "id": "SH-05",
+      "name": "Community Health Workers",
+      "role": "End Users",
+      "organization": "Pilot Clinics",
+      "power": "Low",
+      "interest": "High",
+      "expectations": "Fast, simple access to patient records"
+    }
+  ],
+  "team": [
+    { "id": "SPONSOR", "name": "Dr. James Okello", "role": "Project Sponsor", "reports_to": null },
+    { "id": "PM", "name": "Sarah Nakato", "role": "Project Manager", "reports_to": "SPONSOR" },
+    { "id": "TL-TECH", "name": "David Mukasa", "role": "Technical Lead", "reports_to": "PM" },
+    { "id": "TL-QA", "name": "Grace Achieng", "role": "QA Lead", "reports_to": "PM" },
+    { "id": "BA-01", "name": "Peter Okello", "role": "Business Analyst", "reports_to": "PM" }
+  ]
+}

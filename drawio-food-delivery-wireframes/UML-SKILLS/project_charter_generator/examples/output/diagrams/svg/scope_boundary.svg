@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1400" viewBox="0 0 2600 1400">
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#1a237e">Scope Boundary</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#666"/></marker></defs>
+<rect x="299.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#FFEBEE" stroke="#E53935" stroke-width="2"/>
+<text x="309.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">OUT OF SCOPE</text>
+<rect x="819.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+<text x="829.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">IN SCOPE</text>
+<rect x="1339.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+<text x="1349.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">FHIR API gateway and patient demographics module</text>
+<rect x="1859.0" y="360.0" width="442.0" height="120.0" rx="8" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+<text x="1869.0" y="388.0" font-family="Arial" font-size="13" fill="#000000">Clinic onboarding portal and CHW mobile interface</text>
+<rect x="299.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+<text x="309.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">Integration with NHIS billing endpoints</text>
+<rect x="819.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+<text x="829.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">Training program and operational runbooks</text>
+<rect x="1339.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+<text x="1349.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">Payroll and HR systems</text>
+<rect x="1859.0" y="640.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+<text x="1869.0" y="668.0" font-family="Arial" font-size="13" fill="#000000">Legacy paper record digitization backlog</text>
+<rect x="299.0" y="920.0" width="442.0" height="120.0" rx="8" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+<text x="309.0" y="948.0" font-family="Arial" font-size="13" fill="#000000">National e-prescription rollout (Phase 2)</text>
+</svg>

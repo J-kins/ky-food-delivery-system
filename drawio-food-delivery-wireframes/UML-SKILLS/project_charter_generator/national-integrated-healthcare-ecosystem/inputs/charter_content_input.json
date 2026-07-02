@@ -1,0 +1,150 @@
+{
+  "vision": {
+    "statement": "To create a secure, interoperable, GIS-enabled healthcare ecosystem that connects patients, healthcare providers, regulators, and researchers through a unified digital platform across Uganda.",
+    "mission": "To digitize and integrate healthcare services, improve accessibility, enable emergency response coordination, support telemedicine, enhance regulatory oversight, protect patient data, and facilitate national health analytics through a single, scalable, and sustainable platform."
+  },
+  "objectives": [
+    {
+      "id": "OBJ-01",
+      "description": "Digitize healthcare records and enable seamless sharing across facilities",
+      "measurable_criteria": "Patient record retrieval time ≤ 2 seconds; 100% of registered facilities using EHR"
+    },
+    {
+      "id": "OBJ-02",
+      "description": "Improve healthcare accessibility through GIS-enabled facility discovery and navigation",
+      "measurable_criteria": "100% of districts covered; facility location accuracy ≤ 10m"
+    },
+    {
+      "id": "OBJ-03",
+      "description": "Enable emergency response coordination with real-time dispatch and tracking",
+      "measurable_criteria": "Emergency dispatch time ≤ 2 minutes; patient location accuracy ≤ 50m"
+    },
+    {
+      "id": "OBJ-04",
+      "description": "Support telemedicine services for remote consultation and care",
+      "measurable_criteria": "Video consultation connection success rate ≥ 95%; patient satisfaction ≥ 4/5"
+    },
+    {
+      "id": "OBJ-05",
+      "description": "Improve regulatory oversight through compliance monitoring and pharmacovigilance",
+      "measurable_criteria": "Regulatory compliance rate 100%; ADR report acknowledgment ≤ 4 hours"
+    },
+    {
+      "id": "OBJ-06",
+      "description": "Enable national health analytics and public health surveillance",
+      "measurable_criteria": "Surveillance data freshness ≤ 5 minutes; outbreak detection ≤ 48 hours"
+    },
+    {
+      "id": "OBJ-07",
+      "description": "Facilitate interoperability with existing healthcare systems",
+      "measurable_criteria": "HL7/FHIR standards compliance ≥ 95%; integration success rate ≥ 95%"
+    },
+    {
+      "id": "OBJ-08",
+      "description": "Protect patient data privacy and platform security through robust cybersecurity controls and compliance",
+      "measurable_criteria": "Zero critical (Severity 1) security incidents per year; 100% of facilities completing annual security awareness training; full compliance verified in annual Data Protection Act audits"
+    },
+    {
+      "id": "OBJ-09",
+      "description": "Build sustainable digital health capacity among healthcare workers and facility administrators",
+      "measurable_criteria": "≥ 90% of onboarded healthcare personnel certified on platform use within 60 days of facility go-live; digital health literacy training delivered in all 146 districts"
+    }
+  ],
+  "scope": {
+    "in_scope": [
+      "Patient-facing services: account management, EHR access, appointment booking, telemedicine, AI health assistant, facility discovery and navigation, emergency assistance, online pharmacy, payments, health monitoring, medication reminders, pharmacovigilance reporting, reviews and notifications",
+      "Health facility services: registration and verification, staff and patient management, EMR, telemedicine, pharmacy and laboratory operations, order and delivery management, emergency services, location and mapping, financial management, reviews, pharmacovigilance, reporting, and notifications",
+      "Healthcare personnel services: professional profile management, availability and scheduling, patient search and access, clinical consultation management, telemedicine, prescription management, laboratory and diagnostic requests, referral management, emergency response, pharmacist and laboratory functions, care coordination, pharmacovigilance, health monitoring, reviews, reporting, and notifications",
+      "System administration: user, facility, and personnel lifecycle management; content and catalog governance; transaction oversight; security and audit administration; system configuration; monitoring; backup and recovery",
+      "Regulatory oversight: facility and personnel oversight; prescription and medicine oversight; pharmacovigilance management; public health surveillance; inspection management; complaint investigation; national health analytics",
+      "Audit capabilities: audit trail management; compliance auditing; financial auditing; security auditing",
+      "Developer ecosystem: REST and GraphQL APIs; webhooks; SDKs; plugin framework; healthcare interoperability standards (HL7, FHIR, ICD, SNOMED CT, LOINC)",
+      "GIS capabilities: facility geocoding; map tile services; routing and navigation; geospatial analytics; emergency location services",
+      "Security, privacy, and compliance services: end-to-end encryption, encryption key management, consent management, role-based access control, access auditing, and data subject rights handling under Uganda's Data Protection and Privacy Act",
+      "Capacity building and support: healthcare-worker digital literacy training, facility administrator onboarding, multi-channel help desk and support services, district-level adoption dashboards, and a monitoring & evaluation framework"
+    ],
+    "out_of_scope": [
+      "Integration with government identity systems not yet available",
+      "Insurance platform integration, including national health insurance claims processing and adjudication (future phase)",
+      "Extension marketplace (future phase)",
+      "USSD gateway for feature phones (future phase)",
+      "Wearable device integration beyond commercially available APIs",
+      "Cross-border (East African Community) health data exchange (planned for a future regional-expansion phase; current architecture is designed to support it but exchange is not activated in this phase)"
+    ],
+    "boundaries": "The system is designed for national-scale deployment within Uganda, with architecture supporting future East African expansion. It is an API-first, headless-capable platform that exposes all core functionality through documented APIs consumed by web, mobile, and third-party clients. The implementation phase concludes with a structured post-go-live stabilization (hypercare) period before full operational handover to a permanent Ministry of Health ICT and Digital Health Division team."
+  },
+  "constraints": [
+    "Must operate under low-bandwidth conditions (≤ 100 Kbps) representative of rural Uganda",
+    "Must support intermittent connectivity with offline capabilities for critical functions",
+    "Must comply with Uganda's Data Protection and Privacy Act and healthcare regulatory requirements administered by the Ministry of Health and National Drug Authority",
+    "Must support Mobile Money as a primary payment method",
+    "Must support HL7/FHIR interoperability standards for integration with existing systems",
+    "Must be deployable on cloud, on-premises, or hybrid infrastructure",
+    "Must support 99.9% uptime for all critical services",
+    "Must support patient-facing content in English, Luganda, Runyankole, Luo, and other major Ugandan languages",
+    "Must comply with Uganda's Public Procurement and Disposal of Public Assets Authority (PPDA) regulations for all hardware, software, and vendor contracts"
+  ],
+  "assumptions": [
+    "Patients, healthcare personnel, and facility staff have access to internet-connected smartphones, tablets, or computers, even if connectivity is intermittent or low-bandwidth",
+    "Healthcare facilities and personnel onboarding possess valid licensure and legal authority to deliver registered services",
+    "Cooperation from healthcare facilities and regulatory bodies (MoH, NDA) for credential verification is available",
+    "Third-party Mobile Money, SMS, email, and mapping service providers maintain acceptable service levels",
+    "Future integration with government identity, insurance, and national health systems will be possible",
+    "The platform will achieve sufficient adoption to realize national-scale benefits",
+    "National electricity supply and data-center infrastructure will provide sufficient reliability for primary and backup hosting sites",
+    "The Ministry of Health will provide sustained budgetary support beyond the initial implementation period for ongoing operations and maintenance"
+  ],
+  "success_criteria": [
+    "Patient record retrieval time ≤ 2 seconds",
+    "System uptime ≥ 99.9%",
+    "Emergency dispatch automation ≤ 2 minutes",
+    "National facility mapping coverage 100% of districts",
+    "Multi-facility interoperability via HL7/FHIR",
+    "Medicine inventory accuracy ≥ 98%",
+    "Regulatory compliance rate 100%",
+    "100% of registered healthcare facilities using the platform",
+    "Video consultation quality score ≥ 4/5",
+    "ADR report acknowledgment time ≤ 4 hours",
+    "Zero critical (Severity 1) security incidents during the first 12 months post-launch",
+    "≥ 90% of onboarded healthcare personnel digitally certified on platform use",
+    "Help desk first-response time ≤ 30 minutes during business hours"
+  ],
+  "budget": {
+    "total": 1250000,
+    "currency": "USD",
+    "breakdown": {
+      "personnel": 450000,
+      "hardware": 400000,
+      "software": 200000,
+      "training": 150000,
+      "contingency": 50000
+    }
+  },
+  "approvals": [
+    {
+      "role": "Project Sponsor",
+      "name": "Ministry of Health Representative",
+      "date": "2026-07-15"
+    },
+    {
+      "role": "Project Manager",
+      "name": "Digital Health Division Lead",
+      "date": "2026-07-01"
+    },
+    {
+      "role": "Technical Lead / Architect",
+      "name": "Chief Architect",
+      "date": "2026-07-10"
+    },
+    {
+      "role": "Data Protection Officer",
+      "name": "Ministry of Health Data Protection Officer",
+      "date": "2026-07-12"
+    },
+    {
+      "role": "National Drug Authority Representative",
+      "name": "NDA Liaison Officer",
+      "date": "2026-07-14"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "word_document": {
+    "template": "word_template.docx",
+    "figure_width_inches": 6.5,
+    "include_toc": true,
+    "include_appendices": true,
+    "body_font": "Calibri",
+    "body_size_pt": 11,
+    "heading_font": "Calibri Light",
+    "color_theme": {
+      "primary": "#1565C0",
+      "secondary": "#2E7D32",
+      "accent": "#C62828"
+    },
+    "cover_page": {
+      "include_logo": true,
+      "logo_path": "assets/moh_logo.png",
+      "subtitle": "Project Charter — Version 1.1"
+    },
+    "header_footer": {
+      "header_text": "NIHE Project Charter — Confidential",
+      "footer_text": "Ministry of Health, Uganda",
+      "page_numbering": true
+    },
+    "sections": {
+      "system_context": true,
+      "budget_chart": true,
+      "risk_matrix": true,
+      "milestone_timeline": true
+    },
+    "appendix_sections": [
+      "Glossary of Terms",
+      "Stakeholder Contact Directory",
+      "Detailed Risk Register",
+      "Acronyms (HL7, FHIR, EHR, GIS, NDA, MoH, ADR)"
+    ]
+  }
+}

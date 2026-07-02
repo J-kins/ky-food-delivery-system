@@ -1,0 +1,11 @@
+{
+  "budget": {
+    "title": "Budget Breakdown - Project Financials",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "currency": "USD",
+    "exchange_rate_note": "1 USD = 3,700 UGX",
+    "budget_period": "Jan 2026 - Dec 2026"
+  }
+}

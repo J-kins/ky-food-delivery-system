@@ -1,0 +1,43 @@
+{
+  "problem_tree": {
+    "title": "Da'atSNA Problem Tree",
+    "project_name": "Da'atSNA Community Data Platform",
+    "version": "1.0",
+    "date": "2026-06-21",
+    "core_problem": {
+      "id": "TRUNK",
+      "statement": "No integrated, offline-first platform exists that lets Ugandan communities collect, analyze, and visualize social network data",
+      "description": "The central problem the project aims to solve"
+    },
+    "roots": [
+      { "id": "R1", "statement": "No accessible SNA tools designed for low-literacy, low-tech environments" },
+      { "id": "R2", "statement": "Lack of investment in local data infrastructure & training" },
+      { "id": "R3", "statement": "Policy-makers don't recognize the value of network data" },
+      { "id": "R4", "statement": "Cultural & language barriers in existing international tools" },
+      { "id": "R5", "statement": "No business model for sustainable data collection at community level" }
+    ],
+    "branches": [
+      { "id": "B1", "statement": "Cooperatives & savings groups can't identify their own influence" },
+      { "id": "B2", "statement": "NGO & government interventions spread thinly instead of targeted at high-level leverage" },
+      { "id": "B3", "statement": "Field researchers have no low-cost, offline way to collect network data" },
+      { "id": "B4", "statement": "Existing SNA tools demand technical skill, constant internet & give no Uganda-specific data" }
+    ],
+    "leaf": [
+      { "id": "L1", "statement": "Persistent exclusion of youth, women & informal workers from data-driven decision-making" },
+      { "id": "L2", "statement": "Informal economy stays largely invisible to policy & investment despite its economic importance" },
+      { "id": "L3", "statement": "Parish Development Model / Emyooga interventions under-perform for lack of targeting" }
+    ],
+    "styling": {
+      "theme": "enterprise_blue",
+      "font_family": "Arial",
+      "font_size": 10,
+      "shadow_enabled": true
+    },
+    "layout": {
+      "page_size": "A3",
+      "margin": 0.5,
+      "node_spacing": 0.4,
+      "rank_spacing": 1.2
+    }
+  }
+}

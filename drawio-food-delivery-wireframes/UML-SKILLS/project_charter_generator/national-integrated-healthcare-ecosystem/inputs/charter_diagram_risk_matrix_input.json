@@ -1,0 +1,240 @@
+{
+  "diagram_description": {
+    "id": "risk_matrix",
+    "title": "Risk Matrix",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "caption": "Figure 6: NIHE Risk Matrix",
+    "nodes": [
+      {
+        "id": "HIGH_HIGH",
+        "label": "High Impact / High Likelihood",
+        "shape": "box",
+        "fill": "#C62828",
+        "border": "#B71C1C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "HIGH_MED",
+        "label": "High Impact / Medium Likelihood",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "MED_HIGH",
+        "label": "Medium Impact / High Likelihood",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "LOW_HIGH",
+        "label": "Low Impact / High Likelihood",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "HIGH_LOW",
+        "label": "High Impact / Low Likelihood",
+        "shape": "box",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "MED_MED",
+        "label": "Medium Impact / Medium Likelihood",
+        "shape": "box",
+        "fill": "#FFE0B2",
+        "border": "#FFB74D",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LOW_MED",
+        "label": "Low Impact / Medium Likelihood",
+        "shape": "box",
+        "fill": "#FFF9C4",
+        "border": "#FFF176",
+        "text_color": "#333333"
+      },
+      {
+        "id": "MED_LOW",
+        "label": "Medium Impact / Low Likelihood",
+        "shape": "box",
+        "fill": "#FFF9C4",
+        "border": "#FFF176",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LOW_LOW",
+        "label": "Low Impact / Low Likelihood",
+        "shape": "box",
+        "fill": "#C8E6C9",
+        "border": "#81C784",
+        "text_color": "#333333"
+      },
+      {
+        "id": "RSK-01",
+        "label": "Limited Connectivity (Rural)",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "RSK-02",
+        "label": "Adoption Resistance",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "RSK-03",
+        "label": "Data Privacy Breach",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "RSK-04",
+        "label": "Interoperability Challenges",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "RSK-05",
+        "label": "Funding Constraints",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "RSK-06",
+        "label": "Regulatory Changes",
+        "shape": "ellipse",
+        "fill": "#FFE0B2",
+        "border": "#FFB74D",
+        "text_color": "#333333"
+      },
+      {
+        "id": "RSK-07",
+        "label": "GIS Data Quality",
+        "shape": "ellipse",
+        "fill": "#FFE0B2",
+        "border": "#FFB74D",
+        "text_color": "#333333"
+      },
+      {
+        "id": "RSK-08",
+        "label": "Cybersecurity Threats",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "RSK-09",
+        "label": "Key Personnel Attrition",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "RSK-10",
+        "label": "Vendor Lock-in",
+        "shape": "ellipse",
+        "fill": "#FFF9C4",
+        "border": "#FFF176",
+        "text_color": "#333333"
+      },
+      {
+        "id": "RSK-11",
+        "label": "Data Migration Quality",
+        "shape": "ellipse",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      }
+    ],
+    "edges": [
+      {
+        "from": "RSK-01",
+        "to": "HIGH_HIGH",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-02",
+        "to": "HIGH_MED",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-03",
+        "to": "HIGH_LOW",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-04",
+        "to": "MED_HIGH",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-05",
+        "to": "HIGH_MED",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-06",
+        "to": "LOW_HIGH",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-07",
+        "to": "MED_MED",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-08",
+        "to": "HIGH_MED",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-09",
+        "to": "MED_HIGH",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-10",
+        "to": "MED_LOW",
+        "label": "",
+        "color": "#C62828"
+      },
+      {
+        "from": "RSK-11",
+        "to": "MED_HIGH",
+        "label": "",
+        "color": "#C62828"
+      }
+    ]
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "diagram_description": {
+    "id": "problem_tree",
+    "title": "Problem Tree: Uganda Healthcare Challenges",
+    "format": "graphviz",
+    "engine": "dot",
+    "rankdir": "TB",
+    "caption": "Figure 1: Problem Tree — Uganda Healthcare Ecosystem Challenges",
+    "nodes": [
+      {
+        "id": "ROOT",
+        "label": "Fragmented, Inefficient, and Inaccessible Healthcare",
+        "shape": "box",
+        "fill": "#C62828",
+        "border": "#B71C1C",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-1",
+        "label": "Fragmented Patient Records",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-2",
+        "label": "Poor Healthcare Access",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-3",
+        "label": "Inefficient Referrals",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-4",
+        "label": "Emergency Response Delays",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-5",
+        "label": "Medicine Stock-outs",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-6",
+        "label": "Limited Healthcare Analytics",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "BRANCH-7",
+        "label": "Workforce Capacity Gaps",
+        "shape": "box",
+        "fill": "#EF5350",
+        "border": "#C62828",
+        "text_color": "#FFFFFF"
+      },
+      {
+        "id": "LEAF-1-1",
+        "label": "No shared EHR across facilities",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-1-2",
+        "label": "Paper-based records",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-2-1",
+        "label": "No facility locator",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-2-2",
+        "label": "Limited rural coverage",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-3-1",
+        "label": "No electronic referrals",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-3-2",
+        "label": "Referral loss/fragmentation",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-4-1",
+        "label": "No integrated dispatch",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-4-2",
+        "label": "No ambulance tracking",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-5-1",
+        "label": "No real-time inventory",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-5-2",
+        "label": "No expiry tracking",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-6-1",
+        "label": "No national health data",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-6-2",
+        "label": "No disease surveillance",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-7-1",
+        "label": "Limited digital literacy among health workers",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      },
+      {
+        "id": "LEAF-7-2",
+        "label": "Shortage of trained GIS/health-informatics specialists",
+        "shape": "ellipse",
+        "fill": "#FFCDD2",
+        "border": "#E57373",
+        "text_color": "#333333"
+      }
+    ],
+    "edges": [
+      {
+        "from": "LEAF-1-1",
+        "to": "BRANCH-1",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-1-2",
+        "to": "BRANCH-1",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-2-1",
+        "to": "BRANCH-2",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-2-2",
+        "to": "BRANCH-2",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-3-1",
+        "to": "BRANCH-3",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-3-2",
+        "to": "BRANCH-3",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-4-1",
+        "to": "BRANCH-4",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-4-2",
+        "to": "BRANCH-4",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-5-1",
+        "to": "BRANCH-5",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-5-2",
+        "to": "BRANCH-5",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-6-1",
+        "to": "BRANCH-6",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-6-2",
+        "to": "BRANCH-6",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-7-1",
+        "to": "BRANCH-7",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "LEAF-7-2",
+        "to": "BRANCH-7",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-1",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-2",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-3",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-4",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-5",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-6",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      },
+      {
+        "from": "BRANCH-7",
+        "to": "ROOT",
+        "label": "",
+        "color": "#666666"
+      }
+    ]
+  }
+}

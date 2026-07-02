@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#556B4E" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="2.5">04  STATIONERY</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end">19</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Company Stationery Guideline</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#556B4E" stroke-width="2"/>
+  <text id="sub-hdr" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B6B6B" text-anchor="start">Letterhead — A4 Portrait</text>
+  <text id="lbl-lh" x="72" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start" letter-spacing="1">Layout Preview</text>
+  <rect id="lh" x="72" y="220" width="280" height="400" fill="#FFFFFF" rx="2" stroke="#DDDDDD" stroke-width="0.5"/>
+  <rect id="lh-top" x="72" y="220" width="280" height="44" fill="#556B4E" rx="2"/>
+  <text id="lh-logo" x="86" y="248" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="start">&#x25B2;  BRAND</text>
+  <g id="lh-b">
+    <rect x="86" y="288" width="228" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="302" width="252" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="316" width="232" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="330" width="252" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="344" width="220" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="358" width="252" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="372" width="232" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="386" width="252" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="400" width="228" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="414" width="252" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="428" width="220" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="442" width="252" height="6" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="456" width="228" height="6" rx="1.5" fill="#DDDDDD"/>
+  </g>
+  <rect id="lh-ftr" x="72" y="572" width="280" height="48" fill="#F5F5F5" rx="2"/>
+  <g id="lh-f">
+    <rect x="86" y="584" width="200" height="5" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="596" width="160" height="5" rx="1.5" fill="#DDDDDD"/>
+    <rect x="86" y="608" width="180" height="5" rx="1.5" fill="#DDDDDD"/>
+  </g>
+  <text id="ls-hdr" x="416" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Layout Grid</text>
+  <line id="ls-r" x1="416" y1="222" x2="616" y2="222" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="ls1" x="416" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Paper:    A4 (210 &#xD7; 297mm)</text>
+  <text id="ls2" x="416" y="270" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Margins:  20mm all sides</text>
+  <text id="ls3" x="416" y="288" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Header:   20mm height</text>
+  <text id="ls4" x="416" y="306" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Footer:   15mm height</text>
+  <text id="ls5" x="416" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Columns:  Single column</text>
+  <text id="ty-hdr" x="416" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">Typography Rules</text>
+  <line id="ty-r" x1="416" y1="386" x2="616" y2="386" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="ty1" x="416" y="416" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Address:  8pt Regular</text>
+  <text id="ty2" x="416" y="434" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Body:     10pt / 16pt leading</text>
+  <text id="ty3" x="416" y="452" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Date:     9pt Semi Bold</text>
+  <text id="fo-hdr" x="712" y="208" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#1A1A1A" text-anchor="start">File Formats</text>
+  <line id="fo-r" x1="712" y1="222" x2="912" y2="222" stroke="#556B4E" stroke-width="1.5"/>
+  <text id="fo1" x="712" y="252" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">InDesign (.indd)</text>
+  <text id="fo2" x="712" y="270" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">PDF/X-1a (Print ready)</text>
+  <text id="fo3" x="712" y="288" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Word (.docx)</text>
+  <text id="fo4" x="712" y="306" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B6B6B" text-anchor="start">Illustrator (.ai)</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#DDDDDD" stroke-width="0.5"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" letter-spacing="1.5">YOUR COMPANY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#6B6B6B" text-anchor="end" letter-spacing="1">BRAND GUIDELINES 2024</text>
+  </g>
+</svg>
