@@ -24,7 +24,7 @@
     "date-fns": "^2.30.0"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.6.3",
+    "@tauri-apps/cli": "^2.11.4",
     "eslint": "^8.50.0",
     "prettier": "^3.0.3"
   },

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#F7F4EF"/>
+  <rect id="top-bar" x="0" y="0" width="1280" height="6" fill="#005638" rx="0"/>
+  <text id="s-num" x="72" y="48" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="800" fill="#005638" text-anchor="start">09.</text>
+  <text id="s-title" x="114" y="48" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="800" fill="#1A1A1A" text-anchor="start" letter-spacing="2">DO'S &AMP; DON'TS</text>
+  <line id="s-rule" x1="72" y1="58" x2="1208" y2="58" stroke="#E0DBD4" stroke-width="0.75"/>
+  <rect id="do-bar" x="72" y="72" width="40" height="40" fill="#005638" rx="4"/>
+  <text id="do-lbl" x="124" y="98" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="start" letter-spacing="2">DO</text>
+  <line id="do-r" x1="72" y1="110" x2="1208" y2="110" stroke="#005638" stroke-width="1.5"/>
+  <rect id="dob0" x="72" y="124" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#005638" stroke-width="1.5"/>
+  <rect id="dolg0" x="84" y="136" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dolm0" x="208" y="185" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dok0-c" cx="94" cy="242" r="10" fill="#005638"/>
+  <text id="dok0-t" x="94" y="247" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+  <text id="dot0" x="112" y="248" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Use the correct logo</text>
+  <rect id="dob1" x="360" y="124" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#005638" stroke-width="1.5"/>
+  <rect id="dolg1" x="372" y="136" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dolm1" x="496" y="185" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dok1-c" cx="382" cy="242" r="10" fill="#005638"/>
+  <text id="dok1-t" x="382" y="247" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+  <text id="dot1" x="400" y="248" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Maintain clear space</text>
+  <rect id="dob2" x="648" y="124" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#005638" stroke-width="1.5"/>
+  <rect id="dolg2" x="660" y="136" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dolm2" x="784" y="185" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dok2-c" cx="670" cy="242" r="10" fill="#005638"/>
+  <text id="dok2-t" x="670" y="247" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+  <text id="dot2" x="688" y="248" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Use approved colors</text>
+  <rect id="dob3" x="936" y="124" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#005638" stroke-width="1.5"/>
+  <rect id="dolg3" x="948" y="136" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dolm3" x="1072" y="185" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dok3-c" cx="958" cy="242" r="10" fill="#005638"/>
+  <text id="dok3-t" x="958" y="247" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+  <text id="dot3" x="976" y="248" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Ensure high contrast</text>
+  <rect id="dn-bar" x="72" y="308" width="40" height="40" fill="#DC4024" rx="4"/>
+  <text id="dn-lbl" x="124" y="334" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#DC4024" text-anchor="start" letter-spacing="2">DON'T</text>
+  <line id="dn-r" x1="72" y1="346" x2="1208" y2="346" stroke="#DC4024" stroke-width="1.5"/>
+  <rect id="dnb0" x="72" y="360" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#DC4024" stroke-width="1.5"/>
+  <rect id="dnlg0" x="84" y="372" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dnlm0" x="208" y="421" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dnx0-c" cx="94" cy="478" r="10" fill="#DC4024"/>
+  <text id="dnx0-t" x="94" y="483" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#215;</text>
+  <text id="dnt0" x="112" y="484" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Don't distort the logo</text>
+  <rect id="dnb1" x="360" y="360" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#DC4024" stroke-width="1.5"/>
+  <rect id="dnlg1" x="372" y="372" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dnlm1" x="496" y="421" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dnx1-c" cx="382" cy="478" r="10" fill="#DC4024"/>
+  <text id="dnx1-t" x="382" y="483" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#215;</text>
+  <text id="dnt1" x="400" y="484" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Don't change the colors</text>
+  <rect id="dnb2" x="648" y="360" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#DC4024" stroke-width="1.5"/>
+  <rect id="dnlg2" x="660" y="372" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dnlm2" x="784" y="421" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dnx2-c" cx="670" cy="478" r="10" fill="#DC4024"/>
+  <text id="dnx2-t" x="670" y="483" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#215;</text>
+  <text id="dnt2" x="688" y="484" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Don't rotate the logo</text>
+  <rect id="dnb3" x="936" y="360" width="272" height="160" fill="#FFFFFF" rx="8" stroke="#DC4024" stroke-width="1.5"/>
+  <rect id="dnlg3" x="948" y="372" width="248" height="84" fill="#F7F4EF" rx="4"/>
+  <text id="dnlm3" x="1072" y="421" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" fill="#005638" text-anchor="middle">Quaké</text>
+  <circle id="dnx3-c" cx="958" cy="478" r="10" fill="#DC4024"/>
+  <text id="dnx3-t" x="958" y="483" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">&#215;</text>
+  <text id="dnt3" x="976" y="484" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#1A1A1A" text-anchor="start">Don't add effects</text>
+  <g id="ftr-pat">
+    <rect x="0" y="684" width="1280" height="36" fill="#005638"/>
+    <rect x="0" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="18" cy="702" r="12" fill="#F0C039"/>
+    <rect x="36" y="684" width="36" height="36" fill="#DC4024"/>
+    <line x1="40" y1="716" x2="68" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="72" y="684" width="36" height="36" fill="#F0C039"/>
+    <path d="M108,684 A36,36 0 0,0 72,720 L108,720 Z" fill="#DC4024"/>
+    <rect x="108" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="126" cy="702" r="12" fill="#F38919"/>
+    <rect x="144" y="684" width="36" height="36" fill="#F38919"/>
+    <line x1="148" y1="716" x2="176" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="180" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="198" cy="702" r="12" fill="#F0C039"/>
+    <rect x="216" y="684" width="36" height="36" fill="#F0C039"/>
+    <path d="M252,684 A36,36 0 0,0 216,720 L252,720 Z" fill="#005638"/>
+    <rect x="252" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="270" cy="702" r="12" fill="#DC4024"/>
+    <rect x="288" y="684" width="36" height="36" fill="#F38919"/>
+    <line x1="292" y1="716" x2="320" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="324" y="684" width="36" height="36" fill="#DC4024"/>
+    <path d="M360,684 A36,36 0 0,0 324,720 L360,720 Z" fill="#F38919"/>
+    <rect x="360" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="378" cy="702" r="12" fill="#F0C039"/>
+    <rect x="396" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="414" cy="702" r="12" fill="#DC4024"/>
+    <rect x="432" y="684" width="36" height="36" fill="#F38919"/>
+    <line x1="436" y1="716" x2="464" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="468" y="684" width="36" height="36" fill="#DC4024"/>
+    <path d="M504,684 A36,36 0 0,0 468,720 L504,720 Z" fill="#FFFFFF"/>
+    <rect x="504" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="522" cy="702" r="12" fill="#F38919"/>
+    <rect x="540" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="558" cy="702" r="12" fill="#005638"/>
+    <rect x="576" y="684" width="36" height="36" fill="#DC4024"/>
+    <line x1="580" y1="716" x2="608" y2="688" stroke="#F0C039" stroke-width="7"/>
+    <rect x="612" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M648,684 A36,36 0 0,0 612,720 L648,720 Z" fill="#DC4024"/>
+    <rect x="648" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="666" cy="702" r="12" fill="#F0C039"/>
+    <rect x="684" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="702" cy="702" r="12" fill="#F38919"/>
+    <rect x="720" y="684" width="36" height="36" fill="#F0C039"/>
+    <line x1="724" y1="716" x2="752" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="756" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M792,684 A36,36 0 0,0 756,720 L792,720 Z" fill="#005638"/>
+    <rect x="792" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="810" cy="702" r="12" fill="#DC4024"/>
+    <rect x="828" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="846" cy="702" r="12" fill="#F38919"/>
+    <rect x="864" y="684" width="36" height="36" fill="#DC4024"/>
+    <line x1="868" y1="716" x2="896" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="900" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M936,684 A36,36 0 0,0 900,720 L936,720 Z" fill="#F0C039"/>
+    <rect x="936" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="954" cy="702" r="12" fill="#FFFFFF"/>
+    <rect x="972" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="990" cy="702" r="12" fill="#F0C039"/>
+    <rect x="1008" y="684" width="36" height="36" fill="#F0C039"/>
+    <line x1="1012" y1="716" x2="1040" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="1044" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M1080,684 A36,36 0 0,0 1044,720 L1080,720 Z" fill="#DC4024"/>
+    <rect x="1080" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="1098" cy="702" r="12" fill="#F0C039"/>
+    <rect x="1116" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="1134" cy="702" r="12" fill="#F38919"/>
+    <rect x="1152" y="684" width="36" height="36" fill="#F0C039"/>
+    <line x1="1156" y1="716" x2="1184" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="1188" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M1224,684 A36,36 0 0,0 1188,720 L1224,720 Z" fill="#005638"/>
+    <rect x="1224" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="1242" cy="702" r="12" fill="#DC4024"/>
+    <rect x="1260" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="1278" cy="702" r="12" fill="#F38919"/>
+  </g>
+  <text id="ftr-l" x="72" y="707" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="start" letter-spacing="1">BRAND GUIDELINES  |  VERSION 1.0  |  2024</text>
+  <text id="ftr-r" x="1208" y="707" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="700" fill="#F0C039" text-anchor="end" letter-spacing="2">QUAKÉ PARANÁ</text>
+</svg>

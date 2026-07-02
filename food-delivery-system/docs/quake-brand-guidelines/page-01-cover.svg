@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#F7F4EF"/>
+  <rect id="gp" x="0" y="0" width="420" height="720" fill="#003D28" rx="0"/>
+  <rect id="gp-dk" x="0" y="626" width="420" height="58" fill="#005638" rx="0"/>
+  <text id="lg1" x="48" y="126" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="54" font-weight="800" fill="#FFFFFF" text-anchor="start" letter-spacing="-1">Quaké</text>
+  <text id="lg2" x="48" y="162" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#F0C039" text-anchor="start" letter-spacing="6">PARANÁ</text>
+  <rect id="lg-r" x="48" y="177" width="196" height="3" fill="#F0C039" rx="1"/>
+  <text id="bg-t" x="48" y="208" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" font-weight="800" fill="#F0C039" text-anchor="start" letter-spacing="3">BRAND GUIDELINES</text>
+  <g id="cv-d">
+    <rect x="48" y="234" width="308" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="251" width="328" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="268" width="288" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="285" width="328" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="302" width="308" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="319" width="288" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="336" width="328" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="353" width="304" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="370" width="284" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="48" y="387" width="308" height="7" rx="2" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  <g id="cv-pp">
+    <rect x="0" y="626" width="420" height="58" fill="#005638"/>
+    <rect x="0" y="626" width="58" height="58" fill="#005638"/>
+    <circle cx="29" cy="655" r="19" fill="#F0C039"/>
+    <rect x="58" y="626" width="58" height="58" fill="#DC4024"/>
+    <line x1="62" y1="680" x2="112" y2="630" stroke="#FFFFFF" stroke-width="11"/>
+    <rect x="116" y="626" width="58" height="58" fill="#F0C039"/>
+    <path d="M174,626 A58,58 0 0,0 116,684 L174,684 Z" fill="#DC4024"/>
+    <rect x="174" y="626" width="58" height="58" fill="#005638"/>
+    <circle cx="203" cy="655" r="19" fill="#F38919"/>
+    <rect x="232" y="626" width="58" height="58" fill="#F38919"/>
+    <line x1="236" y1="680" x2="286" y2="630" stroke="#005638" stroke-width="11"/>
+    <rect x="290" y="626" width="58" height="58" fill="#DC4024"/>
+    <circle cx="319" cy="655" r="19" fill="#F0C039"/>
+    <rect x="348" y="626" width="58" height="58" fill="#F0C039"/>
+    <path d="M406,626 A58,58 0 0,0 348,684 L406,684 Z" fill="#005638"/>
+    <rect x="406" y="626" width="58" height="58" fill="#005638"/>
+    <circle cx="435" cy="655" r="19" fill="#DC4024"/>
+  </g>
+  <text id="cv-v" x="48" y="612" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,0.38)" text-anchor="start" letter-spacing="2">VERSION 1.0  /  2024</text>
+  <g id="hero">
+    <rect x="420" y="0" width="488" height="684" fill="#E8B57A" rx="6"/>
+    <line x1="432" y1="12" x2="896" y2="672" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+    <line x1="896" y1="12" x2="432" y2="672" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+    <text x="664" y="347" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="600" opacity="0.85">HERO FOOD PHOTO</text>
+  </g>
+  <rect id="hero-grd" x="420" y="590" width="488" height="94" fill="#003D28" opacity="0.72"/>
+  <rect id="rp" x="908" y="0" width="372" height="720" fill="#F7F4EF" rx="0"/>
+  <text id="r-01" x="932" y="78" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9" font-weight="800" fill="#DC4024" text-anchor="start">01.</text>
+  <text id="r-h1" x="932" y="104" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="20" font-weight="800" fill="#005638" text-anchor="start" letter-spacing="0.5">BRAND</text>
+  <text id="r-h2" x="932" y="128" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="20" font-weight="800" fill="#005638" text-anchor="start" letter-spacing="0.5">ESSENCE</text>
+  <line id="r-rl" x1="932" y1="140" x2="1192" y2="140" stroke="#DC4024" stroke-width="2"/>
+  <text id="r-pl" x="932" y="168" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" font-weight="700" fill="#DC4024" text-anchor="start">Our Purpose</text>
+  <g id="r-pb">
+    <rect x="932" y="184" width="256" height="7" rx="2" fill="#E0DBD4"/>
+    <rect x="932" y="199" width="288" height="7" rx="2" fill="#E0DBD4"/>
+    <rect x="932" y="214" width="264" height="7" rx="2" fill="#E0DBD4"/>
+    <rect x="932" y="229" width="288" height="7" rx="2" fill="#E0DBD4"/>
+  </g>
+  <text id="r-ml" x="932" y="276" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" font-weight="700" fill="#DC4024" text-anchor="start">Our Mission</text>
+  <g id="r-mb">
+    <rect x="932" y="292" width="256" height="7" rx="2" fill="#E0DBD4"/>
+    <rect x="932" y="307" width="288" height="7" rx="2" fill="#E0DBD4"/>
+    <rect x="932" y="322" width="264" height="7" rx="2" fill="#E0DBD4"/>
+    <rect x="932" y="337" width="256" height="7" rx="2" fill="#E0DBD4"/>
+  </g>
+  <text id="r-vl" x="932" y="368" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" font-weight="700" fill="#DC4024" text-anchor="start">Our Values</text>
+  <rect id="vi0" x="932" y="385" width="44" height="44" fill="#005638" rx="22"/>
+  <text id="vt0" x="954" y="413" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Q</text>
+  <rect id="vi1" x="985" y="385" width="44" height="44" fill="#DC4024" rx="22"/>
+  <text id="vt1" x="1007" y="413" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">B</text>
+  <rect id="vi2" x="1038" y="385" width="44" height="44" fill="#F38919" rx="22"/>
+  <text id="vt2" x="1060" y="413" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">W</text>
+  <rect id="vi3" x="1091" y="385" width="44" height="44" fill="#F0C039" rx="22"/>
+  <text id="vt3" x="1113" y="413" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#1A1A1A" text-anchor="middle">S</text>
+  <rect id="vi4" x="1144" y="385" width="44" height="44" fill="#005638" rx="22"/>
+  <text id="vt4" x="1166" y="413" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">T</text>
+  <text id="vl0" x="954" y="443" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7" font-weight="400" fill="#6B6B6B" text-anchor="middle">Quality</text>
+  <text id="vl1" x="1007" y="443" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7" font-weight="400" fill="#6B6B6B" text-anchor="middle">Boldness</text>
+  <text id="vl2" x="1060" y="443" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7" font-weight="400" fill="#6B6B6B" text-anchor="middle">Warmth</text>
+  <text id="vl3" x="1113" y="443" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7" font-weight="400" fill="#6B6B6B" text-anchor="middle">Speed</text>
+  <text id="vl4" x="1166" y="443" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="7" font-weight="400" fill="#6B6B6B" text-anchor="middle">Trust</text>
+  <g id="cv-ftr">
+    <rect x="0" y="684" width="1280" height="36" fill="#005638"/>
+    <rect x="0" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="18" cy="702" r="12" fill="#F0C039"/>
+    <rect x="36" y="684" width="36" height="36" fill="#DC4024"/>
+    <line x1="40" y1="716" x2="68" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="72" y="684" width="36" height="36" fill="#F0C039"/>
+    <path d="M108,684 A36,36 0 0,0 72,720 L108,720 Z" fill="#DC4024"/>
+    <rect x="108" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="126" cy="702" r="12" fill="#F38919"/>
+    <rect x="144" y="684" width="36" height="36" fill="#F38919"/>
+    <line x1="148" y1="716" x2="176" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="180" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="198" cy="702" r="12" fill="#F0C039"/>
+    <rect x="216" y="684" width="36" height="36" fill="#F0C039"/>
+    <path d="M252,684 A36,36 0 0,0 216,720 L252,720 Z" fill="#005638"/>
+    <rect x="252" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="270" cy="702" r="12" fill="#DC4024"/>
+    <rect x="288" y="684" width="36" height="36" fill="#F38919"/>
+    <line x1="292" y1="716" x2="320" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="324" y="684" width="36" height="36" fill="#DC4024"/>
+    <path d="M360,684 A36,36 0 0,0 324,720 L360,720 Z" fill="#F38919"/>
+    <rect x="360" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="378" cy="702" r="12" fill="#F0C039"/>
+    <rect x="396" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="414" cy="702" r="12" fill="#DC4024"/>
+    <rect x="432" y="684" width="36" height="36" fill="#F38919"/>
+    <line x1="436" y1="716" x2="464" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="468" y="684" width="36" height="36" fill="#DC4024"/>
+    <path d="M504,684 A36,36 0 0,0 468,720 L504,720 Z" fill="#FFFFFF"/>
+    <rect x="504" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="522" cy="702" r="12" fill="#F38919"/>
+    <rect x="540" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="558" cy="702" r="12" fill="#005638"/>
+    <rect x="576" y="684" width="36" height="36" fill="#DC4024"/>
+    <line x1="580" y1="716" x2="608" y2="688" stroke="#F0C039" stroke-width="7"/>
+    <rect x="612" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M648,684 A36,36 0 0,0 612,720 L648,720 Z" fill="#DC4024"/>
+    <rect x="648" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="666" cy="702" r="12" fill="#F0C039"/>
+    <rect x="684" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="702" cy="702" r="12" fill="#F38919"/>
+    <rect x="720" y="684" width="36" height="36" fill="#F0C039"/>
+    <line x1="724" y1="716" x2="752" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="756" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M792,684 A36,36 0 0,0 756,720 L792,720 Z" fill="#005638"/>
+    <rect x="792" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="810" cy="702" r="12" fill="#DC4024"/>
+    <rect x="828" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="846" cy="702" r="12" fill="#F38919"/>
+    <rect x="864" y="684" width="36" height="36" fill="#DC4024"/>
+    <line x1="868" y1="716" x2="896" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="900" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M936,684 A36,36 0 0,0 900,720 L936,720 Z" fill="#F0C039"/>
+    <rect x="936" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="954" cy="702" r="12" fill="#FFFFFF"/>
+    <rect x="972" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="990" cy="702" r="12" fill="#F0C039"/>
+    <rect x="1008" y="684" width="36" height="36" fill="#F0C039"/>
+    <line x1="1012" y1="716" x2="1040" y2="688" stroke="#005638" stroke-width="7"/>
+    <rect x="1044" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M1080,684 A36,36 0 0,0 1044,720 L1080,720 Z" fill="#DC4024"/>
+    <rect x="1080" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="1098" cy="702" r="12" fill="#F0C039"/>
+    <rect x="1116" y="684" width="36" height="36" fill="#DC4024"/>
+    <circle cx="1134" cy="702" r="12" fill="#F38919"/>
+    <rect x="1152" y="684" width="36" height="36" fill="#F0C039"/>
+    <line x1="1156" y1="716" x2="1184" y2="688" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="1188" y="684" width="36" height="36" fill="#F38919"/>
+    <path d="M1224,684 A36,36 0 0,0 1188,720 L1224,720 Z" fill="#005638"/>
+    <rect x="1224" y="684" width="36" height="36" fill="#005638"/>
+    <circle cx="1242" cy="702" r="12" fill="#DC4024"/>
+    <rect x="1260" y="684" width="36" height="36" fill="#F0C039"/>
+    <circle cx="1278" cy="702" r="12" fill="#F38919"/>
+  </g>
+  <text id="cv-fl" x="72" y="707" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="start" letter-spacing="1">BRAND GUIDELINES  |  VERSION 1.0  |  2024</text>
+  <text id="cv-fr" x="1208" y="707" font-family="'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="8" font-weight="700" fill="#F0C039" text-anchor="end" letter-spacing="2">QUAKÉ PARANÁ</text>
+</svg>
