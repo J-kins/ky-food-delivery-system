@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" width="140" height="100">
+  <circle id="circle-concentric-1" cx="70.0" cy="50.0" r="10.0" fill="none" stroke="#F2F2F2" stroke-width="1.2"/>
+  <circle id="circle-concentric-2" cx="70.0" cy="50.0" r="19.0" fill="none" stroke="#F2F2F2" stroke-width="1.2"/>
+  <circle id="circle-concentric-3" cx="70.0" cy="50.0" r="28.0" fill="none" stroke="#F2F2F2" stroke-width="1.2"/>
+</svg>

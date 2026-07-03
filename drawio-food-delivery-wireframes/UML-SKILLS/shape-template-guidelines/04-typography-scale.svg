@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#1A1A1A" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="2.5">01  FOUNDATIONS</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end">04</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#E5E5E5" stroke-width="1"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Typography Scale</text>
+  <text id="subtitle" x="72" y="130" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">Every text element in the library maps to exactly one of these six roles.</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#1A1A1A" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">One sans-serif family throughout. Size, weight, and color are the only variables.</text>
+  <text id="tl0" x="72" y="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Panel Heading — 18px / 600 / stroke</text>
+  <text id="ts0" x="72" y="228" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#1A1A1A" text-anchor="start">Shape &amp; Diagram Style</text>
+  <line id="tr0" x1="72" y1="244" x2="692" y2="244" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="tl1" x="72" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Shape Label — 12px / 400–500 / stroke</text>
+  <text id="ts1" x="72" y="290" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start">Process Step</text>
+  <line id="tr1" x1="72" y1="306" x2="692" y2="306" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="tl2" x="72" y="330" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Small / Tight Label — 10px / 600 / stroke</text>
+  <text id="ts2" x="72" y="350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">Valid?</text>
+  <line id="tr2" x1="72" y1="366" x2="692" y2="366" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="tl3" x="72" y="390" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Micro / Attribute — 8px / 400 / stroke</text>
+  <text id="ts3" x="72" y="408" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#1A1A1A" text-anchor="start">+ field: Type</text>
+  <line id="tr3" x1="72" y1="424" x2="692" y2="424" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="tl4" x="72" y="448" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Caption Label — 10.5px / 400 / muted, +0.3 tracking</text>
+  <text id="ts4" x="72" y="468.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#8A8A85" text-anchor="start">Decision</text>
+  <line id="tr4" x1="72" y1="484.5" x2="692" y2="484.5" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="tl5" x="72" y="508.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Panel Subheading — 11px / 400 / muted</text>
+  <text id="ts5" x="72" y="529.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">Same rules, tokens swap by mode</text>
+  <line id="tr5" x1="72" y1="545.5" x2="692" y2="545.5" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="cmp-hdr" x="772" y="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="1.5">SAME SCALE, TOKENS SWAP</text>
+  <rect id="cmp-l" x="772" y="220" width="200" height="110" fill="#FFFFFF" rx="6" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="cmp-lt" x="792" y="282" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#1A1A1A" text-anchor="start">Aa Decision</text>
+  <text id="cmp-ll" x="792" y="316" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Light</text>
+  <rect id="cmp-d" x="772" y="350" width="200" height="110" fill="#0D0D0D" rx="6"/>
+  <text id="cmp-dt" x="792" y="412" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#F2F2F2" text-anchor="start">Aa Decision</text>
+  <text id="cmp-dl" x="792" y="446" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Dark</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="1.5">SHAPE &amp; DIAGRAM LIBRARY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end" letter-spacing="1">GENERAL GUIDELINE — WALKTHROUGH</text>
+  </g>
+</svg>
