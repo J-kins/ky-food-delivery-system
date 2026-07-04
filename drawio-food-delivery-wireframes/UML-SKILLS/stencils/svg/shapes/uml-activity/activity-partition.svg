@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-  <line x1="40" y1="8" x2="40" y2="72"/>
-  <rect x="8" y="8" width="32" height="64" rx="0" fill="none"/>
-  <text x="24" y="24" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="9" text-anchor="middle" fill="#334155" stroke="none" style="">Lane</text>
-</svg>
