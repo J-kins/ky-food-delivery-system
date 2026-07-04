@@ -1,0 +1,78 @@
+<?XML version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <script type="application/json" id="power-interest-data">
+  {
+    "metadata": {"title": "Stakeholder Power/Interest Matrix", "projectName": "Food Delivery System", "description": "2x2 matrix of stakeholder influence and interest levels", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF"}},
+    "data": {
+      "quadrants": [
+        {"id": "q1", "name": "Manage Closely", "x": 960, "y": 250, "color": "#FEE2E2"},
+        {"id": "q2", "name": "Keep Satisfied", "x": 1360, "y": 250, "color": "#FEF3C7"},
+        {"id": "q3", "name": "Monitor", "x": 560, "y": 650, "color": "#DBEAFE"},
+        {"id": "q4", "name": "Keep Informed", "x": 960, "y": 650, "color": "#ECFDF5"}
+      ]
+    }
+  }
+  </script>
+  <defs>
+    <style>
+      :root { --text-light: #334155; --muted-light: #64748b; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .label-primary { fill: var(--text-light); font-size: 13px; font-weight: 600; }
+      .label-secondary { fill: var(--muted-light); font-size: 11px; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="520" y="52" width="880" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">Stakeholder Power/Interest Matrix</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-secondary" font-size="12">&lt;Project Name&gt; · Template</text>
+  
+  <!-- Matrix grid -->
+  <line x1="960" y1="150" x2="960" y2="850" stroke="#334155" stroke-width="2"/>
+  <line x1="400" y1="500" x2="1520" y2="500" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="920" y="130" text-anchor="end" class="label-secondary">Interest</text>
+  <text x="1580" y="470" class="label-secondary">Power</text>
+  <text x="920" y="880" text-anchor="middle" class="label-secondary">Low Power</text>
+  <text x="1520" y="880" text-anchor="middle" class="label-secondary">High Power</text>
+  <text x="370" y="505" text-anchor="end" class="label-secondary">Low Interest</text>
+  <text x="370" y="160" text-anchor="end" class="label-secondary">High Interest</text>
+  
+  <!-- Quadrants -->
+  <rect x="560" y="210" width="360" height="270" rx="8" fill="#FEE2E2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="740" y="260" text-anchor="middle" class="label-primary" font-size="14">Manage Closely</text>
+  <text x="740" y="350" text-anchor="middle" class="label-secondary">High Power</text>
+  <text x="740" y="370" text-anchor="middle" class="label-secondary">High Interest</text>
+  
+  <rect x="960" y="210" width="360" height="270" rx="8" fill="#FEF3C7" stroke="#FCD34D" stroke-width="2"/>
+  <text x="1140" y="260" text-anchor="middle" class="label-primary" font-size="14">Keep Satisfied</text>
+  <text x="1140" y="350" text-anchor="middle" class="label-secondary">High Power</text>
+  <text x="1140" y="370" text-anchor="middle" class="label-secondary">Low Interest</text>
+  
+  <rect x="560" y="530" width="360" height="270" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="2"/>
+  <text x="740" y="580" text-anchor="middle" class="label-primary" font-size="14">Monitor</text>
+  <text x="740" y="670" text-anchor="middle" class="label-secondary">Low Power</text>
+  <text x="740" y="690" text-anchor="middle" class="label-secondary">High Interest</text>
+  
+  <rect x="960" y="530" width="360" height="270" rx="8" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="2"/>
+  <text x="1140" y="580" text-anchor="middle" class="label-primary" font-size="14">Keep Informed</text>
+  <text x="1140" y="670" text-anchor="middle" class="label-secondary">Low Power</text>
+  <text x="1140" y="690" text-anchor="middle" class="label-secondary">Low Interest</text>
+  
+  <text x="52" y="1048" class="label-secondary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary" font-size="10">&lt;Project Name&gt; · Version 1.0 · Power/Interest Matrix</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#power-interest-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Power/Interest Matrix Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Power/Interest Matrix] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
+</svg>

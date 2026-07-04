@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <script type="application/json" id="kanban-board-data">
+  {
+    "metadata": {"title": "Kanban Board", "projectName": "Food Delivery System", "description": "Task workflow visualization with columns and cards", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#FFFFFF", "strokeColor": "#334155", "columnColor": "#f1f5f9"}},
+    "data": {
+      "columns": [
+        {"id": "col1", "name": "Backlog", "x": 120, "y": 150, "width": 380, "height": 850},
+        {"id": "col2", "name": "To Do", "x": 540, "y": 150, "width": 380, "height": 850},
+        {"id": "col3", "name": "In Progress", "x": 960, "y": 150, "width": 380, "height": 850},
+        {"id": "col4", "name": "Done", "x": 1380, "y": 150, "width": 380, "height": 850}
+      ],
+      "cards": [
+        {"id": "c1", "column": "col1", "title": "Task 1", "priority": "high"},
+        {"id": "c2", "column": "col1", "title": "Task 2", "priority": "medium"},
+        {"id": "c3", "column": "col2", "title": "Task 3", "priority": "high"},
+        {"id": "c4", "column": "col3", "title": "Task 4", "priority": "medium"},
+        {"id": "c5", "column": "col4", "title": "Task 5", "priority": "low"}
+      ]
+    }
+  }
+  </script>
+  <defs>
+    <style>
+      :root { --fill-light: #FFFFFF; --stroke-light: #334155; --text-light: #334155; --muted-light: #64748b; --col-bg: #f1f5f9; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .column-bg { fill: var(--col-bg); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .card-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+      .label-primary { fill: var(--text-light); font-size: 13px; font-weight: 600; }
+      .label-secondary { fill: var(--muted-light); font-size: 11px; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="680" y="52" width="560" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">Kanban Board</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-secondary" font-size="12">&lt;Project Name&gt; · Template</text>
+  
+  <!-- Column 1: Backlog -->
+  <rect x="120" y="150" width="380" height="850" rx="8" class="column-bg"/>
+  <rect x="130" y="160" width="360" height="40" rx="6" fill="#3B82F6"/>
+  <text x="310" y="188" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="14">Backlog</text>
+  <rect x="135" y="220" width="350" height="80" rx="4" class="card-box"/>
+  <text x="310" y="250" text-anchor="middle" class="label-primary">Task 1</text>
+  <rect x="155" y="260" width="40" height="20" rx="2" fill="#EF4444"/>
+  <text x="175" y="272" text-anchor="middle" fill="#FFFFFF" class="label-secondary" font-size="9">High</text>
+  
+  <!-- Column 2: To Do -->
+  <rect x="540" y="150" width="380" height="850" rx="8" class="column-bg"/>
+  <rect x="550" y="160" width="360" height="40" rx="6" fill="#3B82F6"/>
+  <text x="730" y="188" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="14">To Do</text>
+  <rect x="555" y="220" width="350" height="80" rx="4" class="card-box"/>
+  <text x="730" y="250" text-anchor="middle" class="label-primary">Task 3</text>
+  
+  <!-- Column 3: In Progress -->
+  <rect x="960" y="150" width="380" height="850" rx="8" class="column-bg"/>
+  <rect x="970" y="160" width="360" height="40" rx="6" fill="#3B82F6"/>
+  <text x="1150" y="188" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="14">In Progress</text>
+  <rect x="975" y="220" width="350" height="80" rx="4" class="card-box"/>
+  <text x="1150" y="250" text-anchor="middle" class="label-primary">Task 4</text>
+  
+  <!-- Column 4: Done -->
+  <rect x="1380" y="150" width="380" height="850" rx="8" class="column-bg"/>
+  <rect x="1390" y="160" width="360" height="40" rx="6" fill="#3B82F6"/>
+  <text x="1570" y="188" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="14">Done</text>
+  <rect x="1395" y="220" width="350" height="80" rx="4" class="card-box"/>
+  <text x="1570" y="250" text-anchor="middle" class="label-primary">Task 5</text>
+  
+  <text x="52" y="1048" class="label-secondary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary" font-size="10">&lt;Project Name&gt; · Version 1.0 · Kanban Board</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#kanban-board-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Kanban Board Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Kanban Board] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
+</svg>

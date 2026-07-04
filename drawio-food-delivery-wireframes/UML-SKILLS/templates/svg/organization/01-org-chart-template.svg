@@ -1,0 +1,92 @@
+<?XML version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <script type="application/json" id="org-chart-data">
+  {
+    "metadata": {"title": "Organization Chart", "projectName": "Food Delivery System", "description": "Hierarchical organizational structure", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#FFFFFF", "strokeColor": "#334155"}},
+    "data": {
+      "nodes": [
+        {"id": "ceo", "title": "CEO", "name": "Executive", "x": 850, "y": 150, "width": 220, "height": 80},
+        {"id": "dir1", "title": "Director - Ops", "name": "Operations", "x": 350, "y": 350, "width": 200, "height": 80},
+        {"id": "dir2", "title": "Director - Dev", "name": "Development", "x": 850, "y": 350, "width": 200, "height": 80},
+        {"id": "dir3", "title": "Director - Sales", "name": "Sales", "x": 1350, "y": 350, "width": 200, "height": 80},
+        {"id": "mgr1", "title": "Manager", "name": "Team Lead", "x": 200, "y": 550, "width": 180, "height": 70},
+        {"id": "mgr2", "title": "Manager", "name": "Team Lead", "x": 500, "y": 550, "width": 180, "height": 70}
+      ],
+      "edges": [
+        {"from": "ceo", "to": "dir1"},
+        {"from": "ceo", "to": "dir2"},
+        {"from": "ceo", "to": "dir3"},
+        {"from": "dir1", "to": "mgr1"},
+        {"from": "dir1", "to": "mgr2"}
+      ]
+    }
+  }
+  </script>
+  <defs>
+    <style>
+      :root { --fill-light: #FFFFFF; --stroke-light: #334155; --text-light: #334155; --muted-light: #64748b; --exec-bg: #3B82F6; --dir-bg: #60A5FA; --mgr-bg: #93C5FD; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .exec-box { fill: var(--exec-bg); stroke: var(--stroke-light); stroke-width: 2; }
+      .dir-box { fill: var(--dir-bg); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .mgr-box { fill: var(--mgr-bg); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: white; font-size: 11px; font-weight: 600; }
+      .label-secondary { fill: rgba(255,255,255,0.9); font-size: 10px; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="600" y="52" width="720" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">Organization Chart</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-secondary" font-size="12">&lt;Project Name&gt; · Template</text>
+  
+  <!-- CEO -->
+  <rect x="850" y="150" width="220" height="80" rx="8" class="exec-box"/>
+  <text x="960" y="182" text-anchor="middle" class="label-primary" font-size="12">CEO</text>
+  <text x="960" y="202" text-anchor="middle" class="label-secondary">Executive</text>
+  
+  <!-- Directors -->
+  <rect x="350" y="350" width="200" height="80" rx="6" class="dir-box"/>
+  <text x="450" y="380" text-anchor="middle" class="label-primary">Director - Ops</text>
+  <text x="450" y="398" text-anchor="middle" class="label-secondary">Operations</text>
+  
+  <rect x="850" y="350" width="200" height="80" rx="6" class="dir-box"/>
+  <text x="950" y="380" text-anchor="middle" class="label-primary">Director - Dev</text>
+  <text x="950" y="398" text-anchor="middle" class="label-secondary">Development</text>
+  
+  <rect x="1350" y="350" width="200" height="80" rx="6" class="dir-box"/>
+  <text x="1450" y="380" text-anchor="middle" class="label-primary">Director - Sales</text>
+  <text x="1450" y="398" text-anchor="middle" class="label-secondary">Sales</text>
+  
+  <!-- Managers -->
+  <rect x="200" y="550" width="180" height="70" rx="6" class="mgr-box"/>
+  <text x="290" y="577" text-anchor="middle" class="label-primary">Manager</text>
+  <text x="290" y="595" text-anchor="middle" class="label-secondary">Team Lead</text>
+  
+  <rect x="500" y="550" width="180" height="70" rx="6" class="mgr-box"/>
+  <text x="590" y="577" text-anchor="middle" class="label-primary">Manager</text>
+  <text x="590" y="595" text-anchor="middle" class="label-secondary">Team Lead</text>
+  
+  <!-- Connector lines -->
+  <line x1="960" y1="230" x2="450" y2="350" stroke="#334155" stroke-width="1.5"/>
+  <line x1="960" y1="230" x2="950" y2="350" stroke="#334155" stroke-width="1.5"/>
+  <line x1="960" y1="230" x2="1450" y2="350" stroke="#334155" stroke-width="1.5"/>
+  
+  <line x1="450" y1="430" x2="290" y2="550" stroke="#334155" stroke-width="1.5"/>
+  <line x1="450" y1="430" x2="590" y2="550" stroke="#334155" stroke-width="1.5"/>
+  
+  <text x="52" y="1048" class="label-secondary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary" font-size="10">&lt;Project Name&gt; · Version 1.0 · Organization Chart</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#org-chart-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Org Chart Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Org Chart] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
+</svg>

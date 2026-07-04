@@ -98,6 +98,17 @@ from uml import (
     TimingDiagramConverter,
     ProfileDiagramConverter,
 )
+from project_management import (
+    KanbanBoardConverter,
+    TimelineConverter,
+)
+from organization import (
+    OrgChartConverter,
+    SWOTMatrixConverter,
+)
+from misc import (
+    ProblemTreeConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -111,6 +122,10 @@ CONVERTER_REGISTRY = {
     "wbs": WBSConverter,
     "work-breakdown-structure": WBSConverter,
     "risk-matrix": RiskMatrixConverter,
+    "kanban-board": KanbanBoardConverter,
+    "kanban": KanbanBoardConverter,
+    "timeline": TimelineConverter,
+    "simple-timeline": TimelineConverter,
     # Sitemaps
     "sitemap": SitemapConverter,
     # Stakeholder Analysis
@@ -254,6 +269,16 @@ CONVERTER_REGISTRY = {
     "uml-profile-diagram": ProfileDiagramConverter,
     "profile-diagram": ProfileDiagramConverter,
     "uml-profile": ProfileDiagramConverter,
+    # Organization
+    "org-chart": OrgChartConverter,
+    "organization-chart": OrgChartConverter,
+    "organizational-chart": OrgChartConverter,
+    "swot-matrix": SWOTMatrixConverter,
+    "swot": SWOTMatrixConverter,
+    # Miscellaneous
+    "problem-tree": ProblemTreeConverter,
+    "problem-tree-diagram": ProblemTreeConverter,
+    "problem-analysis": ProblemTreeConverter,
 }
 
 
@@ -596,6 +621,18 @@ class TemplateConverterOrchestrator:
                 return "uml-timing-diagram"
             elif "uml" in title and "profile" in title:
                 return "uml-profile-diagram"
+            elif "kanban" in title:
+                return "kanban-board"
+            elif "timeline" in title and "gantt" not in title:
+                return "timeline"
+            elif "org" in title and "chart" in title:
+                return "org-chart"
+            elif "organization" in title and "chart" in title:
+                return "org-chart"
+            elif "swot" in title:
+                return "swot-matrix"
+            elif "problem tree" in title or "problem-tree" in title:
+                return "problem-tree"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 

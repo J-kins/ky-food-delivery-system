@@ -1,0 +1,93 @@
+<?XML version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <script type="application/json" id="problem-tree-data">
+  {
+    "metadata": {"title": "Problem Tree Diagram", "projectName": "Food Delivery System", "description": "Hierarchical analysis of problem causes and effects", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#FFFFFF", "strokeColor": "#334155", "effectColor": "#FEE2E2", "causeColor": "#DBEAFE", "problemColor": "#FEF3C7"}},
+    "data": {
+      "root": {"id": "problem", "label": "Main Problem", "x": 850, "y": 450, "width": 220, "height": 80},
+      "effects": [
+        {"id": "e1", "label": "Effect 1", "x": 450, "y": 200, "width": 180, "height": 60},
+        {"id": "e2", "label": "Effect 2", "x": 850, "y": 150, "width": 180, "height": 60},
+        {"id": "e3", "label": "Effect 3", "x": 1250, "y": 200, "width": 180, "height": 60}
+      ],
+      "causes": [
+        {"id": "c1", "label": "Cause 1", "x": 450, "y": 750, "width": 180, "height": 60},
+        {"id": "c2", "label": "Cause 2", "x": 850, "y": 800, "width": 180, "height": 60},
+        {"id": "c3", "label": "Cause 3", "x": 1250, "y": 750, "width": 180, "height": 60}
+      ]
+    }
+  }
+  </script>
+  <defs>
+    <style>
+      :root { --fill-light: #FFFFFF; --stroke-light: #334155; --text-light: #334155; --muted-light: #64748b; --effect-bg: #FEE2E2; --effect-stroke: #FCA5A5; --cause-bg: #DBEAFE; --cause-stroke: #93C5FD; --problem-bg: #FEF3C7; --problem-stroke: #FCD34D; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .problem-box { fill: var(--problem-bg); stroke: var(--problem-stroke); stroke-width: 2; }
+      .effect-box { fill: var(--effect-bg); stroke: var(--effect-stroke); stroke-width: 1.5; }
+      .cause-box { fill: var(--cause-bg); stroke: var(--cause-stroke); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 12px; font-weight: 600; }
+      .label-secondary { fill: var(--muted-light); font-size: 10px; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">Problem Tree Diagram</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-secondary" font-size="12">&lt;Project Name&gt; · Template</text>
+  
+  <!-- Main Problem -->
+  <rect x="850" y="450" width="220" height="80" rx="8" class="problem-box"/>
+  <text x="960" y="495" text-anchor="middle" class="label-primary">Main Problem</text>
+  
+  <!-- Effects (top) -->
+  <text x="960" y="130" text-anchor="middle" class="label-primary" font-size="14" font-weight="bold">EFFECTS</text>
+  
+  <!-- Effect 1 -->
+  <rect x="450" y="200" width="180" height="60" rx="6" class="effect-box"/>
+  <text x="540" y="235" text-anchor="middle" class="label-primary">Effect 1</text>
+  <line x1="540" y1="200" x2="920" y2="450" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Effect 2 -->
+  <rect x="850" y="150" width="180" height="60" rx="6" class="effect-box"/>
+  <text x="940" y="185" text-anchor="middle" class="label-primary">Effect 2</text>
+  <line x1="940" y1="150" x2="960" y2="450" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Effect 3 -->
+  <rect x="1250" y="200" width="180" height="60" rx="6" class="effect-box"/>
+  <text x="1340" y="235" text-anchor="middle" class="label-primary">Effect 3</text>
+  <line x1="1340" y1="200" x2="1000" y2="450" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Causes (bottom) -->
+  <text x="960" y="950" text-anchor="middle" class="label-primary" font-size="14" font-weight="bold">ROOT CAUSES</text>
+  
+  <!-- Cause 1 -->
+  <rect x="450" y="750" width="180" height="60" rx="6" class="cause-box"/>
+  <text x="540" y="785" text-anchor="middle" class="label-primary">Cause 1</text>
+  <line x1="540" y1="750" x2="920" y2="530" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Cause 2 -->
+  <rect x="850" y="800" width="180" height="60" rx="6" class="cause-box"/>
+  <text x="940" y="835" text-anchor="middle" class="label-primary">Cause 2</text>
+  <line x1="940" y1="800" x2="960" y2="530" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Cause 3 -->
+  <rect x="1250" y="750" width="180" height="60" rx="6" class="cause-box"/>
+  <text x="1340" y="785" text-anchor="middle" class="label-primary">Cause 3</text>
+  <line x1="1340" y1="750" x2="1000" y2="530" stroke="#334155" stroke-width="1.5"/>
+  
+  <text x="52" y="1048" class="label-secondary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary" font-size="10">&lt;Project Name&gt; · Version 1.0 · Problem Tree Diagram</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#problem-tree-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Problem Tree Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Problem Tree] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
+</svg>
