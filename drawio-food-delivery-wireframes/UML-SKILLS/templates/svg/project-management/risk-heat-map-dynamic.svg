@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <script type="application/json" id="heat-map-data">
+  {"heatmapData": [{"category": "Technical Risks", "severity": "8.5", "trend": "increasing"}, {"category": "Resource Risks", "severity": "6.2", "trend": "stable"}, {"category": "Schedule Risks", "severity": "7.1", "trend": "decreasing"}]}
+  </script>
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <text style="font-size: 24px; font-weight: 700;" x="50" y="50">Risk Heat Map (Trends Over Time)</text>
+</svg>

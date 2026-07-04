@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" width="1200" height="1000">
+  <script type="application/json" id="threat-tree-data">
+  {"rootThreat": "Project Failure", "children": [{"threat": "Technical Failure", "children": [{"threat": "Infrastructure Outage"}, {"threat": "Integration Failure"}]}, {"threat": "Schedule Failure", "children": [{"threat": "Resource Shortage"}, {"threat": "Scope Creep"}]}, {"threat": "Budget Overrun", "children": [{"threat": "Underestimation"}, {"threat": "Unforeseen Costs"}]}]}
+  </script>
+  <rect width="1200" height="1000" fill="#FFFFFF"/>
+  <text style="font-size: 24px; font-weight: 700;" x="50" y="50">Threat Tree Analysis (Fault Tree)</text>
+</svg>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <script type="application/json" id="pert-data">
+  {"tasks": [{"id": "t1", "name": "Planning", "optimistic": 4, "mostLikely": 6, "pessimistic": 8, "predecessors": []}, {"id": "t2", "name": "Development", "optimistic": 10, "mostLikely": 14, "pessimistic": 18, "predecessors": ["t1"]}, {"id": "t3", "name": "Testing", "optimistic": 5, "mostLikely": 7, "pessimistic": 10, "predecessors": ["t2"]}]}
+  </script>
+  <rect width="1400" height="900" fill="#FFFFFF"/>
+  <text style="font-size: 24px; font-weight: 700;" x="50" y="50">PERT Chart (Program Evaluation Review Technique)</text>
+</svg>

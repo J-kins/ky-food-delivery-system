@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="1400" height="600">
+  <script type="application/json" id="milestone-data">
+  {"milestones": [{"id": "m1", "name": "Design Complete", "date": "2024-02-28", "status": "completed", "owner": "Design Team"}, {"id": "m2", "name": "API Delivery", "date": "2024-04-15", "status": "in-progress"}, {"id": "m3", "name": "MVP Launch", "date": "2024-06-30", "status": "planned"}], "designTokens": {"lightMode": {"canvas": "#FFFFFF", "fill": "#E5E5E5", "stroke": "#1A1A1A"}, "darkMode": {"canvas": "#0D0D0D", "fill": "#1E1E1E", "stroke": "#F2F2F2"}}}
+  </script>
+  <rect width="1400" height="600" fill="#FFFFFF"/>
+  <text style="font-size: 24px; font-weight: 700; fill: #1A1A1A;" x="50" y="50">Project Milestones</text>
+</svg>
