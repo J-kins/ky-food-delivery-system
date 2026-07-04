@@ -57,6 +57,13 @@ from devops import (
     InfrastructureAsCodeConverter,
     ServiceMeshArchitectureConverter,
 )
+from gis import (
+    GISArchitectureConverter,
+    GeospatialDataModelConverter,
+    MapDesignConverter,
+    GeoprocessingWorkflowConverter,
+    SpatialDataFlowConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -124,6 +131,17 @@ CONVERTER_REGISTRY = {
     "infrastructure-code": InfrastructureAsCodeConverter,
     "service-mesh": ServiceMeshArchitectureConverter,
     "service-mesh-architecture": ServiceMeshArchitectureConverter,
+    # GIS (Geographic Information Systems)
+    "gis": GISArchitectureConverter,
+    "gis-architecture": GISArchitectureConverter,
+    "geospatial": GeospatialDataModelConverter,
+    "geospatial-data-model": GeospatialDataModelConverter,
+    "map-design": MapDesignConverter,
+    "map": MapDesignConverter,
+    "geoprocessing": GeoprocessingWorkflowConverter,
+    "geoprocessing-workflow": GeoprocessingWorkflowConverter,
+    "spatial-data-flow": SpatialDataFlowConverter,
+    "data-flow": SpatialDataFlowConverter,
 }
 
 
@@ -285,6 +303,19 @@ class TemplateConverterOrchestrator:
             return "infrastructure-as-code"
         elif "service" in filename and "mesh" in filename:
             return "service-mesh-architecture"
+        # GIS Detection
+        elif "gis" in filename and "architecture" in filename:
+            return "gis-architecture"
+        elif "gis" in filename:
+            return "gis-architecture"
+        elif "geospatial" in filename:
+            return "geospatial-data-model"
+        elif "map" in filename and "design" in filename:
+            return "map-design"
+        elif "geoprocessing" in filename:
+            return "geoprocessing-workflow"
+        elif "spatial" in filename and "flow" in filename:
+            return "spatial-data-flow"
 
         # Could parse SVG content to detect data type
         try:
@@ -326,6 +357,16 @@ class TemplateConverterOrchestrator:
                 return "infrastructure-as-code"
             elif "service mesh" in title:
                 return "service-mesh-architecture"
+            elif "gis" in title and "architecture" in title:
+                return "gis-architecture"
+            elif "geospatial" in title:
+                return "geospatial-data-model"
+            elif "map" in title and "design" in title:
+                return "map-design"
+            elif "geoprocessing" in title:
+                return "geoprocessing-workflow"
+            elif "spatial" in title and "flow" in title:
+                return "spatial-data-flow"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 
