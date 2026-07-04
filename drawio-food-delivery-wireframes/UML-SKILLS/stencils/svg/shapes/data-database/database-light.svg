@@ -1,0 +1,13 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .db-fill { fill: #E5E5E5; }
+      .db-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <ellipse cx="70" cy="25" rx="35" ry="15" class="db-fill db-stroke"/>
+  <rect x="35" y="25" width="70" height="40" class="db-fill db-stroke"/>
+  <ellipse cx="70" cy="65" rx="35" ry="15" class="db-fill db-stroke"/>
+  <line x1="35" y1="25" x2="35" y2="65" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="105" y1="25" x2="105" y2="65" stroke="#1A1A1A" stroke-width="1.5"/>
+</svg>

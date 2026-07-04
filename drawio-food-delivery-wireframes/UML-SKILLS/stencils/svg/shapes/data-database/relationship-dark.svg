@@ -1,0 +1,9 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .rel-fill { fill: #1E1E1E; }
+      .rel-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <polygon points="70,15 115,40 70,65 25,40" class="rel-fill rel-stroke"/>
+</svg>
