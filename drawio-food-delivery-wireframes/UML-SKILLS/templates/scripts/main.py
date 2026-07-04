@@ -74,6 +74,14 @@ from infrastructure import (
     HighAvailabilityArchitectureConverter,
     DisasterRecoveryArchitectureConverter,
 )
+from process_flow import (
+    BusinessProcessModelConverter,
+    DataFlowDiagramConverter,
+    BusinessProcessAnalysisConverter,
+    ProcessFlowDiagramConverter,
+    WorkflowDiagramConverter,
+    ValueStreamMapConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -170,6 +178,21 @@ CONVERTER_REGISTRY = {
     "ha-architecture": HighAvailabilityArchitectureConverter,
     "disaster-recovery": DisasterRecoveryArchitectureConverter,
     "dr-architecture": DisasterRecoveryArchitectureConverter,
+    # Process Flow & Workflow
+    "business-process-model": BusinessProcessModelConverter,
+    "bpm": BusinessProcessModelConverter,
+    "process-model": BusinessProcessModelConverter,
+    "data-flow-diagram": DataFlowDiagramConverter,
+    "dfd": DataFlowDiagramConverter,
+    "business-process-analysis": BusinessProcessAnalysisConverter,
+    "bpa": BusinessProcessAnalysisConverter,
+    "process-flow-diagram": ProcessFlowDiagramConverter,
+    "pfd": ProcessFlowDiagramConverter,
+    "workflow-diagram": WorkflowDiagramConverter,
+    "workflow": WorkflowDiagramConverter,
+    "value-stream-map": ValueStreamMapConverter,
+    "vsm": ValueStreamMapConverter,
+    "value-stream": ValueStreamMapConverter,
 }
 
 
@@ -363,6 +386,19 @@ class TemplateConverterOrchestrator:
             return "high-availability"
         elif "disaster-recovery" in filename or "dr-architecture" in filename:
             return "disaster-recovery"
+        # Process Flow Detection
+        elif "business-process-model" in filename or "bpm" in filename:
+            return "business-process-model"
+        elif "data-flow-diagram" in filename or "dfd" in filename:
+            return "data-flow-diagram"
+        elif "business-process-analysis" in filename or "bpa" in filename:
+            return "business-process-analysis"
+        elif "process-flow-diagram" in filename or "pfd" in filename:
+            return "process-flow-diagram"
+        elif "workflow" in filename and "diagram" in filename:
+            return "workflow-diagram"
+        elif "value-stream-map" in filename or "vsm" in filename:
+            return "value-stream-map"
 
         # Could parse SVG content to detect data type
         try:
@@ -430,6 +466,18 @@ class TemplateConverterOrchestrator:
                 return "high-availability"
             elif "disaster recovery" in title:
                 return "disaster-recovery"
+            elif "business process model" in title:
+                return "business-process-model"
+            elif "data flow diagram" in title:
+                return "data-flow-diagram"
+            elif "business process analysis" in title:
+                return "business-process-analysis"
+            elif "process flow diagram" in title:
+                return "process-flow-diagram"
+            elif "workflow" in title and "diagram" in title:
+                return "workflow-diagram"
+            elif "value stream" in title:
+                return "value-stream-map"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 
