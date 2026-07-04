@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" width="1920" height="1000">
+  <script type="application/json" id="physical-data">
+  {
+    "diagramType": "Physical Data Model",
+    "projectName": "Food Delivery System",
+    "description": "Implementation-specific schema with indexes, constraints, and storage details",
+    "schema": "food_delivery",
+    "tables": [
+      {
+        "id": "users",
+        "name": "users",
+        "engine": "InnoDB",
+        "position": {"x": 240, "y": 300},
+        "columns": [
+          {"name": "user_id", "type": "BIGINT", "pk": true, "autoincrement": true},
+          {"name": "name", "type": "VARCHAR(255)", "notNull": true},
+          {"name": "email", "type": "VARCHAR(255)", "notNull": true, "unique": true, "indexed": true},
+          {"name": "phone", "type": "VARCHAR(20)"},
+          {"name": "address", "type": "TEXT"},
+          {"name": "created_at", "type": "TIMESTAMP", "default": "CURRENT_TIMESTAMP"},
+          {"name": "updated_at", "type": "TIMESTAMP", "onUpdate": "CURRENT_TIMESTAMP"}
+        ],
+        "indexes": ["idx_email", "idx_created_at"],
+        "charset": "utf8mb4"
+      },
+      {
+        "id": "restaurants",
+        "name": "restaurants",
+        "engine": "InnoDB",
+        "position": {"x": 800, "y": 300},
+        "columns": [
+          {"name": "restaurant_id", "type": "BIGINT", "pk": true, "autoincrement": true},
+          {"name": "name", "type": "VARCHAR(255)", "notNull": true},
+          {"name": "location", "type": "POINT", "spatialIndex": true},
+          {"name": "rating", "type": "DECIMAL(3,2)", "default": 0},
+          {"name": "cuisine", "type": "VARCHAR(100)", "indexed": true},
+          {"name": "created_at", "type": "TIMESTAMP"}
+        ],
+        "indexes": ["idx_location", "idx_cuisine", "idx_rating"],
+        "charset": "utf8mb4"
+      },
+      {
+        "id": "orders",
+        "name": "orders",
+        "engine": "InnoDB",
+        "position": {"x": 1360, "y": 300},
+        "columns": [
+          {"name": "order_id", "type": "BIGINT", "pk": true, "autoincrement": true},
+          {"name": "user_id", "type": "BIGINT", "fk": "users.user_id", "notNull": true, "indexed": true},
+          {"name": "restaurant_id", "type": "BIGINT", "fk": "restaurants.restaurant_id", "notNull": true, "indexed": true},
+          {"name": "status", "type": "ENUM('pending','confirmed','preparing','on_way','delivered','cancelled')", "default": "pending"},
+          {"name": "total", "type": "DECIMAL(12,2)", "notNull": true},
+          {"name": "created_at", "type": "TIMESTAMP"}
+        ],
+        "indexes": ["idx_user_id", "idx_restaurant_id", "idx_status", "idx_created_at"],
+        "charset": "utf8mb4",
+        "partitioning": "RANGE (YEAR(created_at))"
+      }
+    ],
+    "constraints": [
+      {"type": "FOREIGN_KEY", "table": "orders", "column": "user_id", "references": "users.user_id"},
+      {"type": "FOREIGN_KEY", "table": "orders", "column": "restaurant_id", "references": "restaurants.restaurant_id"},
+      {"type": "CHECK", "condition": "total > 0"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1000" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Physical Data Model (MySQL Implementation)</text>
+</svg>

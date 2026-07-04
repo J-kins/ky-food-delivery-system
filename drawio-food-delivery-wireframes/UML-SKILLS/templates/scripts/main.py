@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Main orchestrator for SVG template to Visio diagram conversion.
+"""Main orchestrator for SVG template to Visio template conversion.
 
-This module coordinates the conversion of data-driven SVG templates to Visio diagrams.
+This module coordinates the conversion of data-driven SVG templates to Visio template files (.vstx).
 Each diagram type has its own converter, and this orchestrator manages the pipeline.
 
 Usage:
-    python main.py --input <svg_file> --output <vsdx_file> --diagram <type>
-    python main.py --batch <svg_folder> --output-dir <vsdx_folder>
+    python main.py --input <svg_file> --output <vstx_file> --diagram <type>
+    python main.py --batch <svg_folder> --output-dir <vstx_folder>
+    
+Output Format: .vstx (Visio Template Format)
 """
 
 import argparse
@@ -30,11 +32,20 @@ from stakeholder import (
     RACIMatrixConverter,
     StakeholderRegisterConverter,
 )
+from data import (
+    ERDDiagramConverter,
+    ConceptualDataModelConverter,
+    LogicalDataModelConverter,
+    PhysicalDataModelConverter,
+    DataPipelineConverter,
+    DataLakehouseConverter,
+)
 
 logger = logging.getLogger(__name__)
 
 # Converter registry mapping diagram types to converter classes
 CONVERTER_REGISTRY = {
+    # Project Management
     "gantt-chart": GanttChartConverter,
     "gantt-resource": GanttChartConverter,
     "gantt-project": GanttChartConverter,
@@ -42,13 +53,29 @@ CONVERTER_REGISTRY = {
     "wbs": WBSConverter,
     "work-breakdown-structure": WBSConverter,
     "risk-matrix": RiskMatrixConverter,
+    # Sitemaps
     "sitemap": SitemapConverter,
+    # Stakeholder Analysis
     "stakeholder-map": StakeholderMapConverter,
     "power-interest-matrix": PowerInterestMatrixConverter,
     "influence-network": InfluenceNetworkConverter,
     "salience-model": SalienceModelConverter,
     "raci-matrix": RACIMatrixConverter,
     "stakeholder-register": StakeholderRegisterConverter,
+    # Data Models & Architecture
+    "erd": ERDDiagramConverter,
+    "erd-diagram": ERDDiagramConverter,
+    "entity-relationship": ERDDiagramConverter,
+    "conceptual-model": ConceptualDataModelConverter,
+    "data-model-conceptual": ConceptualDataModelConverter,
+    "logical-model": LogicalDataModelConverter,
+    "data-model-logical": LogicalDataModelConverter,
+    "physical-model": PhysicalDataModelConverter,
+    "data-model-physical": PhysicalDataModelConverter,
+    "data-pipeline": DataPipelineConverter,
+    "pipeline": DataPipelineConverter,
+    "data-lakehouse": DataLakehouseConverter,
+    "lakehouse": DataLakehouseConverter,
 }
 
 

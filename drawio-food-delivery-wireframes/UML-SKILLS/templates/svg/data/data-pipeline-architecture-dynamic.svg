@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" width="1920" height="1000">
+  <script type="application/json" id="pipeline-data">
+  {
+    "diagramType": "Data Pipeline Architecture",
+    "projectName": "Food Delivery System",
+    "description": "ETL pipeline from sources to data warehouse",
+    "layers": [
+      {
+        "layer": "Source Systems",
+        "stage": 1,
+        "components": [
+          {"id": "src1", "name": "Production DB", "type": "source", "technology": "MySQL", "position": {"x": 100, "y": 300}},
+          {"id": "src2", "name": "API Logs", "type": "source", "technology": "S3", "position": {"x": 300, "y": 300}},
+          {"id": "src3", "name": "Mobile Events", "type": "source", "technology": "Kinesis", "position": {"x": 500, "y": 300}}
+        ]
+      },
+      {
+        "layer": "Ingestion",
+        "stage": 2,
+        "components": [
+          {"id": "ing1", "name": "Kafka", "type": "ingestion", "technology": "Apache Kafka", "position": {"x": 700, "y": 300}},
+          {"id": "ing2", "name": "Firehose", "type": "ingestion", "technology": "Kinesis Firehose", "position": {"x": 900, "y": 300}}
+        ]
+      },
+      {
+        "layer": "Processing",
+        "stage": 3,
+        "components": [
+          {"id": "proc1", "name": "Spark Jobs", "type": "processing", "technology": "Apache Spark", "position": {"x": 1100, "y": 300}},
+          {"id": "proc2", "name": "dbt Models", "type": "processing", "technology": "dbt", "position": {"x": 1300, "y": 300}}
+        ]
+      },
+      {
+        "layer": "Storage",
+        "stage": 4,
+        "components": [
+          {"id": "stor1", "name": "Data Lake", "type": "storage", "technology": "S3 Data Lake", "position": {"x": 1500, "y": 200}},
+          {"id": "stor2", "name": "Data Warehouse", "type": "storage", "technology": "Snowflake", "position": {"x": 1500, "y": 400}}
+        ]
+      },
+      {
+        "layer": "Analytics",
+        "stage": 5,
+        "components": [
+          {"id": "ana1", "name": "BI Tool", "type": "analytics", "technology": "Tableau", "position": {"x": 1700, "y": 300}}
+        ]
+      }
+    ],
+    "flows": [
+      {"from": "src1", "to": "ing1"},
+      {"from": "src2", "to": "ing1"},
+      {"from": "src3", "to": "ing2"},
+      {"from": "ing1", "to": "proc1"},
+      {"from": "ing2", "to": "proc2"},
+      {"from": "proc1", "to": "stor1"},
+      {"from": "proc2", "to": "stor2"},
+      {"from": "stor1", "to": "ana1"},
+      {"from": "stor2", "to": "ana1"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1000" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Data Pipeline Architecture</text>
+</svg>
