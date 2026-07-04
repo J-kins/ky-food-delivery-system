@@ -49,6 +49,14 @@ from cloud import (
     CloudMigrationConverter,
     CloudCostOptimizationConverter,
 )
+from devops import (
+    CICDPipelineConverter,
+    DevOpsArchitectureConverter,
+    GitOpsArchitectureConverter,
+    ObservabilityArchitectureConverter,
+    InfrastructureAsCodeConverter,
+    ServiceMeshArchitectureConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -101,6 +109,21 @@ CONVERTER_REGISTRY = {
     "migration": CloudMigrationConverter,
     "cloud-cost-optimization": CloudCostOptimizationConverter,
     "cost-optimization": CloudCostOptimizationConverter,
+    # DevOps
+    "cicd": CICDPipelineConverter,
+    "cicd-pipeline": CICDPipelineConverter,
+    "ci-cd": CICDPipelineConverter,
+    "devops": DevOpsArchitectureConverter,
+    "devops-architecture": DevOpsArchitectureConverter,
+    "gitops": GitOpsArchitectureConverter,
+    "gitops-architecture": GitOpsArchitectureConverter,
+    "observability": ObservabilityArchitectureConverter,
+    "observability-architecture": ObservabilityArchitectureConverter,
+    "iac": InfrastructureAsCodeConverter,
+    "infrastructure-as-code": InfrastructureAsCodeConverter,
+    "infrastructure-code": InfrastructureAsCodeConverter,
+    "service-mesh": ServiceMeshArchitectureConverter,
+    "service-mesh-architecture": ServiceMeshArchitectureConverter,
 }
 
 
@@ -249,6 +272,19 @@ class TemplateConverterOrchestrator:
             return "cloud-migration"
         elif "cost" in filename and "optimization" in filename:
             return "cloud-cost-optimization"
+        # DevOps Detection
+        elif "cicd" in filename or "ci-cd" in filename:
+            return "cicd-pipeline"
+        elif "devops" in filename and "architecture" in filename:
+            return "devops-architecture"
+        elif "gitops" in filename:
+            return "gitops-architecture"
+        elif "observability" in filename:
+            return "observability-architecture"
+        elif "infrastructure" in filename and "code" in filename:
+            return "infrastructure-as-code"
+        elif "service" in filename and "mesh" in filename:
+            return "service-mesh-architecture"
 
         # Could parse SVG content to detect data type
         try:
@@ -278,6 +314,18 @@ class TemplateConverterOrchestrator:
                 return "cloud-migration"
             elif "cost optimization" in title:
                 return "cloud-cost-optimization"
+            elif "ci/cd" in title or "cicd" in title:
+                return "cicd-pipeline"
+            elif "devops" in title and "architecture" in title:
+                return "devops-architecture"
+            elif "gitops" in title:
+                return "gitops-architecture"
+            elif "observability" in title:
+                return "observability-architecture"
+            elif "infrastructure as code" in title:
+                return "infrastructure-as-code"
+            elif "service mesh" in title:
+                return "service-mesh-architecture"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 
