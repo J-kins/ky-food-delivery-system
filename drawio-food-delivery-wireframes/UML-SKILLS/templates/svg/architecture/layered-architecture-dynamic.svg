@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="layered-arch-data">
+  {
+    "diagramType": "Layered Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Traditional n-tier layered architecture pattern",
+    "layers": [
+      {"id": "layer1", "name": "Presentation Layer", "position": {"y": 100}, "components": ["Web UI", "Mobile App", "API Clients"]},
+      {"id": "layer2", "name": "Application Layer", "position": {"y": 250}, "components": ["Business Logic", "Workflows", "Validations"]},
+      {"id": "layer3", "name": "Data Layer", "position": {"y": 400}, "components": ["ORM", "Query Engine", "Transaction Manager"]},
+      {"id": "layer4", "name": "Persistence Layer", "position": {"y": 550}, "components": ["Database", "Cache", "Search Index"]},
+      {"id": "layer5", "name": "Infrastructure Layer", "position": {"y": 700}, "components": ["Cloud Platform", "Networking", "Security"]}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Layered Architecture Pattern</text>
+</svg>

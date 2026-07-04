@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="c4-component-data">
+  {
+    "diagramType": "C4 Component Diagram",
+    "projectName": "Food Delivery System",
+    "description": "Level 3: Components within API container",
+    "container": "API Server",
+    "components": [
+      {"id": "ctrl1", "name": "Order Controller", "type": "controller", "position": {"x": 200, "y": 300}},
+      {"id": "ctrl2", "name": "User Controller", "type": "controller", "position": {"x": 200, "y": 450}},
+      {"id": "ctrl3", "name": "Restaurant Controller", "type": "controller", "position": {"x": 200, "y": 600}},
+      {"id": "svc1", "name": "Order Service", "type": "service", "position": {"x": 700, "y": 300}},
+      {"id": "svc2", "name": "User Service", "type": "service", "position": {"x": 700, "y": 450}},
+      {"id": "svc3", "name": "Restaurant Service", "type": "service", "position": {"x": 700, "y": 600}},
+      {"id": "repo1", "name": "Order Repository", "type": "repository", "position": {"x": 1300, "y": 300}},
+      {"id": "repo2", "name": "User Repository", "type": "repository", "position": {"x": 1300, "y": 450}},
+      {"id": "repo3", "name": "Restaurant Repository", "type": "repository", "position": {"x": 1300, "y": 600}}
+    ],
+    "relationships": [
+      {"from": "ctrl1", "to": "svc1"},
+      {"from": "ctrl2", "to": "svc2"},
+      {"from": "ctrl3", "to": "svc3"},
+      {"from": "svc1", "to": "repo1"},
+      {"from": "svc2", "to": "repo2"},
+      {"from": "svc3", "to": "repo3"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">C4 Model: Component Diagram</text>
+</svg>

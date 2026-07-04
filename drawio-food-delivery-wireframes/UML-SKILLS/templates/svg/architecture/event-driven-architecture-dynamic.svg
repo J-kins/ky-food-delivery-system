@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="eda-data">
+  {
+    "diagramType": "Event-Driven Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Asynchronous event-based communication architecture",
+    "event_sources": [
+      {"id": "evt1", "name": "Order Placed", "type": "domain_event", "position": {"x": 150, "y": 300}},
+      {"id": "evt2", "name": "Restaurant Accepted", "type": "domain_event", "position": {"x": 150, "y": 450}},
+      {"id": "evt3", "name": "Delivery Started", "type": "domain_event", "position": {"x": 150, "y": 600}}
+    ],
+    "event_bus": {"id": "bus", "name": "Event Bus", "type": "kafka", "position": {"x": 700, "y": 450}},
+    "event_consumers": [
+      {"id": "cons1", "name": "Notification Service", "subscribes_to": ["evt1", "evt2", "evt3"], "position": {"x": 1300, "y": 300}},
+      {"id": "cons2", "name": "Analytics Service", "subscribes_to": ["evt1", "evt2", "evt3"], "position": {"x": 1300, "y": 450}},
+      {"id": "cons3", "name": "Inventory Service", "subscribes_to": ["evt1"], "position": {"x": 1300, "y": 600}}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Event-Driven Architecture</text>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="hex-arch-data">
+  {
+    "diagramType": "Hexagonal Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Ports and adapters architecture pattern",
+    "core": {
+      "id": "core",
+      "name": "Core Domain",
+      "position": {"x": 960, "y": 540},
+      "use_cases": ["Place Order", "Accept Order", "Start Delivery"]
+    },
+    "primary_ports": [
+      {"id": "pp1", "name": "API Port", "position": {"x": 200, "y": 300}},
+      {"id": "pp2", "name": "Web Port", "position": {"x": 200, "y": 540}},
+      {"id": "pp3", "name": "Mobile Port", "position": {"x": 200, "y": 780}}
+    ],
+    "primary_adapters": [
+      {"id": "pa1", "name": "REST Adapter", "adapts": "pp1", "position": {"x": 400, "y": 300}},
+      {"id": "pa2", "name": "Web Adapter", "adapts": "pp2", "position": {"x": 400, "y": 540}},
+      {"id": "pa3", "name": "Mobile Adapter", "adapts": "pp3", "position": {"x": 400, "y": 780}}
+    ],
+    "secondary_ports": [
+      {"id": "sp1", "name": "Persistence Port", "position": {"x": 1720, "y": 300}},
+      {"id": "sp2", "name": "Email Port", "position": {"x": 1720, "y": 540}},
+      {"id": "sp3", "name": "Payment Port", "position": {"x": 1720, "y": 780}}
+    ],
+    "secondary_adapters": [
+      {"id": "sa1", "name": "Database Adapter", "adapts": "sp1", "position": {"x": 1520, "y": 300}},
+      {"id": "sa2", "name": "SMTP Adapter", "adapts": "sp2", "position": {"x": 1520, "y": 540}},
+      {"id": "sa3", "name": "Stripe Adapter", "adapts": "sp3", "position": {"x": 1520, "y": 780}}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Hexagonal Architecture (Ports & Adapters)</text>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="c4-context-data">
+  {
+    "diagramType": "C4 System Context Diagram",
+    "projectName": "Food Delivery System",
+    "description": "Level 1: System context showing external dependencies",
+    "system": {"id": "sys", "name": "Food Delivery Platform", "type": "software_system", "description": "Allows customers to order food from restaurants", "position": {"x": 960, "y": 540}},
+    "actors": [
+      {"id": "customer", "name": "Customer", "type": "person", "role": "Uses app to order food", "position": {"x": 200, "y": 300}},
+      {"id": "restaurant", "name": "Restaurant Staff", "type": "person", "role": "Manages orders", "position": {"x": 200, "y": 780}},
+      {"id": "driver", "name": "Delivery Driver", "type": "person", "role": "Delivers orders", "position": {"x": 1720, "y": 540}}
+    ],
+    "external_systems": [
+      {"id": "payment", "name": "Payment Gateway", "type": "external_system", "position": {"x": 100, "y": 540}},
+      {"id": "sms", "name": "SMS Service", "type": "external_system", "position": {"x": 1820, "y": 300}},
+      {"id": "map", "name": "Maps Service", "type": "external_system", "position": {"x": 1820, "y": 780}}
+    ],
+    "relationships": [
+      {"from": "customer", "to": "sys", "label": "Uses"},
+      {"from": "restaurant", "to": "sys", "label": "Manages"},
+      {"from": "driver", "to": "sys", "label": "Delivers"},
+      {"from": "sys", "to": "payment", "label": "Processes payment"},
+      {"from": "sys", "to": "sms", "label": "Sends SMS"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">C4 Model: System Context Diagram</text>
+</svg>

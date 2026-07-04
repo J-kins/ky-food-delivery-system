@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="solution-arch-data">
+  {
+    "diagramType": "Solution Architecture",
+    "projectName": "Food Delivery System",
+    "description": "End-to-end solution architecture with all stakeholder concerns",
+    "pillars": [
+      {
+        "pillar": "User Experience",
+        "components": [
+          {"id": "ux1", "name": "Mobile App", "platform": "iOS/Android"},
+          {"id": "ux2", "name": "Web Portal", "platform": "Browser"}
+        ]
+      },
+      {
+        "pillar": "Business Logic",
+        "components": [
+          {"id": "bl1", "name": "Order Engine"},
+          {"id": "bl2", "name": "Matching Algorithm"},
+          {"id": "bl3", "name": "Payment Processing"}
+        ]
+      },
+      {
+        "pillar": "Data & Analytics",
+        "components": [
+          {"id": "da1", "name": "Data Warehouse"},
+          {"id": "da2", "name": "Analytics Engine"},
+          {"id": "da3", "name": "BI Dashboards"}
+        ]
+      },
+      {
+        "pillar": "Infrastructure",
+        "components": [
+          {"id": "inf1", "name": "Cloud Platform"},
+          {"id": "inf2", "name": "Monitoring"},
+          {"id": "inf3", "name": "Security"}
+        ]
+      }
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Solution Architecture</text>
+</svg>

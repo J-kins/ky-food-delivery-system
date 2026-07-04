@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="security-arch-data">
+  {
+    "diagramType": "Security Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Security layers, controls, and threat mitigation",
+    "layers": [
+      {
+        "layer": "Perimeter Security",
+        "position": {"y": 100},
+        "controls": [
+          {"id": "perimeter1", "name": "WAF", "technology": "CloudFlare", "position": {"x": 300}},
+          {"id": "perimeter2", "name": "DDoS Protection", "technology": "AWS Shield", "position": {"x": 800}},
+          {"id": "perimeter3", "name": "VPN", "technology": "TLS 1.3", "position": {"x": 1300}}
+        ]
+      },
+      {
+        "layer": "Network Security",
+        "position": {"y": 350},
+        "controls": [
+          {"id": "network1", "name": "VPC", "technology": "AWS VPC", "position": {"x": 300}},
+          {"id": "network2", "name": "Security Groups", "technology": "Firewall Rules", "position": {"x": 800}},
+          {"id": "network3", "name": "Network ACLs", "technology": "ACLs", "position": {"x": 1300}}
+        ]
+      },
+      {
+        "layer": "Application Security",
+        "position": {"y": 600},
+        "controls": [
+          {"id": "app1", "name": "Authentication", "technology": "OAuth 2.0", "position": {"x": 300}},
+          {"id": "app2", "name": "Authorization", "technology": "RBAC/ABAC", "position": {"x": 800}},
+          {"id": "app3", "name": "Encryption", "technology": "AES-256", "position": {"x": 1300}}
+        ]
+      },
+      {
+        "layer": "Data Security",
+        "position": {"y": 850},
+        "controls": [
+          {"id": "data1", "name": "Encryption at Rest", "technology": "KMS", "position": {"x": 300}},
+          {"id": "data2", "name": "Encryption in Transit", "technology": "TLS", "position": {"x": 800}},
+          {"id": "data3", "name": "Key Management", "technology": "Vault", "position": {"x": 1300}}
+        ]
+      }
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Security Architecture</text>
+</svg>

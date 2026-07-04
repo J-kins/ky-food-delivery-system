@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="clean-arch-data">
+  {
+    "diagramType": "Clean Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Concentric circles: entities, use cases, interface adapters, frameworks",
+    "layers": [
+      {
+        "layer": "Enterprise Business Rules",
+        "depth": 1,
+        "position": {"x": 960, "y": 540},
+        "radius": 100,
+        "components": ["Entities", "Domain Objects"]
+      },
+      {
+        "layer": "Use Cases",
+        "depth": 2,
+        "position": {"x": 960, "y": 540},
+        "radius": 200,
+        "components": ["Application Use Cases", "Business Logic"]
+      },
+      {
+        "layer": "Interface Adapters",
+        "depth": 3,
+        "position": {"x": 960, "y": 540},
+        "radius": 300,
+        "components": ["Controllers", "Gateways", "Presenters", "Repositories"]
+      },
+      {
+        "layer": "Frameworks & Tools",
+        "depth": 4,
+        "position": {"x": 960, "y": 540},
+        "radius": 400,
+        "components": ["Web", "Database", "UI", "External Interfaces"]
+      }
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Clean Architecture</text>
+</svg>

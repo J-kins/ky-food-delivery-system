@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="bcm-data">
+  {
+    "diagramType": "Business Capability Map",
+    "projectName": "Food Delivery System",
+    "description": "Complete business capabilities mapped across value chain",
+    "capabilities": [
+      {
+        "id": "core",
+        "name": "Core Capabilities",
+        "level": 1,
+        "position": {"x": 300, "y": 200},
+        "children": [
+          {"id": "core1", "name": "Customer Acquisition", "maturity": "high", "investments": "maintaining"},
+          {"id": "core2", "name": "Order Processing", "maturity": "high", "investments": "optimizing"},
+          {"id": "core3", "name": "Delivery Execution", "maturity": "medium", "investments": "improving"}
+        ]
+      },
+      {
+        "id": "support",
+        "name": "Support Capabilities",
+        "level": 1,
+        "position": {"x": 1200, "y": 200},
+        "children": [
+          {"id": "sup1", "name": "IT Operations", "maturity": "high"},
+          {"id": "sup2", "name": "Finance", "maturity": "medium"},
+          {"id": "sup3", "name": "HR Management", "maturity": "low"}
+        ]
+      }
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Business Capability Map</text>
+</svg>
