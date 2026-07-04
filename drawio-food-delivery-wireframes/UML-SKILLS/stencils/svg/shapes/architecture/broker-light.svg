@@ -1,0 +1,18 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Message broker shape: rounded rectangle with message dots -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Main container -->
+  <rect x="20" y="25" width="100" height="50" rx="8" class="arch-fill arch-stroke"/>
+  <!-- Message indicators -->
+  <circle cx="40" cy="40" r="4" class="arch-fill arch-stroke"/>
+  <circle cx="70" cy="40" r="4" class="arch-fill arch-stroke"/>
+  <circle cx="100" cy="40" r="4" class="arch-fill arch-stroke"/>
+  <circle cx="40" cy="60" r="4" class="arch-fill arch-stroke"/>
+  <circle cx="70" cy="60" r="4" class="arch-fill arch-stroke"/>
+  <circle cx="100" cy="60" r="4" class="arch-fill arch-stroke"/>
+</svg>

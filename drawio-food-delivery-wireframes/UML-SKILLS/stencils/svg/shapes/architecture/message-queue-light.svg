@@ -1,0 +1,15 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Message queue shape: stacked boxes -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Bottom box -->
+  <rect x="25" y="50" width="90" height="30" class="arch-fill arch-stroke"/>
+  <!-- Middle box -->
+  <rect x="25" y="35" width="90" height="20" class="arch-fill arch-stroke"/>
+  <!-- Top box -->
+  <rect x="25" y="20" width="90" height="20" class="arch-fill arch-stroke"/>
+</svg>

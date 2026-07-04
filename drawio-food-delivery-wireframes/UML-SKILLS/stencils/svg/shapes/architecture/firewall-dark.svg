@@ -1,0 +1,15 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Firewall shape: shield -->
+  <defs>
+    <style>
+      .arch-fill { fill: #1E1E1E; }
+      .arch-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Shield body -->
+  <path d="M 70 15 L 110 35 L 110 65 Q 70 85 70 85 Q 30 65 30 35 Z" class="arch-fill arch-stroke"/>
+  <!-- Security lines -->
+  <line x1="55" y1="40" x2="85" y2="40" class="arch-stroke"/>
+  <line x1="55" y1="50" x2="85" y2="50" class="arch-stroke"/>
+  <line x1="55" y1="60" x2="85" y2="60" class="arch-stroke"/>
+</svg>

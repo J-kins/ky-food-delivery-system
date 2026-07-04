@@ -1,0 +1,15 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gateway shape: trapezoid with gateway symbol -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Main trapezoid body -->
+  <polygon points="20,30 120,30 110,70 30,70" class="arch-fill arch-stroke"/>
+  <!-- Gateway lines inside -->
+  <line x1="45" y1="35" x2="45" y2="65" class="arch-stroke"/>
+  <line x1="70" y1="35" x2="70" y2="65" class="arch-stroke"/>
+  <line x1="95" y1="35" x2="95" y2="65" class="arch-stroke"/>
+</svg>

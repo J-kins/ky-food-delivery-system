@@ -1,0 +1,17 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kubernetes Service shape: grouped circles -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Service container -->
+  <rect x="20" y="25" width="100" height="50" rx="8" class="arch-fill arch-stroke"/>
+  <!-- Inner pods/containers -->
+  <circle cx="40" cy="50" r="8" class="arch-fill arch-stroke"/>
+  <circle cx="70" cy="50" r="8" class="arch-fill arch-stroke"/>
+  <circle cx="100" cy="50" r="8" class="arch-fill arch-stroke"/>
+  <!-- Connection indicator -->
+  <circle cx="70" cy="35" r="4" class="arch-fill arch-stroke"/>
+</svg>

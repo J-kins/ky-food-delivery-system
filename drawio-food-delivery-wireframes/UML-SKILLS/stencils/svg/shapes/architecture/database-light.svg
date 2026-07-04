@@ -1,0 +1,18 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Database shape: cylinder -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Cylinder top ellipse -->
+  <ellipse cx="70" cy="20" rx="40" ry="14" class="arch-fill arch-stroke"/>
+  <!-- Cylinder body -->
+  <rect x="30" y="20" width="80" height="45" class="arch-fill arch-stroke"/>
+  <!-- Cylinder bottom ellipse -->
+  <ellipse cx="70" cy="65" rx="40" ry="14" class="arch-fill arch-stroke"/>
+  <!-- Database rings inside -->
+  <ellipse cx="70" cy="35" rx="40" ry="8" class="arch-stroke" fill="none"/>
+  <ellipse cx="70" cy="50" rx="40" ry="8" class="arch-stroke" fill="none"/>
+</svg>

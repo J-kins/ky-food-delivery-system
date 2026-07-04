@@ -1,0 +1,18 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cache shape: cylinder -->
+  <defs>
+    <style>
+      .arch-fill { fill: #1E1E1E; }
+      .arch-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Cylinder top ellipse -->
+  <ellipse cx="70" cy="25" rx="35" ry="12" class="arch-fill arch-stroke"/>
+  <!-- Cylinder body -->
+  <rect x="35" y="25" width="70" height="40" class="arch-fill arch-stroke"/>
+  <!-- Cylinder bottom ellipse -->
+  <ellipse cx="70" cy="65" rx="35" ry="12" class="arch-fill arch-stroke"/>
+  <!-- Cache lines inside -->
+  <line x1="45" y1="40" x2="95" y2="40" class="arch-stroke"/>
+  <line x1="45" y1="50" x2="95" y2="50" class="arch-stroke"/>
+</svg>

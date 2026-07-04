@@ -1,0 +1,19 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Topic shape: rounded rectangle with topic lines -->
+  <defs>
+    <style>
+      .arch-fill { fill: #1E1E1E; }
+      .arch-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Main container -->
+  <rect x="20" y="25" width="100" height="50" rx="8" class="arch-fill arch-stroke"/>
+  <!-- Topic indicator lines -->
+  <line x1="35" y1="35" x2="35" y2="65" class="arch-stroke"/>
+  <line x1="70" y1="35" x2="70" y2="65" class="arch-stroke"/>
+  <line x1="105" y1="35" x2="105" y2="65" class="arch-stroke"/>
+  <!-- Connection points -->
+  <circle cx="35" cy="35" r="2" class="arch-fill arch-stroke"/>
+  <circle cx="70" cy="35" r="2" class="arch-fill arch-stroke"/>
+  <circle cx="105" cy="35" r="2" class="arch-fill arch-stroke"/>
+</svg>

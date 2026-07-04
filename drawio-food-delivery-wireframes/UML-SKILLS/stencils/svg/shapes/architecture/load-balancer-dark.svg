@@ -1,0 +1,15 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Load balancer shape: trapezoid with balance lines -->
+  <defs>
+    <style>
+      .arch-fill { fill: #1E1E1E; }
+      .arch-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Trapezoid body -->
+  <polygon points="30,25 110,25 100,75 40,75" class="arch-fill arch-stroke"/>
+  <!-- Balance indicator lines -->
+  <line x1="50" y1="35" x2="90" y2="35" class="arch-stroke"/>
+  <line x1="48" y1="50" x2="92" y2="50" class="arch-stroke"/>
+  <line x1="50" y1="65" x2="90" y2="65" class="arch-stroke"/>
+</svg>
