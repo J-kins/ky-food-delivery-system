@@ -1,53 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <!-- Design Tokens (Light Mode - Default) -->
+<?XML version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="migration-data">
+  {
+    "metadata": {"title": "Cloud Migration Architecture", "projectName": "Food Delivery System", "description": "Strategy and infrastructure for cloud migration", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#E5E5E5", "strokeColor": "#1A1A1A"}},
+    "data": {
+      "migrationPhases": [
+        {"id": "onprem", "name": "On-Premises", "x": 100, "y": 220, "width": 500, "height": 720},
+        {"id": "tools", "name": "Migration Tools", "x": 700, "y": 380, "width": 450, "height": 400},
+        {"id": "cloud", "name": "Cloud", "x": 1320, "y": 220, "width": 500, "height": 720}
+      ],
+      "tools": ["AWS DataSync", "Azure Migrate", "GCP Transfer Service"]
+    }
+  }
+  </script>
+
   <defs>
     <style>
-      :root {
-        --canvas-light: #FFFFFF;
-        --fill-light: #E5E5E5;
-        --stroke-light: #1A1A1A;
-        --text-muted: #8A8A85;
-        --connector: #1A1A1A;
-      }
+      :root { --canvas-light: #FFFFFF; --fill-light: #E5E5E5; --stroke-light: #1A1A1A; --text-light: #1A1A1A; --muted-light: #8A8A85; }
+      text { font-family: Helvetica, Arial, sans-serif; }
+      .service-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .container-box { fill: none; stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 12px; font-weight: 500; }
+      .label-secondary { fill: var(--muted-light); font-size: 9px; font-weight: 400; }
     </style>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#1A1A1A"/>
-    </marker>
-  </defs>
-
-  <!-- Canvas Background -->
-  <rect width="1920" height="1080" fill="#FFFFFF"/>
-
-  <!-- Main Border Container -->
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
-
-  <!-- Header Section -->
-  <rect x="520" y="52" width="880" height="56" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="960" y="88" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Cloud Migration Architecture</text>
-  <text x="960" y="108" text-anchor="middle" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400">&lt;Project Name&gt; · Template</text>
-
-  <!-- Content Grid Background -->
-  <defs>
-    <pattern id="grid-cloud-migration" width="50" height="50" patternUnits="userSpaceOnUse">
+    <pattern id="grid-migration" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1A1A1A" stroke-width="0.5" opacity="0.1"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-cloud-migration)"/>
+
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+  
+  <rect x="380" y="52" width="1160" height="56" rx="8" class="service-box"/>
+  <text x="960" y="88" text-anchor="middle" class="label-primary" font-size="22">Cloud Migration Architecture</text>
+  <text x="960" y="108" text-anchor="middle" class="label-secondary">&lt;Project Name&gt; · Template</text>
+
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-migration)"/>
   <rect x="40" y="118" width="1840" height="882" fill="#FFFFFF" fill-opacity="1"/>
 
-  <!-- On-Premises Section -->
-  <rect x="100" y="220" width="500" height="720" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="110" y="240" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">On-Premises</text>
+  <rect x="100" y="220" width="500" height="720" rx="8" class="container-box"/>
+  <text x="110" y="240" class="label-primary">On-Premises</text>
 
-  <!-- Migration Tools Section -->
-  <rect x="700" y="380" width="450" height="400" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="925.0" y="585.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Migration Tools</text>
+  <rect x="700" y="380" width="450" height="400" rx="8" class="service-box"/>
+  <text x="925" y="585" text-anchor="middle" class="label-primary">Migration Tools</text>
 
-  <!-- Cloud Section -->
-  <rect x="1320" y="220" width="500" height="720" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="1330" y="240" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Cloud</text>
+  <rect x="1320" y="220" width="500" height="720" rx="8" class="container-box"/>
+  <text x="1330" y="240" class="label-primary">Cloud</text>
 
-  <!-- Footer Information -->
-  <text x="52" y="1048" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">&lt;Project Name&gt; · Version 1.0 · Cloud Migration Architecture</text>
+  <text x="52" y="1048" class="label-secondary">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary">&lt;Project Name&gt; · Version 1.0 · Cloud Migration Architecture</text>
+
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#migration-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Cloud Migration Architecture Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Cloud Migration Architecture] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>

@@ -1,61 +1,211 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <!-- Design Tokens (Light Mode - Default) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <!-- DATA BLOCK: Single Source of Truth for AWS Architecture -->
+  <script type="application/json" id="aws-architecture-data">
+  {
+    "metadata": {
+      "title": "AWS Architecture",
+      "projectName": "Food Delivery System",
+      "description": "Cloud infrastructure on Amazon Web Services",
+      "version": "1.0",
+      "created": "2024-01-01T00:00:00Z",
+      "mode": "light"
+    },
+    "config": {
+      "layout": {
+        "canvasWidth": 1920,
+        "canvasHeight": 1080,
+        "vpcX": 300,
+        "vpcY": 220,
+        "vpcWidth": 1200,
+        "vpcHeight": 720,
+        "sectionWidth": 220,
+        "sectionHeight": 120,
+        "spacing": 20
+      },
+      "styling": {
+        "mode": "light",
+        "canvasColor": "#FFFFFF",
+        "fillColor": "#E5E5E5",
+        "strokeColor": "#1A1A1A",
+        "textColor": "#1A1A1A",
+        "mutedTextColor": "#8A8A85",
+        "strokeWidth": 1.5,
+        "cornerRadius": 8,
+        "gridPattern": true
+      }
+    },
+    "data": {
+      "regions": [
+        {
+          "id": "vpc",
+          "name": "AWS VPC",
+          "type": "container",
+          "x": 300,
+          "y": 220,
+          "width": 1200,
+          "height": 720
+        }
+      ],
+      "services": [
+        {
+          "id": "compute",
+          "name": "Compute",
+          "description": "EC2, Lambda, ECS",
+          "type": "service",
+          "category": "compute",
+          "x": 420,
+          "y": 360,
+          "width": 220,
+          "height": 120,
+          "components": ["EC2", "Lambda", "ECS", "Auto Scaling"]
+        },
+        {
+          "id": "storage",
+          "name": "Storage",
+          "description": "S3, EBS, EFS",
+          "type": "service",
+          "category": "storage",
+          "x": 760,
+          "y": 360,
+          "width": 220,
+          "height": 120,
+          "components": ["S3", "EBS", "EFS", "Glacier"]
+        },
+        {
+          "id": "database",
+          "name": "Database",
+          "description": "RDS, DynamoDB, ElastiCache",
+          "type": "service",
+          "category": "database",
+          "x": 1100,
+          "y": 360,
+          "width": 220,
+          "height": 120,
+          "components": ["RDS", "DynamoDB", "ElastiCache", "Neptune"]
+        }
+      ],
+      "relationships": [
+        {"from": "compute", "to": "storage", "label": "reads/writes"},
+        {"from": "compute", "to": "database", "label": "queries"},
+        {"from": "storage", "to": "database", "label": "backup"}
+      ],
+      "legend": {
+        "items": [
+          {"symbol": "rect", "label": "AWS Service", "color": "#E5E5E5"},
+          {"symbol": "line", "label": "Connection", "color": "#1A1A1A"}
+        ]
+      }
+    }
+  }
+  </script>
+
+  <!-- DESIGN TOKENS (CSS Variables) -->
   <defs>
     <style>
       :root {
         --canvas-light: #FFFFFF;
         --fill-light: #E5E5E5;
         --stroke-light: #1A1A1A;
-        --text-muted: #8A8A85;
-        --connector: #1A1A1A;
+        --text-light: #1A1A1A;
+        --muted-light: #8A8A85;
+        --canvas-dark: #0D0D0D;
+        --fill-dark: #1E1E1E;
+        --stroke-dark: #F2F2F2;
+        --text-dark: #F2F2F2;
+        --muted-dark: #8A8A85;
+        --grid-line: rgba(26, 26, 26, 0.1);
+        --grid-line-dark: rgba(242, 242, 242, 0.1);
       }
+      text { font-family: Helvetica, Arial, sans-serif; }
+      .service-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .container-box { fill: none; stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 12px; font-weight: 500; }
+      .label-secondary { fill: var(--muted-light); font-size: 9px; font-weight: 400; }
+      .connector { stroke: var(--stroke-light); stroke-width: 1.5; fill: none; marker-end: url(#arrow-aws); }
     </style>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <marker id="arrow-aws" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#1A1A1A"/>
     </marker>
-  </defs>
-
-  <!-- Canvas Background -->
-  <rect width="1920" height="1080" fill="#FFFFFF"/>
-
-  <!-- Main Border Container -->
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
-
-  <!-- Header Section -->
-  <rect x="580" y="52" width="760" height="56" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="960" y="88" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">AWS Architecture</text>
-  <text x="960" y="108" text-anchor="middle" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400">&lt;Project Name&gt; · Template</text>
-
-  <!-- Content Grid Background -->
-  <defs>
-    <pattern id="grid-aws-architecture" width="50" height="50" patternUnits="userSpaceOnUse">
+    <pattern id="grid-aws" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1A1A1A" stroke-width="0.5" opacity="0.1"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-aws-architecture)"/>
+
+  <!-- CANVAS BACKGROUND -->
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+
+  <!-- MAIN BORDER CONTAINER -->
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+
+  <!-- HEADER SECTION -->
+  <rect x="580" y="52" width="760" height="56" rx="8" class="service-box"/>
+  <text x="960" y="88" text-anchor="middle" class="label-primary" font-size="22">AWS Architecture</text>
+  <text x="960" y="108" text-anchor="middle" class="label-secondary">&lt;Project Name&gt; · Template</text>
+
+  <!-- GRID PATTERN BACKGROUND -->
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-aws)"/>
   <rect x="40" y="118" width="1840" height="882" fill="#FFFFFF" fill-opacity="1"/>
 
-  <!-- AWS VPC Container -->
-  <rect x="300" y="220" width="1200" height="720" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="310" y="240" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">AWS VPC</text>
+  <!-- AWS VPC CONTAINER -->
+  <rect x="300" y="220" width="1200" height="720" rx="8" class="container-box"/>
+  <text x="310" y="240" class="label-primary">AWS VPC</text>
 
-  <!-- Compute Section -->
-  <rect x="420" y="360" width="220" height="120" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="530.0" y="425.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Compute</text>
+  <!-- COMPUTE SECTION -->
+  <rect x="420" y="360" width="220" height="120" rx="8" class="service-box"/>
+  <text x="530" y="415" text-anchor="middle" class="label-primary">Compute</text>
+  <text x="530" y="430" text-anchor="middle" class="label-secondary">EC2, Lambda, ECS</text>
 
-  <!-- Storage Section -->
-  <rect x="760" y="360" width="220" height="120" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="870.0" y="425.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Storage</text>
+  <!-- STORAGE SECTION -->
+  <rect x="760" y="360" width="220" height="120" rx="8" class="service-box"/>
+  <text x="870" y="415" text-anchor="middle" class="label-primary">Storage</text>
+  <text x="870" y="430" text-anchor="middle" class="label-secondary">S3, EBS, EFS</text>
 
-  <!-- Database Section -->
-  <rect x="1100" y="360" width="220" height="120" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="1210.0" y="425.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Database</text>
+  <!-- DATABASE SECTION -->
+  <rect x="1100" y="360" width="220" height="120" rx="8" class="service-box"/>
+  <text x="1210" y="415" text-anchor="middle" class="label-primary">Database</text>
+  <text x="1210" y="430" text-anchor="middle" class="label-secondary">RDS, DynamoDB</text>
 
-  <!-- Legend Section -->
-  <rect x="1580" y="850" width="280" height="130" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Legend</text>
+  <!-- LEGEND SECTION -->
+  <rect x="1580" y="850" width="280" height="130" rx="8" class="service-box"/>
+  <text x="1720" y="875" text-anchor="middle" class="label-primary">Legend</text>
+  <rect x="1600" y="890" width="20" height="20" rx="4" class="service-box"/>
+  <text x="1630" y="905" class="label-secondary">AWS Service</text>
+  <line x1="1600" y1="930" x2="1620" y2="930" class="connector"/>
+  <text x="1630" y="935" class="label-secondary">Connection</text>
 
-  <!-- Footer Information -->
-  <text x="52" y="1048" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">&lt;Project Name&gt; · Version 1.0 · AWS Architecture</text>
+  <!-- FOOTER INFORMATION -->
+  <text x="52" y="1048" class="label-secondary">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary">&lt;Project Name&gt; · Version 1.0 · AWS Architecture</text>
+
+  <!-- RENDERING ENGINE (Web Adapter) -->
+  <script type="text/javascript">
+  (function() {
+    const svgElement = document.currentScript.closest('svg');
+    const dataElement = svgElement.querySelector('#aws-architecture-data');
+    if (!dataElement) return;
+    
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[AWS Architecture Data] Loaded:', data.metadata.title);
+      
+      // Initialize rendering with data
+      function renderArchitecture() {
+        // Data-driven rendering can extend here
+        // Calculate positions from data.config.layout
+        // Apply styles from data.config.styling
+        // Render services from data.data.services
+      }
+      
+      // Render on load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', renderArchitecture);
+      } else {
+        renderArchitecture();
+      }
+    } catch (e) {
+      console.error('[AWS Architecture] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>

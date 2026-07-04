@@ -1,57 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <!-- Design Tokens (Light Mode - Default) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="multi-cloud-data">
+  {
+    "metadata": {"title": "Multi-Cloud Architecture", "projectName": "Food Delivery System", "description": "Distributed cloud infrastructure across multiple cloud providers", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#E5E5E5", "strokeColor": "#1A1A1A"}},
+    "data": {
+      "cloudProviders": [
+        {"id": "aws", "name": "AWS", "x": 200, "y": 220, "width": 520, "height": 720},
+        {"id": "azure", "name": "Azure", "x": 750, "y": 220, "width": 520, "height": 720},
+        {"id": "gcp", "name": "Google Cloud", "x": 1300, "y": 220, "width": 520, "height": 720}
+      ],
+      "integrations": [
+        {"from": "aws", "to": "azure", "type": "data-sync"},
+        {"from": "azure", "to": "gcp", "type": "data-sync"},
+        {"from": "gcp", "to": "aws", "type": "data-sync"}
+      ]
+    }
+  }
+  </script>
+
   <defs>
     <style>
-      :root {
-        --canvas-light: #FFFFFF;
-        --fill-light: #E5E5E5;
-        --stroke-light: #1A1A1A;
-        --text-muted: #8A8A85;
-        --connector: #1A1A1A;
-      }
+      :root { --canvas-light: #FFFFFF; --fill-light: #E5E5E5; --stroke-light: #1A1A1A; --text-light: #1A1A1A; --muted-light: #8A8A85; }
+      text { font-family: Helvetica, Arial, sans-serif; }
+      .service-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .container-box { fill: none; stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 12px; font-weight: 500; }
+      .label-secondary { fill: var(--muted-light); font-size: 9px; font-weight: 400; }
     </style>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#1A1A1A"/>
-    </marker>
-  </defs>
-
-  <!-- Canvas Background -->
-  <rect width="1920" height="1080" fill="#FFFFFF"/>
-
-  <!-- Main Border Container -->
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
-
-  <!-- Header Section -->
-  <rect x="580" y="52" width="760" height="56" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="960" y="88" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Multi-Cloud Architecture</text>
-  <text x="960" y="108" text-anchor="middle" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400">&lt;Project Name&gt; · Template</text>
-
-  <!-- Content Grid Background -->
-  <defs>
-    <pattern id="grid-multi-cloud-architecture" width="50" height="50" patternUnits="userSpaceOnUse">
+    <pattern id="grid-multi" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1A1A1A" stroke-width="0.5" opacity="0.1"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-multi-cloud-architecture)"/>
+
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+  
+  <rect x="520" y="52" width="880" height="56" rx="8" class="service-box"/>
+  <text x="960" y="88" text-anchor="middle" class="label-primary" font-size="22">Multi-Cloud Architecture</text>
+  <text x="960" y="108" text-anchor="middle" class="label-secondary">&lt;Project Name&gt; · Template</text>
+
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-multi)"/>
   <rect x="40" y="118" width="1840" height="882" fill="#FFFFFF" fill-opacity="1"/>
 
-  <!-- AWS Section -->
-  <rect x="200" y="220" width="520" height="720" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="210" y="240" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">AWS</text>
+  <rect x="200" y="220" width="520" height="720" rx="8" class="container-box"/>
+  <text x="210" y="240" class="label-primary">AWS</text>
 
-  <!-- Azure Section -->
-  <rect x="750" y="220" width="520" height="720" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="760" y="240" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Azure</text>
+  <rect x="750" y="220" width="520" height="720" rx="8" class="container-box"/>
+  <text x="760" y="240" class="label-primary">Azure</text>
 
-  <!-- GCP Section -->
-  <rect x="1300" y="220" width="520" height="720" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="1310" y="240" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Google Cloud</text>
+  <rect x="1300" y="220" width="520" height="720" rx="8" class="container-box"/>
+  <text x="1310" y="240" class="label-primary">Google Cloud</text>
 
-  <!-- Legend Section -->
-  <rect x="1580" y="850" width="280" height="130" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Legend</text>
+  <rect x="1580" y="850" width="280" height="130" rx="8" class="service-box"/>
+  <text x="1720" y="875" text-anchor="middle" class="label-primary">Legend</text>
+  <rect x="1600" y="890" width="20" height="20" rx="4" class="service-box"/>
+  <text x="1630" y="905" class="label-secondary">Cloud Provider</text>
+  <line x1="1600" y1="930" x2="1620" y2="930" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="1630" y="935" class="label-secondary">Integration</text>
 
-  <!-- Footer Information -->
-  <text x="52" y="1048" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">&lt;Project Name&gt; · Version 1.0 · Multi-Cloud Architecture</text>
+  <text x="52" y="1048" class="label-secondary">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary">&lt;Project Name&gt; · Version 1.0 · Multi-Cloud Architecture</text>
+
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#multi-cloud-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Multi-Cloud Architecture Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Multi-Cloud Architecture] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>
