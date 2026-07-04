@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 900" width="1600" height="900">
+  <!-- LIGHT MODE DEFS -->
+  <defs id="light-mode-defs">
+    <!-- Canvas and base tokens -->
+    <style id="light-tokens">
+      :root {
+        --canvas: #FFFFFF;
+        --shape-fill: #E5E5E5;
+        --shape-stroke: #1A1A1A;
+        --text-muted: #8A8A85;
+        --connector: #1A1A1A;
+      }
+    </style>
+
+    <!-- Reusable task bar - data-driven via data attributes -->
+    <g id="task-bar-template">
+      <!-- Bar container (x, width, status populate via script) -->
+      <rect class="task-bar" x="0" y="0" width="100" height="24" rx="6" 
+            fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5" 
+            data-task-id="" data-start="" data-end="" data-status=""/>
+      <!-- Milestone marker (optional, for key dates) -->
+      <circle class="milestone-marker" cx="100" cy="12" r="4" 
+              fill="none" stroke="#1A1A1A" stroke-width="1.5" 
+              opacity="0" data-milestone="false"/>
+      <!-- Progress indicator (overlay bar for % complete) -->
+      <rect class="progress-bar" x="0" y="0" width="0" height="24" rx="6" 
+            fill="#1A1A1A" fill-opacity="0.2" 
+            data-progress="0"/>
+      <!-- Dependency connector anchor points (for visual linking) -->
+      <circle class="dep-start" cx="0" cy="12" r="2" fill="#1A1A1A" opacity="0" data-connectable="true"/>
+      <circle class="dep-end" cx="100" cy="12" r="2" fill="#1A1A1A" opacity="0" data-connectable="true"/>
+    </g>
+
+    <!-- Reusable task row (label + bar container) -->
+    <g id="task-row-template">
+      <!-- Task label area -->
+      <rect class="task-label-bg" x="0" y="0" width="240" height="40" 
+            fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.5"/>
+      <!-- Task name text (data-driven) -->
+      <text class="task-name" x="12" y="26" 
+            font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" 
+            fill="#1A1A1A" data-task-name="">Task</text>
+      <!-- Task metadata (owner, priority, etc.) -->
+      <text class="task-meta" x="12" y="38" 
+            font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" 
+            fill="#8A8A85" data-task-meta="">Meta</text>
+      <!-- Timeline container (bars placed here) -->
+      <g class="timeline-container" x="250" y="0" data-row-index="0"></g>
+    </g>
+
+    <!-- Column header cell (for date/week labels) -->
+    <g id="header-cell-template">
+      <rect class="header-bg" x="0" y="0" width="80" height="60" 
+            fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1.5"/>
+      <text class="header-primary" x="40" y="20" 
+            font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" 
+            fill="#1A1A1A" text-anchor="middle" data-header-label="">Month</text>
+      <text class="header-secondary" x="40" y="40" 
+            font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" 
+            fill="#8A8A85" text-anchor="middle" data-header-range="">Range</text>
+    </g>
+
+    <!-- Gridline pattern for timeline -->
+    <pattern id="timeline-grid" x="0" y="0" width="80" height="1" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="80" y2="0" stroke="#E5E5E5" stroke-width="1" opacity="0.5"/>
+    </pattern>
+
+    <!-- Status color palette (extensible for data-driven coloring) -->
+    <g id="status-colors" display="none">
+      <rect id="status-not-started" fill="#E5E5E5"/>
+      <rect id="status-in-progress" fill="#3B82F6"/>
+      <rect id="status-completed" fill="#10B981"/>
+      <rect id="status-blocked" fill="#EF4444"/>
+      <rect id="status-on-hold" fill="#F59E0B"/>
+    </g>
+
+    <!-- Dependency line marker (for task-to-task links) -->
+    <marker id="dep-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1A1A1A" opacity="0.4"/>
+    </marker>
+  </defs>
+
+  <!-- MAIN GANTT STRUCTURE -->
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Header -->
+  <rect x="20" y="20" width="1560" height="80" rx="8" 
+        fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="800" y="55" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="600" 
+        fill="#1A1A1A" text-anchor="middle">Project Gantt Chart</text>
+  <text x="800" y="75" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="400" 
+        fill="#8A8A85" text-anchor="middle" data-project-meta="">&lt;Project Name&gt; · &lt;Date Range&gt;</text>
+
+  <!-- Timeline headers container (columns populate via script) -->
+  <g id="timeline-headers" x="260" y="110">
+    <!-- Headers generate here from data -->
+  </g>
+
+  <!-- Task rows container (rows populate via script) -->
+  <g id="task-list" x="20" y="180">
+    <!-- Rows generate here from data -->
+  </g>
+
+  <!-- Timeline bars container (bars render over grid via script) -->
+  <g id="timeline-bars" x="260" y="180">
+    <!-- Bars generate here from data -->
+  </g>
+
+  <!-- Gridlines (vertical time divisions) -->
+  <g id="timeline-gridlines" x="260" y="110" opacity="0.3">
+    <!-- Gridlines generate here -->
+  </g>
+
+  <!-- Dependency lines (task-to-task connections) -->
+  <g id="dependencies" x="260" y="180" opacity="0.4">
+    <!-- Dependency connectors generate here from data relationships -->
+  </g>
+
+  <!-- Legend / Status key -->
+  <g id="legend" x="20" y="820">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="600" 
+          fill="#1A1A1A">Status:</text>
+    <circle cx="60" cy="-4" r="3" fill="#3B82F6"/><text x="68" y="0" font-size="9" fill="#8A8A85">In Progress</text>
+    <circle cx="160" cy="-4" r="3" fill="#10B981"/><text x="168" y="0" font-size="9" fill="#8A8A85">Completed</text>
+    <circle cx="250" cy="-4" r="3" fill="#EF4444"/><text x="258" y="0" font-size="9" fill="#8A8A85">Blocked</text>
+    <circle cx="320" cy="-4" r="3" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1"/><text x="328" y="0" font-size="9" fill="#8A8A85">Not Started</text>
+  </g>
+
+  <!-- Data payload (for script integration) -->
+  <script type="application/json" id="gantt-data">
+  {
+    "project": {
+      "name": "&lt;Project Name&gt;",
+      "startDate": "2025-01-01",
+      "endDate": "2025-12-31"
+    },
+    "tasks": [
+      {
+        "id": "task-1",
+        "name": "Task 1",
+        "owner": "Team A",
+        "startDate": "2025-01-15",
+        "endDate": "2025-02-15",
+        "status": "in-progress",
+        "progress": 45,
+        "dependencies": []
+      },
+      {
+        "id": "task-2",
+        "name": "Task 2",
+        "owner": "Team B",
+        "startDate": "2025-02-01",
+        "endDate": "2025-03-31",
+        "status": "not-started",
+        "progress": 0,
+        "dependencies": ["task-1"]
+      }
+    ],
+    "config": {
+      "cellWidth": 80,
+      "rowHeight": 40,
+      "labelsWidth": 240,
+      "timelineStart": "2025-01-01",
+      "timelineEnd": "2025-12-31",
+      "granularity": "week"
+    }
+  }
+  </script>
+</svg>
