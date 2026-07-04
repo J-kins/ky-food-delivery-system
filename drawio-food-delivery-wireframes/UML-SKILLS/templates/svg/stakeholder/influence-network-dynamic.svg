@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <script type="application/json" id="influence-network-data">
+  {"diagramType":"Influence Network","projectName":"Food Delivery System","description":"Network visualization of stakeholder influence and dependencies","nodes":[{"id":"s1","name":"Executive Sponsor","influence":0.95,"type":"executive"},{"id":"s2","name":"Project Manager","influence":0.85,"type":"project_team"},{"id":"s3","name":"Tech Lead","influence":0.8,"type":"engineering"},{"id":"s4","name":"QA Lead","influence":0.6,"type":"quality"}],"edges":[{"source":"s1","target":"s2","weight":"strong"},{"source":"s2","target":"s3","weight":"strong"},{"source":"s3","target":"s4","weight":"medium"}],"designTokens":{"lightMode":{"canvas":"#FFFFFF"},"darkMode":{"canvas":"#0D0D0D"}}}
+  </script>
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="600" y="40" text-anchor="middle">Stakeholder Influence Network</text>
+</svg>

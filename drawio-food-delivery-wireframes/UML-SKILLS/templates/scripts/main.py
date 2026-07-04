@@ -22,6 +22,14 @@ from project_management import (
     RiskMatrixConverter,
 )
 from sitemaps import SitemapConverter
+from stakeholder import (
+    StakeholderMapConverter,
+    PowerInterestMatrixConverter,
+    InfluenceNetworkConverter,
+    SalienceModelConverter,
+    RACIMatrixConverter,
+    StakeholderRegisterConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -35,6 +43,12 @@ CONVERTER_REGISTRY = {
     "work-breakdown-structure": WBSConverter,
     "risk-matrix": RiskMatrixConverter,
     "sitemap": SitemapConverter,
+    "stakeholder-map": StakeholderMapConverter,
+    "power-interest-matrix": PowerInterestMatrixConverter,
+    "influence-network": InfluenceNetworkConverter,
+    "salience-model": SalienceModelConverter,
+    "raci-matrix": RACIMatrixConverter,
+    "stakeholder-register": StakeholderRegisterConverter,
 }
 
 
