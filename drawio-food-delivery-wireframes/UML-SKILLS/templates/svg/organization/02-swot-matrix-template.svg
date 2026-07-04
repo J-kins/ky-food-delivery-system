@@ -1,0 +1,77 @@
+<?XML version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
+  <script type="application/json" id="swot-matrix-data">
+  {
+    "metadata": {"title": "SWOT Matrix", "projectName": "Food Delivery System", "description": "Strategic analysis of strengths, weaknesses, opportunities, threats", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light"}},
+    "data": {
+      "quadrants": [
+        {"id": "s", "label": "Strengths", "color": "#86EFAC"},
+        {"id": "w", "label": "Weaknesses", "color": "#FCA5A5"},
+        {"id": "o", "label": "Opportunities", "color": "#93C5FD"},
+        {"id": "t", "label": "Threats", "color": "#FBBF24"}
+      ]
+    }
+  }
+  </script>
+  <defs>
+    <style>
+      :root { --text-light: #334155; --muted-light: #64748b; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .label-primary { fill: var(--text-light); font-size: 13px; font-weight: 600; }
+      .label-secondary { fill: var(--muted-light); font-size: 11px; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="680" y="52" width="560" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">SWOT Analysis Matrix</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-secondary" font-size="12">&lt;Project Name&gt; · Template</text>
+  
+  <!-- Strengths -->
+  <rect x="150" y="180" width="600" height="400" rx="8" fill="#DCFCE7" stroke="#86EFAC" stroke-width="2"/>
+  <text x="450" y="210" text-anchor="middle" class="label-primary" font-size="16">Strengths</text>
+  <text x="450" y="280" text-anchor="middle" class="label-secondary">Internal positive attributes</text>
+  <text x="450" y="350" text-anchor="middle" class="label-secondary">• Competitive advantage</text>
+  <text x="450" y="375" text-anchor="middle" class="label-secondary">• Unique resources</text>
+  <text x="450" y="400" text-anchor="middle" class="label-secondary">• Strong capabilities</text>
+  
+  <!-- Weaknesses -->
+  <rect x="1170" y="180" width="600" height="400" rx="8" fill="#FEE2E2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="1470" y="210" text-anchor="middle" class="label-primary" font-size="16">Weaknesses</text>
+  <text x="1470" y="280" text-anchor="middle" class="label-secondary">Internal negative attributes</text>
+  <text x="1470" y="350" text-anchor="middle" class="label-secondary">• Areas to improve</text>
+  <text x="1470" y="375" text-anchor="middle" class="label-secondary">• Resource gaps</text>
+  <text x="1470" y="400" text-anchor="middle" class="label-secondary">• Constraints</text>
+  
+  <!-- Opportunities -->
+  <rect x="150" y="620" width="600" height="400" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="2"/>
+  <text x="450" y="650" text-anchor="middle" class="label-primary" font-size="16">Opportunities</text>
+  <text x="450" y="720" text-anchor="middle" class="label-secondary">External positive factors</text>
+  <text x="450" y="790" text-anchor="middle" class="label-secondary">• Market growth</text>
+  <text x="450" y="815" text-anchor="middle" class="label-secondary">• Partnerships</text>
+  <text x="450" y="840" text-anchor="middle" class="label-secondary">• New segments</text>
+  
+  <!-- Threats -->
+  <rect x="1170" y="620" width="600" height="400" rx="8" fill="#FEF3C7" stroke="#FBBF24" stroke-width="2"/>
+  <text x="1470" y="650" text-anchor="middle" class="label-primary" font-size="16">Threats</text>
+  <text x="1470" y="720" text-anchor="middle" class="label-secondary">External negative factors</text>
+  <text x="1470" y="790" text-anchor="middle" class="label-secondary">• Competition</text>
+  <text x="1470" y="815" text-anchor="middle" class="label-secondary">• Market changes</text>
+  <text x="1470" y="840" text-anchor="middle" class="label-secondary">• Risks</text>
+  
+  <text x="52" y="1048" class="label-secondary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary" font-size="10">&lt;Project Name&gt; · Version 1.0 · SWOT Matrix</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#swot-matrix-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[SWOT Matrix Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[SWOT Matrix] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
+</svg>

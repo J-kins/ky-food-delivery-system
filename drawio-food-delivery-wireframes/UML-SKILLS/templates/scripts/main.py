@@ -40,6 +40,75 @@ from data import (
     DataPipelineConverter,
     DataLakehouseConverter,
 )
+from cloud import (
+    AWSArchitectureConverter,
+    AzureArchitectureConverter,
+    GCPArchitectureConverter,
+    MultiCloudArchitectureConverter,
+    ServerlessArchitectureConverter,
+    CloudMigrationConverter,
+    CloudCostOptimizationConverter,
+)
+from devops import (
+    CICDPipelineConverter,
+    DevOpsArchitectureConverter,
+    GitOpsArchitectureConverter,
+    ObservabilityArchitectureConverter,
+    InfrastructureAsCodeConverter,
+    ServiceMeshArchitectureConverter,
+)
+from gis import (
+    GISArchitectureConverter,
+    GeospatialDataModelConverter,
+    MapDesignConverter,
+    GeoprocessingWorkflowConverter,
+    SpatialDataFlowConverter,
+)
+from infrastructure import (
+    InfrastructureArchitectureConverter,
+    NetworkArchitectureConverter,
+    CloudInfrastructureConverter,
+    DeploymentArchitectureConverter,
+    ContainerArchitectureConverter,
+    KubernetesArchitectureConverter,
+    HighAvailabilityArchitectureConverter,
+    DisasterRecoveryArchitectureConverter,
+)
+from process_flow import (
+    BusinessProcessModelConverter,
+    DataFlowDiagramConverter,
+    BusinessProcessAnalysisConverter,
+    ProcessFlowDiagramConverter,
+    WorkflowDiagramConverter,
+    ValueStreamMapConverter,
+)
+from uml import (
+    ClassDiagramConverter,
+    ObjectDiagramConverter,
+    ComponentDiagramConverter,
+    DeploymentDiagramConverter,
+    PackageDiagramConverter,
+    CompositeStructureDiagramConverter,
+    UseCaseDiagramConverter,
+    SequenceDiagramConverter,
+    ActivityDiagramConverter,
+    StateMachineDiagramConverter,
+    CommunicationDiagramConverter,
+    InteractionOverviewDiagramConverter,
+    TimingDiagramConverter,
+    ProfileDiagramConverter,
+)
+from project_management import (
+    KanbanBoardConverter,
+    TimelineConverter,
+)
+from organization import (
+    OrgChartConverter,
+    SWOTMatrixConverter,
+)
+from misc import (
+    ProblemTreeConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -53,6 +122,10 @@ CONVERTER_REGISTRY = {
     "wbs": WBSConverter,
     "work-breakdown-structure": WBSConverter,
     "risk-matrix": RiskMatrixConverter,
+    "kanban-board": KanbanBoardConverter,
+    "kanban": KanbanBoardConverter,
+    "timeline": TimelineConverter,
+    "simple-timeline": TimelineConverter,
     # Sitemaps
     "sitemap": SitemapConverter,
     # Stakeholder Analysis
@@ -76,6 +149,136 @@ CONVERTER_REGISTRY = {
     "pipeline": DataPipelineConverter,
     "data-lakehouse": DataLakehouseConverter,
     "lakehouse": DataLakehouseConverter,
+    # Cloud Architecture
+    "aws": AWSArchitectureConverter,
+    "aws-architecture": AWSArchitectureConverter,
+    "azure": AzureArchitectureConverter,
+    "azure-architecture": AzureArchitectureConverter,
+    "gcp": GCPArchitectureConverter,
+    "gcp-architecture": GCPArchitectureConverter,
+    "google-cloud": GCPArchitectureConverter,
+    "multi-cloud": MultiCloudArchitectureConverter,
+    "multi-cloud-architecture": MultiCloudArchitectureConverter,
+    "serverless": ServerlessArchitectureConverter,
+    "serverless-architecture": ServerlessArchitectureConverter,
+    "cloud-migration": CloudMigrationConverter,
+    "migration": CloudMigrationConverter,
+    "cloud-cost-optimization": CloudCostOptimizationConverter,
+    "cost-optimization": CloudCostOptimizationConverter,
+    # DevOps
+    "cicd": CICDPipelineConverter,
+    "cicd-pipeline": CICDPipelineConverter,
+    "ci-cd": CICDPipelineConverter,
+    "devops": DevOpsArchitectureConverter,
+    "devops-architecture": DevOpsArchitectureConverter,
+    "gitops": GitOpsArchitectureConverter,
+    "gitops-architecture": GitOpsArchitectureConverter,
+    "observability": ObservabilityArchitectureConverter,
+    "observability-architecture": ObservabilityArchitectureConverter,
+    "iac": InfrastructureAsCodeConverter,
+    "infrastructure-as-code": InfrastructureAsCodeConverter,
+    "infrastructure-code": InfrastructureAsCodeConverter,
+    "service-mesh": ServiceMeshArchitectureConverter,
+    "service-mesh-architecture": ServiceMeshArchitectureConverter,
+    # GIS (Geographic Information Systems)
+    "gis": GISArchitectureConverter,
+    "gis-architecture": GISArchitectureConverter,
+    "geospatial": GeospatialDataModelConverter,
+    "geospatial-data-model": GeospatialDataModelConverter,
+    "map-design": MapDesignConverter,
+    "map": MapDesignConverter,
+    "geoprocessing": GeoprocessingWorkflowConverter,
+    "geoprocessing-workflow": GeoprocessingWorkflowConverter,
+    "spatial-data-flow": SpatialDataFlowConverter,
+    "data-flow": SpatialDataFlowConverter,
+    # Infrastructure
+    "infrastructure": InfrastructureArchitectureConverter,
+    "infrastructure-architecture": InfrastructureArchitectureConverter,
+    "network": NetworkArchitectureConverter,
+    "network-architecture": NetworkArchitectureConverter,
+    "cloud-infrastructure": CloudInfrastructureConverter,
+    "cloud-arch": CloudInfrastructureConverter,
+    "deployment": DeploymentArchitectureConverter,
+    "deployment-architecture": DeploymentArchitectureConverter,
+    "container": ContainerArchitectureConverter,
+    "container-architecture": ContainerArchitectureConverter,
+    "kubernetes": KubernetesArchitectureConverter,
+    "kubernetes-architecture": KubernetesArchitectureConverter,
+    "k8s": KubernetesArchitectureConverter,
+    "high-availability": HighAvailabilityArchitectureConverter,
+    "ha-architecture": HighAvailabilityArchitectureConverter,
+    "disaster-recovery": DisasterRecoveryArchitectureConverter,
+    "dr-architecture": DisasterRecoveryArchitectureConverter,
+    # Process Flow & Workflow
+    "business-process-model": BusinessProcessModelConverter,
+    "bpm": BusinessProcessModelConverter,
+    "process-model": BusinessProcessModelConverter,
+    "data-flow-diagram": DataFlowDiagramConverter,
+    "dfd": DataFlowDiagramConverter,
+    "business-process-analysis": BusinessProcessAnalysisConverter,
+    "bpa": BusinessProcessAnalysisConverter,
+    "process-flow-diagram": ProcessFlowDiagramConverter,
+    "pfd": ProcessFlowDiagramConverter,
+    "workflow-diagram": WorkflowDiagramConverter,
+    "workflow": WorkflowDiagramConverter,
+    "value-stream-map": ValueStreamMapConverter,
+    "vsm": ValueStreamMapConverter,
+    "value-stream": ValueStreamMapConverter,
+    # UML Diagrams
+    "uml-class-diagram": ClassDiagramConverter,
+    "class-diagram": ClassDiagramConverter,
+    "uml-class": ClassDiagramConverter,
+    "uml-object-diagram": ObjectDiagramConverter,
+    "object-diagram": ObjectDiagramConverter,
+    "uml-object": ObjectDiagramConverter,
+    "uml-component-diagram": ComponentDiagramConverter,
+    "component-diagram": ComponentDiagramConverter,
+    "uml-component": ComponentDiagramConverter,
+    "uml-deployment-diagram": DeploymentDiagramConverter,
+    "deployment-diagram": DeploymentDiagramConverter,
+    "uml-deployment": DeploymentDiagramConverter,
+    "uml-package-diagram": PackageDiagramConverter,
+    "package-diagram": PackageDiagramConverter,
+    "uml-package": PackageDiagramConverter,
+    "uml-composite-structure": CompositeStructureDiagramConverter,
+    "composite-structure": CompositeStructureDiagramConverter,
+    "uml-composite": CompositeStructureDiagramConverter,
+    "uml-use-case-diagram": UseCaseDiagramConverter,
+    "use-case-diagram": UseCaseDiagramConverter,
+    "usecase-diagram": UseCaseDiagramConverter,
+    "uml-use-case": UseCaseDiagramConverter,
+    "uml-sequence-diagram": SequenceDiagramConverter,
+    "sequence-diagram": SequenceDiagramConverter,
+    "uml-sequence": SequenceDiagramConverter,
+    "uml-activity-diagram": ActivityDiagramConverter,
+    "activity-diagram": ActivityDiagramConverter,
+    "uml-activity": ActivityDiagramConverter,
+    "uml-state-machine": StateMachineDiagramConverter,
+    "state-machine-diagram": StateMachineDiagramConverter,
+    "state-machine": StateMachineDiagramConverter,
+    "uml-state": StateMachineDiagramConverter,
+    "uml-communication-diagram": CommunicationDiagramConverter,
+    "communication-diagram": CommunicationDiagramConverter,
+    "uml-communication": CommunicationDiagramConverter,
+    "uml-interaction-overview": InteractionOverviewDiagramConverter,
+    "interaction-overview-diagram": InteractionOverviewDiagramConverter,
+    "interaction-overview": InteractionOverviewDiagramConverter,
+    "uml-timing-diagram": TimingDiagramConverter,
+    "timing-diagram": TimingDiagramConverter,
+    "uml-timing": TimingDiagramConverter,
+    "uml-profile-diagram": ProfileDiagramConverter,
+    "profile-diagram": ProfileDiagramConverter,
+    "uml-profile": ProfileDiagramConverter,
+    # Organization
+    "org-chart": OrgChartConverter,
+    "organization-chart": OrgChartConverter,
+    "organizational-chart": OrgChartConverter,
+    "swot-matrix": SWOTMatrixConverter,
+    "swot": SWOTMatrixConverter,
+    # Miscellaneous
+    "problem-tree": ProblemTreeConverter,
+    "problem-tree-diagram": ProblemTreeConverter,
+    "problem-analysis": ProblemTreeConverter,
 }
 
 
@@ -209,18 +412,227 @@ class TemplateConverterOrchestrator:
             return "risk-matrix"
         elif "sitemap" in filename:
             return "sitemap"
+        # Cloud Architecture Detection
+        elif "aws" in filename:
+            return "aws-architecture"
+        elif "azure" in filename:
+            return "azure-architecture"
+        elif "gcp" in filename or "google" in filename:
+            return "gcp-architecture"
+        elif "multi-cloud" in filename or "multicloud" in filename:
+            return "multi-cloud-architecture"
+        elif "serverless" in filename:
+            return "serverless-architecture"
+        elif "migration" in filename:
+            return "cloud-migration"
+        elif "cost" in filename and "optimization" in filename:
+            return "cloud-cost-optimization"
+        # DevOps Detection
+        elif "cicd" in filename or "ci-cd" in filename:
+            return "cicd-pipeline"
+        elif "devops" in filename and "architecture" in filename:
+            return "devops-architecture"
+        elif "gitops" in filename:
+            return "gitops-architecture"
+        elif "observability" in filename:
+            return "observability-architecture"
+        elif "infrastructure" in filename and "code" in filename:
+            return "infrastructure-as-code"
+        elif "service" in filename and "mesh" in filename:
+            return "service-mesh-architecture"
+        # GIS Detection
+        elif "gis" in filename and "architecture" in filename:
+            return "gis-architecture"
+        elif "gis" in filename:
+            return "gis-architecture"
+        elif "geospatial" in filename:
+            return "geospatial-data-model"
+        elif "map" in filename and "design" in filename:
+            return "map-design"
+        elif "geoprocessing" in filename:
+            return "geoprocessing-workflow"
+        elif "spatial" in filename and "flow" in filename:
+            return "spatial-data-flow"
+        # Infrastructure Detection
+        elif "infrastructure" in filename and "architecture" in filename:
+            return "infrastructure-architecture"
+        elif "infrastructure" in filename:
+            return "infrastructure-architecture"
+        elif "network" in filename and "architecture" in filename:
+            return "network-architecture"
+        elif "cloud" in filename and ("architecture" in filename or "infra" in filename):
+            return "cloud-infrastructure"
+        elif "deployment" in filename and "architecture" in filename:
+            return "deployment-architecture"
+        elif "container" in filename and "architecture" in filename:
+            return "container-architecture"
+        elif "kubernetes" in filename or "k8s" in filename:
+            return "kubernetes-architecture"
+        elif "high-availability" in filename or "ha-architecture" in filename:
+            return "high-availability"
+        elif "disaster-recovery" in filename or "dr-architecture" in filename:
+            return "disaster-recovery"
+        # Process Flow Detection
+        elif "business-process-model" in filename or "bpm" in filename:
+            return "business-process-model"
+        elif "data-flow-diagram" in filename or "dfd" in filename:
+            return "data-flow-diagram"
+        elif "business-process-analysis" in filename or "bpa" in filename:
+            return "business-process-analysis"
+        elif "process-flow-diagram" in filename or "pfd" in filename:
+            return "process-flow-diagram"
+        elif "workflow" in filename and "diagram" in filename:
+            return "workflow-diagram"
+        elif "value-stream-map" in filename or "vsm" in filename:
+            return "value-stream-map"
+        # UML Detection
+        elif "uml" in filename and "class" in filename:
+            return "uml-class-diagram"
+        elif "uml" in filename and "object" in filename:
+            return "uml-object-diagram"
+        elif "uml" in filename and "component" in filename:
+            return "uml-component-diagram"
+        elif "uml" in filename and "deployment" in filename:
+            return "uml-deployment-diagram"
+        elif "uml" in filename and "package" in filename:
+            return "uml-package-diagram"
+        elif "uml" in filename and "composite" in filename:
+            return "uml-composite-structure"
+        elif "uml" in filename and ("use-case" in filename or "usecase" in filename):
+            return "uml-use-case-diagram"
+        elif "uml" in filename and "sequence" in filename:
+            return "uml-sequence-diagram"
+        elif "uml" in filename and "activity" in filename:
+            return "uml-activity-diagram"
+        elif "uml" in filename and ("state-machine" in filename or "state_machine" in filename):
+            return "uml-state-machine"
+        elif "uml" in filename and "communication" in filename:
+            return "uml-communication-diagram"
+        elif "uml" in filename and "interaction-overview" in filename:
+            return "uml-interaction-overview"
+        elif "uml" in filename and "timing" in filename:
+            return "uml-timing-diagram"
+        elif "uml" in filename and "profile" in filename:
+            return "uml-profile-diagram"
 
         # Could parse SVG content to detect data type
         try:
             from base import JSONDataParser
             template = JSONDataParser.parse_svg_template(svg_path)
             chart_type = template.data.get("chartType", "").lower()
+            title = template.data.get("metadata", {}).get("title", "").lower()
             
             if chart_type:
                 # Normalize chart type to diagram type
                 for diagram_type in CONVERTER_REGISTRY:
                     if diagram_type.replace("-", " ") in chart_type:
                         return diagram_type
+            
+            # Check title for cloud architecture keywords
+            if "aws" in title:
+                return "aws-architecture"
+            elif "azure" in title:
+                return "azure-architecture"
+            elif "gcp" in title or "google cloud" in title:
+                return "gcp-architecture"
+            elif "multi-cloud" in title:
+                return "multi-cloud-architecture"
+            elif "serverless" in title:
+                return "serverless-architecture"
+            elif "migration" in title:
+                return "cloud-migration"
+            elif "cost optimization" in title:
+                return "cloud-cost-optimization"
+            elif "ci/cd" in title or "cicd" in title:
+                return "cicd-pipeline"
+            elif "devops" in title and "architecture" in title:
+                return "devops-architecture"
+            elif "gitops" in title:
+                return "gitops-architecture"
+            elif "observability" in title:
+                return "observability-architecture"
+            elif "infrastructure as code" in title:
+                return "infrastructure-as-code"
+            elif "service mesh" in title:
+                return "service-mesh-architecture"
+            elif "gis" in title and "architecture" in title:
+                return "gis-architecture"
+            elif "geospatial" in title:
+                return "geospatial-data-model"
+            elif "map" in title and "design" in title:
+                return "map-design"
+            elif "geoprocessing" in title:
+                return "geoprocessing-workflow"
+            elif "spatial" in title and "flow" in title:
+                return "spatial-data-flow"
+            elif "infrastructure" in title and "architecture" in title:
+                return "infrastructure-architecture"
+            elif "network" in title and "architecture" in title:
+                return "network-architecture"
+            elif "cloud" in title and "infrastructure" in title:
+                return "cloud-infrastructure"
+            elif "deployment" in title and "architecture" in title:
+                return "deployment-architecture"
+            elif "container" in title and "architecture" in title:
+                return "container-architecture"
+            elif "kubernetes" in title or "k8s" in title:
+                return "kubernetes-architecture"
+            elif "high availability" in title:
+                return "high-availability"
+            elif "disaster recovery" in title:
+                return "disaster-recovery"
+            elif "business process model" in title:
+                return "business-process-model"
+            elif "data flow diagram" in title:
+                return "data-flow-diagram"
+            elif "business process analysis" in title:
+                return "business-process-analysis"
+            elif "process flow diagram" in title:
+                return "process-flow-diagram"
+            elif "workflow" in title and "diagram" in title:
+                return "workflow-diagram"
+            elif "value stream" in title:
+                return "value-stream-map"
+            elif "uml" in title and "class" in title:
+                return "uml-class-diagram"
+            elif "uml" in title and "object" in title:
+                return "uml-object-diagram"
+            elif "uml" in title and "component" in title:
+                return "uml-component-diagram"
+            elif "uml" in title and "deployment" in title:
+                return "uml-deployment-diagram"
+            elif "uml" in title and "package" in title:
+                return "uml-package-diagram"
+            elif "uml" in title and "composite" in title:
+                return "uml-composite-structure"
+            elif "uml" in title and "use case" in title:
+                return "uml-use-case-diagram"
+            elif "uml" in title and "sequence" in title:
+                return "uml-sequence-diagram"
+            elif "uml" in title and "activity" in title:
+                return "uml-activity-diagram"
+            elif "uml" in title and "state machine" in title:
+                return "uml-state-machine"
+            elif "uml" in title and "communication" in title:
+                return "uml-communication-diagram"
+            elif "uml" in title and "interaction overview" in title:
+                return "uml-interaction-overview"
+            elif "uml" in title and "timing" in title:
+                return "uml-timing-diagram"
+            elif "uml" in title and "profile" in title:
+                return "uml-profile-diagram"
+            elif "kanban" in title:
+                return "kanban-board"
+            elif "timeline" in title and "gantt" not in title:
+                return "timeline"
+            elif "org" in title and "chart" in title:
+                return "org-chart"
+            elif "organization" in title and "chart" in title:
+                return "org-chart"
+            elif "swot" in title:
+                return "swot-matrix"
+            elif "problem tree" in title or "problem-tree" in title:
+                return "problem-tree"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 

@@ -1,29 +1,71 @@
+<?XML version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <rect width="1920" height="1080" fill="#ffffff"/>
+  <script type="application/json" id="deployment-architecture-data">
+  {
+    "metadata": {"title": "Deployment Architecture", "projectName": "Food Delivery System", "description": "Application deployment and release architecture", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#E5E5E5", "strokeColor": "#1A1A1A"}},
+    "data": {
+      "stages": [
+        {"id": "dev", "name": "Development", "x": 200, "y": 350, "width": 300, "height": 150},
+        {"id": "staging", "name": "Staging", "x": 650, "y": 350, "width": 300, "height": 150},
+        {"id": "prod", "name": "Production", "x": 1100, "y": 350, "width": 300, "height": 150}
+      ]
+    }
+  }
+  </script>
+
   <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
+    <style>
+      :root { --canvas-light: #FFFFFF; --fill-light: #E5E5E5; --stroke-light: #1A1A1A; --text-light: #1A1A1A; --muted-light: #8A8A85; }
+      text { font-family: Helvetica, Arial, sans-serif; }
+      .stage-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 12px; font-weight: 500; }
+      .label-secondary { fill: var(--muted-light); font-size: 9px; font-weight: 400; }
+    </style>
+    <marker id="arrow-deploy" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1A1A1A"/>
     </marker>
-  </defs>
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
-  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
-  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">Deployment Architecture</text>
-  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
-  <defs>
-    <pattern id="grid-deployment-architecture" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    <pattern id="grid-deployment" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1A1A1A" stroke-width="0.5" opacity="0.1"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-deployment-architecture)"/>
-  <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
-  <rect x="180" y="280" width="440" height="640" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="400.0" y="605.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Development</text>
-  <rect x="700" y="280" width="440" height="640" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="920.0" y="605.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Staging</text>
-  <rect x="1220" y="280" width="440" height="640" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1440.0" y="605.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Production</text>
-  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
-  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · Deployment Architecture</text>
+
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+  
+  <rect x="520" y="52" width="880" height="56" rx="8" class="stage-box"/>
+  <text x="960" y="88" text-anchor="middle" class="label-primary" font-size="22">Deployment Architecture</text>
+  <text x="960" y="108" text-anchor="middle" class="label-secondary">&lt;Project Name&gt; · Template</text>
+
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-deployment)"/>
+  <rect x="40" y="118" width="1840" height="882" fill="#FFFFFF" fill-opacity="1"/>
+
+  <rect x="200" y="350" width="300" height="150" rx="8" class="stage-box"/>
+  <text x="350" y="420" text-anchor="middle" class="label-primary">Development</text>
+
+  <line x1="500" y1="425" x2="650" y2="425" stroke="#1A1A1A" stroke-width="1.5" marker-end="url(#arrow-deploy)"/>
+
+  <rect x="650" y="350" width="300" height="150" rx="8" class="stage-box"/>
+  <text x="800" y="420" text-anchor="middle" class="label-primary">Staging</text>
+
+  <line x1="950" y1="425" x2="1100" y2="425" stroke="#1A1A1A" stroke-width="1.5" marker-end="url(#arrow-deploy)"/>
+
+  <rect x="1100" y="350" width="300" height="150" rx="8" class="stage-box"/>
+  <text x="1250" y="420" text-anchor="middle" class="label-primary">Production</text>
+
+  <text x="52" y="1048" class="label-secondary">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary">&lt;Project Name&gt; · Version 1.0 · Deployment Architecture</text>
+
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#deployment-architecture-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[Deployment Architecture Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[Deployment Architecture] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>
