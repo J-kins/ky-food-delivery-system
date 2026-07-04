@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1800" width="1400" height="1800">
+  <defs>
+    <style>
+      .sitemap-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 32px; font-weight: 700; fill: #1A1A1A; }
+      .sitemap-header-label { font-size: 12px; font-weight: 500; fill: #8A8A85; }
+      .page-box { fill: #E5E5E5; stroke: #1A1A1A; stroke-width: 1.5; }
+      .page-title { font-size: 14px; font-weight: 600; fill: #1A1A1A; }
+      .page-content { font-size: 11px; fill: #1A1A1A; }
+      .connector { stroke: #1A1A1A; stroke-width: 1.5; fill: none; }
+      .hierarchy-line { stroke: #1A1A1A; stroke-width: 2; fill: none; }
+      .light-mode .sitemap-title { fill: #1A1A1A; }
+      .light-mode .page-box { fill: #E5E5E5; stroke: #1A1A1A; }
+      .light-mode .page-title { fill: #1A1A1A; }
+      .light-mode .page-content { fill: #1A1A1A; }
+      .light-mode .connector { stroke: #1A1A1A; }
+      .dark-mode .sitemap-title { fill: #F2F2F2; }
+      .dark-mode .page-box { fill: #1E1E1E; stroke: #F2F2F2; }
+      .dark-mode .page-title { fill: #F2F2F2; }
+      .dark-mode .page-content { fill: #F2F2F2; }
+      .dark-mode .connector { stroke: #F2F2F2; }
+    </style>
+
+    <!-- Reusable page box template -->
+    <g id="page-node">
+      <rect class="page-box" width="160" height="120" rx="8"/>
+      <text class="page-title" x="80" y="28" text-anchor="middle" data-bind="title"></text>
+      <rect x="8" y="36" width="144" height="1.5" fill="currentColor" opacity="0.3"/>
+      <text class="page-content" x="80" y="58" text-anchor="middle" data-bind="category"></text>
+      <text class="page-content" x="80" y="75" text-anchor="middle" data-bind="interactions"></text>
+      <text class="page-content" x="80" y="92" text-anchor="middle" data-bind="status"></text>
+    </g>
+
+    <!-- Connection line template -->
+    <line id="connection-line" class="connector" x1="0" y1="0" x2="100" y2="100"/>
+  </defs>
+
+  <!-- Embedded JSON Data - Complete Sitemap Structure -->
+  <script type="application/json" id="sitemap-data">
+  {
+    "projectName": "Food Delivery System",
+    "sitemapVersion": "2.0",
+    "description": "Complete information architecture for food delivery platform",
+    "generatedDate": "2024-01-15",
+    "designTokens": {
+      "lightMode": {
+        "canvas": "#FFFFFF",
+        "fill": "#E5E5E5",
+        "stroke": "#1A1A1A",
+        "text": "#1A1A1A",
+        "muted": "#8A8A85",
+        "accent": "#262C7C",
+        "highlight": "#EB5C46"
+      },
+      "darkMode": {
+        "canvas": "#0D0D0D",
+        "fill": "#1E1E1E",
+        "stroke": "#F2F2F2",
+        "text": "#F2F2F2",
+        "muted": "#8A8A85",
+        "accent": "#5BA5E8",
+        "highlight": "#FF6B5B"
+      }
+    },
+    "typography": {
+      "pageTitle": { "fontSize": 14, "fontWeight": 600 },
+      "sectionHeader": { "fontSize": 12, "fontWeight": 500 },
+      "pageContent": { "fontSize": 11, "fontWeight": 400 },
+      "metadata": { "fontSize": 10, "fontWeight": 400 }
+    },
+    "layout": {
+      "canvasWidth": 1400,
+      "canvasHeight": 1800,
+      "pageBoxWidth": 160,
+      "pageBoxHeight": 120,
+      "gridSpacing": 200,
+      "verticalGap": 150,
+      "connectorStrokeWidth": 1.5,
+      "hierarchyLineWidth": 2
+    },
+    "hierarchyStructure": [
+      {
+        "level": 0,
+        "name": "Root - Food Delivery Platform",
+        "id": "root",
+        "type": "entry-point",
+        "pages": [
+          {
+            "id": "home",
+            "title": "Home",
+            "category": "Landing",
+            "description": "Main entry point with hero section, search, promotions",
+            "interactions": ["Search", "Browse", "Login"],
+            "status": "Active",
+            "priority": "Critical",
+            "audience": ["Guest", "User", "Restaurant"],
+            "cta": ["Order Now", "Browse Restaurants"],
+            "seoKeywords": ["food delivery", "order food online"],
+            "analytics": true
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Main Navigation",
+        "id": "main-nav",
+        "type": "primary",
+        "pages": [
+          {
+            "id": "browse",
+            "title": "Browse",
+            "category": "Discovery",
+            "description": "Browse restaurants by cuisine, location, ratings",
+            "interactions": ["Filter", "Sort", "Search", "View Details"],
+            "status": "Active",
+            "priority": "Critical",
+            "children": ["restaurant-list", "cuisine-filter", "ratings-view"]
+          },
+          {
+            "id": "account",
+            "title": "Account",
+            "category": "User",
+            "description": "User profile, preferences, addresses, payment methods",
+            "interactions": ["Edit Profile", "Manage Addresses", "View Orders"],
+            "status": "Active",
+            "priority": "High",
+            "children": ["profile", "addresses", "payment-methods", "order-history"]
+          },
+          {
+            "id": "orders",
+            "title": "Orders",
+            "category": "Commerce",
+            "description": "Active and past orders with real-time tracking",
+            "interactions": ["Track Order", "View Details", "Repeat Order"],
+            "status": "Active",
+            "priority": "Critical",
+            "children": ["active-orders", "order-history", "order-tracking"]
+          },
+          {
+            "id": "cart",
+            "title": "Cart",
+            "category": "Commerce",
+            "description": "Shopping cart with items, quantities, and checkout",
+            "interactions": ["Add Item", "Remove Item", "Checkout"],
+            "status": "Active",
+            "priority": "Critical",
+            "children": ["cart-items", "checkout", "payment"]
+          },
+          {
+            "id": "help",
+            "title": "Help",
+            "category": "Support",
+            "description": "FAQ, contact support, help articles",
+            "interactions": ["Search Help", "Contact Support", "Track Issue"],
+            "status": "Active",
+            "priority": "Medium",
+            "children": ["faq", "contact-support", "help-articles"]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "name": "Secondary Pages - Browsing & Discovery",
+        "id": "secondary-browse",
+        "type": "secondary",
+        "pages": [
+          {
+            "id": "restaurant-list",
+            "title": "Restaurant List",
+            "category": "Discovery",
+            "description": "Filtered list of restaurants with ratings and delivery time",
+            "interactions": ["Click Restaurant", "Apply Filters", "Sort By"],
+            "status": "Active",
+            "parent": "browse",
+            "children": ["restaurant-detail"]
+          },
+          {
+            "id": "cuisine-filter",
+            "title": "Cuisine Filter",
+            "category": "Discovery",
+            "description": "Filter restaurants by cuisine type",
+            "interactions": ["Select Cuisine", "View Results"],
+            "status": "Active",
+            "parent": "browse"
+          },
+          {
+            "id": "restaurant-detail",
+            "title": "Restaurant Detail",
+            "category": "Discovery",
+            "description": "Full restaurant profile with menu, reviews, ratings, hours",
+            "interactions": ["Browse Menu", "Read Reviews", "Add to Cart"],
+            "status": "Active",
+            "parent": "restaurant-list",
+            "children": ["menu", "reviews", "ratings"]
+          },
+          {
+            "id": "menu",
+            "title": "Menu",
+            "category": "Discovery",
+            "description": "Restaurant menu with categories, items, prices, customizations",
+            "interactions": ["Select Item", "Customize", "View Calories"],
+            "status": "Active",
+            "parent": "restaurant-detail",
+            "children": ["item-detail"]
+          },
+          {
+            "id": "item-detail",
+            "title": "Item Detail",
+            "category": "Discovery",
+            "description": "Individual menu item with description, price, customization options",
+            "interactions": ["Add to Cart", "Quantity", "Save for Later"],
+            "status": "Active",
+            "parent": "menu"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "name": "Secondary Pages - User Account",
+        "id": "secondary-account",
+        "type": "secondary",
+        "pages": [
+          {
+            "id": "profile",
+            "title": "Profile",
+            "category": "User",
+            "description": "Edit user profile, name, email, phone, preferences",
+            "interactions": ["Edit", "Save", "Upload Avatar"],
+            "status": "Active",
+            "parent": "account"
+          },
+          {
+            "id": "addresses",
+            "title": "Addresses",
+            "category": "User",
+            "description": "Manage delivery addresses, set default, add new",
+            "interactions": ["Add Address", "Edit", "Delete", "Set Default"],
+            "status": "Active",
+            "parent": "account"
+          },
+          {
+            "id": "payment-methods",
+            "title": "Payment Methods",
+            "category": "User",
+            "description": "Manage saved payment cards, digital wallets, bank accounts",
+            "interactions": ["Add Card", "Remove", "Set Default"],
+            "status": "Active",
+            "parent": "account"
+          },
+          {
+            "id": "order-history",
+            "title": "Order History",
+            "category": "User",
+            "description": "View past orders, reorder, leave reviews",
+            "interactions": ["View Details", "Reorder", "Leave Review"],
+            "status": "Active",
+            "parent": "account"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "name": "Secondary Pages - Commerce & Checkout",
+        "id": "secondary-commerce",
+        "type": "secondary",
+        "pages": [
+          {
+            "id": "cart-items",
+            "title": "Cart Items",
+            "category": "Commerce",
+            "description": "Review items in cart, modify quantities, apply coupons",
+            "interactions": ["Modify Quantity", "Remove Item", "Apply Coupon", "Continue Shopping"],
+            "status": "Active",
+            "parent": "cart"
+          },
+          {
+            "id": "checkout",
+            "title": "Checkout",
+            "category": "Commerce",
+            "description": "Review order, select delivery address, choose payment method",
+            "interactions": ["Select Address", "Select Payment", "Apply Promo"],
+            "status": "Active",
+            "parent": "cart",
+            "children": ["payment"]
+          },
+          {
+            "id": "payment",
+            "title": "Payment",
+            "category": "Commerce",
+            "description": "Secure payment processing with multiple options",
+            "interactions": ["Select Payment Method", "Enter Details", "Process Payment"],
+            "status": "Active",
+            "parent": "checkout",
+            "children": ["order-confirmation"]
+          },
+          {
+            "id": "order-confirmation",
+            "title": "Order Confirmation",
+            "category": "Commerce",
+            "description": "Order summary, confirmation number, tracking info",
+            "interactions": ["View Receipt", "Track Order", "Continue Shopping"],
+            "status": "Active",
+            "parent": "payment"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "name": "Secondary Pages - Orders & Tracking",
+        "id": "secondary-orders",
+        "type": "secondary",
+        "pages": [
+          {
+            "id": "active-orders",
+            "title": "Active Orders",
+            "category": "Commerce",
+            "description": "Currently active orders with real-time status updates",
+            "interactions": ["View Details", "Track", "Contact Delivery Partner"],
+            "status": "Active",
+            "parent": "orders",
+            "children": ["order-tracking"]
+          },
+          {
+            "id": "order-tracking",
+            "title": "Order Tracking",
+            "category": "Commerce",
+            "description": "Real-time map tracking, delivery partner info, ETA",
+            "interactions": ["View Map", "Contact Driver", "View Details"],
+            "status": "Active",
+            "parent": "active-orders"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "name": "Secondary Pages - Support",
+        "id": "secondary-support",
+        "type": "secondary",
+        "pages": [
+          {
+            "id": "faq",
+            "title": "FAQ",
+            "category": "Support",
+            "description": "Frequently asked questions about ordering, delivery, payments",
+            "interactions": ["Search", "Filter by Category", "Rate Answer"],
+            "status": "Active",
+            "parent": "help"
+          },
+          {
+            "id": "contact-support",
+            "title": "Contact Support",
+            "category": "Support",
+            "description": "Submit support ticket, chat with support, call support",
+            "interactions": ["Start Chat", "Submit Ticket", "View Status"],
+            "status": "Active",
+            "parent": "help"
+          },
+          {
+            "id": "help-articles",
+            "title": "Help Articles",
+            "category": "Support",
+            "description": "Knowledge base articles, guides, troubleshooting",
+            "interactions": ["Search", "Read Article", "Provide Feedback"],
+            "status": "Active",
+            "parent": "help"
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "name": "Tertiary Pages",
+        "id": "tertiary",
+        "type": "tertiary",
+        "pages": [
+          {
+            "id": "reviews",
+            "title": "Reviews",
+            "category": "Discovery",
+            "description": "Customer reviews and ratings for restaurant",
+            "interactions": ["Read Reviews", "Filter by Rating", "Helpful"],
+            "parent": "restaurant-detail"
+          },
+          {
+            "id": "ratings",
+            "title": "Ratings",
+            "category": "Discovery",
+            "description": "Overall ratings, breakdown by category",
+            "interactions": ["View Breakdown"],
+            "parent": "restaurant-detail"
+          }
+        ]
+      }
+    ],
+    "userFlows": [
+      {
+        "flowName": "Order Food Flow",
+        "startPage": "home",
+        "endPage": "order-confirmation",
+        "steps": ["home", "browse", "restaurant-detail", "menu", "item-detail", "cart", "checkout", "payment", "order-confirmation"]
+      },
+      {
+        "flowName": "Track Order Flow",
+        "startPage": "orders",
+        "endPage": "order-tracking",
+        "steps": ["orders", "active-orders", "order-tracking"]
+      },
+      {
+        "flowName": "Manage Account Flow",
+        "startPage": "account",
+        "endPage": "profile",
+        "steps": ["account", "profile", "addresses", "payment-methods"]
+      }
+    ],
+    "metadata": {
+      "totalPages": 26,
+      "criticalPages": 8,
+      "userJourneys": 3,
+      "integrations": ["Maps API", "Payment Gateway", "Real-time Tracking", "Analytics"],
+      "accessibility": "WCAG 2.1 AA",
+      "responsiveness": "Mobile-first design",
+      "lastUpdated": "2024-01-15"
+    }
+  }
+  </script>
+
+  <!-- Light Mode Container -->
+  <g class="light-mode">
+    <rect width="1400" height="1800" fill="#FFFFFF"/>
+    
+    <!-- Header Section -->
+    <rect width="1400" height="120" fill="#262C7C"/>
+    <text class="sitemap-title" x="700" y="80" text-anchor="middle" style="fill: #FFFFFF;">Sitemap - Food Delivery Platform</text>
+    <text class="sitemap-header-label" x="700" y="105" text-anchor="middle" style="fill: #FFFFFF; opacity: 0.8;">Data-Driven Information Architecture Template</text>
+    
+    <!-- Legend/Description -->
+    <text class="sitemap-header-label" x="50" y="155">Legend: Level 0 = Root | Level 1 = Primary Nav | Level 2+ = Secondary/Tertiary Pages</text>
+    
+    <!-- Root Level -->
+    <rect class="page-box" x="620" y="200" width="160" height="120" rx="8"/>
+    <text class="page-title" x="700" y="235" text-anchor="middle">Home</text>
+    <text class="page-content" x="700" y="260" text-anchor="middle" style="font-size: 10px;">Landing</text>
+    <text class="page-content" x="700" y="280" text-anchor="middle" style="font-size: 10px;">Entry Point</text>
+    
+    <!-- Primary Navigation Level (5 main sections) -->
+    <g id="primary-nav-container">
+      <!-- Browse -->
+      <rect class="page-box" x="50" y="420" width="160" height="120" rx="8"/>
+      <text class="page-title" x="130" y="455" text-anchor="middle">Browse</text>
+      <text class="page-content" x="130" y="480" text-anchor="middle" style="font-size: 10px;">Discovery</text>
+      <line class="hierarchy-line" x1="700" y1="320" x2="130" y2="420"/>
+      
+      <!-- Account -->
+      <rect class="page-box" x="280" y="420" width="160" height="120" rx="8"/>
+      <text class="page-title" x="360" y="455" text-anchor="middle">Account</text>
+      <text class="page-content" x="360" y="480" text-anchor="middle" style="font-size: 10px;">User</text>
+      <line class="hierarchy-line" x1="700" y1="320" x2="360" y2="420"/>
+      
+      <!-- Orders -->
+      <rect class="page-box" x="510" y="420" width="160" height="120" rx="8"/>
+      <text class="page-title" x="590" y="455" text-anchor="middle">Orders</text>
+      <text class="page-content" x="590" y="480" text-anchor="middle" style="font-size: 10px;">Commerce</text>
+      <line class="hierarchy-line" x1="700" y1="320" x2="590" y2="420"/>
+      
+      <!-- Cart -->
+      <rect class="page-box" x="740" y="420" width="160" height="120" rx="8"/>
+      <text class="page-title" x="820" y="455" text-anchor="middle">Cart</text>
+      <text class="page-content" x="820" y="480" text-anchor="middle" style="font-size: 10px;">Commerce</text>
+      <line class="hierarchy-line" x1="700" y1="320" x2="820" y2="420"/>
+      
+      <!-- Help -->
+      <rect class="page-box" x="970" y="420" width="160" height="120" rx="8"/>
+      <text class="page-title" x="1050" y="455" text-anchor="middle">Help</text>
+      <text class="page-content" x="1050" y="480" text-anchor="middle" style="font-size: 10px;">Support</text>
+      <line class="hierarchy-line" x1="700" y1="320" x2="1050" y2="420"/>
+    </g>
+    
+    <!-- Secondary Pages - Dynamically populated via script -->
+    <g id="secondary-pages-container" transform="translate(0, 700)">
+      <!-- Example placeholder for dynamic rendering -->
+      <text class="sitemap-header-label" x="50" y="30">Secondary Pages: Restaurant List • Cuisine Filter • Restaurant Detail • Menu • Item Detail • Profile • Addresses • Payment Methods • Order History • Cart Items • Checkout • Payment • Order Confirmation • Active Orders • Order Tracking • FAQ • Contact Support • Help Articles</text>
+    </g>
+    
+    <!-- User Flow Information -->
+    <g id="user-flows-container" transform="translate(0, 1300)">
+      <text class="sitemap-header-label" x="50" y="0" style="font-weight: 600;">Primary User Journeys:</text>
+      <text class="sitemap-header-label" x="50" y="25">1. Order Food: Home → Browse → Restaurant Detail → Menu → Cart → Checkout → Payment → Confirmation</text>
+      <text class="sitemap-header-label" x="50" y="50">2. Track Order: Orders → Active Orders → Order Tracking</text>
+      <text class="sitemap-header-label" x="50" y="75">3. Manage Account: Account → Profile → Addresses → Payment Methods</text>
+    </g>
+    
+    <!-- Metadata Footer -->
+    <g id="metadata-footer" transform="translate(0, 1600)">
+      <rect x="0" y="0" width="1400" height="200" fill="#F5F5F5"/>
+      <text class="sitemap-header-label" x="50" y="30" style="font-weight: 600;">Sitemap Metadata</text>
+      <text class="sitemap-header-label" x="50" y="55">Total Pages: 26 | Critical Pages: 8 | User Journeys: 3</text>
+      <text class="sitemap-header-label" x="50" y="80">Integrations: Maps API, Payment Gateway, Real-time Tracking, Analytics</text>
+      <text class="sitemap-header-label" x="50" y="105">Accessibility: WCAG 2.1 AA | Responsive: Mobile-first Design</text>
+      <text class="sitemap-header-label" x="50" y="130">Last Updated: 2024-01-15 | Design Tokens: Light/Dark Mode Support</text>
+    </g>
+  </g>
+
+  <!-- Dark Mode Container -->
+  <g class="dark-mode" style="display: none;">
+    <rect width="1400" height="1800" fill="#0D0D0D"/>
+    <!-- Same structure with dark mode colors -->
+  </g>
+
+  <!-- Rendering Script Entry Point -->
+  <script type="text/javascript">
+    // Placeholder for web rendering logic
+    // const sitemapData = JSON.parse(document.getElementById('sitemap-data').textContent);
+    // renderSitemap(sitemapData, mode: 'light');
+    // 
+    // For Visio conversion:
+    // const pythonAdapter = require('./visio-adapter.py');
+    // pythonAdapter.generateVisio(sitemapData);
+  </script>
+</svg>

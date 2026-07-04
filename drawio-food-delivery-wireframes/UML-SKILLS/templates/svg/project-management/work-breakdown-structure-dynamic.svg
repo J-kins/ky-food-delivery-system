@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">
+  <defs>
+    <style>
+      .wbs-title { font-size: 24px; font-weight: 700; fill: #1A1A1A; }
+      .wbs-level1 { font-size: 14px; font-weight: 600; fill: #1A1A1A; }
+      .wbs-level2 { font-size: 12px; font-weight: 500; fill: #1A1A1A; }
+      .wbs-box { fill: #E5E5E5; stroke: #1A1A1A; stroke-width: 1.5; }
+      .wbs-connector { stroke: #1A1A1A; stroke-width: 2; fill: none; }
+      .dark-mode .wbs-title { fill: #F2F2F2; }
+      .dark-mode .wbs-level1 { fill: #F2F2F2; }
+      .dark-mode .wbs-level2 { fill: #F2F2F2; }
+      .dark-mode .wbs-box { fill: #1E1E1E; stroke: #F2F2F2; }
+      .dark-mode .wbs-connector { stroke: #F2F2F2; }
+    </style>
+  </defs>
+
+  <script type="application/json" id="wbs-data">
+  {
+    "projectName": "Food Delivery System",
+    "wbsStructure": {
+      "id": "root",
+      "name": "Food Delivery System",
+      "code": "FDS",
+      "children": [
+        {
+          "id": "wbs1",
+          "name": "Planning & Analysis",
+          "code": "1.0",
+          "children": [
+            { "id": "wbs1.1", "name": "Requirements Gathering", "code": "1.1", "effort": "40h" },
+            { "id": "wbs1.2", "name": "Architecture Design", "code": "1.2", "effort": "60h" },
+            { "id": "wbs1.3", "name": "Risk Assessment", "code": "1.3", "effort": "20h" }
+          ]
+        },
+        {
+          "id": "wbs2",
+          "name": "Development",
+          "code": "2.0",
+          "children": [
+            { "id": "wbs2.1", "name": "Backend Services", "code": "2.1", "effort": "240h" },
+            { "id": "wbs2.2", "name": "Mobile Apps", "code": "2.2", "effort": "200h" },
+            { "id": "wbs2.3", "name": "Web Dashboard", "code": "2.3", "effort": "120h" },
+            { "id": "wbs2.4", "name": "Database Design", "code": "2.4", "effort": "80h" }
+          ]
+        },
+        {
+          "id": "wbs3",
+          "name": "Testing & QA",
+          "code": "3.0",
+          "children": [
+            { "id": "wbs3.1", "name": "Unit Testing", "code": "3.1", "effort": "100h" },
+            { "id": "wbs3.2", "name": "Integration Testing", "code": "3.2", "effort": "80h" },
+            { "id": "wbs3.3", "name": "UAT", "code": "3.3", "effort": "60h" }
+          ]
+        },
+        {
+          "id": "wbs4",
+          "name": "Deployment",
+          "code": "4.0",
+          "children": [
+            { "id": "wbs4.1", "name": "Infrastructure Setup", "code": "4.1", "effort": "40h" },
+            { "id": "wbs4.2", "name": "Production Deployment", "code": "4.2", "effort": "30h" },
+            { "id": "wbs4.3", "name": "Monitoring & Support", "code": "4.3", "effort": "ongoing" }
+          ]
+        }
+      ]
+    },
+    "designTokens": { "lightMode": { "canvas": "#FFFFFF", "fill": "#E5E5E5", "stroke": "#1A1A1A" }, "darkMode": { "canvas": "#0D0D0D", "fill": "#1E1E1E", "stroke": "#F2F2F2" } }
+  }
+  </script>
+
+  <g class="light-mode">
+    <rect width="1400" height="1000" fill="#FFFFFF"/>
+    <text class="wbs-title" x="50" y="50">Work Breakdown Structure</text>
+    <!-- Dynamically populated from data -->
+  </g>
+</svg>

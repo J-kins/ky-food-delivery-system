@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" width="1920" height="1000">
+  <script type="application/json" id="conceptual-data">
+  {
+    "diagramType": "Conceptual Data Model",
+    "projectName": "Food Delivery System",
+    "description": "High-level business concepts and relationships",
+    "concepts": [
+      {"id": "c1", "name": "Customer", "position": {"x": 300, "y": 350}},
+      {"id": "c2", "name": "Restaurant", "position": {"x": 800, "y": 350}},
+      {"id": "c3", "name": "Order", "position": {"x": 1300, "y": 350}},
+      {"id": "c4", "name": "Menu Item", "position": {"x": 550, "y": 650}},
+      {"id": "c5", "name": "Delivery Partner", "position": {"x": 1550, "y": 650}}
+    ],
+    "relationships": [
+      {"from": "c1", "to": "c3", "label": "places"},
+      {"from": "c2", "to": "c3", "label": "receives"},
+      {"from": "c2", "to": "c4", "label": "offers"},
+      {"from": "c3", "to": "c5", "label": "assigned_to"}
+    ],
+    "attributes": {
+      "c1": ["Customer ID", "Name", "Contact"],
+      "c2": ["Restaurant ID", "Name", "Location"],
+      "c3": ["Order ID", "Status", "Total Amount"],
+      "c4": ["Item ID", "Name", "Price"],
+      "c5": ["Partner ID", "Name", "Vehicle"]
+    },
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1000" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Conceptual Data Model</text>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="app-landscape-data">
+  {
+    "diagramType": "Application Landscape",
+    "projectName": "Food Delivery System",
+    "description": "Portfolio of applications across business domains",
+    "domains": [
+      {
+        "domain": "Customer",
+        "applications": [
+          {"id": "app1", "name": "Mobile App", "status": "production", "technology": "React Native", "position": {"x": 200, "y": 300}},
+          {"id": "app2", "name": "Web Portal", "status": "production", "technology": "React", "position": {"x": 500, "y": 300}}
+        ]
+      },
+      {
+        "domain": "Restaurant",
+        "applications": [
+          {"id": "app3", "name": "Admin Console", "status": "production", "technology": "Angular", "position": {"x": 800, "y": 300}},
+          {"id": "app4", "name": "POS Integration", "status": "development", "technology": "Node.js", "position": {"x": 1100, "y": 300}}
+        ]
+      },
+      {
+        "domain": "Operations",
+        "applications": [
+          {"id": "app5", "name": "Analytics Dashboard", "status": "production", "technology": "Tableau", "position": {"x": 1400, "y": 300}},
+          {"id": "app6", "name": "Reporting Engine", "status": "maintenance", "technology": "Python", "position": {"x": 1700, "y": 300}}
+        ]
+      }
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Application Landscape</text>
+</svg>

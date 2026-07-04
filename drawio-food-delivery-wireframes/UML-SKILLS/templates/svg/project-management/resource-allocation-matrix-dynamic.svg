@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="1400" height="700">
+  <script type="application/json" id="resource-allocation-data">
+  {"resources": [{"id": "r1", "name": "John Smith", "role": "Backend Developer", "allocation": "100%", "tasks": ["API Development", "Database Design"]}, {"id": "r2", "name": "Sarah Lee", "role": "Frontend Developer", "allocation": "80%", "tasks": ["Mobile App", "Dashboard UI"]}, {"id": "r3", "name": "Mike Chen", "role": "QA Engineer", "allocation": "100%", "tasks": ["Testing", "UAT"]}]}
+  </script>
+  <rect width="1400" height="700" fill="#FFFFFF"/>
+  <text style="font-size: 24px; font-weight: 700;" x="50" y="50">Resource Allocation Matrix (RACI with Effort Tracking)</text>
+</svg>

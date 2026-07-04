@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="enterprise-arch-data">
+  {
+    "diagramType": "Enterprise Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Complete enterprise view across business, application, and technical domains",
+    "layers": [
+      {
+        "layer": "Business Architecture",
+        "position": {"y": 50},
+        "components": [
+          {"id": "b1", "name": "Customer Management", "type": "business_capability", "position": {"x": 200}},
+          {"id": "b2", "name": "Order Management", "type": "business_capability", "position": {"x": 600}},
+          {"id": "b3", "name": "Restaurant Management", "type": "business_capability", "position": {"x": 1000}},
+          {"id": "b4", "name": "Delivery Logistics", "type": "business_capability", "position": {"x": 1400}}
+        ]
+      },
+      {
+        "layer": "Application Architecture",
+        "position": {"y": 350},
+        "components": [
+          {"id": "a1", "name": "Customer Portal", "type": "application", "position": {"x": 200}},
+          {"id": "a2", "name": "Order Service", "type": "application", "position": {"x": 600}},
+          {"id": "a3", "name": "Restaurant Admin", "type": "application", "position": {"x": 1000}},
+          {"id": "a4", "name": "Logistics Platform", "type": "application", "position": {"x": 1400}}
+        ]
+      },
+      {
+        "layer": "Technical Architecture",
+        "position": {"y": 650},
+        "components": [
+          {"id": "t1", "name": "API Gateway", "type": "technical", "position": {"x": 200}},
+          {"id": "t2", "name": "Microservices", "type": "technical", "position": {"x": 600}},
+          {"id": "t3", "name": "Data Layer", "type": "technical", "position": {"x": 1000}},
+          {"id": "t4", "name": "Cloud Infrastructure", "type": "technical", "position": {"x": 1400}}
+        ]
+      }
+    ],
+    "relationships": [
+      {"from": "b1", "to": "a1"},
+      {"from": "b2", "to": "a2"},
+      {"from": "a1", "to": "t1"},
+      {"from": "a2", "to": "t2"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Enterprise Architecture</text>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" width="1000" height="900">
+  <script type="application/json" id="power-interest-data">
+  {"diagramType":"Power-Interest Matrix","projectName":"Food Delivery System","description":"Stakeholder classification matrix by power and interest level","quadrants":{"manage_closely":{"label":"Manage Closely","x":500,"y":50,"power":"High","interest":"High","color":"#F44336","stakeholders":[{"id":"s1","name":"Executive Sponsor","power":0.9,"interest":0.95},{"id":"s2","name":"Project Manager","power":0.85,"interest":0.9}]},"keep_satisfied":{"label":"Keep Satisfied","x":50,"y":50,"power":"High","interest":"Low","color":"#FF9800","stakeholders":[]},"keep_informed":{"label":"Keep Informed","x":500,"y":450,"power":"Low","interest":"High","color":"#2196F3","stakeholders":[{"id":"s5","name":"Restaurant Partners","power":0.4,"interest":0.75},{"id":"s6","name":"Customers","power":0.3,"interest":0.8}]},"monitor":{"label":"Monitor","x":50,"y":450,"power":"Low","interest":"Low","color":"#9E9E9E","stakeholders":[]}},"designTokens":{"lightMode":{"canvas":"#FFFFFF","fill":"#E5E5E5","stroke":"#1A1A1A"},"darkMode":{"canvas":"#0D0D0D","fill":"#1E1E1E","stroke":"#F2F2F2"}}}
+  </script>
+  <rect width="1000" height="900" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="500" y="40" text-anchor="middle">Power-Interest Matrix</text>
+  <!-- Matrix grid (dynamically populated) -->
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="integration-arch-data">
+  {
+    "diagramType": "Integration Architecture",
+    "projectName": "Food Delivery System",
+    "description": "System integration patterns and protocols",
+    "internal_systems": [
+      {"id": "is1", "name": "Order System", "position": {"x": 300, "y": 300}},
+      {"id": "is2", "name": "Inventory System", "position": {"x": 300, "y": 600}},
+      {"id": "is3", "name": "Billing System", "position": {"x": 1600, "y": 300}}
+    ],
+    "external_partners": [
+      {"id": "ep1", "name": "Payment Gateway", "position": {"x": 1600, "y": 600}},
+      {"id": "ep2", "name": "SMS Provider", "position": {"x": 1600, "y": 750}}
+    ],
+    "integration_platform": {
+      "id": "ip",
+      "name": "ESB / Integration Hub",
+      "position": {"x": 960, "y": 500},
+      "technologies": ["Apache Kafka", "Spring Integration"]
+    },
+    "integration_patterns": [
+      {"from": "is1", "to": "ip", "pattern": "API", "protocol": "REST/JSON"},
+      {"from": "is2", "to": "ip", "pattern": "Event Stream", "protocol": "Kafka"},
+      {"from": "is3", "to": "ip", "pattern": "Message Queue", "protocol": "AMQP"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Integration Architecture</text>
+</svg>

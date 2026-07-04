@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <script type="application/json" id="team-structure-data">
+  {"organization": {"id": "sponsor", "name": "Executive Sponsor", "role": "Sarah Chen", "children": [{"id": "pm", "name": "Project Manager", "role": "John Smith", "children": [{"id": "tech", "name": "Tech Lead", "role": "Mike Johnson", "team": "5 engineers"}, {"id": "qa", "name": "QA Lead", "role": "Emma Davis", "team": "3 testers"}, {"id": "design", "name": "Design Lead", "role": "Lisa Wang", "team": "2 designers"}]}]}}
+  </script>
+  <rect width="1200" height="900" fill="#FFFFFF"/>
+  <text style="font-size: 24px; font-weight: 700;" x="50" y="50">Team Structure & Reporting Lines</text>
+</svg>

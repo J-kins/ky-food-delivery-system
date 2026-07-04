@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="microservices-arch-data">
+  {
+    "diagramType": "Microservices Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Service-oriented architecture with independent deployable units",
+    "infrastructure": {"type": "Kubernetes", "orchestration": "Docker", "platform": "AWS EKS"},
+    "services": [
+      {"id": "svc1", "name": "User Service", "port": 8001, "database": "users_db", "position": {"x": 200, "y": 350}},
+      {"id": "svc2", "name": "Order Service", "port": 8002, "database": "orders_db", "position": {"x": 600, "y": 350}},
+      {"id": "svc3", "name": "Restaurant Service", "port": 8003, "database": "restaurants_db", "position": {"x": 1000, "y": 350}},
+      {"id": "svc4", "name": "Payment Service", "port": 8004, "database": "payments_db", "position": {"x": 1400, "y": 350}},
+      {"id": "svc5", "name": "Notification Service", "port": 8005, "database": "notifications_db", "position": {"x": 1800, "y": 350}}
+    ],
+    "infrastructure_components": [
+      {"id": "apigw", "name": "API Gateway", "type": "gateway", "position": {"x": 960, "y": 100}},
+      {"id": "msgbus", "name": "Message Bus", "type": "messaging", "technology": "RabbitMQ", "position": {"x": 960, "y": 600}},
+      {"id": "registry", "name": "Service Registry", "type": "registry", "technology": "Consul", "position": {"x": 100, "y": 600}}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Microservices Architecture</text>
+</svg>

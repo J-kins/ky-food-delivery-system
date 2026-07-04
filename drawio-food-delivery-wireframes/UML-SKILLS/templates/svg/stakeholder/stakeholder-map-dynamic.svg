@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">
+  <defs>
+    <style>
+      .map-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 24px; font-weight: 700; fill: #1A1A1A; }
+      .map-label { font-size: 12px; font-weight: 500; fill: #8A8A85; }
+      .stakeholder-box { fill: #E5E5E5; stroke: #1A1A1A; stroke-width: 1.5; }
+      .stakeholder-name { font-size: 13px; font-weight: 600; fill: #1A1A1A; }
+      .connector { stroke: #1A1A1A; stroke-width: 1.5; fill: none; }
+      .light-mode .map-title { fill: #1A1A1A; }
+      .dark-mode .map-title { fill: #F2F2F2; }
+      .dark-mode .stakeholder-box { fill: #1E1E1E; stroke: #F2F2F2; }
+      .dark-mode .stakeholder-name { fill: #F2F2F2; }
+    </style>
+  </defs>
+
+  <script type="application/json" id="stakeholder-map-data">
+  {
+    "diagramType": "Stakeholder Map",
+    "projectName": "Food Delivery System",
+    "description": "Visual representation of stakeholder relationships and positioning",
+    "centerEntity": {
+      "id": "system",
+      "name": "Project System",
+      "role": "Central Entity",
+      "x": 700,
+      "y": 500,
+      "width": 140,
+      "height": 80
+    },
+    "stakeholders": [
+      {
+        "id": "s1",
+        "name": "Executive Sponsor",
+        "role": "Strategic Leader",
+        "group": "Executive",
+        "influence": "High",
+        "position": { "x": 150, "y": 200 },
+        "interest": "Strategic Alignment",
+        "relationship": "Direct"
+      },
+      {
+        "id": "s2",
+        "name": "Project Manager",
+        "role": "Coordinator",
+        "group": "Project Team",
+        "influence": "High",
+        "position": { "x": 1100, "y": 200 },
+        "interest": "On-time Delivery",
+        "relationship": "Direct"
+      },
+      {
+        "id": "s3",
+        "name": "Tech Lead",
+        "role": "Technical Decision Maker",
+        "group": "Engineering",
+        "influence": "High",
+        "position": { "x": 150, "y": 800 },
+        "interest": "Architecture Quality",
+        "relationship": "Direct"
+      },
+      {
+        "id": "s4",
+        "name": "QA Lead",
+        "role": "Quality Guardian",
+        "group": "Quality",
+        "influence": "Medium",
+        "position": { "x": 1100, "y": 800 },
+        "interest": "Product Quality",
+        "relationship": "Direct"
+      },
+      {
+        "id": "s5",
+        "name": "Restaurant Partners",
+        "role": "External Stakeholder",
+        "group": "External",
+        "influence": "Medium",
+        "position": { "x": 400, "y": 350 },
+        "interest": "Market Reach",
+        "relationship": "Indirect"
+      },
+      {
+        "id": "s6",
+        "name": "Customers",
+        "role": "End User",
+        "group": "External",
+        "influence": "High",
+        "position": { "x": 950, "y": 350 },
+        "interest": "User Experience",
+        "relationship": "Indirect"
+      }
+    ],
+    "connections": [
+      { "from": "s1", "to": "system", "strength": "strong" },
+      { "from": "s2", "to": "system", "strength": "strong" },
+      { "from": "s3", "to": "system", "strength": "strong" },
+      { "from": "s4", "to": "system", "strength": "strong" },
+      { "from": "s5", "to": "system", "strength": "medium" },
+      { "from": "s6", "to": "system", "strength": "medium" },
+      { "from": "s1", "to": "s2", "strength": "medium" },
+      { "from": "s2", "to": "s3", "strength": "strong" },
+      { "from": "s3", "to": "s4", "strength": "medium" }
+    ],
+    "designTokens": {
+      "lightMode": { "canvas": "#FFFFFF", "fill": "#E5E5E5", "stroke": "#1A1A1A", "text": "#1A1A1A" },
+      "darkMode": { "canvas": "#0D0D0D", "fill": "#1E1E1E", "stroke": "#F2F2F2", "text": "#F2F2F2" }
+    },
+    "metadata": {
+      "purpose": "Map stakeholder positions, relationships, and influence",
+      "created": "2024-01-15",
+      "version": "1.0"
+    }
+  }
+  </script>
+
+  <g class="light-mode">
+    <rect width="1400" height="1000" fill="#FFFFFF"/>
+    <text class="map-title" x="700" y="40" text-anchor="middle">Stakeholder Map</text>
+    <text class="map-label" x="700" y="65" text-anchor="middle">Data-driven visualization of stakeholder relationships</text>
+    
+    <!-- Center System -->
+    <rect x="630" y="460" width="140" height="80" rx="8" class="stakeholder-box"/>
+    <text class="stakeholder-name" x="700" y="510" text-anchor="middle">Project System</text>
+    
+    <!-- Stakeholders (dynamically populated from JSON) -->
+    <g id="stakeholder-nodes">
+      <!-- Executive Sponsor -->
+      <rect x="80" y="160" width="140" height="80" rx="8" class="stakeholder-box"/>
+      <text class="stakeholder-name" x="150" y="210" text-anchor="middle">Executive</text>
+      <text class="map-label" x="150" y="230" text-anchor="middle">Sponsor</text>
+      <line x1="150" y1="240" x2="630" y2="500" class="connector" stroke-width="2"/>
+      
+      <!-- Project Manager -->
+      <rect x="1180" y="160" width="140" height="80" rx="8" class="stakeholder-box"/>
+      <text class="stakeholder-name" x="1250" y="210" text-anchor="middle">Project</text>
+      <text class="map-label" x="1250" y="230" text-anchor="middle">Manager</text>
+      <line x1="1180" y1="200" x2="770" y2="500" class="connector" stroke-width="2"/>
+      
+      <!-- Tech Lead -->
+      <rect x="80" y="760" width="140" height="80" rx="8" class="stakeholder-box"/>
+      <text class="stakeholder-name" x="150" y="810" text-anchor="middle">Tech</text>
+      <text class="map-label" x="150" y="830" text-anchor="middle">Lead</text>
+      <line x1="150" y1="760" x2="630" y2="540" class="connector" stroke-width="2"/>
+      
+      <!-- QA Lead -->
+      <rect x="1180" y="760" width="140" height="80" rx="8" class="stakeholder-box"/>
+      <text class="stakeholder-name" x="1250" y="810" text-anchor="middle">QA</text>
+      <text class="map-label" x="1250" y="830" text-anchor="middle">Lead</text>
+      <line x1="1180" y1="800" x2="770" y2="540" class="connector" stroke-width="1.5"/>
+      
+      <!-- Restaurant Partners -->
+      <rect x="330" y="300" width="140" height="80" rx="8" class="stakeholder-box" stroke-dasharray="5,5"/>
+      <text class="stakeholder-name" x="400" y="350" text-anchor="middle">Restaurant</text>
+      <text class="map-label" x="400" y="370" text-anchor="middle">Partners</text>
+      <line x1="400" y1="380" x2="630" y2="480" class="connector" stroke-width="1.5" stroke-dasharray="4,4"/>
+      
+      <!-- Customers -->
+      <rect x="930" y="300" width="140" height="80" rx="8" class="stakeholder-box" stroke-dasharray="5,5"/>
+      <text class="stakeholder-name" x="1000" y="350" text-anchor="middle">Customers</text>
+      <text class="map-label" x="1000" y="370" text-anchor="middle">(End Users)</text>
+      <line x1="1000" y1="380" x2="770" y2="480" class="connector" stroke-width="1.5" stroke-dasharray="4,4"/>
+    </g>
+    
+    <!-- Legend -->
+    <text class="map-label" x="50" y="950" style="font-weight: 600;">Legend:</text>
+    <line x1="150" y1="935" x2="190" y2="935" class="connector" stroke-width="2"/>
+    <text class="map-label" x="200" y="940">Direct Stakeholder</text>
+    <line x1="420" y1="935" x2="460" y2="935" class="connector" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <text class="map-label" x="470" y="940">Indirect Stakeholder</text>
+  </g>
+</svg>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600">
+  <defs>
+    <style>
+      .charter-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 28px; font-weight: 700; fill: #1A1A1A; }
+      .charter-section-title { font-size: 16px; font-weight: 600; fill: #1A1A1A; }
+      .charter-label { font-size: 12px; font-weight: 500; fill: #1A1A1A; }
+      .charter-text { font-size: 12px; fill: #1A1A1A; }
+      .charter-bg { fill: #E5E5E5; stroke: #1A1A1A; stroke-width: 1.5; }
+      .charter-border { stroke: #1A1A1A; stroke-width: 1.5; fill: none; }
+      .light-mode .charter-title { fill: #1A1A1A; }
+      .light-mode .charter-section-title { fill: #1A1A1A; }
+      .light-mode .charter-label { fill: #1A1A1A; }
+      .light-mode .charter-text { fill: #1A1A1A; }
+      .light-mode .charter-bg { fill: #E5E5E5; stroke: #1A1A1A; }
+      .dark-mode .charter-title { fill: #F2F2F2; }
+      .dark-mode .charter-section-title { fill: #F2F2F2; }
+      .dark-mode .charter-label { fill: #F2F2F2; }
+      .dark-mode .charter-text { fill: #F2F2F2; }
+      .dark-mode .charter-bg { fill: #1E1E1E; stroke: #F2F2F2; }
+    </style>
+    
+    <!-- Reusable section template -->
+    <g id="section-box">
+      <rect class="charter-bg" width="1000" height="120" rx="8"/>
+      <text class="charter-section-title" x="20" y="35"></text>
+      <rect class="charter-border" width="1000" height="120" rx="8"/>
+    </g>
+    
+    <!-- Key field template -->
+    <g id="key-field">
+      <rect class="charter-bg" width="480" height="80" rx="6"/>
+      <text class="charter-label" x="12" y="22"></text>
+      <text class="charter-text" x="12" y="50"></text>
+      <rect class="charter-border" width="480" height="80" rx="6"/>
+    </g>
+  </defs>
+
+  <!-- Embedded JSON Data -->
+  <script type="application/json" id="charter-data">
+  {
+    "projectName": "Food Delivery System - Phase 1",
+    "projectCode": "FDS-2024-01",
+    "version": "1.0",
+    "lastUpdated": "2024-01-15",
+    "businessCase": {
+      "businessNeed": "Develop a scalable, cloud-native food delivery platform to capture emerging market demand and improve customer experience",
+      "expectedBenefits": "15% revenue increase, 25% improvement in delivery time, enhanced customer retention",
+      "strategicAlignment": "Align with digital transformation initiative and customer-first strategy"
+    },
+    "projectObjectives": [
+      { "id": "obj1", "objective": "Deliver MVP with core features (order placement, real-time tracking, payment)", "kpis": ["MVP deployment in Q1", "90% uptime", "< 100ms API response"] },
+      { "id": "obj2", "objective": "Achieve seamless restaurant and driver onboarding", "kpis": ["500 restaurants onboarded", "1000 drivers registered", "< 48hr approval time"] },
+      { "id": "obj3", "objective": "Implement real-time order tracking and notifications", "kpis": ["99% tracking accuracy", "< 2s notification delay"] }
+    ],
+    "projectScope": {
+      "inScope": ["Mobile app (iOS/Android)", "Restaurant dashboard", "Driver app", "Payment gateway integration", "Real-time tracking", "Customer support chat"],
+      "outOfScope": ["Marketing campaigns", "Logistics network setup", "Third-party restaurant integrations (Phase 2)"]
+    },
+    "stakeholders": [
+      { "id": "pm", "name": "John Smith", "role": "Project Manager", "department": "Product", "engagement": "High" },
+      { "id": "sponsor", "name": "Sarah Chen", "role": "Executive Sponsor", "department": "C-Suite", "engagement": "Strategic" },
+      { "id": "tech", "name": "Mike Johnson", "role": "Tech Lead", "department": "Engineering", "engagement": "High" },
+      { "id": "qa", "name": "Emma Davis", "role": "QA Lead", "department": "Quality", "engagement": "Medium" }
+    ],
+    "timeline": {
+      "projectStart": "2024-01-15",
+      "projectEnd": "2024-06-30",
+      "phases": [
+        { "phase": "Planning & Design", "start": "2024-01-15", "end": "2024-02-28", "duration": "6 weeks" },
+        { "phase": "Development", "start": "2024-03-01", "end": "2024-05-15", "duration": "11 weeks" },
+        { "phase": "Testing & Deployment", "start": "2024-05-16", "end": "2024-06-30", "duration": "6 weeks" }
+      ]
+    },
+    "budget": {
+      "total": "$2,500,000",
+      "breakdown": [
+        { "category": "Engineering", "percentage": 45, "amount": "$1,125,000" },
+        { "category": "Infrastructure", "percentage": 25, "amount": "$625,000" },
+        { "category": "Testing & QA", "percentage": 15, "amount": "$375,000" },
+        { "category": "Contingency", "percentage": 15, "amount": "$375,000" }
+      ]
+    },
+    "constraints": [
+      { "type": "Technical", "description": "Must integrate with 3+ payment gateways", "impact": "High" },
+      { "type": "Regulatory", "description": "Compliance with food safety and data privacy regulations", "impact": "Critical" },
+      { "type": "Timeline", "description": "Must launch MVP before Q2 holiday season", "impact": "High" }
+    ],
+    "assumptions": [
+      "All stakeholders will be available for weekly sync meetings",
+      "Third-party APIs (payment, mapping) will have > 99% uptime",
+      "Team capacity remains stable throughout project duration",
+      "No major scope changes after charter approval"
+    ],
+    "designTokens": {
+      "lightMode": {
+        "canvas": "#FFFFFF",
+        "fill": "#E5E5E5",
+        "stroke": "#1A1A1A",
+        "text": "#1A1A1A",
+        "muted": "#8A8A85"
+      },
+      "darkMode": {
+        "canvas": "#0D0D0D",
+        "fill": "#1E1E1E",
+        "stroke": "#F2F2F2",
+        "text": "#F2F2F2",
+        "muted": "#8A8A85"
+      }
+    }
+  }
+  </script>
+
+  <!-- Light Mode Container -->
+  <g class="light-mode">
+    <rect width="1200" height="1600" fill="#FFFFFF"/>
+    
+    <!-- Header -->
+    <text class="charter-title" x="60" y="50">Project Charter</text>
+    <text class="charter-label" x="60" y="80">Data-Driven Template • Dynamic Rendering</text>
+    
+    <!-- Project Info Section -->
+    <rect class="charter-bg" x="40" y="120" width="1120" height="100" rx="8"/>
+    <text class="charter-section-title" x="60" y="145">Project Information</text>
+    <text class="charter-label" x="60" y="170">Project Name:</text>
+    <text class="charter-text" x="350" y="170" data-bind="projectName">Food Delivery System - Phase 1</text>
+    <text class="charter-label" x="60" y="190">Project Code:</text>
+    <text class="charter-text" x="350" y="190" data-bind="projectCode">FDS-2024-01</text>
+    <text class="charter-label" x="60" y="210">Timeline:</text>
+    <text class="charter-text" x="350" y="210" data-bind="timeline">Jan 15 - Jun 30, 2024</text>
+    <rect class="charter-border" x="40" y="120" width="1120" height="100" rx="8"/>
+    
+    <!-- Business Case -->
+    <text class="charter-section-title" x="60" y="280">Business Case</text>
+    <rect class="charter-bg" x="40" y="300" width="1120" height="140" rx="8"/>
+    <text class="charter-label" x="60" y="325">Business Need:</text>
+    <text class="charter-text" x="60" y="350" data-bind="businessCase.businessNeed">Develop scalable food delivery platform</text>
+    <text class="charter-label" x="60" y="375">Expected Benefits:</text>
+    <text class="charter-text" x="60" y="400" data-bind="businessCase.expectedBenefits">15% revenue increase, 25% delivery time improvement</text>
+    <rect class="charter-border" x="40" y="300" width="1120" height="140" rx="8"/>
+    
+    <!-- Objectives -->
+    <text class="charter-section-title" x="60" y="500" data-count="3">Project Objectives (3)</text>
+    <g id="objectives-container" transform="translate(40, 520)">
+      <!-- Dynamically populated -->
+    </g>
+    
+    <!-- Stakeholders -->
+    <text class="charter-section-title" x="60" y="1100" data-count="4">Key Stakeholders (4)</text>
+    <g id="stakeholders-container" transform="translate(40, 1120)">
+      <!-- Dynamically populated -->
+    </g>
+    
+    <!-- Budget -->
+    <text class="charter-section-title" x="60" y="1450">Budget Summary</text>
+    <rect class="charter-bg" x="40" y="1470" width="1120" height="80" rx="8"/>
+    <text class="charter-label" x="60" y="1495">Total Project Budget:</text>
+    <text class="charter-text" x="400" y="1495" data-bind="budget.total" style="font-weight: 600;">$2,500,000</text>
+    <text class="charter-label" x="60" y="1520">Distribution: Engineering (45%), Infrastructure (25%), QA (15%), Contingency (15%)</text>
+    <rect class="charter-border" x="40" y="1470" width="1120" height="80" rx="8"/>
+  </g>
+
+  <!-- Dark Mode Container -->
+  <g class="dark-mode" style="display: none;">
+    <rect width="1200" height="1600" fill="#0D0D0D"/>
+    <!-- Same structure as light mode with dark colors -->
+  </g>
+
+  <!-- Rendering Script Entry Point -->
+  <script type="text/javascript">
+    // Placeholder for web rendering logic
+    // const charterData = JSON.parse(document.getElementById('charter-data').textContent);
+    // renderProjectCharter(charterData, mode: 'light');
+  </script>
+</svg>

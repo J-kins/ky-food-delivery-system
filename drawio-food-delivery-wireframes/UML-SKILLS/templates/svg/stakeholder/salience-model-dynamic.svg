@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" width="1000" height="900">
+  <script type="application/json" id="salience-data">
+  {"diagramType":"Salience Model","projectName":"Food Delivery System","description":"Stakeholder analysis by power, legitimacy, and urgency","attributes":["Power","Legitimacy","Urgency"],"stakeholders":[{"id":"s1","name":"Executive Sponsor","power":1.0,"legitimacy":1.0,"urgency":0.9,"type":"definitive"},{"id":"s2","name":"Project Manager","power":0.9,"legitimacy":1.0,"urgency":0.85,"type":"definitive"},{"id":"s5","name":"Restaurant Partners","power":0.5,"legitimacy":0.9,"urgency":0.7,"type":"dependent"}],"designTokens":{"lightMode":{"canvas":"#FFFFFF"},"darkMode":{"canvas":"#0D0D0D"}}}
+  </script>
+  <rect width="1000" height="900" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="500" y="40" text-anchor="middle">Salience Model (Power × Legitimacy × Urgency)</text>
+</svg>

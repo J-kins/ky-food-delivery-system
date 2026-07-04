@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" width="1920" height="1000">
+  <script type="application/json" id="lakehouse-data">
+  {
+    "diagramType": "Data Lakehouse Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Unified data platform combining data lake and warehouse",
+    "zones": [
+      {
+        "zone": "Raw Zone (Bronze)",
+        "layer": 1,
+        "purpose": "Store raw data as-is from sources",
+        "location": {"x": 200, "y": 300},
+        "components": [
+          {"id": "raw1", "name": "Production Events", "format": "Parquet"},
+          {"id": "raw2", "name": "API Logs", "format": "JSON"},
+          {"id": "raw3", "name": "Mobile Data", "format": "Avro"}
+        ]
+      },
+      {
+        "zone": "Processed Zone (Silver)",
+        "layer": 2,
+        "purpose": "Cleaned, deduplicated, and validated data",
+        "location": {"x": 700, "y": 300},
+        "components": [
+          {"id": "proc1", "name": "Orders (Cleaned)", "format": "Delta/Parquet"},
+          {"id": "proc2", "name": "Users (Normalized)", "format": "Delta/Parquet"},
+          {"id": "proc3", "name": "Restaurants (Validated)", "format": "Delta/Parquet"}
+        ]
+      },
+      {
+        "zone": "Analytics Zone (Gold)",
+        "layer": 3,
+        "purpose": "Business-ready fact and dimension tables",
+        "location": {"x": 1200, "y": 300},
+        "components": [
+          {"id": "ana1", "name": "fact_orders", "type": "fact"},
+          {"id": "ana2", "name": "dim_users", "type": "dimension"},
+          {"id": "ana3", "name": "dim_restaurants", "type": "dimension"},
+          {"id": "ana4", "name": "dim_time", "type": "dimension"}
+        ]
+      },
+      {
+        "zone": "Serving Layer",
+        "layer": 4,
+        "purpose": "APIs and applications consume data",
+        "location": {"x": 1700, "y": 300},
+        "components": [
+          {"id": "srv1", "name": "REST APIs"},
+          {"id": "srv2", "name": "BI Dashboards"},
+          {"id": "srv3", "name": "ML Models"}
+        ]
+      }
+    ],
+    "technology": {
+      "storage": "AWS S3 with Delta Lake",
+      "compute": "Apache Spark / Databricks",
+      "orchestration": "Apache Airflow",
+      "metadata": "Hive Metastore",
+      "governance": "Unity Catalog"
+    },
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1000" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Data Lakehouse Architecture (Delta Lake)</text>
+</svg>

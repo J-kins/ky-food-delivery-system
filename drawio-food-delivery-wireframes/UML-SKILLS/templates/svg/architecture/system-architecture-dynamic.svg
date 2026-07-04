@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="system-arch-data">
+  {
+    "diagramType": "System Architecture",
+    "projectName": "Food Delivery System",
+    "description": "Detailed technical system design with components and interactions",
+    "zones": [
+      {"zone": "Client", "position": {"x": 100}, "components": [{"id": "c1", "name": "Mobile Client"}, {"id": "c2", "name": "Web Client"}]},
+      {"zone": "Gateway", "position": {"x": 500}, "components": [{"id": "g1", "name": "API Gateway"}, {"id": "g2", "name": "Load Balancer"}]},
+      {"zone": "Services", "position": {"x": 900}, "components": [{"id": "s1", "name": "Order Service"}, {"id": "s2", "name": "User Service"}, {"id": "s3", "name": "Restaurant Service"}]},
+      {"zone": "Data", "position": {"x": 1400}, "components": [{"id": "d1", "name": "Primary DB"}, {"id": "d2", "name": "Cache"}]}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">System Architecture</text>
+</svg>

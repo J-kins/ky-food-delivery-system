@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <script type="application/json" id="c4-container-data">
+  {
+    "diagramType": "C4 Container Diagram",
+    "projectName": "Food Delivery System",
+    "description": "Level 2: Containers (applications and data stores)",
+    "containers": [
+      {"id": "web", "name": "Web Application", "type": "web_app", "technology": "React", "position": {"x": 300, "y": 300}},
+      {"id": "mobile", "name": "Mobile App", "type": "mobile_app", "technology": "React Native", "position": {"x": 300, "y": 600}},
+      {"id": "api", "name": "API Server", "type": "backend", "technology": "Node.js", "position": {"x": 800, "y": 450}},
+      {"id": "worker", "name": "Background Worker", "type": "backend", "technology": "Python", "position": {"x": 1300, "y": 300}},
+      {"id": "db", "name": "Database", "type": "database", "technology": "PostgreSQL", "position": {"x": 1300, "y": 600}},
+      {"id": "cache", "name": "Cache", "type": "cache", "technology": "Redis", "position": {"x": 1700, "y": 450}}
+    ],
+    "relationships": [
+      {"from": "web", "to": "api", "protocol": "HTTPS"},
+      {"from": "mobile", "to": "api", "protocol": "HTTPS"},
+      {"from": "api", "to": "db", "protocol": "SQL"},
+      {"from": "api", "to": "cache", "protocol": "TCP"},
+      {"from": "worker", "to": "db", "protocol": "SQL"}
+    ],
+    "designTokens": {"lightMode": {"canvas": "#FFFFFF"}, "darkMode": {"canvas": "#0D0D0D"}}
+  }
+  </script>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">C4 Model: Container Diagram</text>
+</svg>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" width="1920" height="1000">
+  <script type="application/json" id="erd-data">
+  {
+    "diagramType": "Entity Relationship Diagram",
+    "projectName": "Food Delivery System",
+    "description": "Logical relationships between core entities",
+    "entities": [
+      {
+        "id": "users",
+        "name": "Users",
+        "type": "entity",
+        "position": {"x": 240, "y": 320},
+        "attributes": ["user_id (PK)", "name", "email", "phone", "address"],
+        "cardinality": "1..n"
+      },
+      {
+        "id": "restaurants",
+        "name": "Restaurants",
+        "type": "entity",
+        "position": {"x": 800, "y": 320},
+        "attributes": ["restaurant_id (PK)", "name", "location", "rating", "cuisine"],
+        "cardinality": "1..n"
+      },
+      {
+        "id": "orders",
+        "name": "Orders",
+        "type": "entity",
+        "position": {"x": 1360, "y": 320},
+        "attributes": ["order_id (PK)", "user_id (FK)", "restaurant_id (FK)", "status", "total"],
+        "cardinality": "1..n"
+      },
+      {
+        "id": "items",
+        "name": "Menu Items",
+        "type": "entity",
+        "position": {"x": 560, "y": 660},
+        "attributes": ["item_id (PK)", "restaurant_id (FK)", "name", "price", "category"],
+        "cardinality": "1..n"
+      },
+      {
+        "id": "order_items",
+        "name": "Order Items",
+        "type": "junction",
+        "position": {"x": 960, "y": 660},
+        "attributes": ["order_item_id (PK)", "order_id (FK)", "item_id (FK)", "quantity", "price"],
+        "cardinality": "M..N"
+      }
+    ],
+    "relationships": [
+      {
+        "from": "users",
+        "to": "orders",
+        "name": "places",
+        "cardinality": "1..n",
+        "type": "one_to_many"
+      },
+      {
+        "from": "restaurants",
+        "to": "orders",
+        "name": "receives",
+        "cardinality": "1..n",
+        "type": "one_to_many"
+      },
+      {
+        "from": "restaurants",
+        "to": "items",
+        "name": "offers",
+        "cardinality": "1..n",
+        "type": "one_to_many"
+      },
+      {
+        "from": "orders",
+        "to": "order_items",
+        "name": "contains",
+        "cardinality": "1..n",
+        "type": "one_to_many"
+      },
+      {
+        "from": "items",
+        "to": "order_items",
+        "name": "included_in",
+        "cardinality": "1..n",
+        "type": "one_to_many"
+      }
+    ],
+    "designTokens": {
+      "lightMode": {"canvas": "#FFFFFF", "entity": "#E5E5E5", "stroke": "#1A1A1A"},
+      "darkMode": {"canvas": "#0D0D0D", "entity": "#1E1E1E", "stroke": "#F2F2F2"}
+    }
+  }
+  </script>
+  <rect width="1920" height="1000" fill="#FFFFFF"/>
+  <text style="font-size:24px;font-weight:700;" x="960" y="50" text-anchor="middle">Entity Relationship Diagram (ERD)</text>
+</svg>
