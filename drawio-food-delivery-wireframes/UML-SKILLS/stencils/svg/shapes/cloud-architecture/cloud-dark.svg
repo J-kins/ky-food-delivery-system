@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" width="140" height="100">
+  <ellipse id="cloud-base" cx="70.0" cy="58.0" rx="42.0" ry="15.0" fill="#1E1E1E" stroke="none" stroke-width="0"/>
+  <circle id="cloud-c1" cx="46.0" cy="50.0" r="15.0" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="0"/>
+  <circle id="cloud-c2" cx="67.0" cy="37.0" r="20.0" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="0"/>
+  <circle id="cloud-c3" cx="88.0" cy="45.0" r="17.0" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="0"/>
+  <circle id="cloud-c4" cx="101.0" cy="53.0" r="12.0" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="0"/>
+</svg>

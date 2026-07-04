@@ -1,0 +1,18 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Storage shape: folder/container -->
+  <defs>
+    <style>
+      .arch-fill { fill: #1E1E1E; }
+      .arch-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Storage container -->
+  <rect x="20" y="30" width="100" height="50" rx="6" class="arch-fill arch-stroke"/>
+  <!-- Storage blocks inside -->
+  <rect x="30" y="40" width="20" height="15" class="arch-fill arch-stroke"/>
+  <rect x="60" y="40" width="20" height="15" class="arch-fill arch-stroke"/>
+  <rect x="90" y="40" width="20" height="15" class="arch-fill arch-stroke"/>
+  <rect x="30" y="60" width="20" height="15" class="arch-fill arch-stroke"/>
+  <rect x="60" y="60" width="20" height="15" class="arch-fill arch-stroke"/>
+  <rect x="90" y="60" width="20" height="15" class="arch-fill arch-stroke"/>
+</svg>

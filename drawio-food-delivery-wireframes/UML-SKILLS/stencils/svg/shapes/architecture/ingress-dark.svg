@@ -1,0 +1,13 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ingress shape: gateway arrow -->
+  <defs>
+    <style>
+      .arch-fill { fill: #1E1E1E; }
+      .arch-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Arrow incoming -->
+  <polygon points="20,50 45,35 45,45 120,45 120,55 45,55 45,65" class="arch-fill arch-stroke"/>
+  <!-- Entry point circles -->
+  <circle cx="35" cy="50" r="3" class="arch-fill arch-stroke"/>
+</svg>

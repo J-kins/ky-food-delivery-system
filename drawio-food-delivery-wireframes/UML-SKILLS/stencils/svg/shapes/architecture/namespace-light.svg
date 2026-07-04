@@ -1,0 +1,16 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Namespace shape: container with label area -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Outer container -->
+  <rect x="15" y="15" width="110" height="70" rx="8" class="arch-fill arch-stroke"/>
+  <!-- Label tab -->
+  <rect x="15" y="15" width="40" height="20" class="arch-fill arch-stroke"/>
+  <!-- Inner compartments -->
+  <line x1="20" y1="40" x2="120" y2="40" class="arch-stroke"/>
+  <line x1="20" y1="60" x2="120" y2="60" class="arch-stroke"/>
+</svg>

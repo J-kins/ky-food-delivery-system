@@ -1,0 +1,16 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Consumer shape: rounded rect with input arrow -->
+  <defs>
+    <style>
+      .arch-fill { fill: #E5E5E5; }
+      .arch-stroke { stroke: #1A1A1A; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <!-- Input arrow -->
+  <polygon points="30,50 50,45 50,55" class="arch-fill arch-stroke"/>
+  <line x1="30" y1="50" x2="50" y2="50" class="arch-stroke"/>
+  <!-- Main container -->
+  <rect x="50" y="30" width="70" height="40" rx="6" class="arch-fill arch-stroke"/>
+  <!-- Consumer indicator -->
+  <circle cx="100" cy="50" r="4" class="arch-fill arch-stroke"/>
+</svg>

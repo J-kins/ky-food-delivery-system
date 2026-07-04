@@ -1,0 +1,9 @@
+<svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ent-fill { fill: #1E1E1E; }
+      .ent-stroke { stroke: #F2F2F2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect x="20" y="20" width="100" height="60" rx="8" class="ent-fill ent-stroke"/>
+</svg>
