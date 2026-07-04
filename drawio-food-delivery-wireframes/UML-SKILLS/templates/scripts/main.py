@@ -40,6 +40,15 @@ from data import (
     DataPipelineConverter,
     DataLakehouseConverter,
 )
+from cloud import (
+    AWSArchitectureConverter,
+    AzureArchitectureConverter,
+    GCPArchitectureConverter,
+    MultiCloudArchitectureConverter,
+    ServerlessArchitectureConverter,
+    CloudMigrationConverter,
+    CloudCostOptimizationConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -76,6 +85,22 @@ CONVERTER_REGISTRY = {
     "pipeline": DataPipelineConverter,
     "data-lakehouse": DataLakehouseConverter,
     "lakehouse": DataLakehouseConverter,
+    # Cloud Architecture
+    "aws": AWSArchitectureConverter,
+    "aws-architecture": AWSArchitectureConverter,
+    "azure": AzureArchitectureConverter,
+    "azure-architecture": AzureArchitectureConverter,
+    "gcp": GCPArchitectureConverter,
+    "gcp-architecture": GCPArchitectureConverter,
+    "google-cloud": GCPArchitectureConverter,
+    "multi-cloud": MultiCloudArchitectureConverter,
+    "multi-cloud-architecture": MultiCloudArchitectureConverter,
+    "serverless": ServerlessArchitectureConverter,
+    "serverless-architecture": ServerlessArchitectureConverter,
+    "cloud-migration": CloudMigrationConverter,
+    "migration": CloudMigrationConverter,
+    "cloud-cost-optimization": CloudCostOptimizationConverter,
+    "cost-optimization": CloudCostOptimizationConverter,
 }
 
 
@@ -209,18 +234,50 @@ class TemplateConverterOrchestrator:
             return "risk-matrix"
         elif "sitemap" in filename:
             return "sitemap"
+        # Cloud Architecture Detection
+        elif "aws" in filename:
+            return "aws-architecture"
+        elif "azure" in filename:
+            return "azure-architecture"
+        elif "gcp" in filename or "google" in filename:
+            return "gcp-architecture"
+        elif "multi-cloud" in filename or "multicloud" in filename:
+            return "multi-cloud-architecture"
+        elif "serverless" in filename:
+            return "serverless-architecture"
+        elif "migration" in filename:
+            return "cloud-migration"
+        elif "cost" in filename and "optimization" in filename:
+            return "cloud-cost-optimization"
 
         # Could parse SVG content to detect data type
         try:
             from base import JSONDataParser
             template = JSONDataParser.parse_svg_template(svg_path)
             chart_type = template.data.get("chartType", "").lower()
+            title = template.data.get("metadata", {}).get("title", "").lower()
             
             if chart_type:
                 # Normalize chart type to diagram type
                 for diagram_type in CONVERTER_REGISTRY:
                     if diagram_type.replace("-", " ") in chart_type:
                         return diagram_type
+            
+            # Check title for cloud architecture keywords
+            if "aws" in title:
+                return "aws-architecture"
+            elif "azure" in title:
+                return "azure-architecture"
+            elif "gcp" in title or "google cloud" in title:
+                return "gcp-architecture"
+            elif "multi-cloud" in title:
+                return "multi-cloud-architecture"
+            elif "serverless" in title:
+                return "serverless-architecture"
+            elif "migration" in title:
+                return "cloud-migration"
+            elif "cost optimization" in title:
+                return "cloud-cost-optimization"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 
