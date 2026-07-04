@@ -64,6 +64,16 @@ from gis import (
     GeoprocessingWorkflowConverter,
     SpatialDataFlowConverter,
 )
+from infrastructure import (
+    InfrastructureArchitectureConverter,
+    NetworkArchitectureConverter,
+    CloudInfrastructureConverter,
+    DeploymentArchitectureConverter,
+    ContainerArchitectureConverter,
+    KubernetesArchitectureConverter,
+    HighAvailabilityArchitectureConverter,
+    DisasterRecoveryArchitectureConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -142,6 +152,24 @@ CONVERTER_REGISTRY = {
     "geoprocessing-workflow": GeoprocessingWorkflowConverter,
     "spatial-data-flow": SpatialDataFlowConverter,
     "data-flow": SpatialDataFlowConverter,
+    # Infrastructure
+    "infrastructure": InfrastructureArchitectureConverter,
+    "infrastructure-architecture": InfrastructureArchitectureConverter,
+    "network": NetworkArchitectureConverter,
+    "network-architecture": NetworkArchitectureConverter,
+    "cloud-infrastructure": CloudInfrastructureConverter,
+    "cloud-arch": CloudInfrastructureConverter,
+    "deployment": DeploymentArchitectureConverter,
+    "deployment-architecture": DeploymentArchitectureConverter,
+    "container": ContainerArchitectureConverter,
+    "container-architecture": ContainerArchitectureConverter,
+    "kubernetes": KubernetesArchitectureConverter,
+    "kubernetes-architecture": KubernetesArchitectureConverter,
+    "k8s": KubernetesArchitectureConverter,
+    "high-availability": HighAvailabilityArchitectureConverter,
+    "ha-architecture": HighAvailabilityArchitectureConverter,
+    "disaster-recovery": DisasterRecoveryArchitectureConverter,
+    "dr-architecture": DisasterRecoveryArchitectureConverter,
 }
 
 
@@ -316,6 +344,25 @@ class TemplateConverterOrchestrator:
             return "geoprocessing-workflow"
         elif "spatial" in filename and "flow" in filename:
             return "spatial-data-flow"
+        # Infrastructure Detection
+        elif "infrastructure" in filename and "architecture" in filename:
+            return "infrastructure-architecture"
+        elif "infrastructure" in filename:
+            return "infrastructure-architecture"
+        elif "network" in filename and "architecture" in filename:
+            return "network-architecture"
+        elif "cloud" in filename and ("architecture" in filename or "infra" in filename):
+            return "cloud-infrastructure"
+        elif "deployment" in filename and "architecture" in filename:
+            return "deployment-architecture"
+        elif "container" in filename and "architecture" in filename:
+            return "container-architecture"
+        elif "kubernetes" in filename or "k8s" in filename:
+            return "kubernetes-architecture"
+        elif "high-availability" in filename or "ha-architecture" in filename:
+            return "high-availability"
+        elif "disaster-recovery" in filename or "dr-architecture" in filename:
+            return "disaster-recovery"
 
         # Could parse SVG content to detect data type
         try:
@@ -367,6 +414,22 @@ class TemplateConverterOrchestrator:
                 return "geoprocessing-workflow"
             elif "spatial" in title and "flow" in title:
                 return "spatial-data-flow"
+            elif "infrastructure" in title and "architecture" in title:
+                return "infrastructure-architecture"
+            elif "network" in title and "architecture" in title:
+                return "network-architecture"
+            elif "cloud" in title and "infrastructure" in title:
+                return "cloud-infrastructure"
+            elif "deployment" in title and "architecture" in title:
+                return "deployment-architecture"
+            elif "container" in title and "architecture" in title:
+                return "container-architecture"
+            elif "kubernetes" in title or "k8s" in title:
+                return "kubernetes-architecture"
+            elif "high availability" in title:
+                return "high-availability"
+            elif "disaster recovery" in title:
+                return "disaster-recovery"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 
