@@ -1,31 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <rect width="1920" height="1080" fill="#ffffff"/>
+  <!-- Design Tokens (Light Mode - Default) -->
   <defs>
+    <style>
+      :root {
+        --canvas-light: #FFFFFF;
+        --fill-light: #E5E5E5;
+        --stroke-light: #1A1A1A;
+        --text-muted: #8A8A85;
+        --connector: #1A1A1A;
+      }
+    </style>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1A1A1A"/>
     </marker>
   </defs>
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
-  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
-  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">Serverless Architecture</text>
-  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
+
+  <!-- Canvas Background -->
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+
+  <!-- Main Border Container -->
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+
+  <!-- Header Section -->
+  <rect x="580" y="52" width="760" height="56" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="960" y="88" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">Serverless Architecture</text>
+  <text x="960" y="108" text-anchor="middle" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400">&lt;Project Name&gt; · Template</text>
+
+  <!-- Content Grid Background -->
   <defs>
     <pattern id="grid-serverless-architecture" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1A1A1A" stroke-width="0.5" opacity="0.1"/>
     </pattern>
   </defs>
   <rect x="40" y="118" width="1840" height="882" fill="url(#grid-serverless-architecture)"/>
-  <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
-  <rect x="360" y="360" width="200" height="80" rx="6" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
-  <text x="460.0" y="405.0" text-anchor="middle" fill="#334155" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">API Gateway</text>
-  <rect x="760" y="360" width="200" height="80" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="860.0" y="405.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Function</text>
-  <rect x="1160" y="360" width="200" height="80" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1260.0" y="405.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Datastore</text>
-  <line x1="560" y1="400" x2="760" y2="400" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <line x1="960" y1="400" x2="1160" y2="400" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
-  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · Serverless Architecture</text>
+  <rect x="40" y="118" width="1840" height="882" fill="#FFFFFF" fill-opacity="1"/>
+
+  <!-- API Gateway Section -->
+  <rect x="300" y="220" width="1200" height="200" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="900.0" y="325.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">API Gateway</text>
+
+  <!-- Functions Section -->
+  <rect x="300" y="460" width="550" height="240" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="310" y="480" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Lambda Functions</text>
+
+  <!-- Data Services Section -->
+  <rect x="920" y="460" width="580" height="240" rx="8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="930" y="480" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Data Services</text>
+
+  <!-- Legend Section -->
+  <rect x="1580" y="850" width="280" height="130" rx="8" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="1720.0" y="920.0" text-anchor="middle" fill="#1A1A1A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="500">Legend</text>
+
+  <!-- Footer Information -->
+  <text x="52" y="1048" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" fill="#8A8A85" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="0.3px">&lt;Project Name&gt; · Version 1.0 · Serverless Architecture</text>
 </svg>
