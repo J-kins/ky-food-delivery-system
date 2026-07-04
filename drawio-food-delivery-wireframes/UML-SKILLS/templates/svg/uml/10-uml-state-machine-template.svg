@@ -1,35 +1,66 @@
+<?XML version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <rect width="1920" height="1080" fill="#ffffff"/>
+  <script type="application/json" id="uml-state-machine-data">
+  {
+    "metadata": {"title": "UML State Machine Diagram", "projectName": "Food Delivery System", "description": "State transitions and behavioral state machine", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#FFFFFF", "strokeColor": "#334155"}},
+    "data": {
+      "states": [
+        {"id": "state1", "name": "State 1", "x": 250, "y": 350, "rx": 40, "ry": 50},
+        {"id": "state2", "name": "State 2", "x": 700, "y": 350, "rx": 40, "ry": 50},
+        {"id": "state3", "name": "State 3", "x": 1150, "y": 350, "rx": 40, "ry": 50}
+      ],
+      "transitions": [
+        {"from": "state1", "to": "state2", "label": "event1"},
+        {"from": "state2", "to": "state3", "label": "event2"}
+      ]
+    }
+  }
+  </script>
   <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <style>
+      :root { --fill-light: #FFFFFF; --stroke-light: #334155; --text-light: #334155; --muted-light: #64748b; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .state-circle { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 11px; font-weight: 600; }
+      .label-secondary { fill: var(--muted-light); font-size: 9px; }
+    </style>
+    <marker id="arrow-state" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
     </marker>
-  </defs>
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
-  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
-  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">UML State Machine Diagram</text>
-  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
-  <defs>
-    <pattern id="grid-uml-state-machine" width="50" height="50" patternUnits="userSpaceOnUse">
+    <pattern id="grid-state" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-uml-state-machine)"/>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="480" y="52" width="960" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">UML State Machine Diagram</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-primary" font-size="12">&lt;Project Name&gt; · Template</text>
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-state)"/>
   <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
-  <text x="200" y="260" text-anchor="start" fill="#334155" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18">●</text>
-  <rect x="280" y="240" width="160" height="72" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="360.0" y="281.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">State A</text>
-  <rect x="620" y="320" width="160" height="72" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="700.0" y="361.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">State B</text>
-  <rect x="980" y="260" width="160" height="72" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1060.0" y="301.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">State C</text>
-  <rect x="1320" y="380" width="160" height="72" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1400.0" y="421.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">State D</text>
-  <line x1="440" y1="276" x2="620" y2="356" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <line x1="780" y1="356" x2="980" y2="296" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <text x="700" y="340" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">event / guard</text>
-  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
-  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · UML State Machine Diagram</text>
+  <ellipse cx="250" cy="350" rx="60" ry="50" class="state-circle"/>
+  <text x="250" y="355" text-anchor="middle" class="label-primary">State 1</text>
+  <ellipse cx="700" cy="350" rx="60" ry="50" class="state-circle"/>
+  <text x="700" y="355" text-anchor="middle" class="label-primary">State 2</text>
+  <ellipse cx="1150" cy="350" rx="60" ry="50" class="state-circle"/>
+  <text x="1150" y="355" text-anchor="middle" class="label-primary">State 3</text>
+  <path d="M 310 330 Q 475 290 640 330" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow-state)"/>
+  <text x="475" y="295" text-anchor="middle" class="label-secondary">event1</text>
+  <path d="M 760 330 Q 925 290 1090 330" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow-state)"/>
+  <text x="925" y="295" text-anchor="middle" class="label-secondary">event2</text>
+  <text x="52" y="1048" class="label-primary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-primary" font-size="10">&lt;Project Name&gt; · Version 1.0 · UML State Machine Diagram</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#uml-state-machine-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[UML State Machine Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[UML State Machine] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>

@@ -1,34 +1,67 @@
+<?XML version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <rect width="1920" height="1080" fill="#ffffff"/>
+  <script type="application/json" id="uml-object-diagram-data">
+  {
+    "metadata": {"title": "UML Object Diagram", "projectName": "Food Delivery System", "description": "Instance snapshots showing object states and links", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#FFFFFF", "strokeColor": "#334155"}},
+    "data": {
+      "objects": [
+        {"id": "obj1", "name": "object1: ClassA", "x": 200, "y": 250, "width": 200, "height": 120, "attributes": ["attr1 = value1", "attr2 = value2"]},
+        {"id": "obj2", "name": "object2: ClassB", "x": 650, "y": 250, "width": 200, "height": 120, "attributes": ["attr1 = value1", "attr2 = value2"]},
+        {"id": "obj3", "name": "object3: ClassC", "x": 1100, "y": 250, "width": 200, "height": 120, "attributes": ["attr1 = value1", "attr2 = value2"]}
+      ],
+      "links": [
+        {"from": "obj1", "to": "obj2"},
+        {"from": "obj2", "to": "obj3"}
+      ]
+    }
+  }
+  </script>
   <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
-    </marker>
-  </defs>
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
-  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
-  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">UML Object Diagram</text>
-  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
-  <defs>
-    <pattern id="grid-uml-object-diagram" width="50" height="50" patternUnits="userSpaceOnUse">
+    <style>
+      :root { --canvas-light: #FFFFFF; --fill-light: #FFFFFF; --stroke-light: #334155; --text-light: #334155; --muted-light: #64748b; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .object-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 12px; font-weight: 600; }
+      .label-secondary { fill: var(--muted-light); font-size: 10px; }
+    </style>
+    <pattern id="grid-object" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-uml-object-diagram)"/>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">UML Object Diagram</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-secondary" font-size="12">&lt;Project Name&gt; · Template</text>
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-object)"/>
   <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
-  <rect x="220" y="280" width="200" height="120" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="320.0" y="345.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">:objA</text>
-  <text x="320" y="420" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">________</text>
-  <rect x="740" y="280" width="200" height="120" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="840.0" y="345.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">:objB</text>
-  <text x="840" y="420" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">________</text>
-  <rect x="1260" y="280" width="200" height="120" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1360.0" y="345.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">:objC</text>
-  <text x="1360" y="420" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">________</text>
-  <line x1="420" y1="340" x2="740" y2="340" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <text x="580" y="325" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&amp;lt;link&amp;gt;</text>
-  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
-  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · UML Object Diagram</text>
+  <rect x="200" y="250" width="200" height="120" class="object-box"/>
+  <line x1="200" y1="278" x2="400" y2="278" stroke="#334155" stroke-width="1.5"/>
+  <text x="300" y="265" text-anchor="middle" class="label-primary">object1: ClassA</text>
+  <text x="300" y="295" text-anchor="middle" class="label-secondary">attr1 = value1</text>
+  <rect x="650" y="250" width="200" height="120" class="object-box"/>
+  <line x1="650" y1="278" x2="850" y2="278" stroke="#334155" stroke-width="1.5"/>
+  <text x="750" y="265" text-anchor="middle" class="label-primary">object2: ClassB</text>
+  <text x="750" y="295" text-anchor="middle" class="label-secondary">attr1 = value1</text>
+  <rect x="1100" y="250" width="200" height="120" class="object-box"/>
+  <line x1="1100" y1="278" x2="1300" y2="278" stroke="#334155" stroke-width="1.5"/>
+  <text x="1200" y="265" text-anchor="middle" class="label-primary">object3: ClassC</text>
+  <text x="1200" y="295" text-anchor="middle" class="label-secondary">attr1 = value1</text>
+  <line x1="400" y1="310" x2="650" y2="310" stroke="#334155" stroke-width="1.25"/>
+  <line x1="850" y1="310" x2="1100" y2="310" stroke="#334155" stroke-width="1.25"/>
+  <text x="52" y="1048" class="label-secondary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-secondary" font-size="10">&lt;Project Name&gt; · Version 1.0 · UML Object Diagram</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#uml-object-diagram-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[UML Object Diagram Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[UML Object Diagram] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>

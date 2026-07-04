@@ -82,6 +82,22 @@ from process_flow import (
     WorkflowDiagramConverter,
     ValueStreamMapConverter,
 )
+from uml import (
+    ClassDiagramConverter,
+    ObjectDiagramConverter,
+    ComponentDiagramConverter,
+    DeploymentDiagramConverter,
+    PackageDiagramConverter,
+    CompositeStructureDiagramConverter,
+    UseCaseDiagramConverter,
+    SequenceDiagramConverter,
+    ActivityDiagramConverter,
+    StateMachineDiagramConverter,
+    CommunicationDiagramConverter,
+    InteractionOverviewDiagramConverter,
+    TimingDiagramConverter,
+    ProfileDiagramConverter,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -193,6 +209,51 @@ CONVERTER_REGISTRY = {
     "value-stream-map": ValueStreamMapConverter,
     "vsm": ValueStreamMapConverter,
     "value-stream": ValueStreamMapConverter,
+    # UML Diagrams
+    "uml-class-diagram": ClassDiagramConverter,
+    "class-diagram": ClassDiagramConverter,
+    "uml-class": ClassDiagramConverter,
+    "uml-object-diagram": ObjectDiagramConverter,
+    "object-diagram": ObjectDiagramConverter,
+    "uml-object": ObjectDiagramConverter,
+    "uml-component-diagram": ComponentDiagramConverter,
+    "component-diagram": ComponentDiagramConverter,
+    "uml-component": ComponentDiagramConverter,
+    "uml-deployment-diagram": DeploymentDiagramConverter,
+    "deployment-diagram": DeploymentDiagramConverter,
+    "uml-deployment": DeploymentDiagramConverter,
+    "uml-package-diagram": PackageDiagramConverter,
+    "package-diagram": PackageDiagramConverter,
+    "uml-package": PackageDiagramConverter,
+    "uml-composite-structure": CompositeStructureDiagramConverter,
+    "composite-structure": CompositeStructureDiagramConverter,
+    "uml-composite": CompositeStructureDiagramConverter,
+    "uml-use-case-diagram": UseCaseDiagramConverter,
+    "use-case-diagram": UseCaseDiagramConverter,
+    "usecase-diagram": UseCaseDiagramConverter,
+    "uml-use-case": UseCaseDiagramConverter,
+    "uml-sequence-diagram": SequenceDiagramConverter,
+    "sequence-diagram": SequenceDiagramConverter,
+    "uml-sequence": SequenceDiagramConverter,
+    "uml-activity-diagram": ActivityDiagramConverter,
+    "activity-diagram": ActivityDiagramConverter,
+    "uml-activity": ActivityDiagramConverter,
+    "uml-state-machine": StateMachineDiagramConverter,
+    "state-machine-diagram": StateMachineDiagramConverter,
+    "state-machine": StateMachineDiagramConverter,
+    "uml-state": StateMachineDiagramConverter,
+    "uml-communication-diagram": CommunicationDiagramConverter,
+    "communication-diagram": CommunicationDiagramConverter,
+    "uml-communication": CommunicationDiagramConverter,
+    "uml-interaction-overview": InteractionOverviewDiagramConverter,
+    "interaction-overview-diagram": InteractionOverviewDiagramConverter,
+    "interaction-overview": InteractionOverviewDiagramConverter,
+    "uml-timing-diagram": TimingDiagramConverter,
+    "timing-diagram": TimingDiagramConverter,
+    "uml-timing": TimingDiagramConverter,
+    "uml-profile-diagram": ProfileDiagramConverter,
+    "profile-diagram": ProfileDiagramConverter,
+    "uml-profile": ProfileDiagramConverter,
 }
 
 
@@ -399,6 +460,35 @@ class TemplateConverterOrchestrator:
             return "workflow-diagram"
         elif "value-stream-map" in filename or "vsm" in filename:
             return "value-stream-map"
+        # UML Detection
+        elif "uml" in filename and "class" in filename:
+            return "uml-class-diagram"
+        elif "uml" in filename and "object" in filename:
+            return "uml-object-diagram"
+        elif "uml" in filename and "component" in filename:
+            return "uml-component-diagram"
+        elif "uml" in filename and "deployment" in filename:
+            return "uml-deployment-diagram"
+        elif "uml" in filename and "package" in filename:
+            return "uml-package-diagram"
+        elif "uml" in filename and "composite" in filename:
+            return "uml-composite-structure"
+        elif "uml" in filename and ("use-case" in filename or "usecase" in filename):
+            return "uml-use-case-diagram"
+        elif "uml" in filename and "sequence" in filename:
+            return "uml-sequence-diagram"
+        elif "uml" in filename and "activity" in filename:
+            return "uml-activity-diagram"
+        elif "uml" in filename and ("state-machine" in filename or "state_machine" in filename):
+            return "uml-state-machine"
+        elif "uml" in filename and "communication" in filename:
+            return "uml-communication-diagram"
+        elif "uml" in filename and "interaction-overview" in filename:
+            return "uml-interaction-overview"
+        elif "uml" in filename and "timing" in filename:
+            return "uml-timing-diagram"
+        elif "uml" in filename and "profile" in filename:
+            return "uml-profile-diagram"
 
         # Could parse SVG content to detect data type
         try:
@@ -478,6 +568,34 @@ class TemplateConverterOrchestrator:
                 return "workflow-diagram"
             elif "value stream" in title:
                 return "value-stream-map"
+            elif "uml" in title and "class" in title:
+                return "uml-class-diagram"
+            elif "uml" in title and "object" in title:
+                return "uml-object-diagram"
+            elif "uml" in title and "component" in title:
+                return "uml-component-diagram"
+            elif "uml" in title and "deployment" in title:
+                return "uml-deployment-diagram"
+            elif "uml" in title and "package" in title:
+                return "uml-package-diagram"
+            elif "uml" in title and "composite" in title:
+                return "uml-composite-structure"
+            elif "uml" in title and "use case" in title:
+                return "uml-use-case-diagram"
+            elif "uml" in title and "sequence" in title:
+                return "uml-sequence-diagram"
+            elif "uml" in title and "activity" in title:
+                return "uml-activity-diagram"
+            elif "uml" in title and "state machine" in title:
+                return "uml-state-machine"
+            elif "uml" in title and "communication" in title:
+                return "uml-communication-diagram"
+            elif "uml" in title and "interaction overview" in title:
+                return "uml-interaction-overview"
+            elif "uml" in title and "timing" in title:
+                return "uml-timing-diagram"
+            elif "uml" in title and "profile" in title:
+                return "uml-profile-diagram"
         except Exception as e:
             logger.debug(f"Could not detect from content: {e}")
 

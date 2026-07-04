@@ -1,25 +1,60 @@
+<?XML version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" fill="none">
-  <rect width="1920" height="1080" fill="#ffffff"/>
-  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
-  <rect x="580" y="52" width="760" height="56" rx="6" fill="#3B82F6"/>
-  <text x="960" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">UML Profile Diagram</text>
-  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12">&lt;Project Name&gt; · Template</text>
+  <script type="application/json" id="uml-profile-diagram-data">
+  {
+    "metadata": {"title": "UML Profile Diagram", "projectName": "Food Delivery System", "description": "UML profile extensions and stereotypes", "version": "1.0", "mode": "light"},
+    "config": {"layout": {"canvasWidth": 1920, "canvasHeight": 1080}, "styling": {"mode": "light", "canvasColor": "#FFFFFF", "fillColor": "#FFFFFF", "strokeColor": "#334155"}},
+    "data": {
+      "stereotypes": [
+        {"id": "st1", "name": "Stereotype1", "x": 300, "y": 300, "width": 180, "height": 120},
+        {"id": "st2", "name": "Stereotype2", "x": 750, "y": 300, "width": 180, "height": 120},
+        {"id": "st3", "name": "Stereotype3", "x": 1200, "y": 300, "width": 180, "height": 120}
+      ]
+    }
+  }
+  </script>
   <defs>
-    <pattern id="grid-uml-profile-diagram" width="50" height="50" patternUnits="userSpaceOnUse">
+    <style>
+      :root { --fill-light: #FFFFFF; --stroke-light: #334155; --text-light: #334155; }
+      text { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+      .stereotype-box { fill: var(--fill-light); stroke: var(--stroke-light); stroke-width: 1.5; }
+      .label-primary { fill: var(--text-light); font-size: 11px; font-weight: 600; }
+    </style>
+    <pattern id="grid-profile" width="50" height="50" patternUnits="userSpaceOnUse">
       <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
     </pattern>
   </defs>
-  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-uml-profile-diagram)"/>
+  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="1840" height="1000" rx="8" fill="#FFFFFF" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="520" y="52" width="880" height="56" rx="6" fill="#3B82F6"/>
+  <text x="960" y="88" text-anchor="middle" fill="#FFFFFF" class="label-primary" font-size="22">UML Profile Diagram</text>
+  <text x="960" y="108" text-anchor="middle" fill="#EFF6FF" class="label-primary" font-size="12">&lt;Project Name&gt; · Template</text>
+  <rect x="40" y="118" width="1840" height="882" fill="url(#grid-profile)"/>
   <rect x="40" y="118" width="1840" height="882" fill="#f8fafc" fill-opacity="0.35"/>
-  <rect x="300" y="280" width="200" height="100" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="400.0" y="335.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">&lt;&lt;stereotype&gt;&gt;</text>
-  <rect x="760" y="240" width="220" height="120" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="870.0" y="305.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Metaclass</text>
-  <rect x="1200" y="300" width="200" height="100" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1300.0" y="355.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">&lt;&lt;profile&gt;&gt;</text>
-  <line x1="500" y1="330" x2="760" y2="300" stroke="#334155" stroke-width="1.25" marker-end="url(#arrow)"/>
-  <rect x="1580" y="850" width="280" height="130" rx="6" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 5"/>
-  <text x="1720.0" y="920.0" text-anchor="middle" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13">Legend</text>
-  <text x="52" y="1048" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
-  <text x="1868" y="1048" text-anchor="end" fill="#64748b" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11">&lt;Project Name&gt; · Version 1.0 · UML Profile Diagram</text>
+  <rect x="300" y="320" width="180" height="100" rx="8" class="stereotype-box"/>
+  <text x="390" y="330" text-anchor="middle" class="label-primary" font-size="10">«stereotype»</text>
+  <line x1="300" y1="340" x2="480" y2="340" stroke="#334155" stroke-width="1"/>
+  <text x="390" y="375" text-anchor="middle" class="label-primary">Stereotype1</text>
+  <rect x="750" y="320" width="180" height="100" rx="8" class="stereotype-box"/>
+  <text x="840" y="330" text-anchor="middle" class="label-primary" font-size="10">«stereotype»</text>
+  <line x1="750" y1="340" x2="930" y2="340" stroke="#334155" stroke-width="1"/>
+  <text x="840" y="375" text-anchor="middle" class="label-primary">Stereotype2</text>
+  <rect x="1200" y="320" width="180" height="100" rx="8" class="stereotype-box"/>
+  <text x="1290" y="330" text-anchor="middle" class="label-primary" font-size="10">«stereotype»</text>
+  <line x1="1200" y1="340" x2="1380" y2="340" stroke="#334155" stroke-width="1"/>
+  <text x="1290" y="375" text-anchor="middle" class="label-primary">Stereotype3</text>
+  <text x="52" y="1048" class="label-primary" font-size="10">Page 1 of 1 · CONFIDENTIAL — Internal Use Only</text>
+  <text x="1868" y="1048" text-anchor="end" class="label-primary" font-size="10">&lt;Project Name&gt; · Version 1.0 · UML Profile Diagram</text>
+  <script type="text/javascript">
+  (function() {
+    const dataElement = document.currentScript.closest('svg').querySelector('#uml-profile-diagram-data');
+    if (!dataElement) return;
+    try {
+      const data = JSON.parse(dataElement.textContent);
+      console.log('[UML Profile Diagram Data] Loaded:', data.metadata.title);
+    } catch (e) {
+      console.error('[UML Profile Diagram] Invalid JSON:', e.message);
+    }
+  })();
+  </script>
 </svg>
