@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#1A1A1A" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="2.5">01  FOUNDATIONS</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end">03</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#E5E5E5" stroke-width="1"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Shape, Corner &amp; Curve Language</text>
+  <text id="subtitle" x="72" y="130" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">The same primitives, drawn consistently, are what let hundreds of SVGs read as one library.</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#1A1A1A" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">Radius is decided by geometry, not preference. Curves appear only where the shape is inherently curved.</text>
+  <text id="sec-a" x="72" y="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">CORNER RADIUS</text>
+  <rect id="cr0" x="72" y="224" width="236" height="80" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="crn0" x="72" y="322" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">Sharp — 0px</text>
+  <text id="cru0" x="72" y="338" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Diamonds, triangles — never round</text>
+  <rect id="cr1" x="328" y="224" width="236" height="80" fill="#E5E5E5" rx="8" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="crn1" x="328" y="322" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">8px radius</text>
+  <text id="cru1" x="328" y="338" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Process, task &amp; module shapes</text>
+  <rect id="cr2" x="584" y="224" width="236" height="80" fill="#E5E5E5" rx="6" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="crn2" x="584" y="322" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">6px radius</text>
+  <text id="cru2" x="584" y="338" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">UML class, ER entity, records</text>
+  <rect id="cr3" x="840" y="224" width="236" height="80" fill="#E5E5E5" rx="40" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="crn3" x="840" y="322" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">Fully rounded</text>
+  <text id="cru3" x="840" y="338" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Terminator — inherent, not chosen</text>
+  <text id="sec-b" x="72" y="388" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">CURVES &amp; ARCS</text>
+  <line id="sec-b-r" x1="72" y1="400" x2="712" y2="400" stroke="#E5E5E5" stroke-width="1"/>
+  <path id="arc1" d="M 72,460 A 70,45 0 0,1 212,460" stroke="#1A1A1A" fill="none" stroke-width="1.5"/>
+  <text id="arc-lbl" x="72" y="540" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">Arc</text>
+  <text id="arc-use" x="72" y="556" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Cylinder caps, pie segments</text>
+  <path id="curve1" d="M 292,440 Q 362,510 432,440" stroke="#1A1A1A" fill="none" stroke-width="1.5"/>
+  <text id="curve-lbl" x="292" y="540" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">Curve</text>
+  <text id="curve-use" x="292" y="556" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Smart-routed connector paths</text>
+  <ellipse id="ell1" cx="602" cy="470" rx="70" ry="35" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="ell-lbl" x="532" y="540" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#1A1A1A" text-anchor="start">Ellipse</text>
+  <text id="ell-use" x="532" y="556" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="400" fill="#8A8A85" text-anchor="start">Data store cap, oval terminator</text>
+  <text id="sec-c" x="792" y="388" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">SHAPE ANATOMY</text>
+  <line id="sec-c-r" x1="792" y1="400" x2="1208" y2="400" stroke="#E5E5E5" stroke-width="1"/>
+  <rect id="anat" x="792" y="424" width="180" height="100" fill="#E5E5E5" rx="8" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="anat-lbl" x="792" y="546" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">Fill + 1.5px stroke,</text>
+  <text id="anat-lbl2" x="792" y="560" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">always together</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="1.5">SHAPE &amp; DIAGRAM LIBRARY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end" letter-spacing="1">GENERAL GUIDELINE — WALKTHROUGH</text>
+  </g>
+</svg>

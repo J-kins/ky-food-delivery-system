@@ -1,0 +1,43 @@
+{
+  "productName": "ky-foods-customer",
+  "identifier": "com.kyfoods.customer",
+  "build": {
+    "devUrl": "{{DEV_URL}}",
+    "beforeDevCommand": "npm run dev:customer",
+    "beforeBuildCommand": "npm run build:customer"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "public",
+        "title": "KY Foods",
+        "url": "public/index.html",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 1024,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "decorations": false,
+        "transparent": true
+      },
+      {
+        "label": "rider",
+        "title": "KY Rider",
+        "url": "delivery/rider.html",
+        "width": 480,
+        "height": 720,
+        "minWidth": 360,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "visible": false
+      }
+    ]
+  },
+  "bundle": {
+    "targets": ["app", "dmg", "apk"]
+  }
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1656" width="1450" height="1656">
+  <rect width="1450" height="1656" fill="#FFFFFF"/>
+  <text id="title" x="60.0" y="42.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.3">Sequence Diagram — Order Checkout (Comprehensive Example)</text>
+  <text id="subtitle" x="60.0" y="64.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#8A8A85" text-anchor="start">Every core element in one scenario: lifelines, activation bars, sync / async / return messages, self-messages, create / destroy, and alt / opt / loop / par / ref fragments.</text>
+  <line id="title-rule" x1="60.0" y1="80.0" x2="1390.0" y2="80.0" stroke="#8A8A85" stroke-width="0.6"/>
+  <line id="ll103" x1="100.0" y1="172.0" x2="100.0" y2="1536.0" stroke="#8A8A85" stroke-width="1.3" stroke-dasharray="4,4"/>
+  <line id="ll104" x1="340.0" y1="172.0" x2="340.0" y2="1536.0" stroke="#8A8A85" stroke-width="1.3" stroke-dasharray="4,4"/>
+  <line id="ll105" x1="580.0" y1="172.0" x2="580.0" y2="1536.0" stroke="#8A8A85" stroke-width="1.3" stroke-dasharray="4,4"/>
+  <line id="ll106" x1="820.0" y1="172.0" x2="820.0" y2="1536.0" stroke="#8A8A85" stroke-width="1.3" stroke-dasharray="4,4"/>
+  <line id="ll107" x1="1060.0" y1="172.0" x2="1060.0" y2="1536.0" stroke="#8A8A85" stroke-width="1.3" stroke-dasharray="4,4"/>
+  <line id="ll108" x1="1300.0" y1="1079.0" x2="1300.0" y2="1496.0" stroke="#8A8A85" stroke-width="1.3" stroke-dasharray="4,4"/>
+  <circle id="h1" cx="100.0" cy="108.0" r="9.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.6"/>
+  <line id="h2" x1="100.0" y1="117.0" x2="100.0" y2="142.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <line id="h3" x1="87.0" y1="125.0" x2="113.0" y2="125.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <line id="h4" x1="100.0" y1="142.0" x2="89.0" y2="158.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <line id="h5" x1="100.0" y1="142.0" x2="111.0" y2="158.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <text id="h6" x="100.0" y="166.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1A1A1A" text-anchor="middle">Customer</text>
+  <rect id="h7" x="245.0" y="126.0" width="190.0" height="46.0" fill="#E5E5E5" rx="6" stroke="#1A1A1A" stroke-width="1.6"/>
+  <text id="h8" x="340.0" y="153.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#1A1A1A" text-anchor="middle">web : WebApp</text>
+  <rect id="h9" x="485.0" y="126.0" width="190.0" height="46.0" fill="#E5E5E5" rx="6" stroke="#1A1A1A" stroke-width="1.6"/>
+  <text id="h10" x="580.0" y="153.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#1A1A1A" text-anchor="middle">order : OrderService</text>
+  <rect id="h11" x="725.0" y="126.0" width="190.0" height="46.0" fill="#E5E5E5" rx="6" stroke="#1A1A1A" stroke-width="1.6"/>
+  <text id="h12" x="820.0" y="153.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#1A1A1A" text-anchor="middle">inventory : InventoryService</text>
+  <rect id="h13" x="965.0" y="126.0" width="190.0" height="46.0" fill="#E5E5E5" rx="6" stroke="#1A1A1A" stroke-width="1.6"/>
+  <text id="h14" x="1060.0" y="153.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#1A1A1A" text-anchor="middle">payment : PaymentGateway</text>
+  <text id="m15" x="220.0" y="203.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="600" fill="#1A1A1A" text-anchor="middle">submitOrder(cart)</text>
+  <line id="m16" x1="100.0" y1="210.0" x2="340.0" y2="210.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m17" points="340.0,210.0 331.5,204.9 331.5,215.1" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <text id="m18" x="460.0" y="253.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="600" fill="#1A1A1A" text-anchor="middle">createOrder(cart)</text>
+  <line id="m19" x1="345.0" y1="260.0" x2="580.0" y2="260.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m20" points="580.0,260.0 571.5,254.9 571.5,265.1" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <path id="s21" d="M 585.0,310.0 L 633.0,310.0 L 633.0,336.0 L 589.0,336.0" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <polygon id="s22" points="589.0,336.0 596.0,331.8 596.0,340.2" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <text id="s23" x="641.0" y="326.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#1A1A1A" text-anchor="start">validateItems()</text>
+  <polygon id="t24" points="485.0,375.0 527.0,375.0 527.0,388.0 518.0,397.0 485.0,397.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="t25" x="492.0" y="390.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1A1A1A" text-anchor="start">opt</text>
+  <text id="g26" x="535.0" y="390.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A8A85" text-anchor="start">[loyaltyMember]</text>
+  <path id="s27" d="M 585.0,411.0 L 633.0,411.0 L 633.0,437.0 L 589.0,437.0" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <polygon id="s28" points="589.0,437.0 596.0,432.8 596.0,441.2" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <text id="s29" x="641.0" y="427.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#1A1A1A" text-anchor="start">applyLoyaltyDiscount()</text>
+  <rect id="f30" x="485.0" y="375.0" width="395.0" height="115.0" fill="none" rx="0" stroke="#1A1A1A" stroke-width="1.4"/>
+  <polygon id="t31" points="300.0,490.0 342.0,490.0 342.0,503.0 333.0,512.0 300.0,512.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="t32" x="307.0" y="505.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1A1A1A" text-anchor="start">alt</text>
+  <text id="g33" x="350.0" y="505.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A8A85" text-anchor="start">[stock available]</text>
+  <text id="m34" x="700.0" y="519.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="600" fill="#1A1A1A" text-anchor="middle">reserveStock(items)</text>
+  <line id="m35" x1="585.0" y1="526.0" x2="820.0" y2="526.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m36" points="820.0,526.0 811.5,520.9 811.5,531.1" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <text id="m37" x="700.0" y="569.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">reserved</text>
+  <line id="m38" x1="815.0" y1="576.0" x2="575.0" y2="576.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <polygon id="m39" points="575.0,576.0 583.5,570.9 583.5,581.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="a40" x="815.0" y="526.0" width="10.0" height="50.0" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="m41" x="820.0" y="619.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="600" fill="#1A1A1A" text-anchor="middle">authorize(amount)</text>
+  <line id="m42" x1="585.0" y1="626.0" x2="1060.0" y2="626.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m43" points="1060.0,626.0 1051.5,620.9 1051.5,631.1" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <polygon id="t44" points="970.0,676.0 1012.0,676.0 1012.0,689.0 1003.0,698.0 970.0,698.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="t45" x="977.0" y="691.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1A1A1A" text-anchor="start">loop</text>
+  <text id="g46" x="1020.0" y="691.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A8A85" text-anchor="start">[retry up to 3×]</text>
+  <path id="s47" d="M 1065.0,712.0 L 1113.0,712.0 L 1113.0,738.0 L 1069.0,738.0" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <polygon id="s48" points="1069.0,738.0 1076.0,733.8 1076.0,742.2" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <text id="s49" x="1121.0" y="728.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#1A1A1A" text-anchor="start">attemptAuthorization()</text>
+  <rect id="f50" x="970.0" y="676.0" width="300.0" height="115.0" fill="none" rx="0" stroke="#1A1A1A" stroke-width="1.4"/>
+  <text id="m51" x="820.0" y="784.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">authorized</text>
+  <line id="m52" x1="1055.0" y1="791.0" x2="575.0" y2="791.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <polygon id="m53" points="575.0,791.0 583.5,785.9 583.5,796.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="a54" x="1055.0" y="626.0" width="10.0" height="165.0" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.3"/>
+  <polygon id="t55" points="540.0,841.0 582.0,841.0 582.0,854.0 573.0,863.0 540.0,863.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="t56" x="547.0" y="856.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1A1A1A" text-anchor="start">par</text>
+  <text id="g57" x="590.0" y="856.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A8A85" text-anchor="start">[finalize concurrently]</text>
+  <text id="m58" x="700.0" y="870.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">commitStock()</text>
+  <line id="m59" x1="585.0" y1="877.0" x2="820.0" y2="877.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m60" points="820.0,877.0 811.5,871.9 811.5,882.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <line id="fd61" x1="540.0" y1="927.0" x2="1100.0" y2="927.0" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text id="m62" x="820.0" y="948.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">captureFunds()</text>
+  <line id="m63" x1="585.0" y1="955.0" x2="1060.0" y2="955.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m64" points="1060.0,955.0 1051.5,949.9 1051.5,960.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="f65" x="540.0" y="841.0" width="560.0" height="178.0" fill="none" rx="0" stroke="#1A1A1A" stroke-width="1.4"/>
+  <rect id="r66" x="770.0" y="1019.0" width="340.0" height="44.0" fill="none" rx="0" stroke="#1A1A1A" stroke-width="1.4"/>
+  <polygon id="t67" points="770.0,1019.0 812.0,1019.0 812.0,1032.0 803.0,1041.0 770.0,1041.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="t68" x="777.0" y="1034.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#1A1A1A" text-anchor="start">ref</text>
+  <text id="r69" x="940.0" y="1045.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1A1A1A" text-anchor="middle">Payment Reconciliation</text>
+  <text id="c70" x="942.5" y="1072.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#1A1A1A" text-anchor="middle">«create»</text>
+  <line id="c71" x1="585.0" y1="1079.0" x2="1205.0" y2="1079.0" stroke="#1A1A1A" stroke-width="1.4" stroke-dasharray="6,4"/>
+  <path id="c72" d="M 1197.0,1074.2 L 1205.0,1079.0 L 1197.0,1083.8" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <rect id="c73" x="1205.0" y="1056.0" width="190.0" height="46.0" fill="#E5E5E5" rx="6" stroke="#1A1A1A" stroke-width="1.6"/>
+  <text id="c74" x="1300.0" y="1083.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#1A1A1A" text-anchor="middle">notify : NotificationService</text>
+  <text id="m75" x="940.0" y="1127.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="600" fill="#1A1A1A" text-anchor="middle">send(order)</text>
+  <line id="m76" x1="585.0" y1="1134.0" x2="1300.0" y2="1134.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="m77" points="1300.0,1134.0 1291.5,1128.9 1291.5,1139.1" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <polygon id="n78" points="1197.2,1184.0 1390.8,1184.0 1402.8,1196.0 1402.8,1238.0 1197.2,1238.0" fill="#E5E5E5" stroke="#1A1A1A" stroke-width="1.3"/>
+  <path id="n79" d="M 1390.8,1184.0 L 1390.8,1196.0 L 1402.8,1196.0" fill="none" stroke="#1A1A1A" stroke-width="1.0"/>
+  <text id="n80" x="1211.2" y="1206.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#1A1A1A" text-anchor="start">Composes and dispatches</text>
+  <text id="n81" x="1211.2" y="1222.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#1A1A1A" text-anchor="start">the confirmation email</text>
+  <text id="m82" x="940.0" y="1247.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">queued</text>
+  <line id="m83" x1="1295.0" y1="1254.0" x2="575.0" y2="1254.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <polygon id="m84" points="575.0,1254.0 583.5,1248.9 583.5,1259.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="a85" x="1295.0" y="1134.0" width="10.0" height="120.0" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="m86" x="460.0" y="1297.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">orderConfirmed(orderId)</text>
+  <line id="m87" x1="575.0" y1="1304.0" x2="335.0" y2="1304.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <polygon id="m88" points="335.0,1304.0 343.5,1298.9 343.5,1309.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="a89" x="575.0" y="260.0" width="10.0" height="1044.0" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.3"/>
+  <line id="fd90" x1="300.0" y1="1354.0" x2="1410.0" y2="1354.0" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text id="fd91" x="308.0" y="1369.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#8A8A85" text-anchor="start">[else: out of stock]</text>
+  <text id="m92" x="460.0" y="1375.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">orderRejected(reason)</text>
+  <line id="m93" x1="575.0" y1="1382.0" x2="335.0" y2="1382.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <polygon id="m94" points="335.0,1382.0 343.5,1376.9 343.5,1387.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="a95" x="575.0" y="1382.0" width="10.0" height="4.0" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.3"/>
+  <rect id="f96" x="300.0" y="490.0" width="1110.0" height="956.0" fill="none" rx="0" stroke="#1A1A1A" stroke-width="1.4"/>
+  <text id="m97" x="220.0" y="1439.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.3" font-weight="400" fill="#1A1A1A" text-anchor="middle">showConfirmation()</text>
+  <line id="m98" x1="335.0" y1="1446.0" x2="100.0" y2="1446.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <polygon id="m99" points="100.0,1446.0 108.5,1440.9 108.5,1451.1" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect id="a100" x="335.0" y="210.0" width="10.0" height="1236.0" fill="#E5E5E5" rx="0" stroke="#1A1A1A" stroke-width="1.3"/>
+  <line id="d101" x1="1291.0" y1="1487.0" x2="1309.0" y2="1505.0" stroke="#1A1A1A" stroke-width="2.2"/>
+  <line id="d102" x1="1291.0" y1="1505.0" x2="1309.0" y2="1487.0" stroke="#1A1A1A" stroke-width="2.2"/>
+  <text id="lg-hdr" x="60.0" y="1566.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">NOTATION</text>
+  <line id="lg109" x1="60.0" y1="1588.0" x2="110.0" y2="1588.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <polygon id="lg110" points="118.0,1588.0 111.0,1583.8 111.0,1592.2" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0"/>
+  <text id="lg111" x="130.0" y="1592.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8A8A85" text-anchor="start">Sync call</text>
+  <line id="lg112" x1="260.0" y1="1588.0" x2="310.0" y2="1588.0" stroke="#1A1A1A" stroke-width="1.6"/>
+  <path id="lg113" d="M 311.0,1583.8 L 318.0,1588.0 L 311.0,1592.2" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="lg114" x="330.0" y="1592.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8A8A85" text-anchor="start">Async call</text>
+  <line id="lg115" x1="460.0" y1="1588.0" x2="510.0" y2="1588.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <path id="lg116" d="M 511.0,1583.8 L 518.0,1588.0 L 511.0,1592.2" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="lg117" x="530.0" y="1592.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8A8A85" text-anchor="start">Return</text>
+  <line id="lg118" x1="660.0" y1="1588.0" x2="710.0" y2="1588.0" stroke="#1A1A1A" stroke-width="1.3" stroke-dasharray="6,4"/>
+  <path id="lg119" d="M 711.0,1583.8 L 718.0,1588.0 L 711.0,1592.2" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="lg120" x="730.0" y="1592.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8A8A85" text-anchor="start">Create</text>
+  <line id="lg121" x1="879.0" y1="1582.0" x2="891.0" y2="1594.0" stroke="#1A1A1A" stroke-width="2"/>
+  <line id="lg122" x1="879.0" y1="1594.0" x2="891.0" y2="1582.0" stroke="#1A1A1A" stroke-width="2"/>
+  <text id="lg123" x="930.0" y="1592.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#8A8A85" text-anchor="start">Destroy</text>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#1A1A1A" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="2.5">01  FOUNDATIONS</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end">01</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#E5E5E5" stroke-width="1"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Color System</text>
+  <text id="subtitle" x="72" y="130" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">The complete palette for every shape you draw. Never introduce a color outside this set.</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#1A1A1A" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">Four tokens per mode — canvas, shape fill, stroke/text, and one shared muted tone.</text>
+  <text id="row-light" x="72" y="192" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">LIGHT MODE</text>
+  <rect id="ls0" x="72" y="204" width="250" height="128" fill="#FFFFFF" rx="4" stroke="#E5E5E5" stroke-width="1"/>
+  <text id="lr0" x="72" y="350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">CANVAS</text>
+  <text id="ld0" x="72" y="366" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Page / artboard background</text>
+  <text id="lh0" x="72" y="381" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#FFFFFF</text>
+  <rect id="ls1" x="352" y="204" width="250" height="128" fill="#E5E5E5" rx="4"/>
+  <text id="lr1" x="352" y="350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">FILL</text>
+  <text id="ld1" x="352" y="366" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Shape body fill</text>
+  <text id="lh1" x="352" y="381" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#E5E5E5</text>
+  <rect id="ls2" x="632" y="204" width="250" height="128" fill="#1A1A1A" rx="4"/>
+  <text id="lr2" x="632" y="350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">STROKE / TEXT</text>
+  <text id="ld2" x="632" y="366" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Outlines &amp; primary text</text>
+  <text id="lh2" x="632" y="381" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#1A1A1A</text>
+  <rect id="ls3" x="912" y="204" width="250" height="128" fill="#8A8A85" rx="4"/>
+  <text id="lr3" x="912" y="350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">MUTED</text>
+  <text id="ld3" x="912" y="366" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Captions &amp; secondary text</text>
+  <text id="lh3" x="912" y="381" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#8A8A85</text>
+  <text id="row-dark" x="72" y="412" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">DARK MODE</text>
+  <rect id="ds0" x="72" y="426" width="250" height="128" fill="#0D0D0D" rx="4"/>
+  <text id="dr0" x="72" y="572" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">CANVAS</text>
+  <text id="dd0" x="72" y="588" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Page / artboard background</text>
+  <text id="dh0" x="72" y="603" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#0D0D0D</text>
+  <rect id="ds1" x="352" y="426" width="250" height="128" fill="#1E1E1E" rx="4"/>
+  <text id="dr1" x="352" y="572" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">FILL</text>
+  <text id="dd1" x="352" y="588" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Shape body fill</text>
+  <text id="dh1" x="352" y="603" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#1E1E1E</text>
+  <rect id="ds2" x="632" y="426" width="250" height="128" fill="#F2F2F2" rx="4"/>
+  <text id="dr2" x="632" y="572" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">STROKE / TEXT</text>
+  <text id="dd2" x="632" y="588" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Outlines &amp; primary text</text>
+  <text id="dh2" x="632" y="603" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#F2F2F2</text>
+  <rect id="ds3" x="912" y="426" width="250" height="128" fill="#8A8A85" rx="4"/>
+  <text id="dr3" x="912" y="572" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#8A8A85" text-anchor="start" letter-spacing="1.5">MUTED</text>
+  <text id="dd3" x="912" y="588" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Captions &amp; secondary text</text>
+  <text id="dh3" x="912" y="603" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">#8A8A85</text>
+  <text id="note" x="72" y="636" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">Muted keeps the identical hex in both modes — the one constant that ties light and dark together.</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="1.5">SHAPE &amp; DIAGRAM LIBRARY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end" letter-spacing="1">GENERAL GUIDELINE — WALKTHROUGH</text>
+  </g>
+</svg>

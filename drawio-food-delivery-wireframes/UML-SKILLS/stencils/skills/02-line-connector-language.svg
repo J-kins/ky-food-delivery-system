@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+  <rect id="accent-bar" x="0" y="0" width="6" height="720" fill="#1A1A1A" rx="0"/>
+  <g id="header">
+    <text x="72" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="2.5">01  FOUNDATIONS</text>
+    <text x="1208" y="36" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end">02</text>
+    <line x1="72" y1="48" x2="1208" y2="48" stroke="#E5E5E5" stroke-width="1"/>
+  </g>
+  <text id="pg-title" x="72" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="-0.5">Line &amp; Connector Language</text>
+  <text id="subtitle" x="72" y="130" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">Reach for the meaning first, then draw the line that says it.</text>
+  <line id="title-accent" x1="72" y1="142" x2="124" y2="142" stroke="#1A1A1A" stroke-width="2"/>
+  <text id="desc" x="72" y="168" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A85" text-anchor="start">Weight and end-style are semantic, never decorative. Shown in the light-mode stroke token; invert to dark-mode stroke on dark canvas.</text>
+  <text id="sec-a" x="72" y="200" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">STROKE WEIGHT</text>
+  <line id="wl0" x1="72" y1="224" x2="212" y2="224" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text id="wn0" x="240" y="228" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1A1A1A" text-anchor="start">Shape outline — 1.5px</text>
+  <text id="wu0" x="240" y="244" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">Every shape boundary</text>
+  <line id="wl1" x1="72" y1="264" x2="212" y2="264" stroke="#1A1A1A" stroke-width="2.0"/>
+  <text id="wn1" x="240" y="268" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1A1A1A" text-anchor="start">Connector / flow line — 2.0px</text>
+  <text id="wu1" x="240" y="284" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">Default line between shapes</text>
+  <line id="wl2" x1="72" y1="304" x2="212" y2="304" stroke="#1A1A1A" stroke-width="2.75"/>
+  <text id="wn2" x="240" y="308" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#1A1A1A" text-anchor="start">Emphasis line — 2.75px</text>
+  <text id="wu2" x="240" y="324" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#8A8A85" text-anchor="start">Critical path, active state — weight signals it, not color</text>
+  <text id="sec-b" x="72" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" font-weight="700" fill="#1A1A1A" text-anchor="start" letter-spacing="2">CONNECTOR MEANING</text>
+  <line id="sec-b-r" x1="72" y1="384" x2="1208" y2="384" stroke="#E5E5E5" stroke-width="1"/>
+  <line id="c0l" x1="72" y1="424" x2="172" y2="424" stroke="#1A1A1A" stroke-width="2"/>
+  <polygon id="c0a" points="182,424 173,418.6 173,429.4" fill="#1A1A1A"/>
+  <text id="cm0" x="222" y="428" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Flow / synchronous message</text>
+  <line id="c1l" x1="72" y1="480" x2="174" y2="480" stroke="#1A1A1A" stroke-width="2"/>
+  <path id="c1a" d="M 174,475.2 L 182,480 L 174,484.8" stroke="#1A1A1A" fill="none" stroke-width="1.5"/>
+  <text id="cm1" x="222" y="484" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Async message / directed association</text>
+  <line id="c2l" x1="72" y1="536" x2="174" y2="536" stroke="#1A1A1A" stroke-width="2" stroke-dasharray="5,4"/>
+  <path id="c2a" d="M 174,531.2 L 182,536 L 174,540.8" stroke="#1A1A1A" fill="none" stroke-width="1.5"/>
+  <text id="cm2" x="222" y="540" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Dependency</text>
+  <line id="c3l" x1="72" y1="592" x2="168" y2="592" stroke="#1A1A1A" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon id="c3a" points="182,584.8 194,592 182,599.2" fill="none" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="cm3" x="222" y="596" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Realization / interface implementation</text>
+  <line id="c4l" x1="642" y1="424" x2="738" y2="424" stroke="#1A1A1A" stroke-width="2"/>
+  <polygon id="c4a" points="752,416.8 764,424 752,431.2" fill="none" stroke="#1A1A1A" stroke-width="1.3"/>
+  <text id="cm4" x="792" y="428" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Generalization / inheritance</text>
+  <line id="c5l" x1="642" y1="480" x2="738" y2="480" stroke="#1A1A1A" stroke-width="2"/>
+  <polygon id="c5a" points="735,480 744,474.15 753,480 744,485.85" fill="none" stroke="#1A1A1A" stroke-width="1.2"/>
+  <text id="cm5" x="792" y="484" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Aggregation</text>
+  <line id="c6l" x1="642" y1="536" x2="738" y2="536" stroke="#1A1A1A" stroke-width="2"/>
+  <polygon id="c6a" points="735,536 744,530.15 753,536 744,541.85" fill="#1A1A1A"/>
+  <text id="cm6" x="792" y="540" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#1A1A1A" text-anchor="start">Composition</text>
+  <g id="footer">
+    <line x1="72" y1="676" x2="1208" y2="676" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="72" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" letter-spacing="1.5">SHAPE &amp; DIAGRAM LIBRARY</text>
+    <text x="1208" y="694" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" fill="#8A8A85" text-anchor="end" letter-spacing="1">GENERAL GUIDELINE — WALKTHROUGH</text>
+  </g>
+</svg>

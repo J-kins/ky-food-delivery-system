@@ -1,0 +1,27 @@
+{
+  "name": "@ky-foods/manager",
+  "version": "1.0.0",
+  "description": "KY Foods - Restaurant Manager Dashboard",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --dev",
+    "watch": "node build.mjs --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "food-delivery",
+    "manager",
+    "restaurant",
+    "dashboard",
+    "ky-foods"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "esbuild-plugin-clean": "^1.0.0",
+    "esbuild-plugin-copy": "^2.0.0"
+  }
+}
