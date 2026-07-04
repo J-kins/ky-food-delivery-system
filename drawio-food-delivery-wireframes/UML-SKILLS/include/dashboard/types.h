@@ -346,4 +346,157 @@ size_t document_total_shapes(VisioDocument *doc);
  */
 size_t document_total_connectors(VisioDocument *doc);
 
+/* ============================================================================
+ * BUILDER FUNCTIONS - Setters for Shape/Connector Properties
+ * ============================================================================ */
+
+/**
+ * @brief Set shape text content
+ * 
+ * @param shape Shape to modify
+ * @param text New text content (NULL to clear)
+ * @return 0 on success, -1 on failure
+ */
+int shape_set_text(Shape *shape, const char *text);
+
+/**
+ * @brief Set shape type
+ * 
+ * @param shape Shape to modify
+ * @param type Shape type (e.g., "rectangle", "circle")
+ * @return 0 on success, -1 on failure
+ */
+int shape_set_type(Shape *shape, const char *type);
+
+/**
+ * @brief Set shape position (x, y coordinates)
+ * 
+ * @param shape Shape to modify
+ * @param x X coordinate
+ * @param y Y coordinate
+ * @return 0 on success, -1 on failure
+ */
+int shape_set_position(Shape *shape, double x, double y);
+
+/**
+ * @brief Set shape dimensions
+ * 
+ * @param shape Shape to modify
+ * @param width Shape width
+ * @param height Shape height
+ * @return 0 on success, -1 on failure
+ */
+int shape_set_size(Shape *shape, double width, double height);
+
+/**
+ * @brief Add property to shape
+ * 
+ * @param shape Shape to modify
+ * @param name Property name
+ * @param value Property value
+ * @return 0 on success, -1 on failure
+ */
+int shape_add_property(Shape *shape, const char *name, const char *value);
+
+/**
+ * @brief Get shape property value
+ * 
+ * @param shape Shape to query
+ * @param name Property name
+ * @return Property value string, or NULL if not found
+ */
+const char* shape_get_property(Shape *shape, const char *name);
+
+/**
+ * @brief Set shape as group
+ * 
+ * @param shape Shape to modify
+ * @param is_group 1 if group, 0 otherwise
+ */
+void shape_set_group(Shape *shape, int is_group);
+
+/**
+ * @brief Set connector text label
+ * 
+ * @param connector Connector to modify
+ * @param text Label text (NULL to clear)
+ * @return 0 on success, -1 on failure
+ */
+int connector_set_text(Connector *connector, const char *text);
+
+/**
+ * @brief Add property to connector
+ * 
+ * @param connector Connector to modify
+ * @param name Property name
+ * @param value Property value
+ * @return 0 on success, -1 on failure
+ */
+int connector_add_property(Connector *connector, const char *name, const char *value);
+
+/**
+ * @brief Get connector property value
+ * 
+ * @param connector Connector to query
+ * @param name Property name
+ * @return Property value string, or NULL if not found
+ */
+const char* connector_get_property(Connector *connector, const char *name);
+
+/* ============================================================================
+ * QUERY/MODIFICATION FUNCTIONS
+ * ============================================================================ */
+
+/**
+ * @brief Find shape by ID within a page
+ * 
+ * @param page Page to search
+ * @param shape_id Shape ID to find
+ * @return Shape pointer, or NULL if not found
+ */
+Shape* page_find_shape_by_id(Page *page, const char *shape_id);
+
+/**
+ * @brief Find connector by ID within a page
+ * 
+ * @param page Page to search
+ * @param connector_id Connector ID to find
+ * @return Connector pointer, or NULL if not found
+ */
+Connector* page_find_connector_by_id(Page *page, const char *connector_id);
+
+/**
+ * @brief Remove shape from page (does not free it)
+ * 
+ * @param page Page to modify
+ * @param shape_id Shape ID to remove
+ * @return 0 on success, -1 if not found
+ */
+int page_remove_shape(Page *page, const char *shape_id);
+
+/**
+ * @brief Remove connector from page (does not free it)
+ * 
+ * @param page Page to modify
+ * @param connector_id Connector ID to remove
+ * @return 0 on success, -1 if not found
+ */
+int page_remove_connector(Page *page, const char *connector_id);
+
+/**
+ * @brief Clone a shape (deep copy)
+ * 
+ * @param source Source shape to clone
+ * @return New cloned shape, or NULL on failure
+ */
+Shape* shape_clone(const Shape *source);
+
+/**
+ * @brief Clone a connector (deep copy)
+ * 
+ * @param source Source connector to clone
+ * @return New cloned connector, or NULL on failure
+ */
+Connector* connector_clone(const Connector *source);
+
 #endif /* DASHBOARD_TYPES_H */

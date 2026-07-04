@@ -340,4 +340,145 @@ void visio_parser_free_shape_array(Shape **results, size_t count);
  */
 void visio_parser_free_connector_array(Connector **results, size_t count);
 
+/* ============================================================================
+ * MODIFICATION OPERATIONS - Creating/Deleting Elements
+ * ============================================================================ */
+
+/**
+ * @brief Create a new shape and add to document
+ * 
+ * Creates an empty shape with given ID and adds it to specified page.
+ * 
+ * @param doc Document to modify
+ * @param page_index Index of page to add shape to
+ * @param shape_id New shape ID
+ * @return New Shape pointer, or NULL on failure
+ * 
+ * @example
+ * Shape *rect = visio_parser_create_shape(doc, 0, "S1");
+ * shape_set_type(rect, "rectangle");
+ * shape_set_text(rect, "New Task");
+ */
+Shape* visio_parser_create_shape(VisioDocument *doc, size_t page_index, const char *shape_id);
+
+/**
+ * @brief Create a new connector and add to document
+ * 
+ * Creates a connector between two shapes and adds to specified page.
+ * 
+ * @param doc Document to modify
+ * @param page_index Index of page to add connector to
+ * @param connector_id New connector ID
+ * @param from_shape_id Source shape ID
+ * @param to_shape_id Target shape ID
+ * @return New Connector pointer, or NULL on failure
+ */
+Connector* visio_parser_create_connector(VisioDocument *doc, size_t page_index,
+                                        const char *connector_id,
+                                        const char *from_shape_id,
+                                        const char *to_shape_id);
+
+/**
+ * @brief Remove shape from document by ID
+ * 
+ * Deletes shape and all connected connectors from document.
+ * 
+ * @param doc Document to modify
+ * @param shape_id Shape ID to remove
+ * @return 0 on success, -1 if not found
+ */
+int visio_parser_remove_shape(VisioDocument *doc, const char *shape_id);
+
+/**
+ * @brief Remove connector from document by ID
+ * 
+ * @param doc Document to modify
+ * @param connector_id Connector ID to remove
+ * @return 0 on success, -1 if not found
+ */
+int visio_parser_remove_connector(VisioDocument *doc, const char *connector_id);
+
+/**
+ * @brief Create a new page and add to document
+ * 
+ * @param doc Document to modify
+ * @param page_name Name for new page
+ * @return New Page pointer, or NULL on failure
+ */
+Page* visio_parser_create_page(VisioDocument *doc, const char *page_name);
+
+/* ============================================================================
+ * CLONING OPERATIONS - For Templates
+ * ============================================================================ */
+
+/**
+ * @brief Clone a shape (deep copy)
+ * 
+ * Creates a complete independent copy of a shape with new ID.
+ * Useful for creating templates and duplicating diagram elements.
+ * 
+ * @param source Source shape
+ * @param new_id ID for cloned shape
+ * @return New cloned shape, or NULL on failure
+ */
+Shape* visio_parser_clone_shape(const Shape *source, const char *new_id);
+
+/**
+ * @brief Clone a connector (deep copy)
+ * 
+ * Creates a complete independent copy of a connector with new ID.
+ * 
+ * @param source Source connector
+ * @param new_id ID for cloned connector
+ * @param new_from_id Source shape ID for cloned connector
+ * @param new_to_id Target shape ID for cloned connector
+ * @return New cloned connector, or NULL on failure
+ */
+Connector* visio_parser_clone_connector(const Connector *source,
+                                       const char *new_id,
+                                       const char *new_from_id,
+                                       const char *new_to_id);
+
+/**
+ * @brief Clone entire page
+ * 
+ * @param source Source page
+ * @param new_name Name for cloned page
+ * @return New cloned page, or NULL on failure
+ */
+Page* visio_parser_clone_page(const Page *source, const char *new_name);
+
+/* ============================================================================
+ * TEMPLATE SUPPORT
+ * ============================================================================ */
+
+/**
+ * @brief Create document from template
+ * 
+ * Loads a template document and creates a new instance.
+ * 
+ * @param template_path Path to template .vsdx file
+ * @param output_filename Name for new document
+ * @return New document based on template, or NULL on failure
+ * 
+ * @example
+ * VisioDocument *doc = visio_parser_from_template("kanban_template.vsdx", "my_kanban.vsdx");
+ * // Modify shapes as needed
+ * visio_writer_save(doc, "my_kanban.vsdx");
+ */
+VisioDocument* visio_parser_from_template(const char *template_path,
+                                         const char *output_filename);
+
+/**
+ * @brief Create document from JSON specification
+ * 
+ * Generates a Visio document from JSON structure.
+ * JSON format matches what json_exporter_document() produces.
+ * 
+ * @param json_spec JSON string describing diagram
+ * @param output_filename Filename for new document
+ * @return New document, or NULL on failure
+ */
+VisioDocument* visio_parser_from_json(const char *json_spec, const char *output_filename);
+
 #endif /* DASHBOARD_VISIO_PARSER_H */
